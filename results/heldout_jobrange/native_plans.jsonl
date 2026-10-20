@@ -1,0 +1,200 @@
+{"query_id": 2, "digest": "8e573f8ad6ff0701", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 14, "digest": "2d808a0204ce051f", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 17, "digest": "804a87c8ef053052", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 18, "digest": "a482dfd5d9842f04", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 22, "digest": "10f7d2652f6892f0", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 24, "digest": "82acf5ae6bbb1c5d", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 26, "digest": "0fa0b0284f7ac138", "join_sets": [["mc", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 31, "digest": "cec52e083ccea273", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 35, "digest": "035b2ae79c4ded1f", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 46, "digest": "8081f944eb6b2352", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 50, "digest": "b5ff99cb26e4913a", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 53, "digest": "01f1619ae4fe648d", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"]]}
+{"query_id": 63, "digest": "b540b0dda60a7225", "join_sets": [["mk", "t"], ["mc", "mk", "t"]]}
+{"query_id": 64, "digest": "327dbf9d267b28f1", "join_sets": [["mk", "t"], ["mc", "mk", "t"]]}
+{"query_id": 67, "digest": "804f01dda34e6962", "join_sets": [["mk", "t"], ["mc", "mk", "t"]]}
+{"query_id": 72, "digest": "e3ea34386bf10fbb", "join_sets": [["mk", "t"], ["mc", "mk", "t"]]}
+{"query_id": 79, "digest": "6bd5fe12a405b474", "join_sets": [["mk", "t"], ["mc", "mk", "t"]]}
+{"query_id": 93, "digest": "678f8f940d031882", "join_sets": [["mc", "mk"], ["mc", "mk", "t"]]}
+{"query_id": 98, "digest": "d606e6b37064645e", "join_sets": [["mk", "t"], ["mc", "mk", "t"]]}
+{"query_id": 103, "digest": "cb3c7365a150d06d", "join_sets": [["mk", "t"], ["mc", "mk", "t"]]}
+{"query_id": 107, "digest": "00ff6cffc4cd6f31", "join_sets": [["mk", "t"], ["mc", "mk", "t"]]}
+{"query_id": 115, "digest": "5baf2bdaba0858a0", "join_sets": [["mk", "t"], ["mi", "mk", "t"]]}
+{"query_id": 117, "digest": "27630c68021be90f", "join_sets": [["mk", "t"], ["mi", "mk", "t"]]}
+{"query_id": 119, "digest": "66fb6f8e56fe27cb", "join_sets": [["mk", "t"], ["mi", "mk", "t"]]}
+{"query_id": 120, "digest": "10c3cb62ea8358a0", "join_sets": [["mk", "t"], ["mi", "mk", "t"]]}
+{"query_id": 124, "digest": "efb83ecf8b1096b5", "join_sets": [["mk", "t"], ["mi", "mk", "t"]]}
+{"query_id": 125, "digest": "33eccb25fe02c451", "join_sets": [["mk", "t"], ["mi", "mk", "t"]]}
+{"query_id": 142, "digest": "d389589c91433519", "join_sets": [["mi", "t"], ["mi", "mk", "t"]]}
+{"query_id": 144, "digest": "e0747a4e2b5c74bf", "join_sets": [["mk", "t"], ["mi", "mk", "t"]]}
+{"query_id": 147, "digest": "0e5a8ade9884123c", "join_sets": [["mk", "t"], ["mi", "mk", "t"]]}
+{"query_id": 153, "digest": "98f2cb6e68a3377b", "join_sets": [["mk", "t"], ["mi", "mk", "t"]]}
+{"query_id": 154, "digest": "ea28a279b9d6515b", "join_sets": [["mk", "t"], ["mi", "mk", "t"]]}
+{"query_id": 160, "digest": "561864832e2ed59b", "join_sets": [["mk", "t"], ["mi", "mk", "t"]]}
+{"query_id": 166, "digest": "d46bb3e0e13651df", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"]]}
+{"query_id": 168, "digest": "55099ce8ce150b39", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"]]}
+{"query_id": 171, "digest": "bcca96bb69a931b9", "join_sets": [["mi_idx", "mk"], ["mi_idx", "mk", "t"]]}
+{"query_id": 178, "digest": "737a0e1e88a16780", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"]]}
+{"query_id": 179, "digest": "843b34fa9beabe1d", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"]]}
+{"query_id": 189, "digest": "ac95b72d2f4670d3", "join_sets": [["mi_idx", "mk"], ["mi_idx", "mk", "t"]]}
+{"query_id": 191, "digest": "ea3b4b43181fc4b9", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"]]}
+{"query_id": 203, "digest": "54ad1bd07d2ec92b", "join_sets": [["mi_idx", "t"], ["mi_idx", "mk", "t"]]}
+{"query_id": 209, "digest": "a6207d418d676160", "join_sets": [["mi_idx", "mk"], ["mi_idx", "mk", "t"]]}
+{"query_id": 212, "digest": "56a332840759f75a", "join_sets": [["mi_idx", "t"], ["mi_idx", "mk", "t"]]}
+{"query_id": 214, "digest": "eca325555c849612", "join_sets": [["mi_idx", "t"], ["mi_idx", "mk", "t"]]}
+{"query_id": 220, "digest": "0abfe83385d1fa31", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"]]}
+{"query_id": 231, "digest": "e9826ba1e4e15e99", "join_sets": [["mc", "t"], ["mc", "mi", "t"]]}
+{"query_id": 234, "digest": "99a4e35a49c39666", "join_sets": [["mc", "t"], ["mc", "mi", "t"]]}
+{"query_id": 240, "digest": "3bf2483c442643e3", "join_sets": [["mc", "t"], ["mc", "mi", "t"]]}
+{"query_id": 247, "digest": "489ab215689775dc", "join_sets": [["mc", "t"], ["mc", "mi", "t"]]}
+{"query_id": 250, "digest": "afd3b69b48d4af1b", "join_sets": [["mi", "t"], ["mc", "mi", "t"]]}
+{"query_id": 251, "digest": "540c25bec0cb1352", "join_sets": [["mi", "t"], ["mc", "mi", "t"]]}
+{"query_id": 254, "digest": "babe0cde865f1921", "join_sets": [["mc", "t"], ["mc", "mi", "t"]]}
+{"query_id": 258, "digest": "4f73c83842dd2bac", "join_sets": [["mc", "t"], ["mc", "mi", "t"]]}
+{"query_id": 262, "digest": "cd82602cf22efc52", "join_sets": [["mc", "t"], ["mc", "mi", "t"]]}
+{"query_id": 271, "digest": "3f84c743e24b5fd9", "join_sets": [["mc", "t"], ["mc", "mi", "t"]]}
+{"query_id": 274, "digest": "5890e4664a2e36a6", "join_sets": [["mc", "t"], ["mc", "mi", "t"]]}
+{"query_id": 275, "digest": "8c5498967be0d0b1", "join_sets": [["mc", "t"], ["mc", "mi", "t"]]}
+{"query_id": 276, "digest": "1f1917211a1747eb", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 278, "digest": "3432e017d90022df", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 281, "digest": "2f570bd0777d3ac8", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 283, "digest": "0f847a8c8f6cdec8", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 284, "digest": "b0a64396bd62724b", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 290, "digest": "3203c6907445cc93", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 291, "digest": "1e739a136509a6b9", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 297, "digest": "2d19ff9f588ed277", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 298, "digest": "877057f6b997e06d", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 300, "digest": "8f2556a3f4cda2db", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 305, "digest": "d51ec8688c642670", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 310, "digest": "00064fcd6b6519dc", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 311, "digest": "81f74e12feca977c", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 315, "digest": "5f241ca5c292b15a", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 316, "digest": "6807413cec1891d4", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 322, "digest": "970c76bc8a40fa4b", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 326, "digest": "e75f64d9f7c5a899", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 327, "digest": "fc0d1741b62e9998", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 329, "digest": "7ab2f3dc87ea0387", "join_sets": [["mk", "t"], ["ci", "mk", "t"]]}
+{"query_id": 332, "digest": "39029080bd14b55e", "join_sets": [["ci", "t"]]}
+{"query_id": 334, "digest": "9ebf894b326c0f7a", "join_sets": [["ci", "t"]]}
+{"query_id": 340, "digest": "1916207c6d7c6e56", "join_sets": [["ci", "t"]]}
+{"query_id": 349, "digest": "205478cac814b57c", "join_sets": [["ci", "t"]]}
+{"query_id": 353, "digest": "16726e2fc51bbc73", "join_sets": [["ci", "t"]]}
+{"query_id": 355, "digest": "99879908ab2861cd", "join_sets": [["ci", "t"]]}
+{"query_id": 358, "digest": "eadb28c09dc233f8", "join_sets": [["ci", "t"]]}
+{"query_id": 364, "digest": "7100045d46d61709", "join_sets": [["ci", "t"]]}
+{"query_id": 369, "digest": "098b5eec431f96de", "join_sets": [["ci", "t"]]}
+{"query_id": 372, "digest": "07e1bb4dea2dcf7c", "join_sets": [["ci", "t"]]}
+{"query_id": 373, "digest": "c1cac15420449792", "join_sets": [["ci", "t"]]}
+{"query_id": 379, "digest": "d0c1d6c125368a96", "join_sets": [["ci", "t"]]}
+{"query_id": 386, "digest": "ef70d7ab58efc791", "join_sets": [["mc", "t"], ["ci", "mc", "t"]]}
+{"query_id": 402, "digest": "a091c44900f6af67", "join_sets": [["mc", "t"], ["ci", "mc", "t"]]}
+{"query_id": 405, "digest": "0a00d335c10b08bb", "join_sets": [["mc", "t"], ["ci", "mc", "t"]]}
+{"query_id": 408, "digest": "978c34540f9db6d3", "join_sets": [["ci", "t"], ["ci", "mc", "t"]]}
+{"query_id": 409, "digest": "72cee19eb2e443fa", "join_sets": [["mc", "t"], ["ci", "mc", "t"]]}
+{"query_id": 411, "digest": "3ad463366a8bbc21", "join_sets": [["mc", "t"], ["ci", "mc", "t"]]}
+{"query_id": 415, "digest": "6e61d088b38a66c2", "join_sets": [["mc", "t"], ["ci", "mc", "t"]]}
+{"query_id": 420, "digest": "324e471e6a6ddb1d", "join_sets": [["mc", "t"], ["ci", "mc", "t"]]}
+{"query_id": 427, "digest": "7c829bec9244af50", "join_sets": [["mc", "t"], ["ci", "mc", "t"]]}
+{"query_id": 432, "digest": "b3e2eb4d3e64b2be", "join_sets": [["mc", "t"], ["ci", "mc", "t"]]}
+{"query_id": 433, "digest": "bbcf6a4f6b02e391", "join_sets": [["mc", "t"], ["ci", "mc", "t"]]}
+{"query_id": 437, "digest": "666711f6e0996d8b", "join_sets": [["mc", "t"], ["ci", "mc", "t"]]}
+{"query_id": 441, "digest": "8380052196c8be95", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 456, "digest": "febca09afcc40b02", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 458, "digest": "775f2c51dc853a97", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 464, "digest": "4f4a0371ab16e1d1", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 465, "digest": "74d5741e4fcfdf78", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 466, "digest": "5e280c18e7ecf48e", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 467, "digest": "5bbe9468975d4150", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 473, "digest": "a18a110de87e384f", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 477, "digest": "8ec788367b99257b", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 480, "digest": "5fbeed85be7e7481", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 484, "digest": "136ce3d1f801ede1", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 489, "digest": "e7386864666b2399", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"]]}
+{"query_id": 499, "digest": "4154ce6172b2be75", "join_sets": [["mi_idx", "t"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"]]}
+{"query_id": 503, "digest": "55f4e12d2a64b267", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"]]}
+{"query_id": 513, "digest": "f4ab14cfd5c21f58", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"]]}
+{"query_id": 516, "digest": "8e6729d8b1e01bfb", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["mi", "mi_idx", "mk", "t"]]}
+{"query_id": 521, "digest": "7a22efadff4ca5e2", "join_sets": [["mi_idx", "mk"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"]]}
+{"query_id": 522, "digest": "da2655f937694f7c", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"]]}
+{"query_id": 528, "digest": "6093a723e12c2d11", "join_sets": [["mi_idx", "t"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"]]}
+{"query_id": 537, "digest": "b757f52c204d45df", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"]]}
+{"query_id": 548, "digest": "44c10c8fe4a5d245", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"]]}
+{"query_id": 565, "digest": "022ef5b8220503ac", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["mc", "mi", "mk", "t"]]}
+{"query_id": 578, "digest": "2962d23e2311c650", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["mc", "mi", "mk", "t"]]}
+{"query_id": 579, "digest": "d2a1d63129212ae5", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["mc", "mi", "mk", "t"]]}
+{"query_id": 581, "digest": "a9ba2a286261849f", "join_sets": [["mc", "t"], ["mc", "mi", "t"], ["mc", "mi", "mk", "t"]]}
+{"query_id": 584, "digest": "c964ed329d74599c", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["mc", "mi", "mk", "t"]]}
+{"query_id": 586, "digest": "172115b4c75271f7", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["mc", "mi", "mk", "t"]]}
+{"query_id": 593, "digest": "a3e5bea736f93701", "join_sets": [["mk", "t"], ["mi", "mk", "t"], ["mc", "mi", "mk", "t"]]}
+{"query_id": 594, "digest": "810e0654e7f86082", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["mc", "mi", "mk", "t"]]}
+{"query_id": 618, "digest": "f372777d650a0ffc", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 624, "digest": "de3a8f66081b17b6", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 625, "digest": "79bae2d3e74491f5", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 627, "digest": "24a090c380ced78c", "join_sets": [["mk", "t"], ["ci", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 631, "digest": "46bb227f384b1bc3", "join_sets": [["mk", "t"], ["ci", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 636, "digest": "3eb6bee81c0fcf59", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 638, "digest": "8207f4df712e5582", "join_sets": [["mk", "t"], ["ci", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 645, "digest": "8d50b11178268d8c", "join_sets": [["mk", "t"], ["ci", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 653, "digest": "93a70f869d7d9b61", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 656, "digest": "6734fae3b2d48d3b", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 658, "digest": "387fad673b0b1b96", "join_sets": [["mk", "t"], ["ci", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 659, "digest": "6f0d25bb56f3ba2e", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["ci", "mc", "mk", "t"]]}
+{"query_id": 665, "digest": "13299e8f52c5ab23", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["ci", "mi", "mi_idx", "t"]]}
+{"query_id": 710, "digest": "1357ba811fffa98b", "join_sets": [["mi_idx", "t"], ["ci", "mi_idx", "t"], ["ci", "mi", "mi_idx", "t"]]}
+{"query_id": 716, "digest": "c2b729d5324772e6", "join_sets": [["mc", "t"], ["mc", "mi", "t"], ["ci", "mc", "mi", "t"]]}
+{"query_id": 717, "digest": "db92418a08362e95", "join_sets": [["mi", "t"], ["ci", "mi", "t"], ["ci", "mc", "mi", "t"]]}
+{"query_id": 737, "digest": "bde5f539947b9697", "join_sets": [["mc", "t"], ["mc", "mi", "t"], ["ci", "mc", "mi", "t"]]}
+{"query_id": 744, "digest": "878ad8fb9f3578d7", "join_sets": [["mi", "t"], ["ci", "mi", "t"], ["ci", "mc", "mi", "t"]]}
+{"query_id": 746, "digest": "468721ed35d1447b", "join_sets": [["mc", "t"], ["ci", "mc", "t"], ["ci", "mc", "mi", "t"]]}
+{"query_id": 749, "digest": "c3ca0cf42bc6a7e6", "join_sets": [["mc", "t"], ["ci", "mc", "t"], ["ci", "mc", "mi", "t"]]}
+{"query_id": 753, "digest": "e9d6c96edb3a39de", "join_sets": [["mc", "t"], ["mc", "mi", "t"], ["ci", "mc", "mi", "t"]]}
+{"query_id": 759, "digest": "b1e84b4ea313602f", "join_sets": [["ci", "t"], ["ci", "mi", "t"], ["ci", "mc", "mi", "t"]]}
+{"query_id": 764, "digest": "ea3486b18876aa25", "join_sets": [["ci", "t"], ["ci", "mi", "t"], ["ci", "mc", "mi", "t"]]}
+{"query_id": 775, "digest": "514ed8de231b54f9", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 778, "digest": "b4e48499870accfa", "join_sets": [["mi_idx", "t"], ["mi", "mi_idx", "t"], ["mi", "mi_idx", "mk", "t"], ["mc", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 784, "digest": "ef090545d16e0714", "join_sets": [["mi_idx", "t"], ["mi_idx", "mk", "t"], ["mc", "mi_idx", "mk", "t"], ["mc", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 803, "digest": "50db97529eb57423", "join_sets": [["mi_idx", "t"], ["mc", "mi_idx", "t"], ["mc", "mi_idx", "mk", "t"], ["mc", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 808, "digest": "751b52b72315ffd4", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["mc", "mi_idx", "mk", "t"], ["mc", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 813, "digest": "52769e8ebb24a17c", "join_sets": [["mc", "mk"], ["mc", "mk", "t"], ["mc", "mi_idx", "mk", "t"], ["mc", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 817, "digest": "bb6cca06480d0d08", "join_sets": [["mi_idx", "mk"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"], ["mc", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 824, "digest": "1236b8f555ec539c", "join_sets": [["mi", "t"], ["mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "t"], ["mc", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 834, "digest": "2da2661ad12143a8", "join_sets": [["ci", "t"], ["ci", "mc", "t"], ["ci", "mc", "mk", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 835, "digest": "371e6bade9da191e", "join_sets": [["mc", "t"], ["mc", "mi", "t"], ["ci", "mc", "mi", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 842, "digest": "0e856a59a9fdf5c6", "join_sets": [["mi", "t"], ["ci", "mi", "t"], ["ci", "mc", "mi", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 846, "digest": "1646827c87e06bde", "join_sets": [["mk", "t"], ["ci", "mk", "t"], ["ci", "mi", "mk", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 849, "digest": "1e79c469a41b6e08", "join_sets": [["mc", "mk"], ["mc", "mk", "t"], ["ci", "mc", "mk", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 850, "digest": "680ee93c3a745ab7", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["ci", "mc", "mk", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 857, "digest": "e8915e98a96a3df7", "join_sets": [["mk", "t"], ["ci", "mk", "t"], ["ci", "mc", "mk", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 866, "digest": "19068a2acd35e992", "join_sets": [["mc", "mk"], ["mc", "mk", "t"], ["ci", "mc", "mk", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 870, "digest": "69d3072084d90144", "join_sets": [["mi", "t"], ["mc", "mi", "t"], ["ci", "mc", "mi", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 871, "digest": "a51fc8e83e40a3ce", "join_sets": [["mk", "t"], ["mc", "mk", "t"], ["ci", "mc", "mk", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 874, "digest": "2b431aa5face7da7", "join_sets": [["mk", "t"], ["ci", "mk", "t"], ["ci", "mc", "mk", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 880, "digest": "36d704b9cd1ac9f2", "join_sets": [["mc", "mk"], ["mc", "mk", "t"], ["mc", "mi", "mk", "t"], ["ci", "mc", "mi", "mk", "t"]]}
+{"query_id": 886, "digest": "b44a15d2938f735e", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"], ["ci", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 891, "digest": "5d961435173ebc6b", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"], ["ci", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 896, "digest": "7a5034d938b05cb2", "join_sets": [["mi", "mi_idx"], ["mi", "mi_idx", "t"], ["ci", "mi", "mi_idx", "t"], ["ci", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 898, "digest": "173b8815fecfa676", "join_sets": [["mi_idx", "mk"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"], ["ci", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 901, "digest": "9756e58afe6801b1", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"], ["ci", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 906, "digest": "40277c21af8e813d", "join_sets": [["mi", "t"], ["ci", "mi", "t"], ["ci", "mi", "mi_idx", "t"], ["ci", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 910, "digest": "1108669101b67845", "join_sets": [["mi_idx", "t"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"], ["ci", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 913, "digest": "8ad62ae5d0457476", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"], ["ci", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 914, "digest": "a3087fbe61a804c1", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"], ["ci", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 918, "digest": "9309e046bff36939", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["mi", "mi_idx", "mk", "t"], ["ci", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 932, "digest": "258b5d3ffb8f4550", "join_sets": [["mi_idx", "t"], ["ci", "mi_idx", "t"], ["ci", "mi_idx", "mk", "t"], ["ci", "mi", "mi_idx", "mk", "t"]]}
+{"query_id": 936, "digest": "b23292b6f3542985", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 941, "digest": "5a02f7dbd044644f", "join_sets": [["mi_idx", "t"], ["ci", "mi_idx", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 947, "digest": "b12e7ce0c549ef3f", "join_sets": [["mi_idx", "mk"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 951, "digest": "cd334a554529d0ee", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 952, "digest": "e59f578d6919a199", "join_sets": [["mi_idx", "t"], ["ci", "mi_idx", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 956, "digest": "00899be4923162e0", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 958, "digest": "44dee195ea6e713c", "join_sets": [["mk", "t"], ["ci", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 959, "digest": "a3e2df2e42d1010e", "join_sets": [["mi_idx", "t"], ["ci", "mi_idx", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 968, "digest": "f0713ddd8488a24e", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 977, "digest": "58b2adb412616c29", "join_sets": [["mi_idx", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 980, "digest": "c0f8a5195daec875", "join_sets": [["mi_idx", "mk"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 982, "digest": "36ccfa30eb442b56", "join_sets": [["mi_idx", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 984, "digest": "f220823592677f18", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 988, "digest": "ef0d412cd1d88ffa", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 993, "digest": "fe649ad6547d4670", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 994, "digest": "751ce15b5e6054b8", "join_sets": [["mk", "t"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}
+{"query_id": 999, "digest": "f13ba97a88e8ada9", "join_sets": [["mi_idx", "mk"], ["mi_idx", "mk", "t"], ["ci", "mi_idx", "mk", "t"]]}

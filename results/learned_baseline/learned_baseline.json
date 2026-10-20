@@ -1,0 +1,55 @@
+{
+  "experiment": "learned_regression_baseline",
+  "seeds": [
+    42,
+    1042,
+    2042,
+    3042,
+    4042
+  ],
+  "epochs": 300,
+  "aggregated": {
+    "learned_mean": 1.48643865028194,
+    "learned_median": 1.2109691748964617,
+    "pessimistic_mean": 1712.456683925832,
+    "oracle_mean": 9.882403049671591,
+    "oracle_median": 6.226684463874074
+  },
+  "per_seed": [
+    {
+      "learned_mean": 1.3934244140515504,
+      "learned_median": 1.1987728171575025,
+      "pessimistic_mean": 854.1117923362915,
+      "oracle_mean": 7.778206123079193,
+      "oracle_median": 6.541267000474528
+    },
+    {
+      "learned_mean": 1.399185146095598,
+      "learned_median": 1.1931816978254424,
+      "pessimistic_mean": 958.2851388765068,
+      "oracle_mean": 8.163933241895245,
+      "oracle_median": 6.041715973167918
+    },
+    {
+      "learned_mean": 1.5575143293706677,
+      "learned_median": 1.231365031682918,
+      "pessimistic_mean": 2546.42614711077,
+      "oracle_mean": 10.411342379195291,
+      "oracle_median": 6.291353007882563
+    },
+    {
+      "learned_mean": 1.5543163348224105,
+      "learned_median": 1.260903087380309,
+      "pessimistic_mean": 2783.3936764924783,
+      "oracle_mean": 13.214972347593255,
+      "oracle_median": 6.033413874953437
+    },
+    {
+      "learned_mean": 1.527753027069474,
+      "learned_median": 1.1706232404361359,
+      "pessimistic_mean": 1420.0666648131137,
+      "oracle_mean": 9.843561156594971,
+      "oracle_median": 6.225672462891922
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "n_subplans": 696,
+  "n_queries": 70,
+  "exact_censored": 3,
+  "sample_censored": 0,
+  "truth_agreement": {
+    "compared": 693,
+    "mismatches": 0
+  },
+  "lower_unsound": 0,
+  "lower_zero": 2,
+  "cost_ratio": {
+    "n": 693,
+    "median": {
+      "point": 0.4817606676290574,
+      "ci_low": 0.4603875302894414,
+      "ci_high": 0.5017696823520257,
+      "n_rows": 693,
+      "n_clusters": 70,
+      "replicates": 10000
+    },
+    "p25": 0.37783120720555313,
+    "p75": 0.7151208331452672,
+    "share_above_one": 0.19624819624819625
+  },
+  "cost_ratio_by_exact_ms": {
+    "0-100": {
+      "n": 18,
+      "median": 2.0432679184874103
+    },
+    "100-1000": {
+      "n": 199,
+      "median": 0.7538621479054777
+    },
+    "1000-10000": {
+      "n": 405,
+      "median": 0.4542907404446797
+    },
+    "10000-1e+12": {
+      "n": 71,
+      "median": 0.22575124871267066
+    }
+  },
+  "lhat_qerror": {
+    "median": {
+      "point": 1.0028399720025423,
+      "ci_low": 1.0022069058844194,
+      "ci_high": 1.0039712760468151,
+      "n_rows": 693,
+      "n_clusters": 70,
+      "replicates": 10000
+    },
+    "p95": {
+      "point": 1.1443070530087223,
+      "ci_low": 1.0615515529712098,
+      "ci_high": 1.2510776942355888,
+      "n_rows": 693,
+      "n_clusters": 70,
+      "replicates": 10000
+    },
+    "max": 3.0
+  }
+}

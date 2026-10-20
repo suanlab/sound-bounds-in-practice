@@ -1,0 +1,1327 @@
+{
+ "experiment": "price_of_certification",
+ "preregistered": false,
+ "predictions": "docs/icde_2027/PREDICTIONS.md",
+ "summary": {
+  "all_certified": {
+   "n": 57,
+   "median_oracle_over_greedy": 1.0,
+   "min_oracle_over_greedy": 0.010222286869344241,
+   "share_greedy_optimal": 0.7719298245614035,
+   "median_sampled_fraction_oracle": 0.3333333333333333,
+   "execution_n": 54,
+   "execution_median_oracle_over_exec": 0.24840437044535021,
+   "execution_share_oracle_above_exec": 0.07407407407407407,
+   "forced_order_n": 55,
+   "forced_order_median_oracle_over_exec": 0.2480777090092321,
+   "forced_order_share_oracle_above_exec": 0.12727272727272726,
+   "in_run_n": 55,
+   "in_run_median_oracle_over_exec": 0.29172969029089996,
+   "in_run_share_oracle_above_exec": 0.12727272727272726
+  },
+  "choice_matters": {
+   "n": 21,
+   "median_oracle_over_greedy": 1.0,
+   "min_oracle_over_greedy": 0.02698321194678825,
+   "share_greedy_optimal": 0.6190476190476191,
+   "median_sampled_fraction_oracle": 0.3333333333333333,
+   "execution_n": 21,
+   "execution_median_oracle_over_exec": 0.38839381090394737,
+   "execution_share_oracle_above_exec": 0.19047619047619047,
+   "forced_order_n": 21,
+   "forced_order_median_oracle_over_exec": 0.4483517416233924,
+   "forced_order_share_oracle_above_exec": 0.3333333333333333,
+   "in_run_n": 21,
+   "in_run_median_oracle_over_exec": 0.49260357536347477,
+   "in_run_share_oracle_above_exec": 0.3333333333333333
+  },
+  "choice_does_not_matter": {
+   "n": 36,
+   "median_oracle_over_greedy": 1.0,
+   "min_oracle_over_greedy": 0.010222286869344241,
+   "share_greedy_optimal": 0.8611111111111112,
+   "median_sampled_fraction_oracle": 0.3333333333333333,
+   "execution_n": 33,
+   "execution_median_oracle_over_exec": 0.1964372502272618,
+   "execution_share_oracle_above_exec": 0.0,
+   "forced_order_n": 34,
+   "forced_order_median_oracle_over_exec": 0.17458696616669173,
+   "forced_order_share_oracle_above_exec": 0.0,
+   "in_run_n": 34,
+   "in_run_median_oracle_over_exec": 0.20188542320396946,
+   "in_run_share_oracle_above_exec": 0.0
+  }
+ },
+ "per_query": [
+  {
+   "query_id": 7,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "p",
+     "pl"
+    ]
+   ],
+   "oracle_ms": 33.056251995731145,
+   "greedy_ms": 33.056251995731145,
+   "full_ms": 1418.547133973334,
+   "search_nodes": 5,
+   "oracle_over_execution": 0.38839381090394737,
+   "oracle_over_forced_order": 0.5102829893452764,
+   "oracle_over_in_run": 0.49260357536347477
+  },
+  {
+   "query_id": 8,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "p",
+     "pl"
+    ]
+   ],
+   "oracle_ms": 23.602284025400877,
+   "greedy_ms": 23.602284025400877,
+   "full_ms": 827.6644170400687,
+   "search_nodes": 5,
+   "oracle_over_execution": 0.1250586322764024,
+   "oracle_over_forced_order": 0.17125280976449636,
+   "oracle_over_in_run": 0.16508312715076606
+  },
+  {
+   "query_id": 10,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "u"
+    ]
+   ],
+   "oracle_ms": 13.267832982819527,
+   "greedy_ms": 27.410881011746824,
+   "full_ms": 45.1814680127427,
+   "search_nodes": 5,
+   "oracle_over_execution": 0.13556484991388865,
+   "oracle_over_forced_order": 0.1611063569950526,
+   "oracle_over_in_run": 0.16382994478549712
+  },
+  {
+   "query_id": 11,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 2,
+   "oracle_subjoins": [
+    [
+     "c",
+     "u"
+    ],
+    [
+     "c",
+     "p",
+     "u"
+    ]
+   ],
+   "oracle_ms": 55.8539149351418,
+   "greedy_ms": 55.8539149351418,
+   "full_ms": 67.34272296307608,
+   "search_nodes": 5,
+   "oracle_over_execution": 0.6342964335349719,
+   "oracle_over_forced_order": 0.9535134280105777,
+   "oracle_over_in_run": 0.9575109371209624
+  },
+  {
+   "query_id": 12,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 45.57113198097795,
+   "greedy_ms": 1688.869808043819,
+   "full_ms": 1749.4699120288715,
+   "search_nodes": 5,
+   "oracle_over_execution": 0.2519273372681917,
+   "oracle_over_forced_order": 0.34746456240958523,
+   "oracle_over_in_run": 0.32472542084713696
+  },
+  {
+   "query_id": 13,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 2,
+   "oracle_subjoins": [
+    [
+     "c",
+     "u"
+    ],
+    [
+     "c",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 39.52084097545594,
+   "greedy_ms": 39.52084097545594,
+   "full_ms": 55.269398959353566,
+   "search_nodes": 9,
+   "oracle_over_execution": 0.6219607522370523,
+   "oracle_over_forced_order": 0.8407740014561962,
+   "oracle_over_in_run": 0.8499489426908307
+  },
+  {
+   "query_id": 14,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "u"
+    ]
+   ],
+   "oracle_ms": 11.37248397571966,
+   "greedy_ms": 23.90070795081556,
+   "full_ms": 34.49078695848584,
+   "search_nodes": 7,
+   "oracle_over_execution": 0.48476776577121883,
+   "oracle_over_forced_order": 0.49968889167605246,
+   "oracle_over_in_run": 0.7054147313696263
+  },
+  {
+   "query_id": 15,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "u"
+    ]
+   ],
+   "oracle_ms": 77.93431403115392,
+   "greedy_ms": 247.9078879696317,
+   "full_ms": 341.8274460127577,
+   "search_nodes": 5,
+   "oracle_over_execution": 0.09857387489991312,
+   "oracle_over_forced_order": 0.12125650563197686,
+   "oracle_over_in_run": 0.12908307368883706
+  },
+  {
+   "query_id": 16,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c"
+    ]
+   ],
+   "oracle_ms": 289.55990698887035,
+   "greedy_ms": 289.55990698887035,
+   "full_ms": 325.8634019875899,
+   "search_nodes": 3,
+   "oracle_over_execution": 3.6253180095959125,
+   "oracle_over_forced_order": 4.909717074830784,
+   "oracle_over_in_run": 5.339567098979211
+  },
+  {
+   "query_id": 17,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "p",
+     "t",
+     "v"
+    ]
+   ],
+   "oracle_ms": 22.26420398801565,
+   "greedy_ms": 65.3454820276238,
+   "full_ms": 91.09275205992162,
+   "search_nodes": 5,
+   "oracle_over_execution": 1.3614064532987566,
+   "oracle_over_forced_order": 1.6721968432379921,
+   "oracle_over_in_run": 1.76401043441456
+  },
+  {
+   "query_id": 18,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "ph",
+     "pl"
+    ]
+   ],
+   "oracle_ms": 16.382811998482794,
+   "greedy_ms": 16.382811998482794,
+   "full_ms": 60.48058602027595,
+   "search_nodes": 7,
+   "oracle_over_execution": 0.34564798436447264,
+   "oracle_over_forced_order": 0.3902099361662118,
+   "oracle_over_in_run": 0.4179670813191221
+  },
+  {
+   "query_id": 19,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "p",
+     "u"
+    ]
+   ],
+   "oracle_ms": 10.571555001661181,
+   "greedy_ms": 10.571555001661181,
+   "full_ms": 27.461392048280686,
+   "search_nodes": 7,
+   "oracle_over_execution": 0.3427060834852998,
+   "oracle_over_forced_order": 0.42638787947403883,
+   "oracle_over_in_run": 0.4072557357360676
+  },
+  {
+   "query_id": 21,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "p",
+     "v"
+    ]
+   ],
+   "oracle_ms": 36.04284598259255,
+   "greedy_ms": 36.04284598259255,
+   "full_ms": 74.66540002496913,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.4948524772137888,
+   "oracle_over_forced_order": 0.6448582344590054,
+   "oracle_over_in_run": 0.8358966833730256
+  },
+  {
+   "query_id": 22,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "p",
+     "v"
+    ]
+   ],
+   "oracle_ms": 57.1321320021525,
+   "greedy_ms": 57.1321320021525,
+   "full_ms": 149.0618570242077,
+   "search_nodes": 5,
+   "oracle_over_execution": 0.19339726044831615,
+   "oracle_over_forced_order": 0.24095624356867212,
+   "oracle_over_in_run": 0.25448851340023576
+  },
+  {
+   "query_id": 23,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "v"
+    ]
+   ],
+   "oracle_ms": 24.997300992254168,
+   "greedy_ms": 24.997300992254168,
+   "full_ms": 64.33635094435886,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.2448814036225087,
+   "oracle_over_forced_order": 0.28055246212437807,
+   "oracle_over_in_run": 0.2920735073662774
+  },
+  {
+   "query_id": 24,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "v"
+    ]
+   ],
+   "oracle_ms": 12.161801976617426,
+   "greedy_ms": 12.161801976617426,
+   "full_ms": 39.238440978806466,
+   "search_nodes": 7,
+   "oracle_over_execution": 0.39536261245917015,
+   "oracle_over_forced_order": 0.4483517416233924,
+   "oracle_over_in_run": 0.5520686034039431
+  },
+  {
+   "query_id": 28,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 6,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "p",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 167.26708301575854,
+   "greedy_ms": 167.26708301575854,
+   "full_ms": 327.6900870259851,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.10081788284206346,
+   "oracle_over_forced_order": 0.15471231566491409,
+   "oracle_over_in_run": 0.16382141488169408
+  },
+  {
+   "query_id": 30,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "p",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 1556.0495410463773,
+   "greedy_ms": 1556.0495410463773,
+   "full_ms": 1717.3266740865074,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.0179910804659749,
+   "oracle_over_forced_order": 0.04718786709307346,
+   "oracle_over_in_run": 0.049274708665369704
+  },
+  {
+   "query_id": 32,
+   "n_aliases": 4,
+   "matters": true,
+   "n_subjoins": 6,
+   "n_sampled_oracle": 2,
+   "oracle_subjoins": [
+    [
+     "c",
+     "ph"
+    ],
+    [
+     "ph",
+     "v"
+    ]
+   ],
+   "oracle_ms": 4678.183811018243,
+   "greedy_ms": 124833.69438204682,
+   "full_ms": 124883.00270098262,
+   "search_nodes": 5,
+   "oracle_over_execution": 0.42279329110990044,
+   "oracle_over_forced_order": 1.2119476683420811,
+   "oracle_over_in_run": 1.2461382326208827
+  },
+  {
+   "query_id": 33,
+   "n_aliases": 4,
+   "matters": true,
+   "n_subjoins": 6,
+   "n_sampled_oracle": 2,
+   "oracle_subjoins": [
+    [
+     "ph",
+     "v"
+    ],
+    [
+     "c",
+     "ph",
+     "v"
+    ]
+   ],
+   "oracle_ms": 19506.39653397957,
+   "greedy_ms": 19506.39653397957,
+   "full_ms": 21232.031550025567,
+   "search_nodes": 9,
+   "oracle_over_execution": 98.91210026442148,
+   "oracle_over_forced_order": 288.1911186121087,
+   "oracle_over_in_run": 313.38679919732994
+  },
+  {
+   "query_id": 34,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 3886.2917950027622,
+   "greedy_ms": 3886.2917950027622,
+   "full_ms": 4182.552488986403,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.035408246121285854,
+   "oracle_over_forced_order": 0.10330372370610205,
+   "oracle_over_in_run": 0.105243582445767
+  },
+  {
+   "query_id": 38,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 676.2967249960639,
+   "greedy_ms": 676.2967249960639,
+   "full_ms": 907.815192011185,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.03671633917397248,
+   "oracle_over_forced_order": 0.09352978422667682,
+   "oracle_over_in_run": 0.09822705585899469
+  },
+  {
+   "query_id": 40,
+   "n_aliases": 4,
+   "matters": true,
+   "n_subjoins": 6,
+   "n_sampled_oracle": 3,
+   "oracle_subjoins": [
+    [
+     "p",
+     "u"
+    ],
+    [
+     "b",
+     "p",
+     "u"
+    ],
+    [
+     "b",
+     "p",
+     "pl",
+     "u"
+    ]
+   ],
+   "oracle_ms": 78.1718879006803,
+   "greedy_ms": 78.1718879006803,
+   "full_ms": 106.46910488139838,
+   "search_nodes": 11,
+   "oracle_over_execution": 0.626890266627004,
+   "oracle_over_forced_order": 1.7989209390246401,
+   "oracle_over_in_run": 2.087616563866116
+  },
+  {
+   "query_id": 43,
+   "n_aliases": 4,
+   "matters": true,
+   "n_subjoins": 6,
+   "n_sampled_oracle": 2,
+   "oracle_subjoins": [
+    [
+     "p",
+     "ph"
+    ],
+    [
+     "b",
+     "p",
+     "ph"
+    ]
+   ],
+   "oracle_ms": 1800.3921899944544,
+   "greedy_ms": 1841.481821029447,
+   "full_ms": 1946.604712982662,
+   "search_nodes": 7,
+   "oracle_over_execution": 1.3184882642437652,
+   "oracle_over_forced_order": 3.1841372671427224,
+   "oracle_over_in_run": 3.2979274808702703
+  },
+  {
+   "query_id": 44,
+   "n_aliases": 4,
+   "matters": true,
+   "n_subjoins": 6,
+   "n_sampled_oracle": 2,
+   "oracle_subjoins": [
+    [
+     "b",
+     "p",
+     "ph"
+    ],
+    [
+     "p",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 1077.7934669749811,
+   "greedy_ms": 1118.8893700018525,
+   "full_ms": 1333.5144810262136,
+   "search_nodes": 17,
+   "oracle_over_execution": 0.8181820762258909,
+   "oracle_over_forced_order": 2.047213323744991,
+   "oracle_over_in_run": 2.131645219312075
+  },
+  {
+   "query_id": 52,
+   "n_aliases": 5,
+   "matters": false,
+   "n_subjoins": 15,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "p",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 1743.3125780080445,
+   "greedy_ms": 1743.3125780080445,
+   "full_ms": 2550.4195039975457,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.04172841900147661,
+   "oracle_over_forced_order": 0.07514676452479749,
+   "oracle_over_in_run": 0.07982121311325137
+  },
+  {
+   "query_id": 56,
+   "n_aliases": 5,
+   "matters": true,
+   "n_subjoins": 12,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "p",
+     "t",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 118.4101999970153,
+   "greedy_ms": 2987.386688007973,
+   "full_ms": 3175.636845990084,
+   "search_nodes": 7,
+   "oracle_over_execution": 0.06786965550427626,
+   "oracle_over_forced_order": 0.10130971440127418,
+   "oracle_over_in_run": 0.10195223529802627
+  },
+  {
+   "query_id": 71,
+   "n_aliases": 6,
+   "matters": true,
+   "n_subjoins": 24,
+   "n_sampled_oracle": 4,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "p",
+     "ph",
+     "pl"
+    ],
+    [
+     "b",
+     "c",
+     "p",
+     "ph",
+     "v"
+    ],
+    [
+     "b",
+     "c",
+     "p",
+     "pl",
+     "v"
+    ],
+    [
+     "b",
+     "c",
+     "p",
+     "ph",
+     "pl",
+     "v"
+    ]
+   ],
+   "oracle_ms": 1395.5114999553189,
+   "greedy_ms": 1395.5114999553189,
+   "full_ms": 2783.756417047698,
+   "search_nodes": 183,
+   "oracle_over_execution": 0.30518066675450894,
+   "oracle_over_forced_order": 0.27311860857676834,
+   "oracle_over_in_run": 0.30808650925830366
+  },
+  {
+   "query_id": 80,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "p",
+     "u"
+    ]
+   ],
+   "oracle_ms": 36.199413996655494,
+   "greedy_ms": 36.199413996655494,
+   "full_ms": 61.72265694476664,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.27347383062230246,
+   "oracle_over_forced_order": 0.2480777090092321,
+   "oracle_over_in_run": 0.29172969029089996
+  },
+  {
+   "query_id": 81,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "u"
+    ]
+   ],
+   "oracle_ms": 15.866451023612171,
+   "greedy_ms": 29.243594966828823,
+   "full_ms": 55.50689302617684,
+   "search_nodes": 5,
+   "oracle_over_execution": 0.2082161172384119,
+   "oracle_over_forced_order": 0.1989079782016977,
+   "oracle_over_in_run": 0.22530952411992072
+  },
+  {
+   "query_id": 82,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 75.56580501841381,
+   "greedy_ms": 75.56580501841381,
+   "full_ms": 116.93429300794378,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.3668189877134188,
+   "oracle_over_forced_order": 0.34807656633055195,
+   "oracle_over_in_run": 0.40103831341337604
+  },
+  {
+   "query_id": 83,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 54.719436971936375,
+   "greedy_ms": 54.719436971936375,
+   "full_ms": 96.78736893692985,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.23539207230481182,
+   "oracle_over_forced_order": 0.21936720515292396,
+   "oracle_over_in_run": 0.25433100699726885
+  },
+  {
+   "query_id": 84,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 338.5181110352278,
+   "greedy_ms": 338.5181110352278,
+   "full_ms": 370.8038300392218,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.49624676128225365,
+   "oracle_over_forced_order": 0.45036831584772186,
+   "oracle_over_in_run": 0.5288110619431785
+  },
+  {
+   "query_id": 85,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 91.14878601394594,
+   "greedy_ms": 91.14878601394594,
+   "full_ms": 127.52224499126896,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.10994828533649427,
+   "oracle_over_forced_order": 0.10102931041148693,
+   "oracle_over_in_run": 0.11859961097754083
+  },
+  {
+   "query_id": 87,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "u"
+    ]
+   ],
+   "oracle_ms": 30.757718021050096,
+   "greedy_ms": 30.757718021050096,
+   "full_ms": 59.61984797613695,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.29480530685018663,
+   "oracle_over_forced_order": 0.2694509866048361,
+   "oracle_over_in_run": 0.3261072424729056
+  },
+  {
+   "query_id": 88,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "u"
+    ]
+   ],
+   "oracle_ms": 315.2978399884887,
+   "greedy_ms": 315.2978399884887,
+   "full_ms": 343.30006304662675,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.47001472800305877,
+   "oracle_over_forced_order": 0.45156840091097006,
+   "oracle_over_in_run": 0.49496696461879597
+  },
+  {
+   "query_id": 89,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "p",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 50.940276007167995,
+   "greedy_ms": 50.940276007167995,
+   "full_ms": 83.73943099286407,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.3210308111272496,
+   "oracle_over_forced_order": 0.28868433745382394,
+   "oracle_over_in_run": 0.33058414774942185
+  },
+  {
+   "query_id": 90,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 21.57979301409796,
+   "greedy_ms": 37.822249985765666,
+   "full_ms": 71.02842896711081,
+   "search_nodes": 5,
+   "oracle_over_execution": 0.16310903047861916,
+   "oracle_over_forced_order": 0.1504809174825622,
+   "oracle_over_in_run": 0.1795223513357808
+  },
+  {
+   "query_id": 91,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "p",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 70.8051020046696,
+   "greedy_ms": 70.8051020046696,
+   "full_ms": 103.8227510289289,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.1964372502272618,
+   "oracle_over_forced_order": 0.18806757533833088,
+   "oracle_over_in_run": 0.22424849507215813
+  },
+  {
+   "query_id": 92,
+   "n_aliases": 3,
+   "matters": true,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "p",
+     "ph"
+    ]
+   ],
+   "oracle_ms": 29.95241602184251,
+   "greedy_ms": 29.95241602184251,
+   "full_ms": 79.13988106884062,
+   "search_nodes": 7,
+   "oracle_over_execution": 0.22746526779991108,
+   "oracle_over_forced_order": 0.22667089149570419,
+   "oracle_over_in_run": 0.28489546191388676
+  },
+  {
+   "query_id": 93,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "p",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 87.88245200412348,
+   "greedy_ms": 87.88245200412348,
+   "full_ms": 114.82874501962215,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.3213571130606818,
+   "oracle_over_forced_order": 0.3117676537359604,
+   "oracle_over_in_run": 0.36753895359166794
+  },
+  {
+   "query_id": 94,
+   "n_aliases": 3,
+   "matters": false,
+   "n_subjoins": 3,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "p",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 51.379987969994545,
+   "greedy_ms": 51.379987969994545,
+   "full_ms": 79.08503396902233,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.36957431065793156,
+   "oracle_over_forced_order": 0.352877581997004,
+   "oracle_over_in_run": 0.3918007116296372
+  },
+  {
+   "query_id": 97,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "p",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 1186.8205950013362,
+   "greedy_ms": 1186.8205950013362,
+   "full_ms": 1579.0810119942762,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.353084846040751,
+   "oracle_over_forced_order": 0.328317355835165,
+   "oracle_over_in_run": 0.3785660022383975
+  },
+  {
+   "query_id": 102,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 6,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "p",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 67.01769703067839,
+   "greedy_ms": 67.01769703067839,
+   "full_ms": 174.04783907113597,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.2423723161303775,
+   "oracle_over_forced_order": 0.21823891127450512,
+   "oracle_over_in_run": 0.2710612474352028
+  },
+  {
+   "query_id": 104,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "c",
+     "ph",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 396.67584595736116,
+   "greedy_ms": 396.67584595736116,
+   "full_ms": 554.2654638993554,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.11705026682456765,
+   "oracle_over_forced_order": 0.10732445001374374,
+   "oracle_over_in_run": 0.12047837160514352
+  },
+  {
+   "query_id": 107,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 11291.142759961076,
+   "greedy_ms": 11291.142759961076,
+   "full_ms": 11683.862617006525,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.34037716952401387,
+   "oracle_over_forced_order": 0.32347126535635684,
+   "oracle_over_in_run": 0.3674925524089019
+  },
+  {
+   "query_id": 108,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 3886.5242860047147,
+   "greedy_ms": 3886.5242860047147,
+   "full_ms": 4207.708703004755,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.10644620316822749,
+   "oracle_over_forced_order": 0.10731510039868924,
+   "oracle_over_in_run": 0.11035222041416581
+  },
+  {
+   "query_id": 113,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 207.09753700066358,
+   "greedy_ms": 207.09753700066358,
+   "full_ms": 394.97928507626057,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.14330526196027443,
+   "oracle_over_forced_order": 0.14573106081430992,
+   "oracle_over_in_run": 0.15034481512525627
+  },
+  {
+   "query_id": 114,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 210.46927297720686,
+   "greedy_ms": 210.46927297720686,
+   "full_ms": 364.4882850931026,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.14680695408564504,
+   "oracle_over_forced_order": 0.14512791429648286,
+   "oracle_over_in_run": 0.15834648855509187
+  },
+  {
+   "query_id": 115,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 361.21584102511406,
+   "greedy_ms": 361.21584102511406,
+   "full_ms": 568.9178239554167,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.1128194329230592,
+   "oracle_over_forced_order": 0.1113808280047261,
+   "oracle_over_in_run": 0.11433416431245448
+  },
+  {
+   "query_id": 120,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "p",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 84145.30995901441,
+   "greedy_ms": 84145.30995901441,
+   "full_ms": 84809.14477811893,
+   "search_nodes": 3
+  },
+  {
+   "query_id": 122,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "p",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 84526.15992998471,
+   "greedy_ms": 84526.15992998471,
+   "full_ms": 85096.87322890386,
+   "search_nodes": 3
+  },
+  {
+   "query_id": 123,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "p",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 1026.8328759702854,
+   "greedy_ms": 1026.8328759702854,
+   "full_ms": 1250.584450957831,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.10765660709738183,
+   "oracle_over_forced_order": 0.11004323646939039,
+   "oracle_over_in_run": 0.11136115770565642
+  },
+  {
+   "query_id": 124,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "ph",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 73.13119404716417,
+   "greedy_ms": 73.13119404716417,
+   "full_ms": 209.5401689875871,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.1359372637020571,
+   "oracle_over_forced_order": 0.15030908344761,
+   "oracle_over_in_run": 0.15084966546722448
+  },
+  {
+   "query_id": 126,
+   "n_aliases": 4,
+   "matters": false,
+   "n_subjoins": 7,
+   "n_sampled_oracle": 3,
+   "oracle_subjoins": [
+    [
+     "b",
+     "ph",
+     "u"
+    ],
+    [
+     "b",
+     "u",
+     "v"
+    ],
+    [
+     "ph",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 351.66005592327565,
+   "greedy_ms": 34401.30964998389,
+   "full_ms": 34801.33063090034,
+   "search_nodes": 9,
+   "oracle_over_forced_order": 0.0019137278487307925,
+   "oracle_over_in_run": 0.0018455013823691368
+  },
+  {
+   "query_id": 135,
+   "n_aliases": 5,
+   "matters": true,
+   "n_subjoins": 15,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "c",
+     "p",
+     "ph",
+     "u"
+    ]
+   ],
+   "oracle_ms": 37060.38862100104,
+   "greedy_ms": 37060.38862100104,
+   "full_ms": 161485.5506250169,
+   "search_nodes": 3,
+   "oracle_over_execution": 0.17022323178704812,
+   "oracle_over_forced_order": 0.16887000517344894,
+   "oracle_over_in_run": 0.1689275755373807
+  },
+  {
+   "query_id": 138,
+   "n_aliases": 5,
+   "matters": true,
+   "n_subjoins": 12,
+   "n_sampled_oracle": 1,
+   "oracle_subjoins": [
+    [
+     "b",
+     "p",
+     "t",
+     "u",
+     "v"
+    ]
+   ],
+   "oracle_ms": 743.4221439762041,
+   "greedy_ms": 7230.163704953156,
+   "full_ms": 7792.987173888832,
+   "search_nodes": 7,
+   "oracle_over_execution": 0.21123724464465674,
+   "oracle_over_forced_order": 0.21016959287660267,
+   "oracle_over_in_run": 0.20611838019200804
+  }
+ ]
+}

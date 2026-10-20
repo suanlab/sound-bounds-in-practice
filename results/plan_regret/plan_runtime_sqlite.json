@@ -1,0 +1,618 @@
+{
+  "experiment": "plan_runtime_sqlite",
+  "engine": "SQLite (CROSS JOIN fixes loop nesting order; join columns indexed)",
+  "dataset": "real STATS-CEB",
+  "note": "Wall-clock execution of the plans chosen by guarded vs unguarded subplan estimates. Only (query, config) pairs where the two policies choose different orders are timed; all others execute identically.",
+  "tau": 2.0,
+  "repeats": 3,
+  "n_pairs_timed": 65,
+  "n_queries_timed": 17,
+  "skipped": [
+    "21:QueryTimeoutError",
+    "47:exec-OperationalError",
+    "49:exec-OperationalError",
+    "53:QueryTimeoutError",
+    "54:QueryTimeoutError",
+    "56:exec-OperationalError",
+    "107:exec-OperationalError",
+    "137:QueryTimeoutError",
+    "138:exec-OperationalError"
+  ],
+  "speedup_guarded_over_no_guard": {
+    "median": 0.8172781904684702,
+    "min": 0.280879812075576,
+    "max": 449.55867117411066,
+    "n_faster": 9,
+    "n_slower": 56
+  },
+  "total_ms_no_guard": 46229.447381570935,
+  "total_ms_guarded": 46153.776763007045,
+  "total_ms_optimal": 32506.16637058556,
+  "per_pair": [
+    {
+      "query_id": 28,
+      "n_aliases": 4,
+      "config": "min_hop-avg",
+      "ms_no_guard": 3570.1249223202467,
+      "ms_guarded": 1431.0860373079777,
+      "ms_optimal": 1431.0860373079777,
+      "speedup_guarded_over_no_guard": 2.4946962161939785
+    },
+    {
+      "query_id": 28,
+      "n_aliases": 4,
+      "config": "min_hop-max",
+      "ms_no_guard": 3570.1249223202467,
+      "ms_guarded": 1431.0860373079777,
+      "ms_optimal": 1431.0860373079777,
+      "speedup_guarded_over_no_guard": 2.4946962161939785
+    },
+    {
+      "query_id": 28,
+      "n_aliases": 4,
+      "config": "all_hops-avg",
+      "ms_no_guard": 3570.1249223202467,
+      "ms_guarded": 1431.0860373079777,
+      "ms_optimal": 1431.0860373079777,
+      "speedup_guarded_over_no_guard": 2.4946962161939785
+    },
+    {
+      "query_id": 28,
+      "n_aliases": 4,
+      "config": "all_hops-max",
+      "ms_no_guard": 3570.1249223202467,
+      "ms_guarded": 1431.0860373079777,
+      "ms_optimal": 1431.0860373079777,
+      "speedup_guarded_over_no_guard": 2.4946962161939785
+    },
+    {
+      "query_id": 29,
+      "n_aliases": 4,
+      "config": "min_hop-avg",
+      "ms_no_guard": 272.1287589520216,
+      "ms_guarded": 332.96955935657024,
+      "ms_optimal": 332.96955935657024,
+      "speedup_guarded_over_no_guard": 0.8172781904684702
+    },
+    {
+      "query_id": 29,
+      "n_aliases": 4,
+      "config": "min_hop-max",
+      "ms_no_guard": 272.1287589520216,
+      "ms_guarded": 332.96955935657024,
+      "ms_optimal": 332.96955935657024,
+      "speedup_guarded_over_no_guard": 0.8172781904684702
+    },
+    {
+      "query_id": 29,
+      "n_aliases": 4,
+      "config": "all_hops-avg",
+      "ms_no_guard": 272.1287589520216,
+      "ms_guarded": 332.96955935657024,
+      "ms_optimal": 332.96955935657024,
+      "speedup_guarded_over_no_guard": 0.8172781904684702
+    },
+    {
+      "query_id": 29,
+      "n_aliases": 4,
+      "config": "all_hops-max",
+      "ms_no_guard": 272.1287589520216,
+      "ms_guarded": 332.96955935657024,
+      "ms_optimal": 332.96955935657024,
+      "speedup_guarded_over_no_guard": 0.8172781904684702
+    },
+    {
+      "query_id": 46,
+      "n_aliases": 5,
+      "config": "min_hop-avg",
+      "ms_no_guard": 220.5487545579672,
+      "ms_guarded": 226.8751934170723,
+      "ms_optimal": 197.77723401784897,
+      "speedup_guarded_over_no_guard": 0.9721148938153189
+    },
+    {
+      "query_id": 46,
+      "n_aliases": 5,
+      "config": "min_hop-max",
+      "ms_no_guard": 220.5487545579672,
+      "ms_guarded": 226.8751934170723,
+      "ms_optimal": 197.77723401784897,
+      "speedup_guarded_over_no_guard": 0.9721148938153189
+    },
+    {
+      "query_id": 46,
+      "n_aliases": 5,
+      "config": "all_hops-avg",
+      "ms_no_guard": 220.5487545579672,
+      "ms_guarded": 226.8751934170723,
+      "ms_optimal": 197.77723401784897,
+      "speedup_guarded_over_no_guard": 0.9721148938153189
+    },
+    {
+      "query_id": 46,
+      "n_aliases": 5,
+      "config": "all_hops-max",
+      "ms_no_guard": 220.5487545579672,
+      "ms_guarded": 226.8751934170723,
+      "ms_optimal": 197.77723401784897,
+      "speedup_guarded_over_no_guard": 0.9721148938153189
+    },
+    {
+      "query_id": 55,
+      "n_aliases": 5,
+      "config": "min_hop-min",
+      "ms_no_guard": 6897.188978269696,
+      "ms_guarded": 15.34213311970234,
+      "ms_optimal": 15.34213311970234,
+      "speedup_guarded_over_no_guard": 449.55867117411066
+    },
+    {
+      "query_id": 57,
+      "n_aliases": 5,
+      "config": "min_hop-avg",
+      "ms_no_guard": 14.8030249401927,
+      "ms_guarded": 50.60939211398363,
+      "ms_optimal": 14.8030249401927,
+      "speedup_guarded_over_no_guard": 0.29249560846044126
+    },
+    {
+      "query_id": 57,
+      "n_aliases": 5,
+      "config": "min_hop-max",
+      "ms_no_guard": 14.8030249401927,
+      "ms_guarded": 50.60939211398363,
+      "ms_optimal": 14.8030249401927,
+      "speedup_guarded_over_no_guard": 0.29249560846044126
+    },
+    {
+      "query_id": 57,
+      "n_aliases": 5,
+      "config": "all_hops-avg",
+      "ms_no_guard": 14.8030249401927,
+      "ms_guarded": 50.60939211398363,
+      "ms_optimal": 14.8030249401927,
+      "speedup_guarded_over_no_guard": 0.29249560846044126
+    },
+    {
+      "query_id": 57,
+      "n_aliases": 5,
+      "config": "all_hops-max",
+      "ms_no_guard": 14.8030249401927,
+      "ms_guarded": 50.60939211398363,
+      "ms_optimal": 14.8030249401927,
+      "speedup_guarded_over_no_guard": 0.29249560846044126
+    },
+    {
+      "query_id": 96,
+      "n_aliases": 4,
+      "config": "min_hop-avg",
+      "ms_no_guard": 947.6145636290312,
+      "ms_guarded": 1190.5537992715836,
+      "ms_optimal": 947.6145636290312,
+      "speedup_guarded_over_no_guard": 0.7959443447316787
+    },
+    {
+      "query_id": 96,
+      "n_aliases": 4,
+      "config": "min_hop-max",
+      "ms_no_guard": 947.6145636290312,
+      "ms_guarded": 1190.5537992715836,
+      "ms_optimal": 947.6145636290312,
+      "speedup_guarded_over_no_guard": 0.7959443447316787
+    },
+    {
+      "query_id": 96,
+      "n_aliases": 4,
+      "config": "all_hops-avg",
+      "ms_no_guard": 947.6145636290312,
+      "ms_guarded": 1190.5537992715836,
+      "ms_optimal": 947.6145636290312,
+      "speedup_guarded_over_no_guard": 0.7959443447316787
+    },
+    {
+      "query_id": 96,
+      "n_aliases": 4,
+      "config": "all_hops-max",
+      "ms_no_guard": 947.6145636290312,
+      "ms_guarded": 1190.5537992715836,
+      "ms_optimal": 947.6145636290312,
+      "speedup_guarded_over_no_guard": 0.7959443447316787
+    },
+    {
+      "query_id": 102,
+      "n_aliases": 4,
+      "config": "min_hop-avg",
+      "ms_no_guard": 392.56461802870035,
+      "ms_guarded": 1018.1286176666617,
+      "ms_optimal": 1018.1286176666617,
+      "speedup_guarded_over_no_guard": 0.38557468203612283
+    },
+    {
+      "query_id": 102,
+      "n_aliases": 4,
+      "config": "min_hop-max",
+      "ms_no_guard": 392.56461802870035,
+      "ms_guarded": 1018.1286176666617,
+      "ms_optimal": 1018.1286176666617,
+      "speedup_guarded_over_no_guard": 0.38557468203612283
+    },
+    {
+      "query_id": 102,
+      "n_aliases": 4,
+      "config": "all_hops-avg",
+      "ms_no_guard": 392.56461802870035,
+      "ms_guarded": 1018.1286176666617,
+      "ms_optimal": 1018.1286176666617,
+      "speedup_guarded_over_no_guard": 0.38557468203612283
+    },
+    {
+      "query_id": 102,
+      "n_aliases": 4,
+      "config": "all_hops-max",
+      "ms_no_guard": 392.56461802870035,
+      "ms_guarded": 1018.1286176666617,
+      "ms_optimal": 1018.1286176666617,
+      "speedup_guarded_over_no_guard": 0.38557468203612283
+    },
+    {
+      "query_id": 109,
+      "n_aliases": 5,
+      "config": "min_hop-avg",
+      "ms_no_guard": 391.01001992821693,
+      "ms_guarded": 435.97414530813694,
+      "ms_optimal": 173.05500339716673,
+      "speedup_guarded_over_no_guard": 0.8968651561937455
+    },
+    {
+      "query_id": 109,
+      "n_aliases": 5,
+      "config": "min_hop-max",
+      "ms_no_guard": 391.01001992821693,
+      "ms_guarded": 435.97414530813694,
+      "ms_optimal": 173.05500339716673,
+      "speedup_guarded_over_no_guard": 0.8968651561937455
+    },
+    {
+      "query_id": 109,
+      "n_aliases": 5,
+      "config": "all_hops-avg",
+      "ms_no_guard": 391.01001992821693,
+      "ms_guarded": 435.97414530813694,
+      "ms_optimal": 173.05500339716673,
+      "speedup_guarded_over_no_guard": 0.8968651561937455
+    },
+    {
+      "query_id": 109,
+      "n_aliases": 5,
+      "config": "all_hops-max",
+      "ms_no_guard": 391.01001992821693,
+      "ms_guarded": 435.97414530813694,
+      "ms_optimal": 173.05500339716673,
+      "speedup_guarded_over_no_guard": 0.8968651561937455
+    },
+    {
+      "query_id": 110,
+      "n_aliases": 5,
+      "config": "min_hop-avg",
+      "ms_no_guard": 140.52456337958574,
+      "ms_guarded": 190.0604162365198,
+      "ms_optimal": 140.52456337958574,
+      "speedup_guarded_over_no_guard": 0.739367860821217
+    },
+    {
+      "query_id": 110,
+      "n_aliases": 5,
+      "config": "min_hop-max",
+      "ms_no_guard": 140.52456337958574,
+      "ms_guarded": 190.0604162365198,
+      "ms_optimal": 140.52456337958574,
+      "speedup_guarded_over_no_guard": 0.739367860821217
+    },
+    {
+      "query_id": 110,
+      "n_aliases": 5,
+      "config": "all_hops-avg",
+      "ms_no_guard": 140.52456337958574,
+      "ms_guarded": 190.0604162365198,
+      "ms_optimal": 140.52456337958574,
+      "speedup_guarded_over_no_guard": 0.739367860821217
+    },
+    {
+      "query_id": 110,
+      "n_aliases": 5,
+      "config": "all_hops-max",
+      "ms_no_guard": 140.52456337958574,
+      "ms_guarded": 190.0604162365198,
+      "ms_optimal": 140.52456337958574,
+      "speedup_guarded_over_no_guard": 0.739367860821217
+    },
+    {
+      "query_id": 111,
+      "n_aliases": 5,
+      "config": "min_hop-avg",
+      "ms_no_guard": 716.73568431288,
+      "ms_guarded": 692.8093070164323,
+      "ms_optimal": 716.73568431288,
+      "speedup_guarded_over_no_guard": 1.0345353000517359
+    },
+    {
+      "query_id": 111,
+      "n_aliases": 5,
+      "config": "min_hop-max",
+      "ms_no_guard": 716.73568431288,
+      "ms_guarded": 692.8093070164323,
+      "ms_optimal": 716.73568431288,
+      "speedup_guarded_over_no_guard": 1.0345353000517359
+    },
+    {
+      "query_id": 111,
+      "n_aliases": 5,
+      "config": "all_hops-avg",
+      "ms_no_guard": 716.73568431288,
+      "ms_guarded": 692.8093070164323,
+      "ms_optimal": 716.73568431288,
+      "speedup_guarded_over_no_guard": 1.0345353000517359
+    },
+    {
+      "query_id": 111,
+      "n_aliases": 5,
+      "config": "all_hops-max",
+      "ms_no_guard": 716.73568431288,
+      "ms_guarded": 692.8093070164323,
+      "ms_optimal": 716.73568431288,
+      "speedup_guarded_over_no_guard": 1.0345353000517359
+    },
+    {
+      "query_id": 112,
+      "n_aliases": 5,
+      "config": "min_hop-avg",
+      "ms_no_guard": 688.2767165079713,
+      "ms_guarded": 692.5814561545849,
+      "ms_optimal": 688.2767165079713,
+      "speedup_guarded_over_no_guard": 0.9937845005690525
+    },
+    {
+      "query_id": 112,
+      "n_aliases": 5,
+      "config": "min_hop-max",
+      "ms_no_guard": 688.2767165079713,
+      "ms_guarded": 692.5814561545849,
+      "ms_optimal": 688.2767165079713,
+      "speedup_guarded_over_no_guard": 0.9937845005690525
+    },
+    {
+      "query_id": 112,
+      "n_aliases": 5,
+      "config": "all_hops-avg",
+      "ms_no_guard": 688.2767165079713,
+      "ms_guarded": 692.5814561545849,
+      "ms_optimal": 688.2767165079713,
+      "speedup_guarded_over_no_guard": 0.9937845005690525
+    },
+    {
+      "query_id": 112,
+      "n_aliases": 5,
+      "config": "all_hops-max",
+      "ms_no_guard": 688.2767165079713,
+      "ms_guarded": 692.5814561545849,
+      "ms_optimal": 688.2767165079713,
+      "speedup_guarded_over_no_guard": 0.9937845005690525
+    },
+    {
+      "query_id": 119,
+      "n_aliases": 4,
+      "config": "min_hop-avg",
+      "ms_no_guard": 968.422788195312,
+      "ms_guarded": 2897.4241130053997,
+      "ms_optimal": 810.3743772953749,
+      "speedup_guarded_over_no_guard": 0.33423577302626917
+    },
+    {
+      "query_id": 119,
+      "n_aliases": 4,
+      "config": "min_hop-max",
+      "ms_no_guard": 968.422788195312,
+      "ms_guarded": 2897.4241130053997,
+      "ms_optimal": 810.3743772953749,
+      "speedup_guarded_over_no_guard": 0.33423577302626917
+    },
+    {
+      "query_id": 119,
+      "n_aliases": 4,
+      "config": "all_hops-avg",
+      "ms_no_guard": 968.422788195312,
+      "ms_guarded": 2897.4241130053997,
+      "ms_optimal": 810.3743772953749,
+      "speedup_guarded_over_no_guard": 0.33423577302626917
+    },
+    {
+      "query_id": 119,
+      "n_aliases": 4,
+      "config": "all_hops-max",
+      "ms_no_guard": 968.422788195312,
+      "ms_guarded": 2897.4241130053997,
+      "ms_optimal": 810.3743772953749,
+      "speedup_guarded_over_no_guard": 0.33423577302626917
+    },
+    {
+      "query_id": 127,
+      "n_aliases": 5,
+      "config": "min_hop-avg",
+      "ms_no_guard": 96.87329269945621,
+      "ms_guarded": 281.6351428627968,
+      "ms_optimal": 260.6200948357582,
+      "speedup_guarded_over_no_guard": 0.3439673462436101
+    },
+    {
+      "query_id": 127,
+      "n_aliases": 5,
+      "config": "min_hop-max",
+      "ms_no_guard": 96.87329269945621,
+      "ms_guarded": 281.6351428627968,
+      "ms_optimal": 260.6200948357582,
+      "speedup_guarded_over_no_guard": 0.3439673462436101
+    },
+    {
+      "query_id": 127,
+      "n_aliases": 5,
+      "config": "all_hops-avg",
+      "ms_no_guard": 96.87329269945621,
+      "ms_guarded": 281.6351428627968,
+      "ms_optimal": 260.6200948357582,
+      "speedup_guarded_over_no_guard": 0.3439673462436101
+    },
+    {
+      "query_id": 127,
+      "n_aliases": 5,
+      "config": "all_hops-max",
+      "ms_no_guard": 96.87329269945621,
+      "ms_guarded": 281.6351428627968,
+      "ms_optimal": 260.6200948357582,
+      "speedup_guarded_over_no_guard": 0.3439673462436101
+    },
+    {
+      "query_id": 128,
+      "n_aliases": 5,
+      "config": "min_hop-avg",
+      "ms_no_guard": 186.67388334870338,
+      "ms_guarded": 192.84074380993843,
+      "ms_optimal": 163.97757269442081,
+      "speedup_guarded_over_no_guard": 0.9680209672530976
+    },
+    {
+      "query_id": 128,
+      "n_aliases": 5,
+      "config": "min_hop-max",
+      "ms_no_guard": 186.67388334870338,
+      "ms_guarded": 192.84074380993843,
+      "ms_optimal": 163.97757269442081,
+      "speedup_guarded_over_no_guard": 0.9680209672530976
+    },
+    {
+      "query_id": 128,
+      "n_aliases": 5,
+      "config": "all_hops-avg",
+      "ms_no_guard": 186.67388334870338,
+      "ms_guarded": 192.84074380993843,
+      "ms_optimal": 163.97757269442081,
+      "speedup_guarded_over_no_guard": 0.9680209672530976
+    },
+    {
+      "query_id": 128,
+      "n_aliases": 5,
+      "config": "all_hops-max",
+      "ms_no_guard": 186.67388334870338,
+      "ms_guarded": 192.84074380993843,
+      "ms_optimal": 163.97757269442081,
+      "speedup_guarded_over_no_guard": 0.9680209672530976
+    },
+    {
+      "query_id": 129,
+      "n_aliases": 5,
+      "config": "min_hop-avg",
+      "ms_no_guard": 187.33426835387945,
+      "ms_guarded": 513.0032962188125,
+      "ms_optimal": 187.33426835387945,
+      "speedup_guarded_over_no_guard": 0.36517166601981316
+    },
+    {
+      "query_id": 129,
+      "n_aliases": 5,
+      "config": "min_hop-max",
+      "ms_no_guard": 187.33426835387945,
+      "ms_guarded": 513.0032962188125,
+      "ms_optimal": 187.33426835387945,
+      "speedup_guarded_over_no_guard": 0.36517166601981316
+    },
+    {
+      "query_id": 129,
+      "n_aliases": 5,
+      "config": "all_hops-avg",
+      "ms_no_guard": 187.33426835387945,
+      "ms_guarded": 513.0032962188125,
+      "ms_optimal": 187.33426835387945,
+      "speedup_guarded_over_no_guard": 0.36517166601981316
+    },
+    {
+      "query_id": 129,
+      "n_aliases": 5,
+      "config": "all_hops-max",
+      "ms_no_guard": 187.33426835387945,
+      "ms_guarded": 513.0032962188125,
+      "ms_optimal": 187.33426835387945,
+      "speedup_guarded_over_no_guard": 0.36517166601981316
+    },
+    {
+      "query_id": 130,
+      "n_aliases": 5,
+      "config": "min_hop-avg",
+      "ms_no_guard": 57.3987141251564,
+      "ms_guarded": 204.35329154133797,
+      "ms_optimal": 57.3987141251564,
+      "speedup_guarded_over_no_guard": 0.280879812075576
+    },
+    {
+      "query_id": 130,
+      "n_aliases": 5,
+      "config": "min_hop-max",
+      "ms_no_guard": 57.3987141251564,
+      "ms_guarded": 204.35329154133797,
+      "ms_optimal": 57.3987141251564,
+      "speedup_guarded_over_no_guard": 0.280879812075576
+    },
+    {
+      "query_id": 130,
+      "n_aliases": 5,
+      "config": "all_hops-avg",
+      "ms_no_guard": 57.3987141251564,
+      "ms_guarded": 204.35329154133797,
+      "ms_optimal": 57.3987141251564,
+      "speedup_guarded_over_no_guard": 0.280879812075576
+    },
+    {
+      "query_id": 130,
+      "n_aliases": 5,
+      "config": "all_hops-max",
+      "ms_no_guard": 57.3987141251564,
+      "ms_guarded": 204.35329154133797,
+      "ms_optimal": 57.3987141251564,
+      "speedup_guarded_over_no_guard": 0.280879812075576
+    },
+    {
+      "query_id": 131,
+      "n_aliases": 5,
+      "config": "min_hop-avg",
+      "ms_no_guard": 982.0300275459886,
+      "ms_guarded": 1183.7041461840272,
+      "ms_optimal": 982.0300275459886,
+      "speedup_guarded_over_no_guard": 0.8296245567034747
+    },
+    {
+      "query_id": 131,
+      "n_aliases": 5,
+      "config": "min_hop-max",
+      "ms_no_guard": 982.0300275459886,
+      "ms_guarded": 1183.7041461840272,
+      "ms_optimal": 982.0300275459886,
+      "speedup_guarded_over_no_guard": 0.8296245567034747
+    },
+    {
+      "query_id": 131,
+      "n_aliases": 5,
+      "config": "all_hops-avg",
+      "ms_no_guard": 982.0300275459886,
+      "ms_guarded": 1183.7041461840272,
+      "ms_optimal": 982.0300275459886,
+      "speedup_guarded_over_no_guard": 0.8296245567034747
+    },
+    {
+      "query_id": 131,
+      "n_aliases": 5,
+      "config": "all_hops-max",
+      "ms_no_guard": 982.0300275459886,
+      "ms_guarded": 1183.7041461840272,
+      "ms_optimal": 982.0300275459886,
+      "speedup_guarded_over_no_guard": 0.8296245567034747
+    }
+  ]
+}

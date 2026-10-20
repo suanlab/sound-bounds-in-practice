@@ -1,0 +1,160 @@
+{
+  "stats": {
+    "estimates": {
+      "n_subplans": 2577,
+      "published_over_native_median": 7.719740048740861,
+      "published_over_native_median_by_relations": {
+        "2": 20.420973124056356,
+        "3": 7.854361185090001,
+        "4": 3.675725691726519,
+        "5": 1.9043637756632994,
+        "6": 1.0207422585210142,
+        "7": 0.9545482291562155
+      },
+      "qerror_median_published": 15.029184549356223,
+      "qerror_median_native": 1.9242490523344222
+    },
+    "pg_to_truth": {
+      "artifact": {
+        "point": 1.2815455630257937,
+        "ci_low": 1.1426883774460614,
+        "ci_high": 1.4626083833602563,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000
+      },
+      "ours": {
+        "point": 1.34640846034058,
+        "ci_low": 1.2285794656732132,
+        "ci_high": 1.510390110963723,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000
+      }
+    },
+    "pg_to_lpbound": {
+      "artifact": {
+        "point": 1.303344211463971,
+        "ci_low": 1.1607141985831801,
+        "ci_high": 1.48479780896843,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000
+      },
+      "ours": {
+        "point": 1.0802577597903609,
+        "ci_low": 0.9912818908714468,
+        "ci_high": 1.1940140239626962,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000
+      }
+    },
+    "truth_to_lpbound": {
+      "artifact": {
+        "point": 1.0170096554247432,
+        "ci_low": 0.9508228953514656,
+        "ci_high": 1.0861096906743462,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000
+      },
+      "ours": {
+        "point": 0.8023254395750788,
+        "ci_low": 0.7538795755733705,
+        "ci_high": 0.851153414674601,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000
+      }
+    },
+    "published_to_truth": {
+      "ours": {
+        "point": 4.469847712889312,
+        "ci_low": 3.3332156858665902,
+        "ci_high": 6.196048146541933,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000
+      }
+    }
+  },
+  "joblight": {
+    "estimates": {
+      "n_subplans": 696,
+      "published_over_native_median": 0.32712334681150523,
+      "published_over_native_median_by_relations": {
+        "2": 0.17397383711897585,
+        "3": 0.4607805236373901,
+        "4": 1.0022617525784927,
+        "5": 0.9989502604964065
+      },
+      "qerror_median_published": 8.388441216187246,
+      "qerror_median_native": 1.7612930804612268
+    },
+    "pg_to_truth": {
+      "artifact": {
+        "point": 1.2091399326640835,
+        "ci_low": 1.0629563774633677,
+        "ci_high": 1.4124923108471206,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "ours": {
+        "point": 1.120976171549624,
+        "ci_low": 1.0363238244630208,
+        "ci_high": 1.2390891646027107,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "pg_to_lpbound": {
+      "artifact": {
+        "point": 1.0234469343601151,
+        "ci_low": 0.8810130656618111,
+        "ci_high": 1.1819296228162721,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "ours": {
+        "point": 0.9888643873710152,
+        "ci_low": 0.9115005666694392,
+        "ci_high": 1.0779401266457738,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "truth_to_lpbound": {
+      "artifact": {
+        "point": 0.8464255515117813,
+        "ci_low": 0.7383964069666549,
+        "ci_high": 0.9637158268241597,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "ours": {
+        "point": 0.882145769435956,
+        "ci_low": 0.8198162934703956,
+        "ci_high": 0.9428248629321917,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "published_to_truth": {
+      "ours": {
+        "point": 1.9366487706052316,
+        "ci_low": 1.547754384262199,
+        "ci_high": 2.469245177064927,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    }
+  }
+}

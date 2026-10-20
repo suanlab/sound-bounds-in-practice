@@ -1,0 +1,21 @@
+# Distribution-shift scenarios for experiments/scripts/run_distribution_shift.py
+# (Separate from eval_shift.yaml, which is the single-checkpoint evaluate CLI.)
+# External learned baselines (GNCE/LMKG/FactorJoin) are NOT implemented and are
+# intentionally not listed; the in-experiment baselines are the CEG configs and
+# the pessimistic bound.
+experiment:
+  seed: 42
+
+shift_scenarios:
+  - name: cross_dataset
+    train_on: [synthetic_path_A, synthetic_star_B]
+    test_on: [synthetic_cycle_C, synthetic_path_D, synthetic_star_E]
+  - name: cross_workload
+    train_on: [acyclic]
+    test_on: [cyclic_large, complex]
+  - name: cross_size
+    train_on: [size_3_4]
+    test_on: [size_5_6_7]
+
+output:
+  results_dir: results/shift

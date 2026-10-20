@@ -1,0 +1,404 @@
+[
+  {
+    "metadata": {
+      "seed": 42,
+      "fixed_optimistic_config": "max_hop-avg"
+    },
+    "in_distribution": {
+      "ml_only_gnn": {
+        "mean": 176.7010131474586,
+        "median": 9.759148898324458,
+        "p95": 809.4488964035639,
+        "p99": 1351.9628865597147,
+        "safety_violation_rate": 0.2,
+        "fallback_rate": 0.0,
+        "ml_safety_violation_rate": 0.2
+      },
+      "fixed_optimistic": {
+        "mean": 176.70101314745858,
+        "median": 9.759148898324458,
+        "p95": 809.4488964035638,
+        "p99": 1351.9628865597144,
+        "fallback_rate": 0.0,
+        "safety_violation_rate": 0.2,
+        "ml_safety_violation_rate": 0.2
+      },
+      "pes_only": {
+        "mean": 186.6887280867007,
+        "median": 4.876404029769134,
+        "p95": 952.8679501233498,
+        "p99": 1706.0359303956438,
+        "fallback_rate": 1.0,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.0
+      },
+      "independence": {
+        "mean": 176.70101314745858,
+        "median": 9.759148898324462,
+        "p95": 809.4488964035639,
+        "p99": 1351.9628865597142,
+        "fallback_rate": 0.0,
+        "safety_violation_rate": 0.2,
+        "ml_safety_violation_rate": 0.2
+      },
+      "safe_ceg_gnn": {
+        "mean": 175.05534980837575,
+        "median": 6.299004569824679,
+        "p95": 809.4488964035639,
+        "p99": 1351.9628865597147,
+        "fallback_rate": 0.2,
+        "upper_fallback_rate": 0.2,
+        "lower_fallback_rate": 0.0,
+        "config_accuracy": 0.16666666666666666,
+        "expected_q_error": 176.70341255664826,
+        "expected_safety_penalty": 2581.9125601912538,
+        "final_differs_from_pessimistic_rate": 0.8,
+        "final_better_than_ml_rate": 0.2,
+        "final_better_than_pessimistic_rate": 0.3,
+        "ml_better_than_pessimistic_rate": 0.3,
+        "helpful_fallback_rate": 0.2,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.2,
+        "ml_only_violating_q_error": {
+          "mean": 11.496195752524242,
+          "median": 8.716714398902827,
+          "p95": 28.104325778868077,
+          "p99": 28.104325778868077
+        },
+        "ml_only_violating_count": 6,
+        "ml_only_safe_q_error": {
+          "mean": 218.0022174961922,
+          "median": 9.759148898324458,
+          "p95": 809.4488964035639,
+          "p99": 1351.9628865597147
+        },
+        "ml_only_safe_count": 24
+      },
+      "safe_ceg_bucketed": {
+        "mean": 3.5404748813622215,
+        "median": 2.0329056662574336,
+        "p95": 9.98898984911294,
+        "p99": 10.98230295293428,
+        "fallback_rate": 0.2,
+        "ml_safety_violation_rate": 0.2,
+        "safety_violation_rate": 0.0
+      },
+      "safe_ceg_mlp": {
+        "mean": 3.5404748813622215,
+        "median": 2.0329056662574336,
+        "p95": 9.988989849112944,
+        "p99": 10.982302952934278,
+        "fallback_rate": 0.2,
+        "ml_safety_violation_rate": 0.2,
+        "safety_violation_rate": 0.0
+      },
+      "oracle_best": {
+        "mean": 3.5081300470653987,
+        "median": 1.9562970793578316,
+        "p95": 9.98898984911294,
+        "p99": 10.982302952934278,
+        "fallback_rate": 0.2,
+        "ml_safety_violation_rate": 0.2,
+        "safety_violation_rate": 0.0
+      }
+    },
+    "cross_workload": {
+      "ml_only_gnn": {
+        "mean": 7226.131821550404,
+        "median": 6912.324734374932,
+        "p95": 17999.853502754482,
+        "p99": 26598.516088628374,
+        "safety_violation_rate": 0.0,
+        "fallback_rate": 0.0,
+        "ml_safety_violation_rate": 0.0
+      },
+      "fixed_optimistic": {
+        "mean": 7226.1318215504025,
+        "median": 6912.324734374931,
+        "p95": 17999.85350275448,
+        "p99": 26598.516088628367,
+        "fallback_rate": 0.0,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.0
+      },
+      "pes_only": {
+        "mean": 656.685395819362,
+        "median": 503.87047788440987,
+        "p95": 1698.414541377931,
+        "p99": 2507.6966039399013,
+        "fallback_rate": 1.0,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.0
+      },
+      "independence": {
+        "mean": 7226.131821550402,
+        "median": 6912.324734374929,
+        "p95": 17999.85350275448,
+        "p99": 26598.516088628367,
+        "fallback_rate": 0.0,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.0
+      },
+      "safe_ceg_gnn": {
+        "mean": 7226.131821550404,
+        "median": 6912.324734374932,
+        "p95": 17999.853502754482,
+        "p99": 26598.516088628374,
+        "fallback_rate": 0.0,
+        "upper_fallback_rate": 0.0,
+        "lower_fallback_rate": 0.0,
+        "config_accuracy": 0.0,
+        "expected_q_error": 7226.131815592448,
+        "expected_safety_penalty": 0.0,
+        "final_differs_from_pessimistic_rate": 1.0,
+        "final_better_than_ml_rate": 0.0,
+        "final_better_than_pessimistic_rate": 0.0,
+        "ml_better_than_pessimistic_rate": 0.0,
+        "helpful_fallback_rate": 0.0,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.0,
+        "ml_only_violating_q_error": {
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0.0
+        },
+        "ml_only_violating_count": 0,
+        "ml_only_safe_q_error": {
+          "mean": 7226.131821550404,
+          "median": 6912.324734374932,
+          "p95": 17999.853502754482,
+          "p99": 26598.516088628374
+        },
+        "ml_only_safe_count": 30
+      },
+      "safe_ceg_bucketed": {
+        "mean": 7226.131821550403,
+        "median": 6912.324734374932,
+        "p95": 17999.853502754482,
+        "p99": 26598.516088628374,
+        "fallback_rate": 0.0,
+        "ml_safety_violation_rate": 0.0,
+        "safety_violation_rate": 0.0
+      },
+      "safe_ceg_mlp": {
+        "mean": 7226.131821550401,
+        "median": 6912.324734374928,
+        "p95": 17999.853502754475,
+        "p99": 26598.516088628363,
+        "fallback_rate": 0.0,
+        "ml_safety_violation_rate": 0.0,
+        "safety_violation_rate": 0.0
+      },
+      "oracle_best": {
+        "mean": 1.737248693581037,
+        "median": 1.56448617399094,
+        "p95": 2.784037159058065,
+        "p99": 2.974786993762037,
+        "fallback_rate": 0.0,
+        "ml_safety_violation_rate": 0.0,
+        "safety_violation_rate": 0.0
+      }
+    }
+  },
+  {
+    "metadata": {
+      "seed": 1042,
+      "fixed_optimistic_config": "max_hop-max"
+    },
+    "in_distribution": {
+      "ml_only_gnn": {
+        "mean": 193.25975867648202,
+        "median": 4.481182982697409,
+        "p95": 1037.168065826346,
+        "p99": 1082.5182684543092,
+        "safety_violation_rate": 0.16666666666666666,
+        "fallback_rate": 0.0,
+        "ml_safety_violation_rate": 0.16666666666666666
+      },
+      "fixed_optimistic": {
+        "mean": 193.25975867648197,
+        "median": 4.481182982697408,
+        "p95": 1037.1680658263458,
+        "p99": 1082.518268454309,
+        "fallback_rate": 0.0,
+        "safety_violation_rate": 0.16666666666666666,
+        "ml_safety_violation_rate": 0.16666666666666666
+      },
+      "pes_only": {
+        "mean": 239.26720161218825,
+        "median": 1.944132061848721,
+        "p95": 1224.2884615334606,
+        "p99": 3075.8630798796275,
+        "fallback_rate": 1.0,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.0
+      },
+      "independence": {
+        "mean": 193.259758676482,
+        "median": 4.481182982697409,
+        "p95": 1037.168065826346,
+        "p99": 1082.518268454309,
+        "fallback_rate": 0.0,
+        "safety_violation_rate": 0.16666666666666666,
+        "ml_safety_violation_rate": 0.16666666666666666
+      },
+      "safe_ceg_gnn": {
+        "mean": 192.5970155020571,
+        "median": 2.2898075418853887,
+        "p95": 1037.168065826346,
+        "p99": 1082.5182684543092,
+        "fallback_rate": 0.16666666666666666,
+        "upper_fallback_rate": 0.16666666666666666,
+        "lower_fallback_rate": 0.0,
+        "config_accuracy": 0.4,
+        "expected_q_error": 193.2604516307513,
+        "expected_safety_penalty": 2286.164922070593,
+        "final_differs_from_pessimistic_rate": 0.8333333333333334,
+        "final_better_than_ml_rate": 0.16666666666666666,
+        "final_better_than_pessimistic_rate": 0.26666666666666666,
+        "ml_better_than_pessimistic_rate": 0.26666666666666666,
+        "helpful_fallback_rate": 0.16666666666666666,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.16666666666666666,
+        "ml_only_violating_q_error": {
+          "mean": 5.399499372791791,
+          "median": 5.070604355698071,
+          "p95": 8.227583684465573,
+          "p99": 8.227583684465573
+        },
+        "ml_only_violating_count": 5,
+        "ml_only_safe_q_error": {
+          "mean": 230.8318105372201,
+          "median": 3.647002673147375,
+          "p95": 1037.168065826346,
+          "p99": 1082.5182684543092
+        },
+        "ml_only_safe_count": 25
+      },
+      "safe_ceg_bucketed": {
+        "mean": 2.7937752658885135,
+        "median": 2.016219072266354,
+        "p95": 4.270874584330294,
+        "p99": 25.56933896848139,
+        "fallback_rate": 0.16666666666666666,
+        "ml_safety_violation_rate": 0.16666666666666666,
+        "safety_violation_rate": 0.0
+      },
+      "safe_ceg_mlp": {
+        "mean": 3.8504342752376064,
+        "median": 2.1470912094331442,
+        "p95": 21.19638491851318,
+        "p99": 25.56933896848139,
+        "fallback_rate": 0.16666666666666666,
+        "ml_safety_violation_rate": 0.16666666666666666,
+        "safety_violation_rate": 0.0
+      },
+      "oracle_best": {
+        "mean": 2.71870396202691,
+        "median": 1.998356597673093,
+        "p95": 4.2708745843302935,
+        "p99": 25.569338968481386,
+        "fallback_rate": 0.16666666666666666,
+        "ml_safety_violation_rate": 0.16666666666666666,
+        "safety_violation_rate": 0.0
+      }
+    },
+    "cross_workload": {
+      "ml_only_gnn": {
+        "mean": 8333.945258945594,
+        "median": 7592.632935956023,
+        "p95": 17465.375298548715,
+        "p99": 20995.258848982718,
+        "safety_violation_rate": 0.0,
+        "fallback_rate": 0.0,
+        "ml_safety_violation_rate": 0.0
+      },
+      "fixed_optimistic": {
+        "mean": 8333.945258945589,
+        "median": 7592.632935956019,
+        "p95": 17465.37529854871,
+        "p99": 20995.258848982703,
+        "fallback_rate": 0.0,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.0
+      },
+      "pes_only": {
+        "mean": 973.8519094151371,
+        "median": 592.3981761068894,
+        "p95": 2462.4525873015646,
+        "p99": 8106.447850981949,
+        "fallback_rate": 1.0,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.0
+      },
+      "independence": {
+        "mean": 8333.945258945592,
+        "median": 7592.63293595602,
+        "p95": 17465.37529854871,
+        "p99": 20995.258848982714,
+        "fallback_rate": 0.0,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.0
+      },
+      "safe_ceg_gnn": {
+        "mean": 8333.945258945594,
+        "median": 7592.632935956023,
+        "p95": 17465.375298548715,
+        "p99": 20995.258848982718,
+        "fallback_rate": 0.0,
+        "upper_fallback_rate": 0.0,
+        "lower_fallback_rate": 0.0,
+        "config_accuracy": 0.0,
+        "expected_q_error": 8333.945349121093,
+        "expected_safety_penalty": 0.0,
+        "final_differs_from_pessimistic_rate": 1.0,
+        "final_better_than_ml_rate": 0.0,
+        "final_better_than_pessimistic_rate": 0.03333333333333333,
+        "ml_better_than_pessimistic_rate": 0.03333333333333333,
+        "helpful_fallback_rate": 0.0,
+        "safety_violation_rate": 0.0,
+        "ml_safety_violation_rate": 0.0,
+        "ml_only_violating_q_error": {
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 0.0
+        },
+        "ml_only_violating_count": 0,
+        "ml_only_safe_q_error": {
+          "mean": 8333.945258945594,
+          "median": 7592.632935956023,
+          "p95": 17465.375298548715,
+          "p99": 20995.258848982718
+        },
+        "ml_only_safe_count": 30
+      },
+      "safe_ceg_bucketed": {
+        "mean": 1.894641026816415,
+        "median": 1.8170754366467903,
+        "p95": 2.862995967098642,
+        "p99": 3.050370602535242,
+        "fallback_rate": 0.0,
+        "ml_safety_violation_rate": 0.0,
+        "safety_violation_rate": 0.0
+      },
+      "safe_ceg_mlp": {
+        "mean": 8333.945258945594,
+        "median": 7592.632935956023,
+        "p95": 17465.375298548715,
+        "p99": 20995.258848982718,
+        "fallback_rate": 0.0,
+        "ml_safety_violation_rate": 0.0,
+        "safety_violation_rate": 0.0
+      },
+      "oracle_best": {
+        "mean": 1.894641026816415,
+        "median": 1.8170754366467903,
+        "p95": 2.862995967098642,
+        "p99": 3.050370602535242,
+        "fallback_rate": 0.0,
+        "ml_safety_violation_rate": 0.0,
+        "safety_violation_rate": 0.0
+      }
+    }
+  }
+]

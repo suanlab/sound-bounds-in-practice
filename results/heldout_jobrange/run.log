@@ -1,0 +1,1256 @@
+[2026-10-19T22:21:37+09:00] waiting for PID 521808
+[2026-10-20T01:17:38+09:00] 1. exact and sampled counts (r = 0.10, seed 0)
+1929 sub-plans, 0 already done
+0/1929 q2 ['mc', 't'] exact 274ms sample 361ms
+50/1929 q63 ['mc', 'mk'] exact 3123ms sample 852ms
+100/1929 q124 ['mi', 't'] exact 355ms sample 1292ms
+150/1929 q179 ['mi_idx', 'mk'] exact 563ms sample 404ms
+200/1929 q251 ['mi', 't'] exact 251ms sample 927ms
+250/1929 q290 ['ci', 'mk'] exact 222ms sample 1978ms
+300/1929 q329 ['mk', 't'] exact 329ms sample 148ms
+350/1929 q427 ['ci', 'mc'] exact 3451ms sample 1801ms
+400/1929 q464 ['mi', 'mi_idx'] exact 1291ms sample 828ms
+450/1929 q473 ['mc', 'mi', 'mi_idx'] exact 3869ms sample 1139ms
+500/1929 q499 ['mi', 'mi_idx'] exact 1381ms sample 704ms
+550/1929 q521 ['mi', 'mi_idx', 'mk', 't'] exact 290ms sample 1112ms
+600/1929 q565 ['mc', 'mk'] exact 717ms sample 153ms
+650/1929 q586 ['mi', 't'] exact 1397ms sample 818ms
+700/1929 q624 ['ci', 'mk', 't'] exact 259ms sample 1644ms
+750/1929 q638 ['mk', 't'] exact 228ms sample 137ms
+800/1929 q658 ['ci', 'mc', 't'] exact 523ms sample 1639ms
+850/1929 q717 ['ci', 't'] exact 4061ms sample 1858ms
+backend crashed; censoring and reconnecting
+900/1929 q749 ['ci', 'mc', 't'] exact 561ms sample 1612ms
+950/1929 q775 ['mc', 'mk', 't'] exact 970ms sample 646ms
+1000/1929 q784 ['mc', 'mi', 't'] exact 1114ms sample 786ms
+1050/1929 q808 ['mi', 'mk', 't'] exact 229ms sample 810ms
+1100/1929 q817 ['mc', 'mk'] exact 237ms sample 141ms
+1150/1929 q834 ['mi', 'mk'] exact 15828ms sample 2760ms
+1200/1929 q842 ['mc', 'mi'] exact 1335ms sample 632ms
+backend crashed; censoring and reconnecting
+1250/1929 q849 ['ci', 't'] exact 3165ms sample 1681ms
+1300/1929 q857 ['mi', 't'] exact 1348ms sample 853ms
+1350/1929 q866 ['ci', 'mc', 'mi', 'mk'] exact 239ms sample 1504ms
+1400/1929 q871 ['ci', 'mi', 'mk', 't'] exact 255ms sample 1560ms
+1450/1929 q880 ['ci', 'mc', 'mi', 't'] exact 566ms sample 1840ms
+1500/1929 q891 ['ci', 'mi', 'mk'] exact 557ms sample 1595ms
+1550/1929 q898 ['ci', 'mi', 'mi_idx'] exact 32781ms sample 6837ms
+backend crashed; censoring and reconnecting
+1600/1929 q906 ['mi_idx', 'mk', 't'] exact 1890ms sample 944ms
+1650/1929 q913 ['mi', 'mk', 't'] exact 219ms sample 821ms
+1700/1929 q918 ['mi', 'mi_idx', 't'] exact 1266ms sample 774ms
+1750/1929 q936 ['ci', 'mi_idx', 't'] exact 224ms sample 1473ms
+1800/1929 q956 ['ci', 'mk'] exact 239ms sample 1388ms
+1850/1929 q977 ['ci', 'mi_idx', 'mk'] exact 232ms sample 1913ms
+1900/1929 q993 ['mi_idx', 'mk'] exact 510ms sample 359ms
+[2026-10-20T05:57:48+09:00] 2. truth file
+truth for 1907 sub-plans written
+[2026-10-20T05:57:48+09:00] 3. in-context native estimates
+q2: 4 join relations sized
+q14: 4 join relations sized
+q17: 4 join relations sized
+q18: 4 join relations sized
+q22: 4 join relations sized
+q24: 4 join relations sized
+q26: 4 join relations sized
+q31: 4 join relations sized
+q35: 4 join relations sized
+q46: 4 join relations sized
+q50: 4 join relations sized
+q53: 4 join relations sized
+q63: 4 join relations sized
+q64: 4 join relations sized
+q67: 4 join relations sized
+q72: 4 join relations sized
+q79: 4 join relations sized
+q93: 4 join relations sized
+q98: 4 join relations sized
+q103: 4 join relations sized
+q107: 4 join relations sized
+q115: 4 join relations sized
+q117: 4 join relations sized
+q119: 4 join relations sized
+q120: 4 join relations sized
+q124: 4 join relations sized
+q125: 4 join relations sized
+q142: 4 join relations sized
+q144: 4 join relations sized
+q147: 4 join relations sized
+q153: 4 join relations sized
+q154: 4 join relations sized
+q160: 4 join relations sized
+q166: 4 join relations sized
+q168: 4 join relations sized
+q171: 4 join relations sized
+q178: 4 join relations sized
+q179: 4 join relations sized
+q189: 4 join relations sized
+q191: 4 join relations sized
+q203: 4 join relations sized
+q209: 4 join relations sized
+q212: 4 join relations sized
+q214: 4 join relations sized
+q220: 4 join relations sized
+q231: 4 join relations sized
+q234: 4 join relations sized
+q240: 4 join relations sized
+q247: 4 join relations sized
+q250: 4 join relations sized
+q251: 4 join relations sized
+q254: 4 join relations sized
+q258: 4 join relations sized
+q262: 4 join relations sized
+q271: 4 join relations sized
+q274: 4 join relations sized
+q275: 4 join relations sized
+q276: 4 join relations sized
+q278: 4 join relations sized
+q281: 4 join relations sized
+q283: 4 join relations sized
+q284: 4 join relations sized
+q290: 4 join relations sized
+q291: 4 join relations sized
+q297: 4 join relations sized
+q298: 4 join relations sized
+q300: 4 join relations sized
+q305: 4 join relations sized
+q310: 4 join relations sized
+q311: 4 join relations sized
+q315: 4 join relations sized
+q316: 4 join relations sized
+q322: 4 join relations sized
+q326: 4 join relations sized
+q327: 4 join relations sized
+q329: 4 join relations sized
+q332: 1 join relations sized
+q334: 1 join relations sized
+q340: 1 join relations sized
+q349: 1 join relations sized
+q353: 1 join relations sized
+q355: 1 join relations sized
+q358: 1 join relations sized
+q364: 1 join relations sized
+q369: 1 join relations sized
+q372: 1 join relations sized
+q373: 1 join relations sized
+q379: 1 join relations sized
+q386: 4 join relations sized
+q402: 4 join relations sized
+q405: 4 join relations sized
+q408: 4 join relations sized
+q409: 4 join relations sized
+q411: 4 join relations sized
+q415: 4 join relations sized
+q420: 4 join relations sized
+q427: 4 join relations sized
+q432: 4 join relations sized
+q433: 4 join relations sized
+q437: 4 join relations sized
+q441: 11 join relations sized
+q456: 11 join relations sized
+q458: 11 join relations sized
+q464: 11 join relations sized
+q465: 11 join relations sized
+q466: 11 join relations sized
+q467: 11 join relations sized
+q473: 11 join relations sized
+q477: 11 join relations sized
+q480: 11 join relations sized
+q484: 11 join relations sized
+q489: 11 join relations sized
+q499: 11 join relations sized
+q503: 11 join relations sized
+q513: 11 join relations sized
+q516: 11 join relations sized
+q521: 11 join relations sized
+q522: 11 join relations sized
+q528: 11 join relations sized
+q537: 11 join relations sized
+q548: 11 join relations sized
+q565: 11 join relations sized
+q578: 11 join relations sized
+q579: 11 join relations sized
+q581: 11 join relations sized
+q584: 11 join relations sized
+q586: 11 join relations sized
+q593: 11 join relations sized
+q594: 11 join relations sized
+q618: 11 join relations sized
+q624: 11 join relations sized
+q625: 11 join relations sized
+q627: 11 join relations sized
+q631: 11 join relations sized
+q636: 11 join relations sized
+q638: 11 join relations sized
+q645: 11 join relations sized
+q653: 11 join relations sized
+q656: 11 join relations sized
+q658: 11 join relations sized
+q659: 11 join relations sized
+q665: 11 join relations sized
+q710: 11 join relations sized
+q716: 11 join relations sized
+q717: 11 join relations sized
+q737: 11 join relations sized
+q744: 11 join relations sized
+q746: 11 join relations sized
+q749: 11 join relations sized
+q753: 11 join relations sized
+q759: 11 join relations sized
+q764: 11 join relations sized
+q775: 26 join relations sized
+q778: 26 join relations sized
+q784: 26 join relations sized
+q803: 26 join relations sized
+q808: 26 join relations sized
+q813: 26 join relations sized
+q817: 26 join relations sized
+q824: 26 join relations sized
+q834: 26 join relations sized
+q835: 26 join relations sized
+q842: 26 join relations sized
+q846: 26 join relations sized
+q849: 26 join relations sized
+q850: 26 join relations sized
+q857: 26 join relations sized
+q866: 26 join relations sized
+q870: 26 join relations sized
+q871: 26 join relations sized
+q874: 26 join relations sized
+q880: 26 join relations sized
+q886: 26 join relations sized
+q891: 26 join relations sized
+q896: 26 join relations sized
+q898: 26 join relations sized
+q901: 26 join relations sized
+q906: 26 join relations sized
+q910: 26 join relations sized
+q913: 26 join relations sized
+q914: 26 join relations sized
+q918: 26 join relations sized
+q932: 26 join relations sized
+q936: 11 join relations sized
+q941: 11 join relations sized
+q947: 11 join relations sized
+q951: 11 join relations sized
+q952: 11 join relations sized
+q956: 11 join relations sized
+q958: 11 join relations sized
+q959: 11 join relations sized
+q968: 11 join relations sized
+q977: 11 join relations sized
+q980: 11 join relations sized
+q982: 11 join relations sized
+q984: 11 join relations sized
+q988: 11 join relations sized
+q993: 11 join relations sized
+q994: 11 join relations sized
+q999: 11 join relations sized
+1929 sub-plan estimates (0 sub-plans never sized by the planner) -> results/heldout_jobrange/native_incontext_estimations.csv
+[2026-10-20T05:58:06+09:00] 4. native plans
+native plans of 200 queries written
+[2026-10-20T05:58:06+09:00] 5. tightness sweep (EXPLAIN only)
+query 1 done
+query 2 done
+query 3 done
+query 4 done
+query 5 done
+query 6 done
+query 7 done
+query 8 done
+query 9 done
+query 10 done
+query 11 done
+query 12 done
+query 13 done
+query 14 done
+query 15 done
+query 16 done
+query 17 done
+query 18 done
+query 19 done
+query 20 done
+query 21 done
+query 22 done
+query 23 done
+query 24 done
+query 25 done
+query 26 done
+query 27 done
+query 28 done
+query 29 done
+query 30 done
+query 31 done
+query 32 done
+query 33 done
+query 34 done
+query 35 done
+query 36 done
+query 37 done
+query 38 done
+query 39 done
+query 40 done
+query 41 done
+query 42 done
+query 43 done
+query 44 done
+query 45 done
+query 46 done
+query 47 done
+query 48 done
+query 49 done
+query 50 done
+query 51 done
+query 52 done
+query 53 done
+query 54 done
+query 55 done
+query 56 done
+query 57 done
+query 58 done
+query 59 done
+query 60 done
+query 61 done
+query 62 done
+query 63 done
+query 64 done
+query 65 done
+query 66 done
+query 67 done
+query 68 done
+query 69 done
+query 70 done
+query 71 done
+query 72 done
+query 73 done
+query 74 done
+query 75 done
+query 76 done
+query 77 done
+query 78 done
+query 79 done
+query 80 done
+query 81 done
+query 82 done
+query 83 done
+query 84 done
+query 85 done
+query 86 done
+query 87 done
+query 88 done
+query 89 done
+query 90 done
+query 91 done
+query 92 done
+query 93 done
+query 94 done
+query 95 done
+query 96 done
+query 97 done
+query 98 done
+query 99 done
+query 100 done
+query 101 done
+query 102 done
+query 103 done
+query 104 done
+query 105 done
+query 106 done
+query 107 done
+query 108 done
+query 109 done
+query 110 done
+query 111 done
+query 112 done
+query 113 done
+query 114 done
+query 115 done
+query 116 done
+query 117 done
+query 118 done
+query 119 done
+query 120 done
+query 121 done
+query 122 done
+query 123 done
+query 124 done
+query 125 done
+query 126 done
+query 127 done
+query 128 done
+query 129 done
+query 130 done
+query 131 done
+query 132 done
+query 133 done
+query 134 done
+query 135 done
+query 136 done
+query 137 done
+query 138 done
+query 139 done
+query 140 done
+query 141 done
+query 142 done
+query 143 done
+query 144 done
+query 145 done
+query 146 done
+query 147 done
+query 148 done
+query 149 done
+query 150 done
+query 151 done
+query 152 done
+query 153 done
+query 154 done
+query 155 done
+query 156 done
+query 157 done
+query 158 done
+query 159 done
+query 160 done
+query 161 done
+query 162 done
+query 163 done
+query 164 done
+query 165 done
+query 166 done
+query 167 done
+query 168 done
+query 169 done
+query 170 done
+query 171 done
+query 172 done
+query 173 done
+query 174 done
+query 175 done
+query 176 done
+query 177 done
+query 178 done
+query 179 done
+query 180 done
+query 181 done
+query 182 done
+query 183 done
+query 184 done
+query 185 done
+query 186 done
+query 187 done
+query 188 done
+query 189 done
+query 190 done
+query 191 done
+query 192 done
+query 193 done
+query 194 done
+query 195 done
+query 196 done
+query 197 done
+query 198 done
+query 199 done
+query 200 done
+query 201 done
+query 202 done
+query 203 done
+query 204 done
+query 205 done
+query 206 done
+query 207 done
+query 208 done
+query 209 done
+query 210 done
+query 211 done
+query 212 done
+query 213 done
+query 214 done
+query 215 done
+query 216 done
+query 217 done
+query 218 done
+query 219 done
+query 220 done
+query 221 done
+query 222 done
+query 223 done
+query 224 done
+query 225 done
+query 226 done
+query 227 done
+query 228 done
+query 229 done
+query 230 done
+query 231 done
+query 232 done
+query 233 done
+query 234 done
+query 235 done
+query 236 done
+query 237 done
+query 238 done
+query 239 done
+query 240 done
+query 241 done
+query 242 done
+query 243 done
+query 244 done
+query 245 done
+query 246 done
+query 247 done
+query 248 done
+query 249 done
+query 250 done
+query 251 done
+query 252 done
+query 253 done
+query 254 done
+query 255 done
+query 256 done
+query 257 done
+query 258 done
+query 259 done
+query 260 done
+query 261 done
+query 262 done
+query 263 done
+query 264 done
+query 265 done
+query 266 done
+query 267 done
+query 268 done
+query 269 done
+query 270 done
+query 271 done
+query 272 done
+query 273 done
+query 274 done
+query 275 done
+query 276 done
+query 277 done
+query 278 done
+query 279 done
+query 280 done
+query 281 done
+query 282 done
+query 283 done
+query 284 done
+query 285 done
+query 286 done
+query 287 done
+query 288 done
+query 289 done
+query 290 done
+query 291 done
+query 292 done
+query 293 done
+query 294 done
+query 295 done
+query 296 done
+query 297 done
+query 298 done
+query 299 done
+query 300 done
+query 301 done
+query 302 done
+query 303 done
+query 304 done
+query 305 done
+query 306 done
+query 307 done
+query 308 done
+query 309 done
+query 310 done
+query 311 done
+query 312 done
+query 313 done
+query 314 done
+query 315 done
+query 316 done
+query 317 done
+query 318 done
+query 319 done
+query 320 done
+query 321 done
+query 322 done
+query 323 done
+query 324 done
+query 325 done
+query 326 done
+query 327 done
+query 328 done
+query 329 done
+query 330 done
+query 331 done
+query 332 done
+query 333 done
+query 334 done
+query 335 done
+query 336 done
+query 337 done
+query 338 done
+query 339 done
+query 340 done
+query 341 done
+query 342 done
+query 343 done
+query 344 done
+query 345 done
+query 346 done
+query 347 done
+query 348 done
+query 349 done
+query 350 done
+query 351 done
+query 352 done
+query 353 done
+query 354 done
+query 355 done
+query 356 done
+query 357 done
+query 358 done
+query 359 done
+query 360 done
+query 361 done
+query 362 done
+query 363 done
+query 364 done
+query 365 done
+query 366 done
+query 367 done
+query 368 done
+query 369 done
+query 370 done
+query 371 done
+query 372 done
+query 373 done
+query 374 done
+query 375 done
+query 376 done
+query 377 done
+query 378 done
+query 379 done
+query 380 done
+query 381 done
+query 382 done
+query 383 done
+query 384 done
+query 385 done
+query 386 done
+query 387 done
+query 388 done
+query 389 done
+query 390 done
+query 391 done
+query 392 done
+query 393 done
+query 394 done
+query 395 done
+query 396 done
+query 397 done
+query 398 done
+query 399 done
+query 400 done
+query 401 done
+query 402 done
+query 403 done
+query 404 done
+query 405 done
+query 406 done
+query 407 done
+query 408 done
+query 409 done
+query 410 done
+query 411 done
+query 412 done
+query 413 done
+query 414 done
+query 415 done
+query 416 done
+query 417 done
+query 418 done
+query 419 done
+query 420 done
+query 421 done
+query 422 done
+query 423 done
+query 424 done
+query 425 done
+query 426 done
+query 427 done
+query 428 done
+query 429 done
+query 430 done
+query 431 done
+query 432 done
+query 433 done
+query 434 done
+query 435 done
+query 436 done
+query 437 done
+query 438 done
+query 439 done
+query 440 done
+query 441 done
+query 442 done
+query 443 done
+query 444 done
+query 445 done
+query 446 done
+query 447 done
+query 448 done
+query 449 done
+query 450 done
+query 451 done
+query 452 done
+query 453 done
+query 454 done
+query 455 done
+query 456 done
+query 457 done
+query 458 done
+query 459 done
+query 460 done
+query 461 done
+query 462 done
+query 463 done
+query 464 done
+query 465 done
+query 466 done
+query 467 done
+query 468 done
+query 469 done
+query 470 done
+query 471 done
+query 472 done
+query 473 done
+query 474 done
+query 475 done
+query 476 done
+query 477 done
+query 478 done
+query 479 done
+query 480 done
+query 481 done
+query 482 done
+query 483 done
+query 484 done
+query 485 done
+query 486 done
+query 487 done
+query 488 done
+query 489 done
+query 490 done
+query 491 done
+query 492 done
+query 493 done
+query 494 done
+query 495 done
+query 496 done
+query 497 done
+query 498 done
+query 499 done
+query 500 done
+query 501 done
+query 502 done
+query 503 done
+query 504 done
+query 505 done
+query 506 done
+query 507 done
+query 508 done
+query 509 done
+query 510 done
+query 511 done
+query 512 done
+query 513 done
+query 514 done
+query 515 done
+query 516 done
+query 517 done
+query 518 done
+query 519 done
+query 520 done
+query 521 done
+query 522 done
+query 523 done
+query 524 done
+query 525 done
+query 526 done
+query 527 done
+query 528 done
+query 529 done
+query 530 done
+query 531 done
+query 532 done
+query 533 done
+query 534 done
+query 535 done
+query 536 done
+query 537 done
+query 538 done
+query 539 done
+query 540 done
+query 541 done
+query 542 done
+query 543 done
+query 544 done
+query 545 done
+query 546 done
+query 547 done
+query 548 done
+query 549 done
+query 550 done
+query 551 done
+query 552 done
+query 553 done
+query 554 done
+query 555 done
+query 556 done
+query 557 done
+query 558 done
+query 559 done
+query 560 done
+query 561 done
+query 562 done
+query 563 done
+query 564 done
+query 565 done
+query 566 done
+query 567 done
+query 568 done
+query 569 done
+query 570 done
+query 571 done
+query 572 done
+query 573 done
+query 574 done
+query 575 done
+query 576 done
+query 577 done
+query 578 done
+query 579 done
+query 580 done
+query 581 done
+query 582 done
+query 583 done
+query 584 done
+query 585 done
+query 586 done
+query 587 done
+query 588 done
+query 589 done
+query 590 done
+query 591 done
+query 592 done
+query 593 done
+query 594 done
+query 595 done
+query 596 done
+query 597 done
+query 598 done
+query 599 done
+query 600 done
+query 601 done
+query 602 done
+query 603 done
+query 604 done
+query 605 done
+query 606 done
+query 607 done
+query 608 done
+query 609 done
+query 610 done
+query 611 done
+query 612 done
+query 613 done
+query 614 done
+query 615 done
+query 616 done
+query 617 done
+query 618 done
+query 619 done
+query 620 done
+query 621 done
+query 622 done
+query 623 done
+query 624 done
+query 625 done
+query 626 done
+query 627 done
+query 628 done
+query 629 done
+query 630 done
+query 631 done
+query 632 done
+query 633 done
+query 634 done
+query 635 done
+query 636 done
+query 637 done
+query 638 done
+query 639 done
+query 640 done
+query 641 done
+query 642 done
+query 643 done
+query 644 done
+query 645 done
+query 646 done
+query 647 done
+query 648 done
+query 649 done
+query 650 done
+query 651 done
+query 652 done
+query 653 done
+query 654 done
+query 655 done
+query 656 done
+query 657 done
+query 658 done
+query 659 done
+query 660 done
+query 661 done
+query 662 done
+query 663 done
+query 664 done
+query 665 done
+query 666 done
+query 667 done
+query 668 done
+query 669 done
+query 670 done
+query 671 done
+query 672 done
+query 673 done
+query 674 done
+query 675 done
+query 676 done
+query 677 done
+query 678 done
+query 679 done
+query 680 done
+query 681 done
+query 682 done
+query 683 done
+query 684 done
+query 685 done
+query 686 done
+query 687 done
+query 688 done
+query 689 done
+query 690 done
+query 691 done
+query 692 done
+query 693 done
+query 694 done
+query 695 done
+query 696 done
+query 697 done
+query 698 done
+query 699 done
+query 700 done
+query 701 done
+query 702 done
+query 703 done
+query 704 done
+query 705 done
+query 706 done
+query 707 done
+query 708 done
+query 709 done
+query 710 done
+query 711 done
+query 712 done
+query 713 done
+query 714 done
+query 715 done
+query 716 done
+query 717 done
+query 718 done
+query 719 done
+query 720 done
+query 721 done
+query 722 done
+query 723 done
+query 724 done
+query 725 done
+query 726 done
+query 727 done
+query 728 done
+query 729 done
+query 730 done
+query 731 done
+query 732 done
+query 733 done
+query 734 done
+query 735 done
+query 736 done
+query 737 done
+query 738 done
+query 739 done
+query 740 done
+query 741 done
+query 742 done
+query 743 done
+query 744 done
+query 745 done
+query 746 done
+query 747 done
+query 748 done
+query 749 done
+query 750 done
+query 751 done
+query 752 done
+query 753 done
+query 754 done
+query 755 done
+query 756 done
+query 757 done
+query 758 done
+query 759 done
+query 760 done
+query 761 done
+query 762 done
+query 763 done
+query 764 done
+query 765 done
+query 766 done
+query 767 done
+query 768 done
+query 769 done
+query 770 done
+query 771 done
+query 772 done
+query 773 done
+query 774 done
+query 775 done
+query 776 done
+query 777 done
+query 778 done
+query 779 done
+query 780 done
+query 781 done
+query 782 done
+query 783 done
+query 784 done
+query 785 done
+query 786 done
+query 787 done
+query 788 done
+query 789 done
+query 790 done
+query 791 done
+query 792 done
+query 793 done
+query 794 done
+query 795 done
+query 796 done
+query 797 done
+query 798 done
+query 799 done
+query 800 done
+query 801 done
+query 802 done
+query 803 done
+query 804 done
+query 805 done
+query 806 done
+query 807 done
+query 808 done
+query 809 done
+query 810 done
+query 811 done
+query 812 done
+query 813 done
+query 814 done
+query 815 done
+query 816 done
+query 817 done
+query 818 done
+query 819 done
+query 820 done
+query 821 done
+query 822 done
+query 823 done
+query 824 done
+query 825 done
+query 826 done
+query 827 done
+query 828 done
+query 829 done
+query 830 done
+query 831 done
+query 832 done
+query 833 done
+query 834 done
+query 835 done
+query 836 done
+query 837 done
+query 838 done
+query 839 done
+query 840 done
+query 841 done
+query 842 done
+query 843 done
+query 844 done
+query 845 done
+query 846 done
+query 847 done
+query 848 done
+query 849 done
+query 850 done
+query 851 done
+query 852 done
+query 853 done
+query 854 done
+query 855 done
+query 856 done
+query 857 done
+query 858 done
+query 859 done
+query 860 done
+query 861 done
+query 862 done
+query 863 done
+query 864 done
+query 865 done
+query 866 done
+query 867 done
+query 868 done
+query 869 done
+query 870 done
+query 871 done
+query 872 done
+query 873 done
+query 874 done
+query 875 done
+query 876 done
+query 877 done
+query 878 done
+query 879 done
+query 880 done
+query 881 done
+query 882 done
+query 883 done
+query 884 done
+query 885 done
+query 886 done
+query 887 done
+query 888 done
+query 889 done
+query 890 done
+query 891 done
+query 892 done
+query 893 done
+query 894 done
+query 895 done
+query 896 done
+query 897 done
+query 898 done
+query 899 done
+query 900 done
+query 901 done
+query 902 done
+query 903 done
+query 904 done
+query 905 done
+query 906 done
+query 907 done
+query 908 done
+query 909 done
+query 910 done
+query 911 done
+query 912 done
+query 913 done
+query 914 done
+query 915 done
+query 916 done
+query 917 done
+query 918 done
+query 919 done
+query 920 done
+query 921 done
+query 922 done
+query 923 done
+query 924 done
+query 925 done
+query 926 done
+query 927 done
+query 928 done
+query 929 done
+query 930 done
+query 931 done
+query 932 done
+query 933 done
+query 934 done
+query 935 done
+query 936 done
+query 937 done
+query 938 done
+query 939 done
+query 940 done
+query 941 done
+query 942 done
+query 943 done
+query 944 done
+query 945 done
+query 946 done
+query 947 done
+query 948 done
+query 949 done
+query 950 done
+query 951 done
+query 952 done
+query 953 done
+query 954 done
+query 955 done
+query 956 done
+query 957 done
+query 958 done
+query 959 done
+query 960 done
+query 961 done
+query 962 done
+query 963 done
+query 964 done
+query 965 done
+query 966 done
+query 967 done
+query 968 done
+query 969 done
+query 970 done
+query 971 done
+query 972 done
+query 973 done
+query 974 done
+query 975 done
+query 976 done
+query 977 done
+query 978 done
+query 979 done
+query 980 done
+query 981 done
+query 982 done
+query 983 done
+query 984 done
+query 985 done
+query 986 done
+query 987 done
+query 988 done
+query 989 done
+query 990 done
+query 991 done
+query 992 done
+query 993 done
+query 994 done
+query 995 done
+query 996 done
+query 997 done
+query 998 done
+query 999 done
+query 1000 done
+{"n_skipped_unknown_join_size": {"native": 0, "postgres": 0}, "native": {"n": 191, "truth_gain": 1.032339451316744, "truth": {"gain": 1.032339451316744, "share_of_truth_gain_log": 1.0, "share_plan_changed": 0.28272251308900526}, "upper_k1": {"gain": 0.9939565333497856, "share_of_truth_gain_log": -0.19045777837157402, "share_plan_changed": 0.04712041884816754}, "lower_k1": {"gain": 1.0414239915842989, "share_of_truth_gain_log": 1.2752792391876882, "share_plan_changed": 0.2513089005235602}, "bi_k1": {"gain": 1.032339451316744, "share_of_truth_gain_log": 1.0, "share_plan_changed": 0.28272251308900526}, "upper_k1.5": {"gain": 0.9983729593568035, "share_of_truth_gain_log": -0.05116216268594249, "share_plan_changed": 0.02617801047120419}, "lower_k1.5": {"gain": 1.041116536215639, "share_of_truth_gain_log": 1.2660020681519166, "share_plan_changed": 0.20418848167539266}, "bi_k1.5": {"gain": 1.0391107659973302, "share_of_truth_gain_log": 1.2054125550708619, "share_plan_changed": 0.2198952879581152}, "upper_k2": {"gain": 1.00342203179789, "share_of_truth_gain_log": 0.10733440640873615, "share_plan_changed": 0.015706806282722512}, "lower_k2": {"gain": 1.0413548840603395, "share_of_truth_gain_log": 1.2731942245411185, "share_plan_changed": 0.17801047120418848}, "bi_k2": {"gain": 1.0449876720376776, "share_of_truth_gain_log": 1.382610471728323, "share_plan_changed": 0.193717277486911}, "upper_k4": {"gain": 1.0, "share_of_truth_gain_log": 0.0, "share_plan_changed": 0.005235602094240838}, "
+[2026-10-20T05:58:11+09:00] 6. pre-registered analysis
+{"preregistration": "docs/icde_2027/PREREGISTRATION_JOBRANGE.md", "a_posteriori": {"n_queries": 179, "excluded": {"final_not_listed": 0, "missing_count": 9, "missing_estimate": 0, "missing_plan": 0, "plan_outside_list": 0, "fewer_than_3": 12}, "shares": {"cout|sample": 0.888268156424581, "cout|none": 0.8659217877094972, "cout_minus_final|sample": 0.3575418994413408, "cout_minus_final|none": 0.07262569832402235}, "violations": 0}, "n_sweep_queries": 191, "n_sweep_excluded_unknown_guarded_join_size": 0, "plan_changed_by_k": {"1": 0.28272251308900526, "1.5": 0.2198952879581152, "2": 0.193717277486911, "4": 0.1099476439790576, "8": 0.09424083769633508, "16": 0.05759162303664921, "32": 0.041884816753926704, "64": 0.015706806282722512}, "truth_gain": 1.032339451316744, "share_of_truth_gain_log": {"1": 1.0, "1.5": 1.2054125550708619, "2": 1.382610471728323, "4": 0.9363119462336029, "8": 0.8948437263791403, "16": 0.7766990415842496, "32": 0.043379224564902064, "64": 0.03502275167832018}, "tests": {"C1": "confirmed", "C2": "confirmed", "C3": "inconclusive", "C4": "confirmed", "C5": "confirmed", "C6": "confirmed", "C7": "not testable"}}
+[2026-10-20T05:58:11+09:00] done

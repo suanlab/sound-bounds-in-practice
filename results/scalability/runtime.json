@@ -1,0 +1,203 @@
+{
+  "hardware": {
+    "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "python": "3.10.12",
+    "torch_threads": 20
+  },
+  "queries_per_size": 20,
+  "rows": [
+    {
+      "n_relations": 3,
+      "n_connected_subsets": 6,
+      "queries_measured": 20,
+      "ceg_optimistic_ms_median": 0.161,
+      "ceg_pessimistic_ms_median": 0.113,
+      "single_config_ms_median": 0.236,
+      "all_9_configs_ms": {
+        "median": 0.543,
+        "mean": 0.548,
+        "p95": 0.599,
+        "n": 20.0
+      },
+      "pessimistic_bound_ms": {
+        "median": 0.189,
+        "mean": 0.211,
+        "p95": 0.237,
+        "n": 20.0
+      },
+      "ml_inference_ms": {
+        "median": 0.759,
+        "mean": 0.789,
+        "p95": 0.876,
+        "n": 20.0
+      },
+      "full_pipeline_ms": {
+        "median": 1.503,
+        "mean": 1.549,
+        "p95": 1.648,
+        "n": 20.0
+      }
+    },
+    {
+      "n_relations": 4,
+      "n_connected_subsets": 10,
+      "queries_measured": 20,
+      "ceg_optimistic_ms_median": 0.415,
+      "ceg_pessimistic_ms_median": 0.189,
+      "single_config_ms_median": 0.561,
+      "all_9_configs_ms": {
+        "median": 1.042,
+        "mean": 1.063,
+        "p95": 1.152,
+        "n": 20.0
+      },
+      "pessimistic_bound_ms": {
+        "median": 0.325,
+        "mean": 0.325,
+        "p95": 0.334,
+        "n": 20.0
+      },
+      "ml_inference_ms": {
+        "median": 0.787,
+        "mean": 0.794,
+        "p95": 0.856,
+        "n": 20.0
+      },
+      "full_pipeline_ms": {
+        "median": 2.157,
+        "mean": 2.182,
+        "p95": 2.271,
+        "n": 20.0
+      }
+    },
+    {
+      "n_relations": 5,
+      "n_connected_subsets": 15,
+      "queries_measured": 20,
+      "ceg_optimistic_ms_median": 0.737,
+      "ceg_pessimistic_ms_median": 0.333,
+      "single_config_ms_median": 1.527,
+      "all_9_configs_ms": {
+        "median": 2.425,
+        "mean": 2.513,
+        "p95": 3.016,
+        "n": 20.0
+      },
+      "pessimistic_bound_ms": {
+        "median": 0.557,
+        "mean": 0.574,
+        "p95": 0.641,
+        "n": 20.0
+      },
+      "ml_inference_ms": {
+        "median": 0.834,
+        "mean": 0.849,
+        "p95": 0.936,
+        "n": 20.0
+      },
+      "full_pipeline_ms": {
+        "median": 3.847,
+        "mean": 3.937,
+        "p95": 4.517,
+        "n": 20.0
+      }
+    },
+    {
+      "n_relations": 6,
+      "n_connected_subsets": 21,
+      "queries_measured": 20,
+      "ceg_optimistic_ms_median": 1.516,
+      "ceg_pessimistic_ms_median": 0.607,
+      "single_config_ms_median": 4.372,
+      "all_9_configs_ms": {
+        "median": 6.374,
+        "mean": 6.494,
+        "p95": 6.978,
+        "n": 20.0
+      },
+      "pessimistic_bound_ms": {
+        "median": 0.719,
+        "mean": 0.749,
+        "p95": 0.968,
+        "n": 20.0
+      },
+      "ml_inference_ms": {
+        "median": 0.988,
+        "mean": 0.99,
+        "p95": 1.03,
+        "n": 20.0
+      },
+      "full_pipeline_ms": {
+        "median": 8.094,
+        "mean": 8.233,
+        "p95": 8.734,
+        "n": 20.0
+      }
+    },
+    {
+      "n_relations": 7,
+      "n_connected_subsets": 28,
+      "queries_measured": 20,
+      "ceg_optimistic_ms_median": 2.983,
+      "ceg_pessimistic_ms_median": 1.09,
+      "single_config_ms_median": 12.439,
+      "all_9_configs_ms": {
+        "median": 15.517,
+        "mean": 15.623,
+        "p95": 16.753,
+        "n": 20.0
+      },
+      "pessimistic_bound_ms": {
+        "median": 1.256,
+        "mean": 1.251,
+        "p95": 1.333,
+        "n": 20.0
+      },
+      "ml_inference_ms": {
+        "median": 1.064,
+        "mean": 1.06,
+        "p95": 1.103,
+        "n": 20.0
+      },
+      "full_pipeline_ms": {
+        "median": 17.827,
+        "mean": 17.935,
+        "p95": 19.121,
+        "n": 20.0
+      }
+    },
+    {
+      "n_relations": 8,
+      "n_connected_subsets": 36,
+      "queries_measured": 20,
+      "ceg_optimistic_ms_median": 5.634,
+      "ceg_pessimistic_ms_median": 2.078,
+      "single_config_ms_median": 38.63,
+      "all_9_configs_ms": {
+        "median": 45.107,
+        "mean": 51.304,
+        "p95": 99.978,
+        "n": 20.0
+      },
+      "pessimistic_bound_ms": {
+        "median": 2.176,
+        "mean": 2.183,
+        "p95": 2.324,
+        "n": 20.0
+      },
+      "ml_inference_ms": {
+        "median": 1.232,
+        "mean": 1.268,
+        "p95": 1.476,
+        "n": 20.0
+      },
+      "full_pipeline_ms": {
+        "median": 48.513,
+        "mean": 54.755,
+        "p95": 103.703,
+        "n": 20.0
+      }
+    }
+  ]
+}

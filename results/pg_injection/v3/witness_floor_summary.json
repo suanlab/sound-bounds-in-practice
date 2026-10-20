@@ -1,0 +1,20 @@
+{
+  "inputs": {
+    "results/pg_injection/v3/witness_floor.jsonl": "f4dbe3ae3a040307d0af36aa621731171e0b7ac23b1c19c709957dd00948d647"
+  },
+  "n_subjoins": 70,
+  "n_queries": 57,
+  "n_censored": 0,
+  "median_witness_over_sample": {
+    "point": 0.9598923433738159,
+    "ci_low": 0.7978093883244622,
+    "ci_high": 1.0393765850155499,
+    "n_rows": 70,
+    "n_clusters": 57,
+    "replicates": 10000,
+    "replicates_dropped": 0
+  },
+  "share_witness_cheaper": 0.5571428571428572,
+  "total_witness_ms": 228445.74492541142,
+  "total_sample_ms": 202559.2856130097
+}

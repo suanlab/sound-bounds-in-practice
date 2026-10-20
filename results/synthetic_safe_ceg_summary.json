@@ -1,0 +1,49 @@
+{
+  "epochs": 10,
+  "eval_corpus_path": null,
+  "eval_count": 16,
+  "eval_family": "cycle",
+  "evaluation": {
+    "config_accuracy": 0.0,
+    "expected_q_error": 23.328277245163918,
+    "expected_safety_penalty": 5.706442540720502e-09,
+    "fallback_rate": 0.0,
+    "mean": 23.328277142790327,
+    "median": 11.754999844761588,
+    "ml_only_safe_count": 16,
+    "ml_only_safe_q_error": {
+      "mean": 23.328277142790327,
+      "median": 11.754999844761588,
+      "p95": 84.65816446805981,
+      "p99": 107.10433993198295
+    },
+    "ml_only_violating_count": 0,
+    "ml_only_violating_q_error": {
+      "max": 0.0,
+      "median": 0.0,
+      "p90": 0.0
+    },
+    "ml_safety_violation_rate": 0.0,
+    "p95": 84.65816446805981,
+    "p99": 107.10433993198295,
+    "safety_violation_rate": 0.0
+  },
+  "name": "synthetic-safe-ceg-cli",
+  "relation_count": 4,
+  "seed": 42,
+  "train_corpus_path": null,
+  "train_count": 32,
+  "train_family": "path",
+  "training_losses": [
+    171975092.00305176,
+    41666.78805696219,
+    41652.157902721316,
+    41651.84323231084,
+    41651.82884939341,
+    41651.82817828609,
+    41651.82815995533,
+    41651.828158359975,
+    41651.82815771736,
+    41651.828157363925
+  ]
+}

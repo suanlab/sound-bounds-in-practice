@@ -1,0 +1,78 @@
+{
+  "stats": {
+    "postgres_raw": {
+      "point": 0.30122020856729803,
+      "ci_low": 0.2234160406226324,
+      "ci_high": 0.39641990577219177,
+      "n_rows": 146,
+      "n_clusters": 146,
+      "replicates": 10000,
+      "replicates_dropped": 0
+    },
+    "postgres_upper": {
+      "point": 0.9423498092080149,
+      "ci_low": 0.8695750409099622,
+      "ci_high": 1.0203225696561347,
+      "n_rows": 146,
+      "n_clusters": 146,
+      "replicates": 10000,
+      "replicates_dropped": 0
+    },
+    "postgres_lower": {
+      "point": 0.3699720466835945,
+      "ci_low": 0.27498159668933375,
+      "ci_high": 0.4874009444869456,
+      "n_rows": 146,
+      "n_clusters": 146,
+      "replicates": 10000,
+      "replicates_dropped": 0
+    },
+    "postgres_bi": {
+      "point": 1.054672775918235,
+      "ci_low": 0.9728771608909089,
+      "ci_high": 1.1625688349013916,
+      "n_rows": 146,
+      "n_clusters": 146,
+      "replicates": 10000,
+      "replicates_dropped": 0
+    }
+  },
+  "joblight": {
+    "postgres_raw": {
+      "point": 0.5788226489820878,
+      "ci_low": 0.4631719483479365,
+      "ci_high": 0.7113319755843411,
+      "n_rows": 70,
+      "n_clusters": 70,
+      "replicates": 10000,
+      "replicates_dropped": 0
+    },
+    "postgres_upper": {
+      "point": 0.6205420879762779,
+      "ci_low": 0.4967725093251713,
+      "ci_high": 0.7596436432575768,
+      "n_rows": 70,
+      "n_clusters": 70,
+      "replicates": 10000,
+      "replicates_dropped": 0
+    },
+    "postgres_lower": {
+      "point": 0.7971761555911352,
+      "ci_low": 0.6934957784683281,
+      "ci_high": 0.9105679860054045,
+      "n_rows": 70,
+      "n_clusters": 70,
+      "replicates": 10000,
+      "replicates_dropped": 0
+    },
+    "postgres_bi": {
+      "point": 0.8394564752291239,
+      "ci_low": 0.7319387736602528,
+      "ci_high": 0.9584769406250195,
+      "n_rows": 70,
+      "n_clusters": 70,
+      "replicates": 10000,
+      "replicates_dropped": 0
+    }
+  }
+}

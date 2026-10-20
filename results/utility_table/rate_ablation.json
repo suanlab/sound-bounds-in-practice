@@ -1,0 +1,27 @@
+{
+  "experiment": "sample_rate_ablation_lower_certificate",
+  "preregistered_as": "TOP_PLAN Phase 3.2 ablation #4 (sample rate x seed cost-stability)",
+  "dataset": "real STATS-CEB (LpBound artifact raw tables)",
+  "queries": "first 40 templates; 39 completed (q21 excluded: certificate exceeds 20s)",
+  "seeds": [1],
+  "generated_by": "experiments.scripts.make_lower_column_stats --rate <r> --seeds 1 --limit 40",
+  "columns": {
+    "cost_ratio_median": "lower-certificate wall-clock / exact full-count wall-clock",
+    "l_hat_qerror_median": "q-error of the rate-scaled unbiased point estimate vs truth",
+    "sound_lb_over_true_median": "sound lower bound / true cardinality (1.0 = perfectly tight)",
+    "lower_validity": "fraction of queries with sound_lower_bound <= true cardinality"
+  },
+  "rows": [
+    {"rate": 0.01, "n": 39, "cost_ratio_median": 0.505, "l_hat_qerror_median": 1.071, "sound_lb_over_true_median": 0.0101, "lower_validity": 1.0},
+    {"rate": 0.05, "n": 39, "cost_ratio_median": 0.550, "l_hat_qerror_median": 1.032, "sound_lb_over_true_median": 0.0500, "lower_validity": 1.0},
+    {"rate": 0.10, "n": 39, "cost_ratio_median": 0.590, "l_hat_qerror_median": 1.017, "sound_lb_over_true_median": 0.0997, "lower_validity": 1.0},
+    {"rate": 0.25, "n": 39, "cost_ratio_median": 0.728, "l_hat_qerror_median": 1.012, "sound_lb_over_true_median": 0.2486, "lower_validity": 1.0}
+  ],
+  "findings": {
+    "cost_floor": "A 25x reduction in sampling rate (0.25 -> 0.01) buys only a 1.44x reduction in cost (0.728 -> 0.505). The cost never falls below roughly half of executing the join, because only one relation is sub-sampled while the remaining relations are still scanned and joined in full. Cheapness cannot be bought by sampling less.",
+    "guarantee_collapses_linearly": "The SOUND lower bound tracks the rate almost exactly (sound_lb/true = 0.0101, 0.0500, 0.0997, 0.2486 at rates 0.01-0.25). At rate 0.01 the certificate is ~100x below the truth, i.e. effectively vacuous as a guarantee.",
+    "accuracy_is_not_what_degrades": "The rate-scaled point estimate stays accurate throughout (median q-error 1.07 -> 1.01). So lowering the rate does not cost accuracy; it costs the GUARANTEE.",
+    "implication": "Sampling less converts the instrument from a certificate back into an ordinary estimate -- while still costing about half of simply running the query. This is the sharpest statement of the cost/soundness trade-off in the paper: the sampling lower certificate is expensive precisely because being a sound certificate is what makes it expensive.",
+    "validity_unaffected": "Soundness itself holds at every rate (100% validity), as Proposition 1 requires; only tightness degrades."
+  }
+}

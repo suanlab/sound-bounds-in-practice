@@ -1,0 +1,35 @@
+{
+  "inputs": {
+    "results/pg_injection/v3/sampling_overhead_inrun.jsonl": "eeb9a0449378b639888b97a4f5b12153b4010568c47df36545b7990186684e78"
+  },
+  "n_queries_measured": 146,
+  "n_excluded_native_timeout": 3,
+  "n_excluded_sample_timeout": 16,
+  "n_high_load": 0,
+  "clean": {
+    "n_queries": 127,
+    "median": {
+      "point": 2.6793890856302927,
+      "ci_low": 1.8698725033470842,
+      "ci_high": 3.8425425570163614,
+      "n_rows": 127,
+      "n_clusters": 127,
+      "replicates": 10000,
+      "replicates_dropped": 0
+    },
+    "share_above_one": 0.7322834645669292
+  },
+  "with_sample_timeouts_at_cap": {
+    "n_queries": 143,
+    "median": {
+      "point": 3.305782838023193,
+      "ci_low": 2.500702850765556,
+      "ci_high": 5.264688874198819,
+      "n_rows": 143,
+      "n_clusters": 143,
+      "replicates": 10000,
+      "replicates_dropped": 0
+    },
+    "share_above_one": 0.7622377622377622
+  }
+}

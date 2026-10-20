@@ -1,0 +1,5793 @@
+{
+  "experiment": "tightness_vs_soundness_ablation",
+  "preregistered_as": "TOP_PLAN Phase 3.2 ablation #3 (claim C3)",
+  "dataset": "real STATS-CEB",
+  "tau": 2.0,
+  "queries_evaluated": 40,
+  "queries_skipped": [],
+  "certificates": {
+    "max_degree": {
+      "bound_over_true_median": 249.88374589901485,
+      "bound_over_true_geomean": 450.67274180079716,
+      "validity": 1.0,
+      "fire_rate": 0.1125,
+      "help_rate": 0.1125
+    },
+    "safebound": {
+      "bound_over_true_median": 4.932853244125301,
+      "bound_over_true_geomean": 8.482962986271342,
+      "validity": 1.0,
+      "fire_rate": 0.2375,
+      "help_rate": 0.2375
+    },
+    "lpbound": {
+      "bound_over_true_median": 5.133543971360659,
+      "bound_over_true_geomean": 9.10549129557058,
+      "validity": 1.0,
+      "fire_rate": 0.225,
+      "help_rate": 0.225
+    }
+  },
+  "per_pair": [
+    {
+      "query_id": "1",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 1.0,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 1.0,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 1.0,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "1",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 1.0,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.0,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 1.0,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 0.9999999999999969,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 0.9999999999999969,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 0.9999999999999969,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "1",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 0.9999999999999969,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 0.9999999999999969,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 0.9999999999999969,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 1.0,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.0,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.0,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "1",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 1.0,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.0,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "1",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 1.0,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 6.018079931401383,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 6.018079931401383,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 6.018079931401383,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "2",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 6.018079931401383,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 6.018079931401383,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 6.018079931401383,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 1.4001019121179241,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.4001019121179241,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.4001019121179241,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "2",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 1.4001019121179241,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.4001019121179241,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 1.4001019121179241,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 1.3034226846176964,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.3034226846176964,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.3034226846176964,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "2",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 1.3034226846176964,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.3034226846176964,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "2",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 1.3034226846176964,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "3",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 69.75278912264464,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "3",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 69.75278912264464,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "3",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 69.75278912264464,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "3",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 69.75278912264464,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "3",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 69.75278912264464,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "3",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 69.75278912264464,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "3",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 5.5902613271494275,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "3",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 5.5902613271494275,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "3",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 5.5902613271494275,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "3",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 5.5902613271494275,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "3",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 5.5902613271494275,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "3",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 5.5902613271494275,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "3",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 5.656414107641926,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "3",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 5.656414107641926,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "3",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 5.656414107641926,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "3",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 5.656414107641926,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "3",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 5.656414107641926,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "3",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 5.656414107641926,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 72.48346718088474,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 72.48346718088474,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 72.48346718088474,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "4",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 72.48346718088474,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 72.48346718088474,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 72.48346718088474,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 7.618196158199443,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "4",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 7.618196158199443,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 7.618196158199443,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "4",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 7.618196158199443,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 7.618196158199443,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 7.618196158199443,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 6.733242789504881,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "4",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 6.733242789504881,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 6.733242789504881,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "4",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 6.733242789504881,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 6.733242789504881,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "4",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 6.733242789504881,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 330.34528290075326,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 330.34528290075326,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 330.34528290075326,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "5",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 330.34528290075326,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 330.34528290075326,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 330.34528290075326,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 2.733528475618933,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.733528475618933,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.733528475618933,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "5",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 2.733528475618933,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.733528475618933,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 2.733528475618933,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 2.7974342893202406,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.7974342893202406,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.7974342893202406,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "5",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 2.7974342893202406,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.7974342893202406,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "5",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 2.7974342893202406,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 44.86676061332866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 44.86676061332866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 44.86676061332866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 44.86676061332866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 44.86676061332866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 44.86676061332866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 2.0365512096285823,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.0365512096285823,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.0365512096285823,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "6",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 2.0365512096285823,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.0365512096285823,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 2.0365512096285823,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 2.1318069026024564,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.1318069026024564,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.1318069026024564,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "6",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 2.1318069026024564,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.1318069026024564,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "6",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 2.1318069026024564,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 209.87847882602952,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 209.87847882602952,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 209.87847882602952,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "7",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 209.87847882602952,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 209.87847882602952,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 209.87847882602952,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 151.41818465771553,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 151.41818465771553,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 151.41818465771553,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "7",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 151.41818465771553,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 151.41818465771553,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 151.41818465771553,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 141.76987984308806,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 141.76987984308806,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 141.76987984308806,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "7",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 141.76987984308806,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 141.76987984308806,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "7",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 141.76987984308806,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 148.5545261933446,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 148.5545261933446,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 148.5545261933446,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "8",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 148.5545261933446,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 148.5545261933446,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 148.5545261933446,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 123.80702449304981,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 123.80702449304981,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 123.80702449304981,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "8",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 123.80702449304981,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 123.80702449304981,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 123.80702449304981,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 123.33016769282187,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 123.33016769282187,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 123.33016769282187,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "8",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 123.33016769282187,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 123.33016769282187,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "8",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 123.33016769282187,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 7.988622383140972,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 7.988622383140972,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 7.988622383140972,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "9",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 7.988622383140972,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 7.988622383140972,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 7.988622383140972,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 1.7310260545776237,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.7310260545776237,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.7310260545776237,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "9",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 1.7310260545776237,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.7310260545776237,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 1.7310260545776237,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 1.6892480514865988,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.6892480514865988,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.6892480514865988,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "9",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 1.6892480514865988,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.6892480514865988,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "9",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 1.6892480514865988,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 47.85278019375348,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 47.85278019375348,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 47.85278019375348,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "10",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 47.85278019375348,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 47.85278019375348,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 47.85278019375348,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 6.547741855980455,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 6.547741855980455,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 6.547741855980455,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "10",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 6.547741855980455,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 6.547741855980455,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 6.547741855980455,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 5.162466274240165,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 5.162466274240165,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 5.162466274240165,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "10",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 5.162466274240165,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 5.162466274240165,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "10",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 5.162466274240165,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "11",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 263.9424820629658,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "11",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 263.9424820629658,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "11",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 263.9424820629658,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "11",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 263.9424820629658,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "11",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 263.9424820629658,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "11",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 263.9424820629658,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "11",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 2.6827605429804287,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "11",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.6827605429804287,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "11",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.6827605429804287,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "11",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 2.6827605429804287,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "11",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.6827605429804287,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "11",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 2.6827605429804287,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "11",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 2.804774478973726,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "11",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.804774478973726,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "11",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.804774478973726,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "11",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 2.804774478973726,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "11",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.804774478973726,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "11",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 2.804774478973726,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "12",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 3649.6497586912446,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "12",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 3649.6497586912446,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "12",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 3649.6497586912446,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "12",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 3649.6497586912446,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "12",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 3649.6497586912446,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "12",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 3649.6497586912446,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "12",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 2.0572584433774543,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "12",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.0572584433774543,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "12",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.0572584433774543,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "12",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 2.0572584433774543,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "12",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.0572584433774543,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "12",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 2.0572584433774543,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "12",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 2.0750415581453345,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "12",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.0750415581453345,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "12",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.0750415581453345,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "12",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 2.0750415581453345,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "12",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.0750415581453345,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "12",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 2.0750415581453345,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 13745.756411719207,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 13745.756411719207,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 13745.756411719207,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "13",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 13745.756411719207,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 13745.756411719207,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 13745.756411719207,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 38.377594482052736,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 38.377594482052736,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 38.377594482052736,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "13",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 38.377594482052736,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 38.377594482052736,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 38.377594482052736,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 9.080917726820246,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "13",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 9.080917726820246,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 9.080917726820246,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "13",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 9.080917726820246,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 9.080917726820246,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "13",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 9.080917726820246,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 106438.35999999999,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 106438.35999999999,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 106438.35999999999,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "14",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 106438.35999999999,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 106438.35999999999,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 106438.35999999999,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 122.65380202015753,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 122.65380202015753,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 122.65380202015753,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "14",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 122.65380202015753,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 122.65380202015753,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "14",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 122.65380202015753,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 257.1813233318407,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 257.1813233318407,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 257.1813233318407,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "14",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 257.1813233318407,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "14",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 257.1813233318407,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "14",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 257.1813233318407,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 6.005997732364196,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 6.005997732364196,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 6.005997732364196,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "15",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 6.005997732364196,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 6.005997732364196,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 6.005997732364196,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 1.399656842502912,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.399656842502912,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.399656842502912,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "15",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 1.399656842502912,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.399656842502912,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 1.399656842502912,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 1.3030083477559182,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.3030083477559182,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.3030083477559182,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "15",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 1.3030083477559182,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.3030083477559182,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "15",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 1.3030083477559182,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "16",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 250.47531630878748,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "16",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 250.47531630878748,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "16",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 250.47531630878748,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "16",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 250.47531630878748,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "16",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 250.47531630878748,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "16",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 250.47531630878748,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "16",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 1.911507471540403,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "16",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.911507471540403,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "16",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.911507471540403,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "16",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 1.911507471540403,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "16",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.911507471540403,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "16",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 1.911507471540403,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "16",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 2.190128976452069,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "16",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.190128976452069,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "16",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.190128976452069,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "16",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 2.190128976452069,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "16",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.190128976452069,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "16",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 2.190128976452069,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 4277.756105834472,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 4277.756105834472,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 4277.756105834472,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 4277.756105834472,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 4277.756105834472,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 4277.756105834472,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 5.997738579828145,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 5.997738579828145,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 5.997738579828145,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "17",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 5.997738579828145,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 5.997738579828145,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 5.997738579828145,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 5.997738579828132,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 5.997738579828132,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 5.997738579828132,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "17",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 5.997738579828132,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 5.997738579828132,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "17",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 5.997738579828132,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 5.59470866141733,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 5.59470866141733,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 5.59470866141733,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "18",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 5.59470866141733,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 5.59470866141733,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 5.59470866141733,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 1.8325447064225409,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.8325447064225409,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.8325447064225409,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "18",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 1.8325447064225409,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "18",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.8325447064225409,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 1.8325447064225409,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 1.8569927701345024,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.8569927701345024,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.8569927701345024,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "18",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 1.8569927701345024,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "18",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.8569927701345024,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "18",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 1.8569927701345024,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 1.018999541073888,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 1.018999541073888,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 1.018999541073888,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "19",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 1.018999541073888,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "19",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.018999541073888,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 1.018999541073888,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 1.0166131252868298,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.0166131252868298,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.0166131252868298,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "19",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 1.0166131252868298,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "19",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.0166131252868298,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 1.0166131252868298,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 1.018999541073887,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.018999541073887,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.018999541073887,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "19",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 1.018999541073887,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "19",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.018999541073887,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "19",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 1.018999541073887,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 1.1701531059314603,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 1.1701531059314603,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 1.1701531059314603,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "20",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 1.1701531059314603,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.1701531059314603,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 1.1701531059314603,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 1.1982610288846056,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.1982610288846056,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.1982610288846056,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "20",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 1.1982610288846056,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.1982610288846056,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 1.1982610288846056,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 1.1942723058887306,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.1942723058887306,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.1942723058887306,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "20",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 1.1942723058887306,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.1942723058887306,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "20",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 1.1942723058887306,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 12.218214338947682,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 12.218214338947682,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 12.218214338947682,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 12.218214338947682,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 12.218214338947682,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 12.218214338947682,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 1.2956476375018626,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.2956476375018626,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.2956476375018626,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 1.2956476375018626,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "21",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.2956476375018626,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 1.2956476375018626,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 1.2963556416753614,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 1.2963556416753614,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 1.2963556416753614,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 1.2963556416753614,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "21",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1.2963556416753614,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "21",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 1.2963556416753614,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 222.174463843606,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 222.174463843606,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 222.174463843606,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "22",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 222.174463843606,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 222.174463843606,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 222.174463843606,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 2.7468964518094365,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.7468964518094365,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.7468964518094365,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "22",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 2.7468964518094365,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.7468964518094365,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 2.7468964518094365,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 2.811466538424526,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.811466538424526,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.811466538424526,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "22",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 2.811466538424526,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.811466538424526,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "22",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 2.811466538424526,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 1038.7467035141674,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 1038.7467035141674,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 1038.7467035141674,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 1038.7467035141674,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 1038.7467035141674,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 1038.7467035141674,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 2.7672967654367824,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.7672967654367824,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.7672967654367824,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "23",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 2.7672967654367824,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.7672967654367824,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 2.7672967654367824,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 2.3556056302242374,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.3556056302242374,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.3556056302242374,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "23",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 2.3556056302242374,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "23",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.3556056302242374,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "23",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 2.3556056302242374,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 129.47533828022696,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 129.47533828022696,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 129.47533828022696,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 129.47533828022696,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 129.47533828022696,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 129.47533828022696,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 4.368531931749264,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 4.368531931749264,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 4.368531931749264,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "24",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 4.368531931749264,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 4.368531931749264,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 4.368531931749264,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 4.182131452594822,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 4.182131452594822,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 4.182131452594822,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "24",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 4.182131452594822,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 4.182131452594822,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "24",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 4.182131452594822,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 544.4164571402619,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 544.4164571402619,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 544.4164571402619,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 544.4164571402619,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 544.4164571402619,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 544.4164571402619,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 22.578001223307442,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 22.578001223307442,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 22.578001223307442,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "25",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 22.578001223307442,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 22.578001223307442,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 22.578001223307442,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 24.789406868973934,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 24.789406868973934,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 24.789406868973934,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "25",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 24.789406868973934,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 24.789406868973934,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "25",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 24.789406868973934,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 19.957256421523603,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 19.957256421523603,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 19.957256421523603,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "26",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 19.957256421523603,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 19.957256421523603,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 19.957256421523603,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 7.559522796603424,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 7.559522796603424,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 7.559522796603424,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "26",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 7.559522796603424,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 7.559522796603424,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 7.559522796603424,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 6.876222513690498,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 6.876222513690498,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 6.876222513690498,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "26",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 6.876222513690498,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 6.876222513690498,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "26",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 6.876222513690498,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "27",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 401379.9790655618,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "27",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 401379.9790655618,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "27",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 401379.9790655618,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "27",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 401379.9790655618,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "27",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 401379.9790655618,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "27",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 401379.9790655618,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "27",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 60.15462428723977,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "27",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 60.15462428723977,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "27",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 60.15462428723977,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "27",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 60.15462428723977,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "27",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 60.15462428723977,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "27",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 60.15462428723977,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "27",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 61.68411671496444,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "27",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 61.68411671496444,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "27",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 61.68411671496444,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "27",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 61.68411671496444,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "27",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 61.68411671496444,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "27",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 61.68411671496444,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 9.321190468031007,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 9.321190468031007,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 9.321190468031007,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 9.321190468031007,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 9.321190468031007,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 9.321190468031007,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 3.455079174364397,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 3.455079174364397,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 3.455079174364397,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "28",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 3.455079174364397,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 3.455079174364397,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 3.455079174364397,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 3.3699664843048116,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 3.3699664843048116,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 3.3699664843048116,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "28",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 3.3699664843048116,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 3.3699664843048116,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "28",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 3.3699664843048116,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 249.29217548924223,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 249.29217548924223,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 249.29217548924223,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 249.29217548924223,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 249.29217548924223,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 249.29217548924223,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 4.676826615571891,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 4.676826615571891,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 4.676826615571891,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "29",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 4.676826615571891,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 4.676826615571891,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 4.676826615571891,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 4.703240214010436,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 4.703240214010436,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 4.703240214010436,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "29",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 4.703240214010436,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 4.703240214010436,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "29",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 4.703240214010436,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 500.2912660891305,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 500.2912660891305,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 500.2912660891305,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 500.2912660891305,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 500.2912660891305,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 500.2912660891305,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 2.7307774882329183,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 2.7307774882329183,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 2.7307774882329183,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 2.7307774882329183,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 2.7307774882329183,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 2.7307774882329183,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 3.1635668570389774,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 3.1635668570389774,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 3.1635668570389774,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 3.1635668570389774,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 3.1635668570389774,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "30",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 3.1635668570389774,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 15027.843573851645,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 15027.843573851645,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 15027.843573851645,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 15027.843573851645,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 15027.843573851645,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 15027.843573851645,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 32.49260202858959,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 32.49260202858959,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 32.49260202858959,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 32.49260202858959,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 32.49260202858959,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 32.49260202858959,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 35.765885307339765,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 35.765885307339765,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 35.765885307339765,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 35.765885307339765,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 35.765885307339765,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "31",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 35.765885307339765,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 4151177.013496707,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 4151177.013496707,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 4151177.013496707,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 4151177.013496707,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 4151177.013496707,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 4151177.013496707,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 21.661274075184362,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "32",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 21.661274075184362,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 21.661274075184362,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "32",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 21.661274075184362,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 21.661274075184362,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 21.661274075184362,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 25.381868845311796,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "32",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 25.381868845311796,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 25.381868845311796,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "32",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 25.381868845311796,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 25.381868845311796,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "32",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 25.381868845311796,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 77483110.48737891,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 77483110.48737891,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 77483110.48737891,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 77483110.48737891,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 77483110.48737891,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 77483110.48737891,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 722.1438111494369,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 722.1438111494369,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 722.1438111494369,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 722.1438111494369,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 722.1438111494369,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 722.1438111494369,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 3657.0020804573414,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 3657.0020804573414,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 3657.0020804573414,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 3657.0020804573414,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 3657.0020804573414,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "33",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 3657.0020804573414,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 788.3766140280524,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 788.3766140280524,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 788.3766140280524,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "34",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 788.3766140280524,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 788.3766140280524,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 788.3766140280524,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 3.0331091176548597,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 3.0331091176548597,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 3.0331091176548597,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "34",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 3.0331091176548597,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 3.0331091176548597,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 3.0331091176548597,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 3.879723802469648,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 3.879723802469648,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 3.879723802469648,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "34",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 3.879723802469648,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 3.879723802469648,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "34",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 3.879723802469648,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 1888.4014381062866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 1888.4014381062866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 1888.4014381062866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 1888.4014381062866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 1888.4014381062866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 1888.4014381062866,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 1600.6445479647075,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 1600.6445479647075,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 1600.6445479647075,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "35",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 1600.6445479647075,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 1600.6445479647075,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 1600.6445479647075,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 27.43663794024691,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 27.43663794024691,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 27.43663794024691,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "35",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 27.43663794024691,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 27.43663794024691,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "35",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 27.43663794024691,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 114026.55125876919,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 114026.55125876919,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 114026.55125876919,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "36",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 114026.55125876919,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 114026.55125876919,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 114026.55125876919,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 197.55683871732666,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 197.55683871732666,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 197.55683871732666,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "36",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 197.55683871732666,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 197.55683871732666,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 197.55683871732666,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 37.21294520363574,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 37.21294520363574,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 37.21294520363574,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "36",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 37.21294520363574,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "36",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 37.21294520363574,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "36",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 37.21294520363574,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 3759.2149752613923,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 3759.2149752613923,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 3759.2149752613923,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 3759.2149752613923,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 3759.2149752613923,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 3759.2149752613923,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 55.96660321994264,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 55.96660321994264,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 55.96660321994264,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 55.96660321994264,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 55.96660321994264,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 55.96660321994264,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 66.47518032653322,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 66.47518032653322,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 66.47518032653322,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 66.47518032653322,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 66.47518032653322,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "37",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 66.47518032653322,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 423.53365362450944,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 423.53365362450944,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 423.53365362450944,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "38",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 423.53365362450944,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 423.53365362450944,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 423.53365362450944,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 17.134804616142677,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 17.134804616142677,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 17.134804616142677,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "38",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 17.134804616142677,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "38",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 17.134804616142677,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 17.134804616142677,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 21.878335727708112,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 21.878335727708112,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 21.878335727708112,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "38",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 21.878335727708112,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "38",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 21.878335727708112,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "38",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 21.878335727708112,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 111599.48310487013,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 111599.48310487013,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 111599.48310487013,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "39",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 111599.48310487013,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 111599.48310487013,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 111599.48310487013,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 48.59811989775541,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "39",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 48.59811989775541,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 48.59811989775541,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "39",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 48.59811989775541,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 48.59811989775541,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 48.59811989775541,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 172.5363917711401,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "39",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 172.5363917711401,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 172.5363917711401,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "39",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 172.5363917711401,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 172.5363917711401,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "39",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 172.5363917711401,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "max_degree",
+      "proposal": "postgres",
+      "bound_over_true": 162.60514615788574,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "max_degree",
+      "proposal": "duckdb",
+      "bound_over_true": 162.60514615788574,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "max_degree",
+      "proposal": "neurocard",
+      "bound_over_true": 162.60514615788574,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "40",
+      "certificate": "max_degree",
+      "proposal": "flat",
+      "bound_over_true": 162.60514615788574,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "max_degree",
+      "proposal": "factorjoin",
+      "bound_over_true": 162.60514615788574,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "max_degree",
+      "proposal": "dbx",
+      "bound_over_true": 162.60514615788574,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "lpbound",
+      "proposal": "postgres",
+      "bound_over_true": 8.104346061546671,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "lpbound",
+      "proposal": "duckdb",
+      "bound_over_true": 8.104346061546671,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "lpbound",
+      "proposal": "neurocard",
+      "bound_over_true": 8.104346061546671,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "40",
+      "certificate": "lpbound",
+      "proposal": "flat",
+      "bound_over_true": 8.104346061546671,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "lpbound",
+      "proposal": "factorjoin",
+      "bound_over_true": 8.104346061546671,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "40",
+      "certificate": "lpbound",
+      "proposal": "dbx",
+      "bound_over_true": 8.104346061546671,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "safebound",
+      "proposal": "postgres",
+      "bound_over_true": 9.352117937724726,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "safebound",
+      "proposal": "duckdb",
+      "bound_over_true": 9.352117937724726,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "safebound",
+      "proposal": "neurocard",
+      "bound_over_true": 9.352117937724726,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "40",
+      "certificate": "safebound",
+      "proposal": "flat",
+      "bound_over_true": 9.352117937724726,
+      "fired": false,
+      "helped": false
+    },
+    {
+      "query_id": "40",
+      "certificate": "safebound",
+      "proposal": "factorjoin",
+      "bound_over_true": 9.352117937724726,
+      "fired": true,
+      "helped": true
+    },
+    {
+      "query_id": "40",
+      "certificate": "safebound",
+      "proposal": "dbx",
+      "bound_over_true": 9.352117937724726,
+      "fired": false,
+      "helped": false
+    }
+  ]
+}

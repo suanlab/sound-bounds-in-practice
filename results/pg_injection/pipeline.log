@@ -1,0 +1,107 @@
+[2026-10-05 14:14:16] phase 2 finished
+[2026-10-05 14:14:16] STATS native estimates
+2577 sub-plan estimates -> results/pg_injection/native_subquery_estimations.csv
+[2026-10-05 14:14:17] STATS guarded-native injection
+q58: server terminated while executing plan 4fc8a078b9fde2f8; reconnecting
+q58: 9 policies -> 5 distinct plans; truth injected True; {'native': 300000, 'truth': 300000}
+q59: 10 policies -> 5 distinct plans; truth injected True; {'native': 9352, 'truth': 5303}
+q60: 10 policies -> 5 distinct plans; truth injected True; {'native': 1047, 'truth': 857}
+q61: 10 policies -> 3 distinct plans; truth injected True; {'native': 120, 'truth': 119}
+q62: 10 policies -> 4 distinct plans; truth injected True; {'native': 32, 'truth': 31}
+q63: 10 policies -> 3 distinct plans; truth injected True; {'native': 56, 'truth': 27}
+q64: 10 policies -> 3 distinct plans; truth injected True; {'native': 242, 'truth': 76}
+q65: 10 policies -> 4 distinct plans; truth injected True; {'native': 55, 'truth': 43}
+q66: 10 policies -> 3 distinct plans; truth injected True; {'native': 428, 'truth': 148}
+q67: 10 policies -> 4 distinct plans; truth injected True; {'native': 14, 'truth': 13}
+q68: 10 policies -> 5 distinct plans; truth injected True; {'native': 75792, 'truth': 63224}
+q69: 10 policies -> 4 distinct plans; truth injected True; {'native': 7498, 'truth': 6665}
+q70: 10 policies -> 4 distinct plans; truth injected True; {'native': 18417, 'truth': 8777}
+q71: 10 policies -> 4 distinct plans; truth injected True; {'native': 4533, 'truth': 3662}
+q72: 10 policies -> 3 distinct plans; truth injected True; {'native': 380, 'truth': 380}
+q73: 10 policies -> 3 distinct plans; truth injected True; {'native': 238, 'truth': 138}
+q74: 10 policies -> 4 distinct plans; truth injected True; {'native': 2843, 'truth': 2651}
+q75: 10 policies -> 4 distinct plans; truth injected True; {'native': 478, 'truth': 487}
+q76: 10 policies -> 3 distinct plans; truth injected True; {'native': 233, 'truth': 188}
+q77: 10 policies -> 4 distinct plans; truth injected True; {'native': 623, 'truth': 498}
+q78: 10 policies -> 4 distinct plans; truth injected True; {'native': 75, 'truth': 65}
+q79: 10 policies -> 5 distinct plans; truth injected True; {'native': 493, 'truth': 398}
+q80: 10 policies -> 1 distinct plans; truth injected True; {'native': 127, 'truth': 127}
+q81: 10 policies -> 1 distinct plans; truth injected True; {'native': 78, 'truth': 78}
+q82: 10 policies -> 1 distinct plans; truth injected True; {'native': 194, 'truth': 194}
+q83: 10 policies -> 1 distinct plans; truth injected True; {'native': 235, 'truth': 235}
+q84: 10 policies -> 1 distinct plans; truth injected True; {'native': 706, 'truth': 706}
+q85: 10 policies -> 1 distinct plans; truth injected True; {'native': 812, 'truth': 812}
+q86: 10 policies -> 3 distinct plans; truth injected True; {'native': 209, 'truth': 121}
+q87: 10 policies -> 1 distinct plans; truth injected True; {'native': 116, 'truth': 116}
+q88: 10 policies -> 1 distinct plans; truth injected True; {'native': 618, 'truth': 618}
+q89: 10 policies -> 1 distinct plans; truth injected True; {'native': 166, 'truth': 166}
+q90: 10 policies -> 1 distinct plans; truth injected True; {'native': 122, 'truth': 122}
+q91: 10 policies -> 1 distinct plans; truth injected True; {'native': 330, 'truth': 330}
+q92: 10 policies -> 2 distinct plans; truth injected True; {'native': 119, 'truth': 67}
+q93: 10 policies -> 2 distinct plans; truth injected True; {'native': 256, 'truth': 256}
+q94: 10 policies -> 1 distinct plans; truth injected True; {'native': 131, 'truth': 131}
+q95: 10 policies -> 2 distinct plans; truth injected True; {'native': 583, 'truth': 583}
+q96: 10 policies -> 2 distinct plans; truth injected True; {'native': 426, 'truth': 388}
+q97: 10 policies -> 5 distinct plans; truth injected True; {'native': 3401, 'truth': 3291}
+q98: 10 policies -> 5 distinct plans; truth injected True; {'native': 2965, 'truth': 2873}
+q99: 10 policies -> 3 distinct plans; truth injected True; {'native': 218, 'truth': 131}
+q100: 10 policies -> 3 distinct plans; truth injected True; {'native': 108, 'truth': 145}
+q101: 10 policies -> 1 distinct plans; truth injected True; {'native': 180, 'truth': 180}
+q102: 10 policies -> 1 distinct plans; truth injected True; {'native': 260, 'truth': 260}
+q103: 10 policies -> 4 distinct plans; truth injected True; {'native': 353, 'truth': 353}
+q104: 9 policies -> 2 distinct plans; truth injected True; {'native': 3334, 'truth': 1273}
+q105: 9 policies -> 3 distinct plans; truth injected True; {'native': 16570, 'truth': 13100}
+q106: 10 policies -> 3 distinct plans; truth injected True; {'native': 687, 'truth': 630}
+q107: 10 policies -> 5 distinct plans; truth injected True; {'native': 32111, 'truth': 31344}
+q108: 10 policies -> 3 distinct plans; truth injected True; {'native': 36751, 'truth': 36751}
+q109: 10 policies -> 4 distinct plans; truth injected True; {'native': 323, 'truth': 215}
+q110: 10 policies -> 4 distinct plans; truth injected True; {'native': 260, 'truth': 205}
+q111: 10 policies -> 3 distinct plans; truth injected True; {'native': 483, 'truth': 295}
+q112: 10 policies -> 3 distinct plans; truth injected True; {'native': 414, 'truth': 249}
+q113: 9 policies -> 3 distinct plans; truth injected True; {'native': 1449, 'truth': 1216}
+q114: 10 policies -> 5 distinct plans; truth injected True; {'native': 1397, 'truth': 1271}
+q115: 9 policies -> 3 distinct plans; truth injected True; {'native': 3257, 'truth': 2769}
+q116: 10 policies -> 4 distinct plans; truth injected True; {'native': 261, 'truth': 106}
+q117: 10 policies -> 2 distinct plans; truth injected True; {'native': 155, 'truth': 155}
+q118: 10 policies -> 3 distinct plans; truth injected True; {'native': 224, 'truth': 184}
+q119: 10 policies -> 4 distinct plans; truth injected True; {'native': 253, 'truth': 206}
+q120: 9 policies -> 3 distinct plans; truth injected True; {'native': 300000, 'truth': 300000}
+q121: 10 policies -> 4 distinct plans; truth injected True; {'native': 823, 'truth': 140}
+q122: 10 policies -> 4 distinct plans; truth injected True; {'native': 300000, 'truth': 300000}
+q123: 10 policies -> 4 distinct plans; truth injected True; {'native': 9638, 'truth': 8875}
+q124: 10 policies -> 2 distinct plans; truth injected True; {'native': 532, 'truth': 532}
+q125: 10 policies -> 2 distinct plans; truth injected True; {'native': 59, 'truth': 56}
+q126: 10 policies -> 2 distinct plans; truth injected True; {'native': 191194, 'truth': 181151}
+q127: 10 policies -> 3 distinct plans; truth injected True; {'native': 154, 'truth': 105}
+q128: 10 policies -> 3 distinct plans; truth injected True; {'native': 207, 'truth': 131}
+q129: 10 policies -> 4 distinct plans; truth injected True; {'native': 220, 'truth': 220}
+q130: 10 policies -> 4 distinct plans; truth injected True; {'native': 130, 'truth': 61}
+q131: 9 policies -> 5 distinct plans; truth injected True; {'native': 1373, 'truth': 464}
+q132: 10 policies -> 5 distinct plans; truth injected True; {'native': 637, 'truth': 101}
+q133: 9 policies -> 5 distinct plans; truth injected True; {'native': 1012, 'truth': 1023}
+q134: 9 policies -> 4 distinct plans; truth injected True; {'native': 168, 'truth': 28}
+q135: 9 policies -> 5 distinct plans; truth injected True; {'native': 231842, 'truth': 128096}
+q136: 9 policies -> 6 distinct plans; truth injected True; {'native': 26079, 'truth': 19106}
+q137: 10 policies -> 3 distinct plans; truth injected True; {'native': 151, 'truth': 57}
+q138: 10 policies -> 3 distinct plans; truth injected True; {'native': 3702, 'truth': 1148}
+q139: 10 policies -> 5 distinct plans; truth injected True; {'native': 383, 'truth': 365}
+q140: 10 policies -> 4 distinct plans; truth injected True; {'native': 7333, 'truth': 7279}
+q141: 10 policies -> 4 distinct plans; truth injected True; {'native': 18726, 'truth': 19020}
+q142: 10 policies -> 4 distinct plans; truth injected True; {'native': 20191, 'truth': 18452}
+q143: 10 policies -> 5 distinct plans; truth injected True; {'native': 9855, 'truth': 9421}
+q144: 10 policies -> 5 distinct plans; truth injected True; {'native': 1695, 'truth': 1503}
+q145: 10 policies -> 3 distinct plans; truth injected True; {'native': 233, 'truth': 140}
+q146: 10 policies -> 2 distinct plans; truth injected True; {'native': 292, 'truth': 292}
+[2026-10-05 16:23:09] load IMDb (JOB-light tables)
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/projects/CEG/Safe-CEG/experiments/pg_injection/load_imdb.py", line 85, in <module>
+    main()
+  File "/projects/CEG/Safe-CEG/experiments/pg_injection/load_imdb.py", line 72, in main
+    cursor.copy_expert(
+psycopg2.errors.QueryCanceled: COPY from stdin failed: error in .read() call: UnicodeEncodeError 'ascii' codec can't encode character '\xf3' in position 941: ordinal not in range(128)
+CONTEXT:  COPY title, line 1: ""
+

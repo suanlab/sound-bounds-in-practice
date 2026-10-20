@@ -1,0 +1,27 @@
+{
+  "epochs": 2,
+  "eval_corpus_path": "results/corpora/eval.yaml",
+  "eval_count": 3,
+  "eval_family": "cycle",
+  "evaluation": {
+    "config_accuracy": 0.0,
+    "expected_q_error": 84.80553944905598,
+    "expected_safety_penalty": 0.0,
+    "fallback_rate": 0.0,
+    "mean": 1.0000000000000002,
+    "median": 1.0000000000000002,
+    "p95": 1.0000000000000002,
+    "p99": 1.0000000000000002,
+    "safety_violation_rate": 0.0
+  },
+  "name": "synthetic-safe-ceg-cli",
+  "relation_count": 4,
+  "seed": 42,
+  "train_corpus_path": "results/corpora/train.yaml",
+  "train_count": 5,
+  "train_family": "path",
+  "training_losses": [
+    2.5750695943832396,
+    0.6214887380599976
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "n_queries": 146,
+  "native|upper": {
+    "error": 91,
+    "seen": 44,
+    "plan_changed": 15,
+    "less_work": 0,
+    "faster": 9,
+    "faster_and_less_work": 0,
+    "slower": 1
+  },
+  "native|lower": {
+    "error": 91,
+    "seen": 56,
+    "plan_changed": 16,
+    "less_work": 5,
+    "faster": 8,
+    "faster_and_less_work": 5,
+    "slower": 3
+  },
+  "native|bi": {
+    "error": 91,
+    "seen": 86,
+    "plan_changed": 32,
+    "less_work": 5,
+    "faster": 17,
+    "faster_and_less_work": 5,
+    "slower": 4
+  },
+  "postgres|upper": {
+    "error": 132,
+    "seen": 113,
+    "plan_changed": 109,
+    "less_work": 76,
+    "faster": 87,
+    "faster_and_less_work": 74,
+    "slower": 4
+  },
+  "postgres|lower": {
+    "error": 132,
+    "seen": 60,
+    "plan_changed": 17,
+    "less_work": 17,
+    "faster": 16,
+    "faster_and_less_work": 16,
+    "slower": 0
+  },
+  "postgres|bi": {
+    "error": 132,
+    "seen": 131,
+    "plan_changed": 121,
+    "less_work": 88,
+    "faster": 100,
+    "faster_and_less_work": 86,
+    "slower": 3
+  }
+}

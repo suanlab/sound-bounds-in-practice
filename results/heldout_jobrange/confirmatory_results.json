@@ -1,0 +1,53 @@
+{
+  "preregistration": "docs/icde_2027/PREREGISTRATION_JOBRANGE.md",
+  "a_posteriori": {
+    "n_queries": 179,
+    "excluded": {
+      "final_not_listed": 0,
+      "missing_count": 9,
+      "missing_estimate": 0,
+      "missing_plan": 0,
+      "plan_outside_list": 0,
+      "fewer_than_3": 12
+    },
+    "shares": {
+      "cout|sample": 0.888268156424581,
+      "cout|none": 0.8659217877094972,
+      "cout_minus_final|sample": 0.3575418994413408,
+      "cout_minus_final|none": 0.07262569832402235
+    },
+    "violations": 0
+  },
+  "n_sweep_queries": 191,
+  "n_sweep_excluded_unknown_guarded_join_size": 0,
+  "plan_changed_by_k": {
+    "1": 0.28272251308900526,
+    "1.5": 0.2198952879581152,
+    "2": 0.193717277486911,
+    "4": 0.1099476439790576,
+    "8": 0.09424083769633508,
+    "16": 0.05759162303664921,
+    "32": 0.041884816753926704,
+    "64": 0.015706806282722512
+  },
+  "truth_gain": 1.032339451316744,
+  "share_of_truth_gain_log": {
+    "1": 1.0,
+    "1.5": 1.2054125550708619,
+    "2": 1.382610471728323,
+    "4": 0.9363119462336029,
+    "8": 0.8948437263791403,
+    "16": 0.7766990415842496,
+    "32": 0.043379224564902064,
+    "64": 0.03502275167832018
+  },
+  "tests": {
+    "C1": "confirmed",
+    "C2": "confirmed",
+    "C3": "inconclusive",
+    "C4": "confirmed",
+    "C5": "confirmed",
+    "C6": "confirmed",
+    "C7": "not testable"
+  }
+}

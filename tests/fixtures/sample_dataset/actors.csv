@@ -1,0 +1,9 @@
+actor_id,name,movie_id
+1,Alice,10
+2,Bob,10
+3,Alice,20
+4,Carol,20
+5,Carol,30
+6,Dave,30
+7,Eve,10
+8,Eve,20

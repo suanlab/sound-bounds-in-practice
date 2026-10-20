@@ -1,0 +1,76 @@
+2577 sub-plans, 0 already done
+0/2577 q1 ['b', 'u'] exact 23ms sample 13ms
+50/2577 q18 ['p', 'ph', 'pl'] exact 46ms sample 38ms
+100/2577 q27 ['c', 'p', 'u', 'v'] exact 138ms sample 14ms
+150/2577 q33 ['ph', 'u'] exact 37ms sample 18ms
+200/2577 q37 ['c', 'ph', 'v'] exact 472ms sample 145ms
+250/2577 q43 ['p', 'ph'] exact 332ms sample 43ms
+300/2577 q46 ['c', 'p', 'pl', 'v'] exact 48ms sample 29ms
+Traceback (most recent call last):
+  File "/projects/CEG/Safe-CEG/experiments/pg_injection/subset_counts.py", line 179, in main
+    sink.flush()
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/projects/CEG/Safe-CEG/experiments/pg_injection/subset_counts.py", line 193, in <module>
+    main()
+  File "/projects/CEG/Safe-CEG/experiments/pg_injection/subset_counts.py", line 146, in main
+    with args.output.open("a") as sink:
+OSError: [Errno 28] No space left on device
+2577 sub-plans, 313 already done
+350/2577 q49 ['c', 'v'] exact 29ms sample 15ms
+400/2577 q51 ['c', 'ph', 'u'] exact 115ms sample 41ms
+450/2577 q53 ['c', 'p', 'u'] exact 49ms sample 25ms
+500/2577 q56 ['b', 'v'] exact 72ms sample 23ms
+550/2577 q58 ['b', 'p', 'ph'] exact 120000ms sample 112677ms
+600/2577 q59 ['p', 'ph', 'pl', 'u'] exact 189ms sample 78ms
+2577 sub-plans, 613 already done
+650/2577 q60 ['b', 'p', 'pl', 'u', 'v'] exact 345ms sample 109ms
+700/2577 q62 ['b', 'c', 'p'] exact 28ms sample 18ms
+750/2577 q63 ['p', 'pl', 'u', 'v'] exact 69ms sample 14ms
+800/2577 q65 ['c', 'pl'] exact 28ms sample 11ms
+850/2577 q66 ['c', 'ph', 'v'] exact 283ms sample 98ms
+900/2577 q67 ['c', 'p', 'pl', 'u', 'v'] exact 14ms sample 24ms
+950/2577 q69 ['c', 'pl'] exact 45ms sample 9ms
+1000/2577 q70 ['c', 'p', 'ph'] exact 70ms sample 39ms
+1050/2577 q71 ['b', 'c', 'pl'] exact 371ms sample 44ms
+1100/2577 q72 ['c', 'p', 'ph', 'v'] exact 41ms sample 37ms
+1150/2577 q73 ['c', 'p', 'ph', 'pl', 'v'] exact 144ms sample 14ms
+1200/2577 q75 ['ph', 'v'] exact 178ms sample 50ms
+1250/2577 q76 ['b', 'p', 'u', 'v'] exact 112ms sample 44ms
+1300/2577 q78 ['p', 'u'] exact 19ms sample 5ms
+1350/2577 q79 ['b', 'p', 'ph'] exact 185ms sample 65ms
+1400/2577 q86 ['c', 'p', 'u'] exact 71ms sample 31ms
+1450/2577 q96 ['p', 'v'] exact 89ms sample 34ms
+1500/2577 q101 ['c', 'p'] exact 66ms sample 26ms
+1550/2577 q106 ['c', 'u'] exact 39ms sample 18ms
+1600/2577 q109 ['c', 'p', 'pl', 'v'] exact 106ms sample 65ms
+1650/2577 q111 ['p', 'ph', 'v'] exact 272ms sample 81ms
+1700/2577 q114 ['c', 'ph'] exact 3529ms sample 332ms
+1750/2577 q119 ['b', 'p', 'u'] exact 57ms sample 22ms
+1800/2577 q124 ['ph', 'u'] exact 43ms sample 18ms
+1850/2577 q127 ['c', 'ph', 'pl'] exact 130ms sample 56ms
+1900/2577 q129 ['ph', 'pl', 'v'] exact 272ms sample 73ms
+1950/2577 q131 ['c', 'ph', 'u', 'v'] exact 131ms sample 21ms
+2000/2577 q133 ['b', 'c', 'v'] exact 14418ms sample 1215ms
+2050/2577 q135 ['b', 'c', 'ph'] exact 120000ms sample 120000ms
+2100/2577 q137 ['b', 'c', 'p', 'pl'] exact 105ms sample 38ms
+2150/2577 q139 ['b', 'c', 'p', 'v'] exact 17516ms sample 2300ms
+2200/2577 q140 ['b', 'c', 'pl', 'u'] exact 967ms sample 104ms
+2250/2577 q141 ['c', 'p', 'v'] exact 344ms sample 103ms
+2300/2577 q141 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 7887ms sample 970ms
+2350/2577 q142 ['b', 'c', 'pl', 'u'] exact 344ms sample 70ms
+2400/2577 q143 ['c', 'p', 'v'] exact 283ms sample 73ms
+2450/2577 q143 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 8543ms sample 985ms
+2500/2577 q145 ['ph', 'v'] exact 159ms sample 74ms
+2550/2577 q146 ['c', 'p', 'v'] exact 405ms sample 161ms

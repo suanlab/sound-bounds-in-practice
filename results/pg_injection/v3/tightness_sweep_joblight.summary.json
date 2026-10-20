@@ -1,0 +1,274 @@
+{
+  "n_skipped_unknown_join_size": {
+    "native": 0,
+    "postgres": 0
+  },
+  "native": {
+    "n": 70,
+    "truth_gain": 0.9822900749032304,
+    "truth": {
+      "gain": 0.9822900749032304,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.38571428571428573
+    },
+    "lpbound_upper": {
+      "gain": 1.0003779759280802,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.02857142857142857
+    },
+    "upper_k1": {
+      "gain": 0.9813393188275725,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.14285714285714285
+    },
+    "lower_k1": {
+      "gain": 1.001861666164223,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.32857142857142857
+    },
+    "bi_k1": {
+      "gain": 0.9822900749032304,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.38571428571428573
+    },
+    "upper_k1.5": {
+      "gain": 1.0000554633986625,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.02857142857142857
+    },
+    "lower_k1.5": {
+      "gain": 0.9989707173719008,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.2857142857142857
+    },
+    "bi_k1.5": {
+      "gain": 0.9989683052082509,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.2857142857142857
+    },
+    "upper_k2": {
+      "gain": 1.0,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.0
+    },
+    "lower_k2": {
+      "gain": 1.0030151561972662,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.2
+    },
+    "bi_k2": {
+      "gain": 1.0030127342677162,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.2
+    },
+    "upper_k4": {
+      "gain": 1.0,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.0
+    },
+    "lower_k4": {
+      "gain": 1.003491635053828,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.12857142857142856
+    },
+    "bi_k4": {
+      "gain": 1.003491635053828,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.12857142857142856
+    },
+    "upper_k8": {
+      "gain": 1.0,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.0
+    },
+    "lower_k8": {
+      "gain": 1.0037312345699596,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.07142857142857142
+    },
+    "bi_k8": {
+      "gain": 1.0037312345699596,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.07142857142857142
+    },
+    "upper_k16": {
+      "gain": 1.0,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.0
+    },
+    "lower_k16": {
+      "gain": 1.0037386685512601,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.07142857142857142
+    },
+    "bi_k16": {
+      "gain": 1.0037386685512601,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.07142857142857142
+    },
+    "upper_k32": {
+      "gain": 1.0,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.0
+    },
+    "lower_k32": {
+      "gain": 1.0039185001595001,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.07142857142857142
+    },
+    "bi_k32": {
+      "gain": 1.0039185001595001,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.07142857142857142
+    },
+    "upper_k64": {
+      "gain": 1.0,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.0
+    },
+    "lower_k64": {
+      "gain": 1.0034333202809114,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.05714285714285714
+    },
+    "bi_k64": {
+      "gain": 1.0034333202809114,
+      "share_of_truth_gain_log": NaN,
+      "share_plan_changed": 0.05714285714285714
+    }
+  },
+  "postgres": {
+    "n": 70,
+    "truth_gain": 1.5769562391858067,
+    "truth": {
+      "gain": 1.5769562391858067,
+      "share_of_truth_gain_log": 1.0,
+      "share_plan_changed": 0.8
+    },
+    "lpbound_upper": {
+      "gain": 1.1145633624251625,
+      "share_of_truth_gain_log": 0.23811974659162435,
+      "share_plan_changed": 0.42857142857142855
+    },
+    "upper_k1": {
+      "gain": 1.1689831756191504,
+      "share_of_truth_gain_log": 0.34277819989110875,
+      "share_plan_changed": 0.5428571428571428
+    },
+    "lower_k1": {
+      "gain": 1.4002196210577607,
+      "share_of_truth_gain_log": 0.7390376292641088,
+      "share_plan_changed": 0.5428571428571428
+    },
+    "bi_k1": {
+      "gain": 1.5769562391858067,
+      "share_of_truth_gain_log": 1.0,
+      "share_plan_changed": 0.8
+    },
+    "upper_k1.5": {
+      "gain": 1.151371138146467,
+      "share_of_truth_gain_log": 0.3094502552507098,
+      "share_plan_changed": 0.4714285714285714
+    },
+    "lower_k1.5": {
+      "gain": 1.3687575855016805,
+      "share_of_truth_gain_log": 0.6891456166742447,
+      "share_plan_changed": 0.44285714285714284
+    },
+    "bi_k1.5": {
+      "gain": 1.5708094175777336,
+      "share_of_truth_gain_log": 0.9914257989151531,
+      "share_plan_changed": 0.7714285714285715
+    },
+    "upper_k2": {
+      "gain": 1.1408276347892414,
+      "share_of_truth_gain_log": 0.2892535455198978,
+      "share_plan_changed": 0.38571428571428573
+    },
+    "lower_k2": {
+      "gain": 1.348908722739755,
+      "share_of_truth_gain_log": 0.657076121980193,
+      "share_plan_changed": 0.4142857142857143
+    },
+    "bi_k2": {
+      "gain": 1.5011902006979208,
+      "share_of_truth_gain_log": 0.8919019327532663,
+      "share_plan_changed": 0.6571428571428571
+    },
+    "upper_k4": {
+      "gain": 1.0671131419274096,
+      "share_of_truth_gain_log": 0.14260701414851348,
+      "share_plan_changed": 0.12857142857142856
+    },
+    "lower_k4": {
+      "gain": 1.3028806874082992,
+      "share_of_truth_gain_log": 0.5808555994255358,
+      "share_plan_changed": 0.32857142857142857
+    },
+    "bi_k4": {
+      "gain": 1.3643447995400302,
+      "share_of_truth_gain_log": 0.6820563349543555,
+      "share_plan_changed": 0.4
+    },
+    "upper_k8": {
+      "gain": 1.024168030534824,
+      "share_of_truth_gain_log": 0.052427631000636715,
+      "share_plan_changed": 0.04285714285714286
+    },
+    "lower_k8": {
+      "gain": 1.2444660469817432,
+      "share_of_truth_gain_log": 0.4801497531953503,
+      "share_plan_changed": 0.2571428571428571
+    },
+    "bi_k8": {
+      "gain": 1.2623466148271876,
+      "share_of_truth_gain_log": 0.5114690273542681,
+      "share_plan_changed": 0.2714285714285714
+    },
+    "upper_k16": {
+      "gain": 1.0,
+      "share_of_truth_gain_log": 0.0,
+      "share_plan_changed": 0.0
+    },
+    "lower_k16": {
+      "gain": 1.2162522453277338,
+      "share_of_truth_gain_log": 0.42980390763368786,
+      "share_plan_changed": 0.21428571428571427
+    },
+    "bi_k16": {
+      "gain": 1.2162522453277338,
+      "share_of_truth_gain_log": 0.42980390763368786,
+      "share_plan_changed": 0.21428571428571427
+    },
+    "upper_k32": {
+      "gain": 1.0,
+      "share_of_truth_gain_log": 0.0,
+      "share_plan_changed": 0.0
+    },
+    "lower_k32": {
+      "gain": 1.1120763443639314,
+      "share_of_truth_gain_log": 0.23321548004130935,
+      "share_plan_changed": 0.15714285714285714
+    },
+    "bi_k32": {
+      "gain": 1.1120763443639314,
+      "share_of_truth_gain_log": 0.23321548004130935,
+      "share_plan_changed": 0.15714285714285714
+    },
+    "upper_k64": {
+      "gain": 1.0,
+      "share_of_truth_gain_log": 0.0,
+      "share_plan_changed": 0.0
+    },
+    "lower_k64": {
+      "gain": 1.079693268132886,
+      "share_of_truth_gain_log": 0.168337144223682,
+      "share_plan_changed": 0.07142857142857142
+    },
+    "bi_k64": {
+      "gain": 1.079693268132886,
+      "share_of_truth_gain_log": 0.168337144223682,
+      "share_plan_changed": 0.07142857142857142
+    }
+  }
+}

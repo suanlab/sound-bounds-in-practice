@@ -1,0 +1,30 @@
+{
+  "preregistration": "docs/c1_preregistration.md (frozen 2026-07-11)",
+  "model": "logistic(direction, tightness_proxy, cost); LODO",
+  "per_dataset_auroc": {
+    "real_joblight": 1.0,
+    "real_stats": 1.0
+  },
+  "pooled_auroc": 1.0,
+  "gates": {
+    "pooled": 0.8,
+    "per_dataset": 0.7
+  },
+  "verdict": "C1 SUPPORTED",
+  "intervention_precision_among_fired": {
+    "real_joblight": {
+      "fired": 117,
+      "helped": 117,
+      "precision": 1.0
+    },
+    "real_stats": {
+      "fired": 305,
+      "helped": 305,
+      "precision": 1.0
+    }
+  },
+  "caveats": [
+    "cost_ratio imputed 0.0 for statistics-based certificates (non-discriminative until sampling certificates join)",
+    "if precision==1.0 everywhere, predicting help reduces to predicting fire (deterministic in tightness_proxy at fixed tau)"
+  ]
+}

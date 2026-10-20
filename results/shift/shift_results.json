@@ -1,0 +1,323 @@
+{
+  "n_seeds": 5,
+  "scenarios": {
+    "cross_dataset": {
+      "test_on": {
+        "synthetic_cycle_C": {
+          "mean": {
+            "mean": 189691.89056334939,
+            "std": 15546.215299847952,
+            "ci95_low": 170391.80930167317,
+            "ci95_high": 208991.9718250256,
+            "n_seeds": 5.0
+          },
+          "median": {
+            "mean": 164418.67377533653,
+            "std": 16022.990532269709,
+            "ci95_low": 144526.69277782016,
+            "ci95_high": 184310.6547728529,
+            "n_seeds": 5.0
+          },
+          "fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "upper_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "lower_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "safety_violation_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "config_accuracy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          }
+        },
+        "synthetic_path_D": {
+          "mean": {
+            "mean": 11.48536862434832,
+            "std": 0.3156484298428161,
+            "ci95_low": 11.093502164982713,
+            "ci95_high": 11.877235083713927,
+            "n_seeds": 5.0
+          },
+          "median": {
+            "mean": 11.26059032146909,
+            "std": 0.42694102717932864,
+            "ci95_low": 10.730558004305365,
+            "ci95_high": 11.790622638632815,
+            "n_seeds": 5.0
+          },
+          "fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "upper_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "lower_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "safety_violation_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "config_accuracy": {
+            "mean": 0.64,
+            "std": 0.2493992782667985,
+            "ci95_low": 0.3303795396941605,
+            "ci95_high": 0.9496204603058396,
+            "n_seeds": 5.0
+          }
+        },
+        "synthetic_star_E": {
+          "mean": {
+            "mean": 31.631308461801193,
+            "std": 4.239199992158071,
+            "ci95_low": 26.368490293192135,
+            "ci95_high": 36.894126630410256,
+            "n_seeds": 5.0
+          },
+          "median": {
+            "mean": 22.117291111634135,
+            "std": 4.382075437310838,
+            "ci95_low": 16.677098086922733,
+            "ci95_high": 27.557484136345536,
+            "n_seeds": 5.0
+          },
+          "fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "upper_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "lower_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "safety_violation_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "config_accuracy": {
+            "mean": 0.392,
+            "std": 0.2722498852157701,
+            "ci95_low": 0.0540113122839761,
+            "ci95_high": 0.729988687716024,
+            "n_seeds": 5.0
+          }
+        }
+      }
+    },
+    "cross_workload": {
+      "test_on": {
+        "cyclic_large": {
+          "mean": {
+            "mean": 1932424.4797512218,
+            "std": 89439.86019419525,
+            "ci95_low": 1821388.028982538,
+            "ci95_high": 2043460.9305199056,
+            "n_seeds": 5.0
+          },
+          "median": {
+            "mean": 1709097.0963217895,
+            "std": 178944.6519454339,
+            "ci95_low": 1486943.5845327808,
+            "ci95_high": 1931250.6081107983,
+            "n_seeds": 5.0
+          },
+          "fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "upper_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "lower_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "safety_violation_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "config_accuracy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          }
+        },
+        "complex": {
+          "mean": {
+            "mean": 19484748.053906765,
+            "std": 981030.3128301771,
+            "ci95_low": 18266833.314364,
+            "ci95_high": 20702662.79344953,
+            "n_seeds": 5.0
+          },
+          "median": {
+            "mean": 15641333.979695186,
+            "std": 861221.0831756367,
+            "ci95_low": 14572158.198389677,
+            "ci95_high": 16710509.761000695,
+            "n_seeds": 5.0
+          },
+          "fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "upper_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "lower_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "safety_violation_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "config_accuracy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          }
+        }
+      }
+    },
+    "cross_size": {
+      "test_on": {
+        "size_5_6_7": {
+          "mean": {
+            "mean": 21.354719248717604,
+            "std": 1.2864912651066365,
+            "ci95_low": 19.75758544604619,
+            "ci95_high": 22.95185305138902,
+            "n_seeds": 5.0
+          },
+          "median": {
+            "mean": 20.68520575231775,
+            "std": 1.3276409620055036,
+            "ci95_low": 19.036986043609172,
+            "ci95_high": 22.333425461026327,
+            "n_seeds": 5.0
+          },
+          "fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "upper_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "lower_fallback_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "safety_violation_rate": {
+            "mean": 0.0,
+            "std": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "n_seeds": 5.0
+          },
+          "config_accuracy": {
+            "mean": 0.728,
+            "std": 0.059329587896765325,
+            "ci95_low": 0.6543443966557873,
+            "ci95_high": 0.8016556033442127,
+            "n_seeds": 5.0
+          }
+        }
+      }
+    }
+  }
+}

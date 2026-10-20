@@ -1,0 +1,20 @@
+{
+  "experiment": "error_direction_composition_of_tail",
+  "dataset": "real STATS-CEB (bidirectional utility table)",
+  "note": "Direct measurement of unguarded q-errors; no plan-cost surrogate is used anywhere in this analysis.",
+  "tail_fraction": 0.05,
+  "all_pairs": {
+    "n": 780,
+    "under": 364,
+    "over": 416,
+    "under_share": 0.4666666666666667,
+    "qerror_median": 18.15913562304123
+  },
+  "worst_tail": {
+    "n": 39,
+    "under": 9,
+    "over": 30,
+    "under_share": 0.23076923076923078,
+    "qerror_median": 10138261.815667234
+  }
+}

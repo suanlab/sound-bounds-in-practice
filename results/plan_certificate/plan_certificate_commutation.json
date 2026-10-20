@@ -1,0 +1,162 @@
+{
+  "experiment": "plan_certificate_commutation",
+  "preregistered": false,
+  "purpose": "post-hoc correction of the registered |S|=1 rule, which C_out makes unattainable because the first two relations of a left-deep order commute; frozen thresholds re-applied unchanged",
+  "source": "results/plan_certificate/plan_certificate.json",
+  "replicates": 10000,
+  "seed": 0,
+  "brackets": {
+    "maxdegxone": {
+      "n_queries": 140,
+      "certified_class_share": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000,
+        "count": 0,
+        "zero_event_upper_95": 0.02117077284486879
+      },
+      "min_survivors": 4,
+      "useful_count": 0,
+      "min_G": 51469.49999999997
+    },
+    "maxdegxsample0.10": {
+      "n_queries": 140,
+      "certified_class_share": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000,
+        "count": 0,
+        "zero_event_upper_95": 0.02117077284486879
+      },
+      "min_survivors": 4,
+      "useful_count": 0,
+      "min_G": 18.346843189908192
+    },
+    "maxdegxsample0.25": {
+      "n_queries": 140,
+      "certified_class_share": {
+        "point": 0.007142857142857143,
+        "ci_low": 0.0,
+        "ci_high": 0.02142857142857143,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000,
+        "count": 1
+      },
+      "min_survivors": 2,
+      "useful_count": 0,
+      "min_G": 3.945273631840799
+    },
+    "safeboundxone": {
+      "n_queries": 138,
+      "certified_class_share": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 138,
+        "n_clusters": 138,
+        "replicates": 10000,
+        "count": 0,
+        "zero_event_upper_95": 0.02147427757293663
+      },
+      "min_survivors": 4,
+      "useful_count": 0,
+      "min_G": 35960.13233318407
+    },
+    "safeboundxsample0.10": {
+      "n_queries": 138,
+      "certified_class_share": {
+        "point": 0.014492753623188406,
+        "ci_low": 0.0,
+        "ci_high": 0.036231884057971016,
+        "n_rows": 138,
+        "n_clusters": 138,
+        "replicates": 10000,
+        "count": 2
+      },
+      "min_survivors": 2,
+      "useful_count": 0,
+      "min_G": 13.417948646208938
+    },
+    "safeboundxsample0.25": {
+      "n_queries": 138,
+      "certified_class_share": {
+        "point": 0.036231884057971016,
+        "ci_low": 0.007246376811594203,
+        "ci_high": 0.07246376811594203,
+        "n_rows": 138,
+        "n_clusters": 138,
+        "replicates": 10000,
+        "count": 5
+      },
+      "min_survivors": 2,
+      "useful_count": 0,
+      "min_G": 3.945273631840796
+    },
+    "lpboundxone": {
+      "n_queries": 140,
+      "certified_class_share": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000,
+        "count": 0,
+        "zero_event_upper_95": 0.02117077284486879
+      },
+      "min_survivors": 4,
+      "useful_count": 0,
+      "min_G": 22507.38020201576
+    },
+    "lpboundxsample0.10": {
+      "n_queries": 140,
+      "certified_class_share": {
+        "point": 0.014285714285714285,
+        "ci_low": 0.0,
+        "ci_high": 0.03571428571428571,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000,
+        "count": 2
+      },
+      "min_survivors": 2,
+      "useful_count": 0,
+      "min_G": 14.403378401653088
+    },
+    "lpboundxsample0.25": {
+      "n_queries": 140,
+      "certified_class_share": {
+        "point": 0.03571428571428571,
+        "ci_low": 0.007142857142857143,
+        "ci_high": 0.07142857142857142,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000,
+        "count": 5
+      },
+      "min_survivors": 2,
+      "useful_count": 0,
+      "min_G": 3.9360341151385967
+    }
+  },
+  "paired_certified_class_share_primary_minus_one": {
+    "point": 0.03571428571428571,
+    "ci_low": 0.007142857142857143,
+    "ci_high": 0.07142857142857142,
+    "n_rows": 140,
+    "n_clusters": 140,
+    "replicates": 10000
+  },
+  "decision_with_frozen_thresholds": {
+    "primary_bracket": "lpboundxsample0.25",
+    "certificates_non_trivial": false,
+    "lower_certificate_matters": true
+  }
+}

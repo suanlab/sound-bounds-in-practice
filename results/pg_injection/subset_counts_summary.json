@@ -1,0 +1,63 @@
+{
+  "n_subplans": 2577,
+  "n_queries": 146,
+  "exact_censored": 67,
+  "sample_censored": 27,
+  "truth_agreement": {
+    "compared": 2510,
+    "mismatches": 0
+  },
+  "lower_unsound": 0,
+  "lower_zero": 8,
+  "cost_ratio": {
+    "n": 2509,
+    "median": {
+      "point": 0.3344281726642346,
+      "ci_low": 0.3109456585452129,
+      "ci_high": 0.3614618939744452,
+      "n_rows": 2509,
+      "n_clusters": 146,
+      "replicates": 10000
+    },
+    "p25": 0.18642031463118577,
+    "p75": 0.49194757767204883,
+    "share_above_one": 0.04424073335990435
+  },
+  "cost_ratio_by_exact_ms": {
+    "0-100": {
+      "n": 1116,
+      "median": 0.47651378084954465
+    },
+    "100-1000": {
+      "n": 974,
+      "median": 0.28492107257987365
+    },
+    "1000-10000": {
+      "n": 277,
+      "median": 0.11956868468657185
+    },
+    "10000-1e+12": {
+      "n": 142,
+      "median": 0.10293649041211866
+    }
+  },
+  "lhat_qerror": {
+    "median": {
+      "point": 1.016446826051113,
+      "ci_low": 1.0136503836481117,
+      "ci_high": 1.0188462891915784,
+      "n_rows": 2509,
+      "n_clusters": 146,
+      "replicates": 10000
+    },
+    "p95": {
+      "point": 1.1878237026505534,
+      "ci_low": 1.125086280228557,
+      "ci_high": 1.283573931324457,
+      "n_rows": 2509,
+      "n_clusters": 146,
+      "replicates": 10000
+    },
+    "max": 5091.0
+  }
+}

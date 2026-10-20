@@ -1,0 +1,53 @@
+{
+  "n_queries": 146,
+  "n_plans": 721,
+  "n_censored_plans": 25,
+  "n_crashed_plans": 0,
+  "n_queries_with_censored_plan": 11,
+  "native_reproduced": 143,
+  "truth_injection_verified": 146,
+  "n_high_load": 0,
+  "load_start_median": 4.9091796875,
+  "load_start_max": 59.84716796875,
+  "load_end_max": 64.8369140625,
+  "load_start_max_query": 34,
+  "n_end_above_60": 2,
+  "n_start_above_30": 19,
+  "queries_start_above_30": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    52
+  ],
+  "queries_with_censored_plan": [
+    33,
+    38,
+    48,
+    58,
+    106,
+    107,
+    120,
+    122,
+    126,
+    132,
+    135
+  ],
+  "uncensored_plans_timed_reps": [
+    3
+  ]
+}

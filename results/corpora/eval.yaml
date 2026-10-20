@@ -1,0 +1,232 @@
+queries:
+- family: cycle
+  true_cardinality: 1153.2369835573702
+  query:
+    relations:
+    - name: R0_0
+      attributes:
+      - k_left
+      - k_right
+      - payload_0
+      cardinality: 551
+      distinct_counts:
+        k_right: 45
+        payload_0: 50
+        k_left: 78
+      max_frequencies:
+        k_right: 3
+        payload_0: 9
+        k_left: 6
+    - name: R0_1
+      attributes:
+      - k_left
+      - k_right
+      - payload_1
+      cardinality: 1076
+      distinct_counts:
+        k_right: 97
+        payload_1: 269
+        k_left: 134
+      max_frequencies:
+        k_right: 5
+        payload_1: 4
+        k_left: 1
+    - name: R0_2
+      attributes:
+      - k_left
+      - k_right
+      - payload_2
+      cardinality: 1141
+      distinct_counts:
+        k_right: 114
+        payload_2: 114
+        k_left: 103
+      max_frequencies:
+        k_right: 9
+        payload_2: 3
+        k_left: 7
+    - name: R0_3
+      attributes:
+      - k_left
+      - k_right
+      - payload_3
+      cardinality: 852
+      distinct_counts:
+        k_right: 170
+        payload_3: 85
+        k_left: 213
+      max_frequencies:
+        k_right: 1
+        payload_3: 1
+        k_left: 2
+    joins:
+    - left_relation: R0_0
+      left_attribute: k_right
+      right_relation: R0_1
+      right_attribute: k_left
+    - left_relation: R0_1
+      left_attribute: k_right
+      right_relation: R0_2
+      right_attribute: k_left
+    - left_relation: R0_2
+      left_attribute: k_right
+      right_relation: R0_3
+      right_attribute: k_left
+    - left_relation: R0_3
+      left_attribute: k_right
+      right_relation: R0_0
+      right_attribute: k_left
+- family: cycle
+  true_cardinality: 2946.273985812143
+  query:
+    relations:
+    - name: R1_0
+      attributes:
+      - k_left
+      - k_right
+      - payload_0
+      cardinality: 1023
+      distinct_counts:
+        k_right: 93
+        payload_0: 113
+        k_left: 102
+      max_frequencies:
+        k_right: 4
+        payload_0: 9
+        k_left: 9
+    - name: R1_1
+      attributes:
+      - k_left
+      - k_right
+      - payload_1
+      cardinality: 548
+      distinct_counts:
+        k_right: 60
+        payload_1: 49
+        k_left: 68
+      max_frequencies:
+        k_right: 8
+        payload_1: 11
+        k_left: 2
+    - name: R1_2
+      attributes:
+      - k_left
+      - k_right
+      - payload_2
+      cardinality: 652
+      distinct_counts:
+        k_right: 59
+        payload_2: 217
+        k_left: 93
+      max_frequencies:
+        k_right: 7
+        payload_2: 3
+        k_left: 2
+    - name: R1_3
+      attributes:
+      - k_left
+      - k_right
+      - payload_3
+      cardinality: 922
+      distinct_counts:
+        k_right: 115
+        payload_3: 83
+        k_left: 115
+      max_frequencies:
+        k_right: 7
+        payload_3: 3
+        k_left: 3
+    joins:
+    - left_relation: R1_0
+      left_attribute: k_right
+      right_relation: R1_1
+      right_attribute: k_left
+    - left_relation: R1_1
+      left_attribute: k_right
+      right_relation: R1_2
+      right_attribute: k_left
+    - left_relation: R1_2
+      left_attribute: k_right
+      right_relation: R1_3
+      right_attribute: k_left
+    - left_relation: R1_3
+      left_attribute: k_right
+      right_relation: R1_0
+      right_attribute: k_left
+- family: cycle
+  true_cardinality: 486.0208862341345
+  query:
+    relations:
+    - name: R2_0
+      attributes:
+      - k_left
+      - k_right
+      - payload_0
+      cardinality: 772
+      distinct_counts:
+        k_right: 154
+        payload_0: 257
+        k_left: 70
+      max_frequencies:
+        k_right: 2
+        payload_0: 3
+        k_left: 5
+    - name: R2_1
+      attributes:
+      - k_left
+      - k_right
+      - payload_1
+      cardinality: 843
+      distinct_counts:
+        k_right: 210
+        payload_1: 84
+        k_left: 76
+      max_frequencies:
+        k_right: 4
+        payload_1: 5
+        k_left: 6
+    - name: R2_2
+      attributes:
+      - k_left
+      - k_right
+      - payload_2
+      cardinality: 1054
+      distinct_counts:
+        k_right: 117
+        payload_2: 87
+        k_left: 105
+      max_frequencies:
+        k_right: 8
+        payload_2: 11
+        k_left: 9
+    - name: R2_3
+      attributes:
+      - k_left
+      - k_right
+      - payload_3
+      cardinality: 1099
+      distinct_counts:
+        k_right: 219
+        payload_3: 137
+        k_left: 219
+      max_frequencies:
+        k_right: 2
+        payload_3: 3
+        k_left: 5
+    joins:
+    - left_relation: R2_0
+      left_attribute: k_right
+      right_relation: R2_1
+      right_attribute: k_left
+    - left_relation: R2_1
+      left_attribute: k_right
+      right_relation: R2_2
+      right_attribute: k_left
+    - left_relation: R2_2
+      left_attribute: k_right
+      right_relation: R2_3
+      right_attribute: k_left
+    - left_relation: R2_3
+      left_attribute: k_right
+      right_relation: R2_0
+      right_attribute: k_left

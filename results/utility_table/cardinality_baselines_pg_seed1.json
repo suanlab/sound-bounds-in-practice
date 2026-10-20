@@ -1,0 +1,305 @@
+{
+  "experiment": "cardinality_baselines",
+  "preregistered": false,
+  "n_pairs": 876,
+  "n_queries": 146,
+  "lower_source": "results/pg_injection/v3/subset_counts_r010_seed1.jsonl",
+  "pooled": {
+    "none": {
+      "median": {
+        "point": 16.880878061777345,
+        "ci_low": 13.743328432013278,
+        "ci_high": 21.597548639947107,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "p95": {
+        "point": 118796.55120633067,
+        "ci_low": 34409.96611703657,
+        "ci_high": 592874.5031047149,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "max": 46715884153.675
+    },
+    "upper_t2": {
+      "median": {
+        "point": 9.45750152618474,
+        "ci_low": 7.106266828481076,
+        "ci_high": 12.600851516663328,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "p95": {
+        "point": 5481.926301984197,
+        "ci_low": 2828.982917825825,
+        "ci_high": 19011.22691580398,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "max": 207549232.20930234
+    },
+    "upper_t1": {
+      "median": {
+        "point": 9.159135822848658,
+        "ci_low": 6.893906159182384,
+        "ci_high": 12.289859280472989,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "p95": {
+        "point": 5481.926301984197,
+        "ci_low": 2828.982917825825,
+        "ci_high": 18761.025900569002,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "max": 207549232.20930234
+    },
+    "bi_sound_t2": {
+      "median": {
+        "point": 8.722382454379831,
+        "ci_low": 6.852256198312183,
+        "ci_high": 9.45750152618474,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "p95": {
+        "point": 250.32121276676574,
+        "ci_low": 95.19672352641787,
+        "ci_high": 699.4325600369011,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "max": 40659.307002043686
+    },
+    "bi_sound_t1": {
+      "median": {
+        "point": 8.49462544434215,
+        "ci_low": 6.641988487688413,
+        "ci_high": 9.273359984866893,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "p95": {
+        "point": 250.32121276676574,
+        "ci_low": 92.27835481678459,
+        "ci_high": 645.5293566574007,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "max": 40659.307002043686
+    },
+    "bi_hat_t2": {
+      "median": {
+        "point": 1.399879377310418,
+        "ci_low": 1.255603315801815,
+        "ci_high": 1.586027925270403,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "p95": {
+        "point": 250.32121276676574,
+        "ci_low": 92.27835481678459,
+        "ci_high": 699.4325600369011,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "max": 40659.307002043686
+    },
+    "lpbound_as_estimate": {
+      "median": {
+        "point": 30.803693649759623,
+        "ci_low": 13.181951215132646,
+        "ci_high": 54.07497589616678,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "p95": {
+        "point": 2861.623855408606,
+        "ci_low": 958.2495552616651,
+        "ci_high": 15865.170971887052,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "max": 1060812.7119857334
+    },
+    "safebound_as_estimate": {
+      "median": {
+        "point": 29.94312044184882,
+        "ci_low": 13.851692392804267,
+        "ci_high": 59.4479407274241,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "p95": {
+        "point": 6099.8443587541215,
+        "ci_low": 1536.8911019271668,
+        "ci_high": 16113.262680816599,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "max": 9887735.297907308
+    },
+    "l_sound_as_estimate": {
+      "median": {
+        "point": 9.930514287341971,
+        "ci_low": 9.858068774124728,
+        "ci_high": 10.012011332294993,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "p95": {
+        "point": 14.222936512067738,
+        "ci_low": 11.210345438441099,
+        "ci_high": 25.815573770491802,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "max": 74.15507834062248
+    },
+    "l_hat_as_estimate": {
+      "median": {
+        "point": 1.025833741724116,
+        "ci_low": 1.0201188260934846,
+        "ci_high": 1.0342539064501552,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "p95": {
+        "point": 1.6460458699775824,
+        "ci_low": 1.3104251601630752,
+        "ci_high": 2.5815573770491804,
+        "n_rows": 876,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "max": 7.415507834062248
+    }
+  },
+  "by_proposal": {
+    "dbx": {
+      "n": 146,
+      "under_share": 0.8287671232876712,
+      "p95_none": 3678.27234573689,
+      "p95_upper_t2": 3678.27234573689,
+      "p95_upper_t1": 3678.27234573689,
+      "p95_bi_sound_t2": 16.525477906276343,
+      "p95_bi_sound_t1": 12.134447304166144,
+      "p95_bi_hat_t2": 5.644634176140148,
+      "p95_lpbound_as_estimate": 2848.035899701279,
+      "p95_safebound_as_estimate": 5839.410910615866,
+      "p95_l_sound_as_estimate": 14.140848697414858,
+      "p95_l_hat_as_estimate": 1.6363201167689012
+    },
+    "duckdb": {
+      "n": 146,
+      "under_share": 0.9726027397260274,
+      "p95_none": 340618.6553701586,
+      "p95_upper_t2": 340618.6553701586,
+      "p95_upper_t1": 340618.6553701586,
+      "p95_bi_sound_t2": 12.550774549756271,
+      "p95_bi_sound_t1": 12.342144943532812,
+      "p95_bi_hat_t2": 1.7657977900787523,
+      "p95_lpbound_as_estimate": 2848.035899701279,
+      "p95_safebound_as_estimate": 5839.410910615866,
+      "p95_l_sound_as_estimate": 14.140848697414858,
+      "p95_l_hat_as_estimate": 1.6363201167689012
+    },
+    "factorjoin": {
+      "n": 146,
+      "under_share": 0.17123287671232876,
+      "p95_none": 1529.9268842018387,
+      "p95_upper_t2": 628.1135718844803,
+      "p95_upper_t1": 628.1135718844803,
+      "p95_bi_sound_t2": 628.1135718844803,
+      "p95_bi_sound_t1": 628.1135718844803,
+      "p95_bi_hat_t2": 628.1135718844803,
+      "p95_lpbound_as_estimate": 2848.035899701279,
+      "p95_safebound_as_estimate": 5839.410910615866,
+      "p95_l_sound_as_estimate": 14.140848697414858,
+      "p95_l_hat_as_estimate": 1.6363201167689012
+    },
+    "flat": {
+      "n": 146,
+      "under_share": 0.4589041095890411,
+      "p95_none": 202.44832746302703,
+      "p95_upper_t2": 93.67012648625422,
+      "p95_upper_t1": 93.67012648625422,
+      "p95_bi_sound_t2": 55.79115416158915,
+      "p95_bi_sound_t1": 42.7688747160885,
+      "p95_bi_hat_t2": 55.79115416158915,
+      "p95_lpbound_as_estimate": 2848.035899701279,
+      "p95_safebound_as_estimate": 5839.410910615866,
+      "p95_l_sound_as_estimate": 14.140848697414858,
+      "p95_l_hat_as_estimate": 1.6363201167689012
+    },
+    "neurocard": {
+      "n": 146,
+      "under_share": 0.04794520547945205,
+      "p95_none": 262488677.69524097,
+      "p95_upper_t2": 1131.999527885694,
+      "p95_upper_t1": 1131.999527885694,
+      "p95_bi_sound_t2": 1131.999527885694,
+      "p95_bi_sound_t1": 1131.999527885694,
+      "p95_bi_hat_t2": 1131.999527885694,
+      "p95_lpbound_as_estimate": 2848.035899701279,
+      "p95_safebound_as_estimate": 5839.410910615866,
+      "p95_l_sound_as_estimate": 14.140848697414858,
+      "p95_l_hat_as_estimate": 1.6363201167689012
+    },
+    "postgres": {
+      "n": 146,
+      "under_share": 0.4246575342465753,
+      "p95_none": 857.2785634253273,
+      "p95_upper_t2": 325.17502065135466,
+      "p95_upper_t1": 325.17502065135466,
+      "p95_bi_sound_t2": 168.62022047792598,
+      "p95_bi_sound_t1": 148.29786193881736,
+      "p95_bi_hat_t2": 168.62022047792598,
+      "p95_lpbound_as_estimate": 2848.035899701279,
+      "p95_safebound_as_estimate": 5839.410910615866,
+      "p95_l_sound_as_estimate": 14.140848697414858,
+      "p95_l_hat_as_estimate": 1.6363201167689012
+    }
+  }
+}

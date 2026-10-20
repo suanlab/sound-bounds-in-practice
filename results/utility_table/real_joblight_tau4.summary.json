@@ -1,0 +1,28 @@
+{
+  "lpbound": {
+    "bound_validity": 1.0,
+    "over": {
+      "n": 239,
+      "fire_rate": 0.23430962343096234,
+      "help_rate": 0.23430962343096234
+    },
+    "under": {
+      "n": 321,
+      "fire_rate": 0.0,
+      "help_rate": 0.0
+    }
+  },
+  "safebound": {
+    "bound_validity": 1.0,
+    "over": {
+      "n": 239,
+      "fire_rate": 0.19665271966527198,
+      "help_rate": 0.19665271966527198
+    },
+    "under": {
+      "n": 321,
+      "fire_rate": 0.0,
+      "help_rate": 0.0
+    }
+  }
+}

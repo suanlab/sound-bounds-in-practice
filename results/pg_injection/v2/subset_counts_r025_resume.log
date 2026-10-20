@@ -1,0 +1,41 @@
+2577 sub-plans, 573 already done
+600/2577 q59 ['p', 'ph', 'pl', 'u'] exact 169ms sample 89ms
+650/2577 q60 ['b', 'p', 'pl', 'u', 'v'] exact 710ms sample 265ms
+700/2577 q62 ['b', 'c', 'p'] exact 50ms sample 39ms
+750/2577 q63 ['p', 'pl', 'u', 'v'] exact 131ms sample 38ms
+800/2577 q65 ['c', 'pl'] exact 54ms sample 33ms
+850/2577 q66 ['c', 'ph', 'v'] exact 606ms sample 454ms
+900/2577 q67 ['c', 'p', 'pl', 'u', 'v'] exact 29ms sample 83ms
+950/2577 q69 ['c', 'pl'] exact 97ms sample 29ms
+1000/2577 q70 ['c', 'p', 'ph'] exact 138ms sample 110ms
+1050/2577 q71 ['b', 'c', 'pl'] exact 729ms sample 201ms
+1100/2577 q72 ['c', 'p', 'ph', 'v'] exact 77ms sample 93ms
+1150/2577 q73 ['c', 'p', 'ph', 'pl', 'v'] exact 265ms sample 41ms
+1200/2577 q75 ['ph', 'v'] exact 386ms sample 273ms
+1250/2577 q76 ['b', 'p', 'u', 'v'] exact 239ms sample 132ms
+1300/2577 q78 ['p', 'u'] exact 40ms sample 22ms
+1350/2577 q79 ['b', 'p', 'ph'] exact 416ms sample 257ms
+1400/2577 q86 ['c', 'p', 'u'] exact 143ms sample 93ms
+1450/2577 q96 ['p', 'v'] exact 216ms sample 109ms
+1500/2577 q101 ['c', 'p'] exact 136ms sample 84ms
+1550/2577 q106 ['c', 'u'] exact 84ms sample 47ms
+1600/2577 q109 ['c', 'p', 'pl', 'v'] exact 223ms sample 190ms
+1650/2577 q111 ['p', 'ph', 'v'] exact 660ms sample 319ms
+1700/2577 q114 ['c', 'ph'] exact 7960ms sample 1952ms
+1750/2577 q119 ['b', 'p', 'u'] exact 104ms sample 41ms
+1800/2577 q124 ['ph', 'u'] exact 111ms sample 67ms
+1850/2577 q127 ['c', 'ph', 'pl'] exact 176ms sample 96ms
+1900/2577 q129 ['ph', 'pl', 'v'] exact 322ms sample 111ms
+1950/2577 q131 ['c', 'ph', 'u', 'v'] exact 198ms sample 120ms
+2000/2577 q133 ['b', 'c', 'v'] exact 23301ms sample 5701ms
+2050/2577 q135 ['b', 'c', 'ph'] exact 120000ms sample 120000ms
+2100/2577 q137 ['b', 'c', 'p', 'pl'] exact 113ms sample 69ms
+2150/2577 q139 ['b', 'c', 'p', 'v'] exact 20428ms sample 5251ms
+2200/2577 q140 ['b', 'c', 'pl', 'u'] exact 1029ms sample 275ms
+2250/2577 q141 ['c', 'p', 'v'] exact 332ms sample 235ms
+2300/2577 q141 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 7395ms sample 1970ms
+2350/2577 q142 ['b', 'c', 'pl', 'u'] exact 451ms sample 133ms
+2400/2577 q143 ['c', 'p', 'v'] exact 267ms sample 131ms
+2450/2577 q143 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 11917ms sample 3331ms
+2500/2577 q145 ['ph', 'v'] exact 230ms sample 129ms
+2550/2577 q146 ['c', 'p', 'v'] exact 418ms sample 264ms

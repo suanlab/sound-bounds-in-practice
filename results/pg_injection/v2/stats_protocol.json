@@ -1,0 +1,15 @@
+{
+  "n_queries": 146,
+  "n_plans": 758,
+  "n_censored_plans": 27,
+  "n_crashed_plans": 1,
+  "n_queries_with_censored_plan": 10,
+  "native_reproduced": 90,
+  "truth_injection_verified": 146,
+  "n_high_load": 0,
+  "load_start_median": 9.3017578125,
+  "load_start_max": 17.9404296875,
+  "uncensored_plans_timed_reps": [
+    3
+  ]
+}

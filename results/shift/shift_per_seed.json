@@ -1,0 +1,1307 @@
+[
+  {
+    "seed": 42,
+    "scenarios": {
+      "cross_dataset": {
+        "train_on": {
+          "names": [
+            "synthetic_path_A",
+            "synthetic_star_B"
+          ]
+        },
+        "test_on": {
+          "synthetic_cycle_C": {
+            "mean": 201334.35641144015,
+            "median": 154191.0903689243,
+            "p95": 422818.49526702607,
+            "p99": 526669.9418820929,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 201331.829765625,
+            "expected_safety_penalty": 4930.730509300232,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 201334.35641144015,
+              "median": 154191.0903689243,
+              "p95": 422818.49526702607,
+              "p99": 526669.9418820929
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 201334.35641144015,
+            "bound_valid_median": 154191.0903689243,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 1.48079188185945e+17
+          },
+          "synthetic_path_D": {
+            "mean": 11.840537420356075,
+            "median": 11.429402994339824,
+            "p95": 15.985556038029335,
+            "p99": 18.230675920572253,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.2,
+            "expected_q_error": 84.14606986999512,
+            "expected_safety_penalty": 9830.17511590004,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 11.840537420356075,
+              "median": 11.429402994339824,
+              "p95": 15.985556038029335,
+              "p99": 18.230675920572253
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 11.840537420356075,
+            "bound_valid_median": 11.429402994339824,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 2944.850559127183
+          },
+          "synthetic_star_E": {
+            "mean": 35.46155585021233,
+            "median": 28.87017888484318,
+            "p95": 96.40760691097431,
+            "p99": 104.86093288533732,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.26,
+            "expected_q_error": 35.46155603885651,
+            "expected_safety_penalty": 0.0,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 35.46155585021233,
+              "median": 28.87017888484318,
+              "p95": 96.40760691097431,
+              "p99": 104.86093288533732
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 35.46155585021233,
+            "bound_valid_median": 28.87017888484318,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 288342.03915278637
+          }
+        }
+      },
+      "cross_workload": {
+        "train_on": {
+          "names": [
+            "acyclic"
+          ]
+        },
+        "test_on": {
+          "cyclic_large": {
+            "mean": 1936143.3674694418,
+            "median": 1662286.8980103151,
+            "p95": 5217751.227427427,
+            "p99": 5554658.061116778,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 1936143.35640625,
+            "expected_safety_penalty": 7.548476117811282e-30,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 1936143.3674694418,
+              "median": 1662286.8980103151,
+              "p95": 5217751.227427427,
+              "p99": 5554658.061116778
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 1936143.3674694418,
+            "bound_valid_median": 1662286.8980103151,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 4.4343222864507995e+24
+          },
+          "complex": {
+            "mean": 18427431.875937518,
+            "median": 17071986.30585077,
+            "p95": 38607645.89194714,
+            "p99": 47124341.72664632,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 18427431.905,
+            "expected_safety_penalty": 0.0,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 18427431.875937518,
+              "median": 17071986.30585077,
+              "p95": 38607645.89194714,
+              "p99": 47124341.72664632
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 18427431.875937518,
+            "bound_valid_median": 17071986.30585077,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 5.534064859162799e+32
+          }
+        }
+      },
+      "cross_size": {
+        "train_on": {
+          "names": [
+            "size_3_4"
+          ]
+        },
+        "test_on": {
+          "size_5_6_7": {
+            "mean": 20.694300362579707,
+            "median": 20.465772951423844,
+            "p95": 31.66475237175377,
+            "p99": 32.81644971557886,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.7,
+            "expected_q_error": 20.694300518035888,
+            "expected_safety_penalty": 2.39640553983335e-21,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 20.694300362579707,
+              "median": 20.465772951423844,
+              "p95": 31.66475237175377,
+              "p99": 32.81644971557886
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 20.694300362579707,
+            "bound_valid_median": 20.465772951423844,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 135292.49134972168
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 1042,
+    "scenarios": {
+      "cross_dataset": {
+        "train_on": {
+          "names": [
+            "synthetic_path_A",
+            "synthetic_star_B"
+          ]
+        },
+        "test_on": {
+          "synthetic_cycle_C": {
+            "mean": 206076.23327805678,
+            "median": 184255.05631900858,
+            "p95": 443253.89117275685,
+            "p99": 468711.7166595013,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 206076.2325,
+            "expected_safety_penalty": 1.467570300102234,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 206076.23327805678,
+              "median": 184255.05631900858,
+              "p95": 443253.89117275685,
+              "p99": 468711.7166595013
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 206076.23327805678,
+            "bound_valid_median": 184255.05631900858,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 1.525957703813785e+17
+          },
+          "synthetic_path_D": {
+            "mean": 11.635945774713123,
+            "median": 11.091756281478354,
+            "p95": 16.114447545321337,
+            "p99": 17.200578151874794,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.78,
+            "expected_q_error": 11.869236764907837,
+            "expected_safety_penalty": 43.5441096496582,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 11.635945774713123,
+              "median": 11.091756281478354,
+              "p95": 16.114447545321337,
+              "p99": 17.200578151874794
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 11.635945774713123,
+            "bound_valid_median": 11.091756281478354,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 2798.151453743327
+          },
+          "synthetic_star_E": {
+            "mean": 28.998762863766594,
+            "median": 18.433340925540186,
+            "p95": 89.87249669136328,
+            "p99": 114.14116674167713,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.56,
+            "expected_q_error": 28.998763508796692,
+            "expected_safety_penalty": 2.6993822178438235e-15,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 28.998762863766594,
+              "median": 18.433340925540186,
+              "p95": 89.87249669136328,
+              "p99": 114.14116674167713
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 28.998762863766594,
+            "bound_valid_median": 18.433340925540186,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 253137.40059032707
+          }
+        }
+      },
+      "cross_workload": {
+        "train_on": {
+          "names": [
+            "acyclic"
+          ]
+        },
+        "test_on": {
+          "cyclic_large": {
+            "mean": 2055189.4770338652,
+            "median": 1966356.3460245007,
+            "p95": 4087198.074485859,
+            "p99": 5685236.507480603,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 2055189.448125,
+            "expected_safety_penalty": 0.0,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 2055189.4770338652,
+              "median": 1966356.3460245007,
+              "p95": 4087198.074485859,
+              "p99": 5685236.507480603
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 2055189.4770338652,
+            "bound_valid_median": 1966356.3460245007,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 3.272115682014596e+24
+          },
+          "complex": {
+            "mean": 19178340.842821594,
+            "median": 14973733.515770521,
+            "p95": 50085041.177664034,
+            "p99": 60948704.88105875,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 19178340.875,
+            "expected_safety_penalty": 0.0,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 19178340.842821594,
+              "median": 14973733.515770521,
+              "p95": 50085041.177664034,
+              "p99": 60948704.88105875
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 19178340.842821594,
+            "bound_valid_median": 14973733.515770521,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 1.4289389252297147e+33
+          }
+        }
+      },
+      "cross_size": {
+        "train_on": {
+          "names": [
+            "size_3_4"
+          ]
+        },
+        "test_on": {
+          "size_5_6_7": {
+            "mean": 21.062870665188868,
+            "median": 20.029595931262016,
+            "p95": 30.58115623021074,
+            "p99": 33.764918483420175,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.7,
+            "expected_q_error": 21.06287036895752,
+            "expected_safety_penalty": 2.5437926463486324e-23,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 21.062870665188868,
+              "median": 20.029595931262016,
+              "p95": 30.58115623021074,
+              "p99": 33.764918483420175
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 21.062870665188868,
+            "bound_valid_median": 20.029595931262016,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 148248.19083456017
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 2042,
+    "scenarios": {
+      "cross_dataset": {
+        "train_on": {
+          "names": [
+            "synthetic_path_A",
+            "synthetic_star_B"
+          ]
+        },
+        "test_on": {
+          "synthetic_cycle_C": {
+            "mean": 192078.34054822632,
+            "median": 177443.86692040417,
+            "p95": 378019.56929140096,
+            "p99": 400933.2571258156,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 192077.8596875,
+            "expected_safety_penalty": 1176.7165832519531,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 192078.34054822632,
+              "median": 177443.86692040417,
+              "p95": 378019.56929140096,
+              "p99": 400933.2571258156
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 192078.34054822632,
+            "bound_valid_median": 177443.86692040417,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 9.851044693301795e+16
+          },
+          "synthetic_path_D": {
+            "mean": 11.643724036652305,
+            "median": 11.88810915044543,
+            "p95": 15.270270758750591,
+            "p99": 15.682873084697128,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.7,
+            "expected_q_error": 13.046060733795166,
+            "expected_safety_penalty": 269.03984802246094,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 11.643724036652305,
+              "median": 11.88810915044543,
+              "p95": 15.270270758750591,
+              "p99": 15.682873084697128
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 11.643724036652305,
+            "bound_valid_median": 11.88810915044543,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 2625.2973724950343
+          },
+          "synthetic_star_E": {
+            "mean": 29.05599919639546,
+            "median": 24.110287897990762,
+            "p95": 69.39759776951074,
+            "p99": 104.99240123189142,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 29.055999393463136,
+            "expected_safety_penalty": 1.182145975064941e-07,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 29.05599919639546,
+              "median": 24.110287897990762,
+              "p95": 69.39759776951074,
+              "p99": 104.99240123189142
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 29.05599919639546,
+            "bound_valid_median": 24.110287897990762,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 180641.7347173449
+          }
+        }
+      },
+      "cross_workload": {
+        "train_on": {
+          "names": [
+            "acyclic"
+          ]
+        },
+        "test_on": {
+          "cyclic_large": {
+            "mean": 1805788.9844015287,
+            "median": 1617376.4925158478,
+            "p95": 4205504.228704481,
+            "p99": 4553775.137281959,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 1805789.006875,
+            "expected_safety_penalty": 0.0,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 1805788.9844015287,
+              "median": 1617376.4925158478,
+              "p95": 4205504.228704481,
+              "p99": 4553775.137281959
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 1805788.9844015287,
+            "bound_valid_median": 1617376.4925158478,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 2.0725706363416552e+24
+          },
+          "complex": {
+            "mean": 21085468.654184755,
+            "median": 14985070.34073126,
+            "p95": 48800749.918425724,
+            "p99": 94376107.27430901,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 21085468.97,
+            "expected_safety_penalty": 0.0,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 21085468.654184755,
+              "median": 14985070.34073126,
+              "p95": 48800749.918425724,
+              "p99": 94376107.27430901
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 21085468.654184755,
+            "bound_valid_median": 14985070.34073126,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 9.025450418360231e+33
+          }
+        }
+      },
+      "cross_size": {
+        "train_on": {
+          "names": [
+            "size_3_4"
+          ]
+        },
+        "test_on": {
+          "size_5_6_7": {
+            "mean": 20.204714672060543,
+            "median": 19.287397515224903,
+            "p95": 33.742984528013,
+            "p99": 39.49910753881514,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.8,
+            "expected_q_error": 20.204714851379393,
+            "expected_safety_penalty": 5.47391969423648e-23,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 20.204714672060543,
+              "median": 19.287397515224903,
+              "p95": 33.742984528013,
+              "p99": 39.49910753881514
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 20.204714672060543,
+            "bound_valid_median": 19.287397515224903,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 152560.20874218585
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 3042,
+    "scenarios": {
+      "cross_dataset": {
+        "train_on": {
+          "names": [
+            "synthetic_path_A",
+            "synthetic_star_B"
+          ]
+        },
+        "test_on": {
+          "synthetic_cycle_C": {
+            "mean": 167608.95224665402,
+            "median": 145923.41503622278,
+            "p95": 360323.0957763841,
+            "p99": 380953.8496118503,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 167608.95375,
+            "expected_safety_penalty": 0.0002083042619187836,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 167608.95224665402,
+              "median": 145923.41503622278,
+              "p95": 360323.0957763841,
+              "p99": 380953.8496118503
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 167608.95224665402,
+            "bound_valid_median": 145923.41503622278,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 7.026636858746261e+16
+          },
+          "synthetic_path_D": {
+            "mean": 11.198736164236347,
+            "median": 10.745030418728636,
+            "p95": 16.47524894256908,
+            "p99": 17.1960368257904,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.8,
+            "expected_q_error": 11.198764123916625,
+            "expected_safety_penalty": 0.005692463034065441,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 11.198736164236347,
+              "median": 10.745030418728636,
+              "p95": 16.47524894256908,
+              "p99": 17.1960368257904
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 11.198736164236347,
+            "bound_valid_median": 10.745030418728636,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 2442.383321072908
+          },
+          "synthetic_star_E": {
+            "mean": 36.94077535095201,
+            "median": 20.239673873570048,
+            "p95": 129.96322363492408,
+            "p99": 170.96794983008218,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.7,
+            "expected_q_error": 36.940775189399716,
+            "expected_safety_penalty": 2.876294945862303e-15,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 36.94077535095201,
+              "median": 20.239673873570048,
+              "p95": 129.96322363492408,
+              "p99": 170.96794983008218
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 36.94077535095201,
+            "bound_valid_median": 20.239673873570048,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 795522.6399192305
+          }
+        }
+      },
+      "cross_workload": {
+        "train_on": {
+          "names": [
+            "acyclic"
+          ]
+        },
+        "test_on": {
+          "cyclic_large": {
+            "mean": 1953432.550775868,
+            "median": 1500987.5426522098,
+            "p95": 4580997.680977308,
+            "p99": 5638585.059838277,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 1953432.513125,
+            "expected_safety_penalty": 0.0,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 1953432.550775868,
+              "median": 1500987.5426522098,
+              "p95": 4580997.680977308,
+              "p99": 5638585.059838277
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 1953432.550775868,
+            "bound_valid_median": 1500987.5426522098,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 3.728186301141493e+24
+          },
+          "complex": {
+            "mean": 19212157.3648708,
+            "median": 15725720.005450245,
+            "p95": 42930717.28347702,
+            "p99": 67943815.91981679,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 19212157.27,
+            "expected_safety_penalty": 0.0,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 19212157.3648708,
+              "median": 15725720.005450245,
+              "p95": 42930717.28347702,
+              "p99": 67943815.91981679
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 19212157.3648708,
+            "bound_valid_median": 15725720.005450245,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 1.87686105402256e+33
+          }
+        }
+      },
+      "cross_size": {
+        "train_on": {
+          "names": [
+            "size_3_4"
+          ]
+        },
+        "test_on": {
+          "size_5_6_7": {
+            "mean": 21.2730212162477,
+            "median": 20.81273234573178,
+            "p95": 32.49801066865882,
+            "p99": 37.50738781451818,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.78,
+            "expected_q_error": 21.273021430969237,
+            "expected_safety_penalty": 4.855763560462932e-19,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 21.2730212162477,
+              "median": 20.81273234573178,
+              "p95": 32.49801066865882,
+              "p99": 37.50738781451818
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 21.2730212162477,
+            "bound_valid_median": 20.81273234573178,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 161401.87354315817
+          }
+        }
+      }
+    }
+  },
+  {
+    "seed": 4042,
+    "scenarios": {
+      "cross_dataset": {
+        "train_on": {
+          "names": [
+            "synthetic_path_A",
+            "synthetic_star_B"
+          ]
+        },
+        "test_on": {
+          "synthetic_cycle_C": {
+            "mean": 181361.57033236968,
+            "median": 160279.94023212278,
+            "p95": 386787.6188766498,
+            "p99": 561765.987411018,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 181361.570078125,
+            "expected_safety_penalty": 0.07301117449998856,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 181361.57033236968,
+              "median": 160279.94023212278,
+              "p95": 386787.6188766498,
+              "p99": 561765.987411018
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 181361.57033236968,
+            "bound_valid_median": 160279.94023212278,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 1.2369974341582981e+17
+          },
+          "synthetic_path_D": {
+            "mean": 11.107899725783748,
+            "median": 11.148652762353208,
+            "p95": 14.819436876969224,
+            "p99": 15.680936996230372,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.72,
+            "expected_q_error": 11.117842292785644,
+            "expected_safety_penalty": 1.8427836275100709,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 11.107899725783748,
+              "median": 11.148652762353208,
+              "p95": 14.819436876969224,
+              "p99": 15.680936996230372
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 11.107899725783748,
+            "bound_valid_median": 11.148652762353208,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 2291.009661208746
+          },
+          "synthetic_star_E": {
+            "mean": 27.69944904767957,
+            "median": 18.932973976226492,
+            "p95": 73.08678970944241,
+            "p99": 91.86966152845221,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.44,
+            "expected_q_error": 27.699451789855956,
+            "expected_safety_penalty": 0.00012002469300568919,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 27.69944904767957,
+              "median": 18.932973976226492,
+              "p95": 73.08678970944241,
+              "p99": 91.86966152845221
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 27.69944904767957,
+            "bound_valid_median": 18.932973976226492,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 157976.5153253337
+          }
+        }
+      },
+      "cross_workload": {
+        "train_on": {
+          "names": [
+            "acyclic"
+          ]
+        },
+        "test_on": {
+          "cyclic_large": {
+            "mean": 1911568.019075405,
+            "median": 1798478.2024060746,
+            "p95": 4041858.337419024,
+            "p99": 4908838.819075732,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 1911568.038125,
+            "expected_safety_penalty": 0.0,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 1911568.019075405,
+              "median": 1798478.2024060746,
+              "p95": 4041858.337419024,
+              "p99": 4908838.819075732
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 1911568.019075405,
+            "bound_valid_median": 1798478.2024060746,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 2.5807833884859767e+24
+          },
+          "complex": {
+            "mean": 19520341.531719163,
+            "median": 15450159.73067313,
+            "p95": 48638435.8287258,
+            "p99": 56118945.10401904,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.0,
+            "expected_q_error": 19520341.39,
+            "expected_safety_penalty": 0.0,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 0.0,
+            "ml_better_than_pessimistic_rate": 0.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 19520341.531719163,
+              "median": 15450159.73067313,
+              "p95": 48638435.8287258,
+              "p99": 56118945.10401904
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 19520341.531719163,
+            "bound_valid_median": 15450159.73067313,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 1.272865704242699e+33
+          }
+        }
+      },
+      "cross_size": {
+        "train_on": {
+          "names": [
+            "size_3_4"
+          ]
+        },
+        "test_on": {
+          "size_5_6_7": {
+            "mean": 23.5386893275112,
+            "median": 22.830530017946217,
+            "p95": 33.97497285560189,
+            "p99": 38.66694552322084,
+            "fallback_rate": 0.0,
+            "upper_fallback_rate": 0.0,
+            "lower_fallback_rate": 0.0,
+            "config_accuracy": 0.66,
+            "expected_q_error": 23.538689575195313,
+            "expected_safety_penalty": 1.3194329650892104e-24,
+            "final_differs_from_pessimistic_rate": 1.0,
+            "final_better_than_ml_rate": 0.0,
+            "final_better_than_pessimistic_rate": 1.0,
+            "ml_better_than_pessimistic_rate": 1.0,
+            "helpful_fallback_rate": 0.0,
+            "safety_violation_rate": 0.0,
+            "ml_safety_violation_rate": 0.0,
+            "ml_only_violating_q_error": {
+              "median": 0.0,
+              "p90": 0.0,
+              "max": 0.0
+            },
+            "ml_only_violating_count": 0,
+            "ml_only_safe_q_error": {
+              "mean": 23.5386893275112,
+              "median": 22.830530017946217,
+              "p95": 33.97497285560189,
+              "p99": 38.66694552322084
+            },
+            "ml_only_safe_count": 50,
+            "bound_valid_fraction": 1.0,
+            "bound_valid_mean": 23.5386893275112,
+            "bound_valid_median": 22.830530017946217,
+            "bound_invalid_mean": 0.0,
+            "bound_invalid_median": 0.0,
+            "plan_cost_ratio_mean": 224487.0294352678
+          }
+        }
+      }
+    }
+  }
+]

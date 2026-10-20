@@ -1,0 +1,8535 @@
+{
+ "experiment": "selective_sampling",
+ "preregistered": false,
+ "upper": "lpbound",
+ "target": 2.0,
+ "include_final": true,
+ "summary": {
+  "n_queries": 140,
+  "n_timed": 137,
+  "selective_certified": {
+   "point": 0.40714285714285714,
+   "ci_low": 0.32857142857142857,
+   "ci_high": 0.4857142857142857,
+   "n_rows": 140,
+   "n_clusters": 140,
+   "replicates": 10000
+  },
+  "full_certified": {
+   "point": 0.40714285714285714,
+   "ci_low": 0.32857142857142857,
+   "ci_high": 0.4857142857142857,
+   "n_rows": 140,
+   "n_clusters": 140,
+   "replicates": 10000
+  },
+  "selective_cost_over_exec": {
+   "point": 0.6622327886058608,
+   "ci_low": 0.47956095610645055,
+   "ci_high": 1.0196234550048773,
+   "n_rows": 137,
+   "n_clusters": 137,
+   "replicates": 10000
+  },
+  "full_cost_over_exec": {
+   "point": 0.7206247113817712,
+   "ci_low": 0.6424142550400825,
+   "ci_high": 1.2468374970593488,
+   "n_rows": 137,
+   "n_clusters": 137,
+   "replicates": 10000
+  },
+  "selective_share_cost_below_exec": 0.5766423357664233,
+  "median_fraction_sampled": 1.0,
+  "max_true_regret_selective": 1.1546038708684443,
+  "max_true_regret_full": 1.1546038708684443
+ },
+ "per_query": [
+  {
+   "query_id": 7,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.1587540494825264,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 33.056251995731145,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 1418.547133973334,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     5538.5
+    ],
+    [
+     33.056251995731145,
+     1.1587540494825264
+    ]
+   ],
+   "native_exec_ms": 97.01254300307482,
+   "selective_cost_over_exec": 0.34074204193042773,
+   "full_cost_over_exec": 14.622306457097748
+  },
+  {
+   "query_id": 8,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.213084229465668,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 23.602284025400877,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 827.6644170400687,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     5093.5
+    ],
+    [
+     23.602284025400877,
+     1.213084229465668
+    ]
+   ],
+   "native_exec_ms": 448.93020699964836,
+   "selective_cost_over_exec": 0.052574506365127185,
+   "full_cost_over_exec": 1.8436371715140945
+  },
+  {
+   "query_id": 9,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 2.4383992805755397,
+   "selective_certified": false,
+   "selective_sampled": 3,
+   "selective_ms": 103.88293105643243,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.4383992805755397,
+   "full_certified": false,
+   "full_ms": 103.88293105643243,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     87153.0
+    ],
+    [
+     53.704811027273536,
+     3.499662990635442
+    ],
+    [
+     81.86395006487146,
+     2.4383992805755397
+    ],
+    [
+     103.88293105643243,
+     2.4383992805755397
+    ]
+   ],
+   "native_exec_ms": 183.23451303876936,
+   "selective_cost_over_exec": 0.5669397611488864,
+   "full_cost_over_exec": 0.5669397611488864
+  },
+  {
+   "query_id": 10,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.1654394222709394,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 27.410881011746824,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 45.1814680127427,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     6415.5
+    ],
+    [
+     27.410881011746824,
+     1.1654394222709394
+    ]
+   ],
+   "native_exec_ms": 139.42270301049575,
+   "selective_cost_over_exec": 0.19660270830987497,
+   "full_cost_over_exec": 0.324061053452259
+  },
+  {
+   "query_id": 11,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.9264755921999739,
+   "selective_certified": true,
+   "selective_sampled": 2,
+   "selective_ms": 55.8539149351418,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.9264755921999739,
+   "full_certified": true,
+   "full_ms": 67.34272296307608,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     20363.5
+    ],
+    [
+     42.00775799108669,
+     2.238745589487772
+    ],
+    [
+     55.8539149351418,
+     1.9264755921999739
+    ]
+   ],
+   "native_exec_ms": 121.7656780499965,
+   "selective_cost_over_exec": 0.4586999869717673,
+   "full_cost_over_exec": 0.5530517633665657
+  },
+  {
+   "query_id": 12,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.0,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 1688.869808043819,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 1749.4699120288715,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     30098.0
+    ],
+    [
+     1688.869808043819,
+     1.0
+    ]
+   ],
+   "native_exec_ms": 232.14690701570362,
+   "selective_cost_over_exec": 7.2750045639400875,
+   "full_cost_over_exec": 7.5360466116851095
+  },
+  {
+   "query_id": 13,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.7109498680738786,
+   "selective_certified": true,
+   "selective_sampled": 2,
+   "selective_ms": 39.52084097545594,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.7109498680738786,
+   "full_certified": true,
+   "full_ms": 55.269398959353566,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     16661.0
+    ],
+    [
+     27.19451900338754,
+     2.0569389373513083
+    ],
+    [
+     39.52084097545594,
+     1.7109498680738786
+    ]
+   ],
+   "native_exec_ms": 94.096319982782,
+   "selective_cost_over_exec": 0.4200041083720125,
+   "full_cost_over_exec": 0.5873704621973198
+  },
+  {
+   "query_id": 14,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.0,
+   "selective_certified": true,
+   "selective_sampled": 2,
+   "selective_ms": 23.90070795081556,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 34.49078695848584,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     532.0
+    ],
+    [
+     12.528223975095898,
+     67.375
+    ],
+    [
+     23.90070795081556,
+     1.0
+    ]
+   ],
+   "native_exec_ms": 42.91142098372802,
+   "selective_cost_over_exec": 0.556977778943249,
+   "full_cost_over_exec": 0.8037670663846047
+  },
+  {
+   "query_id": 15,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.0,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 247.9078879696317,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 341.8274460127577,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     66356.5
+    ],
+    [
+     247.9078879696317,
+     1.0
+    ]
+   ],
+   "native_exec_ms": 912.3391000321135,
+   "selective_cost_over_exec": 0.27172779064374813,
+   "full_cost_over_exec": 0.37467148563590635
+  },
+  {
+   "query_id": 16,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.0,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 289.55990698887035,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 325.8634019875899,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     26259.00000000003
+    ],
+    [
+     289.55990698887035,
+     1.0
+    ]
+   ],
+   "native_exec_ms": 120.76143402373418,
+   "selective_cost_over_exec": 2.3977846017625204,
+   "full_cost_over_exec": 2.6984061974913733
+  },
+  {
+   "query_id": 17,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.0,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 65.3454820276238,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 91.09275205992162,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     298.5
+    ],
+    [
+     65.3454820276238,
+     1.0
+    ]
+   ],
+   "native_exec_ms": 22.385683027096093,
+   "selective_cost_over_exec": 2.9190747473967305,
+   "full_cost_over_exec": 4.069241575057641
+  },
+  {
+   "query_id": 18,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.7386470404008791,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 16.382811998482794,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.3694971016763289,
+   "full_certified": true,
+   "full_ms": 60.48058602027595,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     5551.500000000007
+    ],
+    [
+     16.382811998482794,
+     1.7386470404008791
+    ]
+   ],
+   "native_exec_ms": 68.53490299545228,
+   "selective_cost_over_exec": 0.23904333824722704,
+   "full_cost_over_exec": 0.882478611289334
+  },
+  {
+   "query_id": 19,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.2483940042826565,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 10.571555001661181,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.2220207514858479,
+   "full_certified": true,
+   "full_ms": 27.461392048280686,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     5538.5000000000055
+    ],
+    [
+     10.571555001661181,
+     1.2483940042826565
+    ]
+   ],
+   "native_exec_ms": 45.128603000193834,
+   "selective_cost_over_exec": 0.23425398303634115,
+   "full_cost_over_exec": 0.6085141179345334
+  },
+  {
+   "query_id": 20,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 2.002523996389027,
+   "selective_certified": false,
+   "selective_sampled": 3,
+   "selective_ms": 75.38598799146712,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.002523996389027,
+   "full_certified": false,
+   "full_ms": 75.38598799146712,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     41812.0
+    ],
+    [
+     26.75112697761506,
+     2.863051218844152
+    ],
+    [
+     65.26739499531686,
+     2.002523996389027
+    ],
+    [
+     75.38598799146712,
+     2.002523996389027
+    ]
+   ],
+   "native_exec_ms": 314.99367899959907,
+   "selective_cost_over_exec": 0.23932539926162477,
+   "full_cost_over_exec": 0.23932539926162477
+  },
+  {
+   "query_id": 21,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.2043155998891655,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 36.04284598259255,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.186706757398322,
+   "full_certified": true,
+   "full_ms": 74.66540002496913,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     17385.499999999993
+    ],
+    [
+     36.04284598259255,
+     1.2043155998891655
+    ]
+   ],
+   "native_exec_ms": 99.59043900016695,
+   "selective_cost_over_exec": 0.3619107049275295,
+   "full_cost_over_exec": 0.7497245797344458
+  },
+  {
+   "query_id": 22,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.0,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 57.1321320021525,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 149.0618570242077,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     45210.0
+    ],
+    [
+     57.1321320021525,
+     1.0
+    ]
+   ],
+   "native_exec_ms": 344.30645598331466,
+   "selective_cost_over_exec": 0.16593395508366873,
+   "full_cost_over_exec": 0.4329336683464087
+  },
+  {
+   "query_id": 23,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.0,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 24.997300992254168,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 64.33635094435886,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     10167.5
+    ],
+    [
+     24.997300992254168,
+     1.0
+    ]
+   ],
+   "native_exec_ms": 161.50237899273634,
+   "selective_cost_over_exec": 0.15477976948796796,
+   "full_cost_over_exec": 0.39836162999959535
+  },
+  {
+   "query_id": 24,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.0,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 12.161801976617426,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 39.238440978806466,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     405.5
+    ],
+    [
+     12.161801976617426,
+     1.0
+    ]
+   ],
+   "native_exec_ms": 90.08862497285008,
+   "selective_cost_over_exec": 0.13499819738932206,
+   "full_cost_over_exec": 0.43555377818932983
+  },
+  {
+   "query_id": 25,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 6.497505614064405,
+   "selective_certified": false,
+   "selective_sampled": 6,
+   "selective_ms": 167.84633905626833,
+   "selective_true_regret": 1.0,
+   "full_bound": 6.497505614064405,
+   "full_certified": false,
+   "full_ms": 167.84633905626833,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     80102.6676036627
+    ],
+    [
+     38.715302012860775,
+     14.678563456909615
+    ],
+    [
+     101.24256298877299,
+     7.839281728454821
+    ],
+    [
+     123.05475299945101,
+     7.339908428286457
+    ],
+    [
+     136.4238050300628,
+     6.497505614064405
+    ],
+    [
+     145.8700950606726,
+     6.497505614064405
+    ],
+    [
+     167.84633905626833,
+     6.497505614064405
+    ]
+   ],
+   "native_exec_ms": 286.11820394871756,
+   "selective_cost_over_exec": 0.5866328557212399,
+   "full_cost_over_exec": 0.5866328557212399
+  },
+  {
+   "query_id": 26,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 2.2470808033629144,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 115.2950050891377,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.2470808033629144,
+   "full_certified": false,
+   "full_ms": 115.2950050891377,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     7401.666666666667
+    ],
+    [
+     24.3830670369789,
+     10.623753792804507
+    ],
+    [
+     39.49883102905005,
+     10.623753792804507
+    ],
+    [
+     58.7497380329296,
+     10.623753792804507
+    ],
+    [
+     88.70047103846446,
+     5.811876896402254
+    ],
+    [
+     98.79637305857614,
+     2.4838829195998517
+    ],
+    [
+     103.76195108983666,
+     2.2470808033629144
+    ],
+    [
+     115.2950050891377,
+     2.2470808033629144
+    ]
+   ],
+   "native_exec_ms": 128.29804699867964,
+   "selective_cost_over_exec": 0.8986497283962884,
+   "full_cost_over_exec": 0.8986497283962884
+  },
+  {
+   "query_id": 27,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 5.920966887405631,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 95.50766402389854,
+   "selective_true_regret": 1.0,
+   "full_bound": 5.920966887405631,
+   "full_certified": false,
+   "full_ms": 95.50766402389854,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     10293.923545230491
+    ],
+    [
+     14.22200899105519,
+     6.387084898062016
+    ],
+    [
+     44.49748597107828,
+     6.387084898062016
+    ],
+    [
+     56.36678996961564,
+     6.245947424230891
+    ],
+    [
+     67.06134096020833,
+     5.942202595135514
+    ],
+    [
+     75.91651496477425,
+     5.920966887405631
+    ],
+    [
+     84.8027269821614,
+     5.920966887405631
+    ],
+    [
+     95.50766402389854,
+     5.920966887405631
+    ]
+   ],
+   "native_exec_ms": 125.64207200193778,
+   "selective_cost_over_exec": 0.7601567094693052,
+   "full_cost_over_exec": 0.7601567094693052
+  },
+  {
+   "query_id": 28,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 1.2524430384250695,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 167.26708301575854,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0370532857175572,
+   "full_certified": true,
+   "full_ms": 327.6900870259851,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     134805.66666666666
+    ],
+    [
+     167.26708301575854,
+     1.2524430384250695
+    ]
+   ],
+   "native_exec_ms": 1811.7498999927193,
+   "selective_cost_over_exec": 0.09232349510074803,
+   "full_cost_over_exec": 0.18086938325610064
+  },
+  {
+   "query_id": 29,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 2.3234265498197333,
+   "selective_certified": false,
+   "selective_sampled": 6,
+   "selective_ms": 145.96930803963915,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.3234265498197333,
+   "full_certified": false,
+   "full_ms": 145.96930803963915,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     37283.333333333336
+    ],
+    [
+     62.089201994240284,
+     2.8573373852106476
+    ],
+    [
+     75.17680496675894,
+     2.5284116791324407
+    ],
+    [
+     83.76023801974952,
+     2.338486179889204
+    ],
+    [
+     92.11614303058013,
+     2.3234265498197333
+    ],
+    [
+     113.45641902880743,
+     2.3234265498197333
+    ],
+    [
+     145.96930803963915,
+     2.3234265498197333
+    ]
+   ],
+   "native_exec_ms": 259.46897198446095,
+   "selective_cost_over_exec": 0.5625694160008502,
+   "full_cost_over_exec": 0.5625694160008502
+  },
+  {
+   "query_id": 30,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.0921305485936892,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 1556.0495410463773,
+   "selective_true_regret": 1.0018512070470553,
+   "full_bound": 1.0868697721936522,
+   "full_certified": true,
+   "full_ms": 1717.3266740865074,
+   "full_true_regret": 1.0018512070470553,
+   "trajectory": [
+    [
+     0.0,
+     681445.5546888908
+    ],
+    [
+     1556.0495410463773,
+     1.0921305485936892
+    ]
+   ],
+   "native_exec_ms": 50245.36296603037,
+   "selective_cost_over_exec": 0.030969017819582344,
+   "full_cost_over_exec": 0.03417880920170781
+  },
+  {
+   "query_id": 31,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 2.33193158815588,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 379.57112508593127,
+   "selective_true_regret": 1.010055823581173,
+   "full_bound": 2.33193158815588,
+   "full_certified": false,
+   "full_ms": 379.57112508593127,
+   "full_true_regret": 1.010055823581173,
+   "trajectory": [
+    [
+     0.0,
+     304680.8783586224
+    ],
+    [
+     237.72379901492968,
+     2.429855839668906
+    ],
+    [
+     268.76817404991016,
+     2.429855839668906
+    ],
+    [
+     320.5227290163748,
+     2.341937871297393
+    ],
+    [
+     336.51955105597153,
+     2.33193158815588
+    ],
+    [
+     361.70014907838777,
+     2.33193158815588
+    ],
+    [
+     370.5762330791913,
+     2.33193158815588
+    ],
+    [
+     379.57112508593127,
+     2.33193158815588
+    ]
+   ],
+   "native_exec_ms": 2913.8730270205997,
+   "selective_cost_over_exec": 0.13026344029617454,
+   "full_cost_over_exec": 0.13026344029617454
+  },
+  {
+   "query_id": 32,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 1.3731144872557173,
+   "selective_certified": true,
+   "selective_sampled": 4,
+   "selective_ms": 124833.69438204682,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.3731144872557173,
+   "full_certified": true,
+   "full_ms": 124883.00270098262,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     780068.6009562811
+    ],
+    [
+     120000.0,
+     780068.6009562811
+    ],
+    [
+     120155.51057102857,
+     2.2817600013084007
+    ],
+    [
+     124638.45419301651,
+     2.2817600013084007
+    ],
+    [
+     124833.69438204682,
+     1.3731144872557173
+    ]
+   ],
+   "native_exec_ms": 6726.531440974213,
+   "selective_cost_over_exec": 18.558404948742346,
+   "full_cost_over_exec": 18.56573537146741
+  },
+  {
+   "query_id": 33,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 1.0,
+   "selective_certified": true,
+   "selective_sampled": 2,
+   "selective_ms": 19506.39653397957,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 21232.031550025567,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     49201.1047926719
+    ],
+    [
+     19493.515661975835,
+     1774.3333333333333
+    ],
+    [
+     19506.39653397957,
+     1.0
+    ]
+   ],
+   "native_exec_ms": 196.44024997251108,
+   "selective_cost_over_exec": 99.29938765965326,
+   "full_cost_over_exec": 108.08391637150064
+  },
+  {
+   "query_id": 34,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.0417500298265425,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 3886.2917950027622,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.037760779475147,
+   "full_certified": true,
+   "full_ms": 4182.552488986403,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     737407.4643921852
+    ],
+    [
+     3886.2917950027622,
+     1.0417500298265425
+    ]
+   ],
+   "native_exec_ms": 59344.520698010456,
+   "selective_cost_over_exec": 0.06548695227953963,
+   "full_cost_over_exec": 0.07047916875545047
+  },
+  {
+   "query_id": 35,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 12.169666707360967,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 163.8927300227806,
+   "selective_true_regret": 1.0,
+   "full_bound": 12.169666707360967,
+   "full_certified": false,
+   "full_ms": 163.8927300227806,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     737398.0136384964
+    ],
+    [
+     70.24195301346481,
+     12.66632057944484
+    ],
+    [
+     102.41165198385715,
+     12.66632057944484
+    ],
+    [
+     114.12856000242755,
+     12.353670853022509
+    ],
+    [
+     127.56537704262882,
+     12.174837290804435
+    ],
+    [
+     138.9817530871369,
+     12.169666707360967
+    ],
+    [
+     152.23559405421838,
+     12.169666707360967
+    ],
+    [
+     163.8927300227806,
+     12.169666707360967
+    ]
+   ],
+   "native_exec_ms": 1388.47408501897,
+   "selective_cost_over_exec": 0.11803801870781147,
+   "full_cost_over_exec": 0.11803801870781147
+  },
+  {
+   "query_id": 36,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 34.024997498302724,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 97.19784796470776,
+   "selective_true_regret": 1.0,
+   "full_bound": 34.024997498302724,
+   "full_certified": false,
+   "full_ms": 97.19784796470776,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     69586.853410827
+    ],
+    [
+     18.308166007045656,
+     38.852685445599455
+    ],
+    [
+     41.94923100294545,
+     38.852685445599455
+    ],
+    [
+     52.73221095558256,
+     36.509211148829614
+    ],
+    [
+     65.58851891895756,
+     34.21631627747163
+    ],
+    [
+     75.66181995207444,
+     34.024997498302724
+    ],
+    [
+     88.26426893938333,
+     34.024997498302724
+    ],
+    [
+     97.19784796470776,
+     34.024997498302724
+    ]
+   ],
+   "native_exec_ms": 77.95550598530099,
+   "selective_cost_over_exec": 1.2468374970593488,
+   "full_cost_over_exec": 1.2468374970593488
+  },
+  {
+   "query_id": 37,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 2.9223907554611213,
+   "selective_certified": false,
+   "selective_sampled": 6,
+   "selective_ms": 421.09143803827465,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.9223907554611213,
+   "full_certified": false,
+   "full_ms": 421.09143803827465,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     504530.776739493
+    ],
+    [
+     120.53327698959038,
+     10.19053573512951
+    ],
+    [
+     265.1150099700317,
+     3.2895956513579163
+    ],
+    [
+     301.4780940138735,
+     3.2895956513579163
+    ],
+    [
+     384.00609098607674,
+     2.9223907554611213
+    ],
+    [
+     412.67679003067315,
+     2.9223907554611213
+    ],
+    [
+     421.09143803827465,
+     2.9223907554611213
+    ]
+   ],
+   "native_exec_ms": 608.4162219776772,
+   "selective_cost_over_exec": 0.6921107998558995,
+   "full_cost_over_exec": 0.6921107998558995
+  },
+  {
+   "query_id": 38,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.082094620411101,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 676.2967249960639,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0654299852498241,
+   "full_certified": true,
+   "full_ms": 907.815192011185,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     304815.4249098301
+    ],
+    [
+     676.2967249960639,
+     1.082094620411101
+    ]
+   ],
+   "native_exec_ms": 13028.255782963242,
+   "selective_cost_over_exec": 0.05190999749025821,
+   "full_cost_over_exec": 0.06968048579444645
+  },
+  {
+   "query_id": 39,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 3.9081766058437344,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 224.28881109226495,
+   "selective_true_regret": 1.0972540422745605,
+   "full_bound": 3.9081766058437344,
+   "full_certified": false,
+   "full_ms": 224.28881109226495,
+   "full_true_regret": 1.0972540422745605,
+   "trajectory": [
+    [
+     0.0,
+     213822.29264297584
+    ],
+    [
+     64.1590179875493,
+     4.134765247980138
+    ],
+    [
+     94.27422500448301,
+     4.134765247980138
+    ],
+    [
+     155.67963104695082,
+     3.9379532241544455
+    ],
+    [
+     164.77976407622918,
+     3.9379532241544455
+    ],
+    [
+     182.40870209410787,
+     3.9081766058437344
+    ],
+    [
+     209.96051910333335,
+     3.9081766058437344
+    ],
+    [
+     224.28881109226495,
+     3.9081766058437344
+    ]
+   ],
+   "native_exec_ms": 412.7901520114392,
+   "selective_cost_over_exec": 0.5433482606097867,
+   "full_cost_over_exec": 0.5433482606097867
+  },
+  {
+   "query_id": 40,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 1.8350373031224094,
+   "selective_certified": true,
+   "selective_sampled": 3,
+   "selective_ms": 78.1718879006803,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.7836120834953975,
+   "full_certified": true,
+   "full_ms": 106.46910488139838,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     6791.0
+    ],
+    [
+     32.65927196480334,
+     3396.0
+    ],
+    [
+     68.17762792343274,
+     4.288666451404585
+    ],
+    [
+     78.1718879006803,
+     1.8350373031224094
+    ]
+   ],
+   "native_exec_ms": 110.47149496152997,
+   "selective_cost_over_exec": 0.7076204402583895,
+   "full_cost_over_exec": 0.9637699292335515
+  },
+  {
+   "query_id": 41,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 4.120762711864407,
+   "selective_certified": false,
+   "selective_sampled": 6,
+   "selective_ms": 31.172023038379848,
+   "selective_true_regret": 1.0,
+   "full_bound": 4.120762711864407,
+   "full_certified": false,
+   "full_ms": 31.172023038379848,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     1065.0
+    ],
+    [
+     4.002265981398523,
+     533.0
+    ],
+    [
+     8.856725005898625,
+     6.355704697986577
+    ],
+    [
+     12.456846015993506,
+     4.498812351543943
+    ],
+    [
+     17.153664026409388,
+     4.144893111638955
+    ],
+    [
+     26.712246995884925,
+     4.120762711864407
+    ],
+    [
+     31.172023038379848,
+     4.120762711864407
+    ]
+   ],
+   "native_exec_ms": 21.93085296312347,
+   "selective_cost_over_exec": 1.4213775948794751,
+   "full_cost_over_exec": 1.4213775948794751
+  },
+  {
+   "query_id": 42,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 2.1702285623375936,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 282.3158309911378,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.1702285623375936,
+   "full_certified": false,
+   "full_ms": 282.3158309911378,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     65602.0
+    ],
+    [
+     81.51501097017899,
+     3.1948697931188312
+    ],
+    [
+     109.71686895936728,
+     3.1948697931188312
+    ],
+    [
+     173.99583593942225,
+     2.724374058997379
+    ],
+    [
+     210.83635895047337,
+     2.2081099892433267
+    ],
+    [
+     220.0486149522476,
+     2.1702285623375936
+    ],
+    [
+     247.94320698129013,
+     2.1702285623375936
+    ],
+    [
+     282.3158309911378,
+     2.1702285623375936
+    ]
+   ],
+   "native_exec_ms": 426.309050002601,
+   "selective_cost_over_exec": 0.6622327886058608,
+   "full_cost_over_exec": 0.6622327886058608
+  },
+  {
+   "query_id": 43,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 1.0789947855357105,
+   "selective_certified": true,
+   "selective_sampled": 2,
+   "selective_ms": 1841.481821029447,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 1946.604712982662,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     356473.72637303424
+    ],
+    [
+     1757.4609870207496,
+     21497.666666666668
+    ],
+    [
+     1841.481821029447,
+     1.0789947855357105
+    ]
+   ],
+   "native_exec_ms": 942.1167870168574,
+   "selective_cost_over_exec": 1.9546215993670615,
+   "full_cost_over_exec": 2.0662031924369386
+  },
+  {
+   "query_id": 44,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 1.0598200130560478,
+   "selective_certified": true,
+   "selective_sampled": 2,
+   "selective_ms": 1118.8893700018525,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 1333.5144810262136,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     197498.17617383413
+    ],
+    [
+     1045.6846239976585,
+     4277.333333333333
+    ],
+    [
+     1118.8893700018525,
+     1.0598200130560478
+    ]
+   ],
+   "native_exec_ms": 772.0555730047636,
+   "selective_cost_over_exec": 1.449234237954201,
+   "full_cost_over_exec": 1.7272260283496275
+  },
+  {
+   "query_id": 45,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 8.607067529831157,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 94.04916799394414,
+   "selective_true_regret": 1.1209290893449675,
+   "full_bound": 8.607067529831157,
+   "full_certified": false,
+   "full_ms": 94.04916799394414,
+   "full_true_regret": 1.1209290893449675,
+   "trajectory": [
+    [
+     0.0,
+     1606.6886462725477
+    ],
+    [
+     15.291263989638537,
+     12.414848196250338
+    ],
+    [
+     29.178668977692723,
+     12.414848196250338
+    ],
+    [
+     43.808938935399055,
+     10.3743879976587
+    ],
+    [
+     59.49209094978869,
+     9.239734532312164
+    ],
+    [
+     73.5983019694686,
+     8.607067529831157
+    ],
+    [
+     87.97806093934923,
+     8.607067529831157
+    ],
+    [
+     94.04916799394414,
+     8.607067529831157
+    ]
+   ],
+   "native_exec_ms": 20.222158986143768,
+   "selective_cost_over_exec": 4.650797575985169,
+   "full_cost_over_exec": 4.650797575985169
+  },
+  {
+   "query_id": 46,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 8.85827051409104,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 490.6585210119374,
+   "selective_true_regret": 1.006187675977842,
+   "full_bound": 8.85827051409104,
+   "full_certified": false,
+   "full_ms": 490.6585210119374,
+   "full_true_regret": 1.006187675977842,
+   "trajectory": [
+    [
+     0.0,
+     111229.38695243327
+    ],
+    [
+     51.52107303729281,
+     10.56597608707231
+    ],
+    [
+     138.75020702835172,
+     10.56597608707231
+    ],
+    [
+     167.7847800310701,
+     10.56597608707231
+    ],
+    [
+     201.66290499037132,
+     9.277218625469278
+    ],
+    [
+     241.7547749937512,
+     9.277218625469278
+    ],
+    [
+     264.0409300220199,
+     9.20665171149748
+    ],
+    [
+     289.8259899811819,
+     8.899858528929194
+    ],
+    [
+     293.83738699834794,
+     8.85827051409104
+    ],
+    [
+     340.54445795482025,
+     8.85827051409104
+    ],
+    [
+     368.3734649675898,
+     8.85827051409104
+    ],
+    [
+     402.88279799278826,
+     8.85827051409104
+    ],
+    [
+     427.6107649784535,
+     8.85827051409104
+    ],
+    [
+     454.37501900596544,
+     8.85827051409104
+    ],
+    [
+     472.5727899931371,
+     8.85827051409104
+    ],
+    [
+     490.6585210119374,
+     8.85827051409104
+    ]
+   ],
+   "native_exec_ms": 407.2349049965851,
+   "selective_cost_over_exec": 1.2048537956638365,
+   "full_cost_over_exec": 1.2048537956638365
+  },
+  {
+   "query_id": 47,
+   "n_subjoins": 10,
+   "n_orders": 16,
+   "selective_bound": 41.11375795064998,
+   "selective_certified": false,
+   "selective_sampled": 10,
+   "selective_ms": 1455.596566083841,
+   "selective_true_regret": 1.0,
+   "full_bound": 41.11375795064998,
+   "full_certified": false,
+   "full_ms": 1455.596566083841,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     108466799.37787819
+    ],
+    [
+     441.3229760248214,
+     974618.1131920815
+    ],
+    [
+     806.4258840167895,
+     41.19868534071594
+    ],
+    [
+     1066.4750630385242,
+     41.19868534071594
+    ],
+    [
+     1104.7327420674264,
+     41.11882731934318
+    ],
+    [
+     1125.267273047939,
+     41.11882731934318
+    ],
+    [
+     1140.8174260286614,
+     41.11375795064998
+    ],
+    [
+     1386.046490049921,
+     41.11375795064998
+    ],
+    [
+     1408.3853440824896,
+     41.11375795064998
+    ],
+    [
+     1440.0491480482742,
+     41.11375795064998
+    ],
+    [
+     1455.596566083841,
+     41.11375795064998
+    ]
+   ],
+   "native_exec_ms": 7294.26345200045,
+   "selective_cost_over_exec": 0.1995536047830359,
+   "full_cost_over_exec": 0.1995536047830359
+  },
+  {
+   "query_id": 48,
+   "n_subjoins": 10,
+   "n_orders": 16,
+   "selective_bound": 15.648868253047011,
+   "selective_certified": false,
+   "selective_sampled": 10,
+   "selective_ms": 121423.60690503847,
+   "selective_true_regret": 1.1160171393593143,
+   "full_bound": 15.648868253047011,
+   "full_certified": false,
+   "full_ms": 121423.60690503847,
+   "full_true_regret": 1.1160171393593143,
+   "trajectory": [
+    [
+     0.0,
+     38249.37749524508
+    ],
+    [
+     120000.0,
+     38249.37749524508
+    ],
+    [
+     120058.62049898133,
+     38249.37749524508
+    ],
+    [
+     121196.49020698853,
+     6737.75
+    ],
+    [
+     121215.77113296371,
+     6737.75
+    ],
+    [
+     121232.2435019305,
+     6737.75
+    ],
+    [
+     121239.61787292501,
+     15.751607247223845
+    ],
+    [
+     121249.76215494098,
+     15.648868253047011
+    ],
+    [
+     121385.314551997,
+     15.648868253047011
+    ],
+    [
+     121416.64602200035,
+     15.648868253047011
+    ],
+    [
+     121423.60690503847,
+     15.648868253047011
+    ]
+   ],
+   "native_exec_ms": 83.79561500623822,
+   "selective_cost_over_exec": 1449.0448801646603,
+   "full_cost_over_exec": 1449.0448801646603
+  },
+  {
+   "query_id": 49,
+   "n_subjoins": 10,
+   "n_orders": 16,
+   "selective_bound": 33.79220515821187,
+   "selective_certified": false,
+   "selective_sampled": 10,
+   "selective_ms": 126964.19425302884,
+   "selective_true_regret": 1.0,
+   "full_bound": 33.79220515821187,
+   "full_certified": false,
+   "full_ms": 126964.19425302884,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     17243838.80897045
+    ],
+    [
+     120000.0,
+     17243838.80897045
+    ],
+    [
+     120103.92872896045,
+     224.36071149903276
+    ],
+    [
+     120450.11870400049,
+     224.36071149903276
+    ],
+    [
+     126624.99819899676,
+     33.83479776076786
+    ],
+    [
+     126634.25123802153,
+     33.83479776076786
+    ],
+    [
+     126647.66655402491,
+     33.79220515821187
+    ],
+    [
+     126664.0841550543,
+     33.79220515821187
+    ],
+    [
+     126919.52446504729,
+     33.79220515821187
+    ],
+    [
+     126952.7248290251,
+     33.79220515821187
+    ],
+    [
+     126964.19425302884,
+     33.79220515821187
+    ]
+   ],
+   "native_exec_ms": 3147.996957995929,
+   "selective_cost_over_exec": 40.33173981650113,
+   "full_cost_over_exec": 40.33173981650113
+  },
+  {
+   "query_id": 50,
+   "n_subjoins": 10,
+   "n_orders": 16,
+   "selective_bound": 5.977293790546803,
+   "selective_certified": false,
+   "selective_sampled": 10,
+   "selective_ms": 71347.96135302167,
+   "selective_true_regret": 1.0,
+   "full_bound": 5.977293790546803,
+   "full_certified": false,
+   "full_ms": 71347.96135302167,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     2732570.5089059845
+    ],
+    [
+     70732.21443302464,
+     58382.524218440056
+    ],
+    [
+     71157.1912880172,
+     6155.0
+    ],
+    [
+     71178.55463002343,
+     24.55598086124402
+    ],
+    [
+     71199.7798490338,
+     22.294117647058822
+    ],
+    [
+     71213.71537604136,
+     6.007459207459207
+    ],
+    [
+     71224.86581001431,
+     5.977293790546803
+    ],
+    [
+     71290.21395801101,
+     5.977293790546803
+    ],
+    [
+     71313.93891805783,
+     5.977293790546803
+    ],
+    [
+     71335.7414760394,
+     5.977293790546803
+    ],
+    [
+     71347.96135302167,
+     5.977293790546803
+    ]
+   ],
+   "native_exec_ms": 304.5264740358107,
+   "selective_cost_over_exec": 234.29149002208436,
+   "full_cost_over_exec": 234.29149002208436
+  },
+  {
+   "query_id": 51,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 2.7113006686825076,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 1201.124813000206,
+   "selective_true_regret": 1.0138708759687085,
+   "full_bound": 2.7113006686825076,
+   "full_certified": false,
+   "full_ms": 1201.124813000206,
+   "full_true_regret": 1.0138708759687085,
+   "trajectory": [
+    [
+     0.0,
+     4182260.26659894
+    ],
+    [
+     683.0071110161953,
+     2.7888321970685586
+    ],
+    [
+     784.1735749971122,
+     2.7888321970685586
+    ],
+    [
+     839.4634980359115,
+     2.7888321970685586
+    ],
+    [
+     927.7038940344937,
+     2.719322357785482
+    ],
+    [
+     953.6729620303959,
+     2.719322357785482
+    ],
+    [
+     981.7278040573001,
+     2.712771924103015
+    ],
+    [
+     996.5173380332999,
+     2.7113006686825076
+    ],
+    [
+     1057.712171052117,
+     2.7113006686825076
+    ],
+    [
+     1098.8549520261586,
+     2.7113006686825076
+    ],
+    [
+     1128.73842503177,
+     2.7113006686825076
+    ],
+    [
+     1153.7891780026257,
+     2.7113006686825076
+    ],
+    [
+     1171.329428034369,
+     2.7113006686825076
+    ],
+    [
+     1184.7485349862836,
+     2.7113006686825076
+    ],
+    [
+     1192.9730760166422,
+     2.7113006686825076
+    ],
+    [
+     1201.124813000206,
+     2.7113006686825076
+    ]
+   ],
+   "native_exec_ms": 13035.219990997575,
+   "selective_cost_over_exec": 0.0921445755291994,
+   "full_cost_over_exec": 0.0921445755291994
+  },
+  {
+   "query_id": 52,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 1.8957407854681174,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 1743.3125780080445,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.8712651128793296,
+   "full_certified": true,
+   "full_ms": 2550.4195039975457,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     5238078.583499432
+    ],
+    [
+     1743.3125780080445,
+     1.8957407854681174
+    ]
+   ],
+   "native_exec_ms": 38169.805007986724,
+   "selective_cost_over_exec": 0.04567255655729104,
+   "full_cost_over_exec": 0.06681772420539982
+  },
+  {
+   "query_id": 53,
+   "n_subjoins": 12,
+   "n_orders": 28,
+   "selective_bound": 2.5091286751475477,
+   "selective_certified": false,
+   "selective_sampled": 12,
+   "selective_ms": 225.2307009184733,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.5091286751475477,
+   "full_certified": false,
+   "full_ms": 225.2307009184733,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     52860.633541844785
+    ],
+    [
+     32.21966896671802,
+     3.407827248441337
+    ],
+    [
+     73.10870598303154,
+     3.407827248441337
+    ],
+    [
+     87.35429297666997,
+     2.7186642879487173
+    ],
+    [
+     106.31234099855646,
+     2.6178130346895165
+    ],
+    [
+     114.68611494638026,
+     2.522524832728236
+    ],
+    [
+     123.87307296739891,
+     2.5091286751475477
+    ],
+    [
+     150.67860094131902,
+     2.5091286751475477
+    ],
+    [
+     171.12131498288363,
+     2.5091286751475477
+    ],
+    [
+     188.12148296274245,
+     2.5091286751475477
+    ],
+    [
+     212.69831695826724,
+     2.5091286751475477
+    ],
+    [
+     220.8985789329745,
+     2.5091286751475477
+    ],
+    [
+     225.2307009184733,
+     2.5091286751475477
+    ]
+   ],
+   "native_exec_ms": 220.89595900615677,
+   "selective_cost_over_exec": 1.0196234550048773,
+   "full_cost_over_exec": 1.0196234550048773
+  },
+  {
+   "query_id": 54,
+   "n_subjoins": 12,
+   "n_orders": 28,
+   "selective_bound": 23.913449349900063,
+   "selective_certified": false,
+   "selective_sampled": 12,
+   "selective_ms": 111.54302401700988,
+   "selective_true_regret": 1.0,
+   "full_bound": 23.913449349900063,
+   "full_certified": false,
+   "full_ms": 111.54302401700988,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     3269.3326323751826
+    ],
+    [
+     13.705788005609065,
+     3269.3326323751826
+    ],
+    [
+     26.68710902798921,
+     42.24079031388243
+    ],
+    [
+     30.34420101903379,
+     39.65719409937139
+    ],
+    [
+     34.54645304009318,
+     27.56870730153669
+    ],
+    [
+     37.565059028565884,
+     25.772654669957742
+    ],
+    [
+     41.13251302624121,
+     24.781748483159433
+    ],
+    [
+     45.75174406636506,
+     23.913449349900063
+    ],
+    [
+     53.07941703358665,
+     23.913449349900063
+    ],
+    [
+     65.67874405300245,
+     23.913449349900063
+    ],
+    [
+     82.38451002398506,
+     23.913449349900063
+    ],
+    [
+     97.90086699649692,
+     23.913449349900063
+    ],
+    [
+     111.54302401700988,
+     23.913449349900063
+    ]
+   ],
+   "native_exec_ms": 22.936586989089847,
+   "selective_cost_over_exec": 4.863104701238554,
+   "full_cost_over_exec": 4.863104701238554
+  },
+  {
+   "query_id": 55,
+   "n_subjoins": 12,
+   "n_orders": 28,
+   "selective_bound": 21.599304620532614,
+   "selective_certified": false,
+   "selective_sampled": 12,
+   "selective_ms": 561.478165036533,
+   "selective_true_regret": 1.0,
+   "full_bound": 21.599304620532614,
+   "full_certified": false,
+   "full_ms": 561.478165036533,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     8943.8089836929
+    ],
+    [
+     346.10946400789544,
+     8943.8089836929
+    ],
+    [
+     395.6691579660401,
+     24.45654815394859
+    ],
+    [
+     436.47797795711085,
+     24.06638421952236
+    ],
+    [
+     457.2765729390085,
+     22.6132075999825
+    ],
+    [
+     466.45408793119714,
+     22.24660254761035
+    ],
+    [
+     469.80353695107624,
+     21.599304620532614
+    ],
+    [
+     473.376368987374,
+     21.599304620532614
+    ],
+    [
+     505.9807189973071,
+     21.599304620532614
+    ],
+    [
+     532.8639340004884,
+     21.599304620532614
+    ],
+    [
+     549.8917360091582,
+     21.599304620532614
+    ],
+    [
+     558.3516020560637,
+     21.599304620532614
+    ],
+    [
+     561.478165036533,
+     21.599304620532614
+    ]
+   ],
+   "native_exec_ms": 36.39600903261453,
+   "selective_cost_over_exec": 15.426915751487792,
+   "full_cost_over_exec": 15.426915751487792
+  },
+  {
+   "query_id": 56,
+   "n_subjoins": 12,
+   "n_orders": 28,
+   "selective_bound": 1.1822188963195075,
+   "selective_certified": true,
+   "selective_sampled": 2,
+   "selective_ms": 2987.386688007973,
+   "selective_true_regret": 1.0005159370601902,
+   "full_bound": 1.1759833570649751,
+   "full_certified": true,
+   "full_ms": 3175.636845990084,
+   "full_true_regret": 1.0005159370601902,
+   "trajectory": [
+    [
+     0.0,
+     68242.25
+    ],
+    [
+     2868.976488010958,
+     68242.25
+    ],
+    [
+     2987.386688007973,
+     1.1822188963195075
+    ]
+   ],
+   "native_exec_ms": 1957.6029089512303,
+   "selective_cost_over_exec": 1.5260432411231146,
+   "full_cost_over_exec": 1.6222068487277665
+  },
+  {
+   "query_id": 57,
+   "n_subjoins": 12,
+   "n_orders": 28,
+   "selective_bound": 631.5744047619048,
+   "selective_certified": false,
+   "selective_sampled": 12,
+   "selective_ms": 139.61958908475935,
+   "selective_true_regret": 1.0,
+   "full_bound": 631.5744047619048,
+   "full_certified": false,
+   "full_ms": 139.61958908475935,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     47680.25
+    ],
+    [
+     15.37708000978455,
+     47680.25
+    ],
+    [
+     26.351257984060794,
+     47680.25
+    ],
+    [
+     45.254771946929395,
+     47531.5
+    ],
+    [
+     55.360367987304926,
+     47531.5
+    ],
+    [
+     64.14085300639272,
+     47382.75
+    ],
+    [
+     67.5794740091078,
+     3446.9454545454546
+    ],
+    [
+     70.41565398685634,
+     2829.7611940298507
+    ],
+    [
+     105.97794299246743,
+     2829.7611940298507
+    ],
+    [
+     115.92196201672778,
+     2829.7611940298507
+    ],
+    [
+     119.01417205808684,
+     631.5744047619048
+    ],
+    [
+     129.29413403617218,
+     631.5744047619048
+    ],
+    [
+     139.61958908475935,
+     631.5744047619048
+    ]
+   ],
+   "native_exec_ms": 8925.031371996738,
+   "selective_cost_over_exec": 0.015643596449736983,
+   "full_cost_over_exec": 0.015643596449736983
+  },
+  {
+   "query_id": 58,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 584.8912846056917,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 324128.71072790585,
+   "selective_true_regret": 1.000002075579321,
+   "full_bound": 584.8912846056917,
+   "full_certified": false,
+   "full_ms": 324128.71072790585,
+   "full_true_regret": 1.000002075579321,
+   "trajectory": [
+    [
+     0.0,
+     720293002.2
+    ],
+    [
+     120000.0,
+     720293002.2
+    ],
+    [
+     121518.37145496393,
+     720293002.2
+    ],
+    [
+     241518.37145496393,
+     720293002.2
+    ],
+    [
+     271058.08610795066,
+     720293002.2
+    ],
+    [
+     273760.5139889638,
+     720293002.2
+    ],
+    [
+     291896.98815793963,
+     720293002.2
+    ],
+    [
+     293778.08847191045,
+     720293002.2
+    ],
+    [
+     323122.16447887477,
+     1014653.6
+    ],
+    [
+     323386.83990284335,
+     587.0046695155237
+    ],
+    [
+     323423.87736280216,
+     586.181386286564
+    ],
+    [
+     323452.49602681724,
+     585.0684309153529
+    ],
+    [
+     323495.9787118132,
+     585.0666290657729
+    ],
+    [
+     323505.14669081895,
+     585.0648272161928
+    ],
+    [
+     323515.5144878081,
+     584.9884443610183
+    ],
+    [
+     323519.8609578074,
+     584.8912846056917
+    ],
+    [
+     323652.3621738306,
+     584.8912846056917
+    ],
+    [
+     323886.4084528177,
+     584.8912846056917
+    ],
+    [
+     323940.8777008648,
+     584.8912846056917
+    ],
+    [
+     323976.063017908,
+     584.8912846056917
+    ],
+    [
+     324048.24346792884,
+     584.8912846056917
+    ],
+    [
+     324085.8415199327,
+     584.8912846056917
+    ],
+    [
+     324094.1881199251,
+     584.8912846056917
+    ],
+    [
+     324110.23234791355,
+     584.8912846056917
+    ],
+    [
+     324128.71072790585,
+     584.8912846056917
+    ]
+   ],
+   "native_exec_ms": null
+  },
+  {
+   "query_id": 59,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 18.420847374476345,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 3270.736810285598,
+   "selective_true_regret": 1.0002574414780117,
+   "full_bound": 18.420847374476345,
+   "full_certified": false,
+   "full_ms": 3270.736810285598,
+   "full_true_regret": 1.0002574414780117,
+   "trajectory": [
+    [
+     0.0,
+     30333433.406939697
+    ],
+    [
+     1094.143174996134,
+     18.849760045247052
+    ],
+    [
+     1163.02572801942,
+     18.849760045247052
+    ],
+    [
+     2209.670154028572,
+     18.849760045247052
+    ],
+    [
+     2357.8435700037517,
+     18.433323888414733
+    ],
+    [
+     2435.4620479862206,
+     18.433323888414733
+    ],
+    [
+     2492.183969996404,
+     18.433323888414733
+    ],
+    [
+     2568.5479470412247,
+     18.42519153901674
+    ],
+    [
+     2619.820045074448,
+     18.424019861651015
+    ],
+    [
+     2641.1931590992026,
+     18.422848184285293
+    ],
+    [
+     2653.2324721338227,
+     18.42184128342894
+    ],
+    [
+     2682.5158031424507,
+     18.420847374476345
+    ],
+    [
+     2732.055076106917,
+     18.420847374476345
+    ],
+    [
+     2799.0459001157433,
+     18.420847374476345
+    ],
+    [
+     2856.7821351462044,
+     18.420847374476345
+    ],
+    [
+     2891.2181181949563,
+     18.420847374476345
+    ],
+    [
+     2955.173819209449,
+     18.420847374476345
+    ],
+    [
+     3010.4432821972296,
+     18.420847374476345
+    ],
+    [
+     3067.365688213613,
+     18.420847374476345
+    ],
+    [
+     3099.199699179735,
+     18.420847374476345
+    ],
+    [
+     3124.183341220487,
+     18.420847374476345
+    ],
+    [
+     3170.217796228826,
+     18.420847374476345
+    ],
+    [
+     3209.1947032604367,
+     18.420847374476345
+    ],
+    [
+     3229.9485642579384,
+     18.420847374476345
+    ],
+    [
+     3270.736810285598,
+     18.420847374476345
+    ]
+   ],
+   "native_exec_ms": 9352.072427980602,
+   "selective_cost_over_exec": 0.34973390502193213,
+   "full_cost_over_exec": 0.34973390502193213
+  },
+  {
+   "query_id": 60,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 8.859224257266048,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 1503.5716411075555,
+   "selective_true_regret": 1.0,
+   "full_bound": 8.859224257266048,
+   "full_certified": false,
+   "full_ms": 1503.5716411075555,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     1991399.777449298
+    ],
+    [
+     241.7942130123265,
+     9.575372712648178
+    ],
+    [
+     402.9605459654704,
+     9.575372712648178
+    ],
+    [
+     511.98720396496356,
+     9.575372712648178
+    ],
+    [
+     582.2003099601716,
+     9.575372712648178
+    ],
+    [
+     684.2063939548098,
+     9.018246307524613
+    ],
+    [
+     769.4956319755875,
+     9.018246307524613
+    ],
+    [
+     838.7971699703485,
+     8.888364804120114
+    ],
+    [
+     899.2702379473485,
+     8.888364804120114
+    ],
+    [
+     926.0167239699513,
+     8.879490117004599
+    ],
+    [
+     938.9018859365024,
+     8.870615429889083
+    ],
+    [
+     944.9799979338422,
+     8.86475062828535
+    ],
+    [
+     977.3080509039573,
+     8.86417124821788
+    ],
+    [
+     991.1759739043191,
+     8.859224257266048
+    ],
+    [
+     1028.262578882277,
+     8.859224257266048
+    ],
+    [
+     1131.6569029004313,
+     8.859224257266048
+    ],
+    [
+     1198.8901119329967,
+     8.859224257266048
+    ],
+    [
+     1277.7690339717083,
+     8.859224257266048
+    ],
+    [
+     1326.8790720030665,
+     8.859224257266048
+    ],
+    [
+     1371.195001003798,
+     8.859224257266048
+    ],
+    [
+     1414.6642910200171,
+     8.859224257266048
+    ],
+    [
+     1433.1092039938085,
+     8.859224257266048
+    ],
+    [
+     1455.3111290442757,
+     8.859224257266048
+    ],
+    [
+     1491.546742094215,
+     8.859224257266048
+    ],
+    [
+     1503.5716411075555,
+     8.859224257266048
+    ]
+   ],
+   "native_exec_ms": 1047.110334970057,
+   "selective_cost_over_exec": 1.4359247453617687,
+   "full_cost_over_exec": 1.4359247453617687
+  },
+  {
+   "query_id": 61,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 18.474865979215938,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 713.6411849642172,
+   "selective_true_regret": 1.0,
+   "full_bound": 18.474865979215938,
+   "full_certified": false,
+   "full_ms": 713.6411849642172,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     370905.6598233461
+    ],
+    [
+     51.822065957821906,
+     21.655157310427473
+    ],
+    [
+     79.23364493763074,
+     21.655157310427473
+    ],
+    [
+     146.46118192467839,
+     21.655157310427473
+    ],
+    [
+     193.8060889369808,
+     19.56674481841972
+    ],
+    [
+     224.14567996747792,
+     19.56674481841972
+    ],
+    [
+     238.04625996854156,
+     19.49099608643357
+    ],
+    [
+     251.80860102409497,
+     18.678573624425987
+    ],
+    [
+     262.71789299789816,
+     18.60598224627959
+    ],
+    [
+     267.48614700045437,
+     18.52956827328773
+    ],
+    [
+     279.32881098240614,
+     18.47719486856142
+    ],
+    [
+     307.0983359357342,
+     18.474865979215938
+    ],
+    [
+     351.4331969199702,
+     18.474865979215938
+    ],
+    [
+     388.8347478932701,
+     18.474865979215938
+    ],
+    [
+     429.8005739110522,
+     18.474865979215938
+    ],
+    [
+     468.2061419589445,
+     18.474865979215938
+    ],
+    [
+     512.1732169645838,
+     18.474865979215938
+    ],
+    [
+     537.5648109475151,
+     18.474865979215938
+    ],
+    [
+     572.0144749502651,
+     18.474865979215938
+    ],
+    [
+     596.5447439812124,
+     18.474865979215938
+    ],
+    [
+     624.4632150046527,
+     18.474865979215938
+    ],
+    [
+     656.8559000152163,
+     18.474865979215938
+    ],
+    [
+     679.2931910022162,
+     18.474865979215938
+    ],
+    [
+     702.9436929733492,
+     18.474865979215938
+    ],
+    [
+     713.6411849642172,
+     18.474865979215938
+    ]
+   ],
+   "native_exec_ms": 119.50669600628316,
+   "selective_cost_over_exec": 5.9715581537514595,
+   "full_cost_over_exec": 5.9715581537514595
+  },
+  {
+   "query_id": 62,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 17.01548105197088,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 565.2296069310978,
+   "selective_true_regret": 1.0458532055881484,
+   "full_bound": 17.01548105197088,
+   "full_certified": false,
+   "full_ms": 565.2296069310978,
+   "full_true_regret": 1.0458532055881484,
+   "trajectory": [
+    [
+     0.0,
+     35526.39915995896
+    ],
+    [
+     33.22880400810391,
+     20.677300963752607
+    ],
+    [
+     41.14777396898717,
+     20.677300963752607
+    ],
+    [
+     82.76376698631793,
+     20.677300963752607
+    ],
+    [
+     124.64053300209343,
+     18.48791559031248
+    ],
+    [
+     141.01840002695099,
+     18.48791559031248
+    ],
+    [
+     153.21783599210903,
+     17.503152996129703
+    ],
+    [
+     162.06393798347563,
+     17.503152996129703
+    ],
+    [
+     170.68210197612643,
+     17.402424950671932
+    ],
+    [
+     187.20385699998587,
+     17.402424950671932
+    ],
+    [
+     198.16104596247897,
+     17.119294271637177
+    ],
+    [
+     216.28767997026443,
+     17.01548105197088
+    ],
+    [
+     259.878646931611,
+     17.01548105197088
+    ],
+    [
+     274.57956393482164,
+     17.01548105197088
+    ],
+    [
+     308.2204548991285,
+     17.01548105197088
+    ],
+    [
+     337.71405392326415,
+     17.01548105197088
+    ],
+    [
+     348.4862439217977,
+     17.01548105197088
+    ],
+    [
+     390.08094591554254,
+     17.01548105197088
+    ],
+    [
+     429.82969793956727,
+     17.01548105197088
+    ],
+    [
+     456.40011894283816,
+     17.01548105197088
+    ],
+    [
+     486.20201292214915,
+     17.01548105197088
+    ],
+    [
+     511.96963095571846,
+     17.01548105197088
+    ],
+    [
+     547.6473049493507,
+     17.01548105197088
+    ],
+    [
+     559.983154933434,
+     17.01548105197088
+    ],
+    [
+     565.2296069310978,
+     17.01548105197088
+    ]
+   ],
+   "native_exec_ms": 31.883677991572767,
+   "selective_cost_over_exec": 17.727867126261113,
+   "full_cost_over_exec": 17.727867126261113
+  },
+  {
+   "query_id": 63,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 178.67821853835093,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 370.32678100513294,
+   "selective_true_regret": 1.0301708793164828,
+   "full_bound": 178.67821853835093,
+   "full_certified": false,
+   "full_ms": 370.32678100513294,
+   "full_true_regret": 1.0301708793164828,
+   "trajectory": [
+    [
+     0.0,
+     32912.096265755594
+    ],
+    [
+     15.263986017089337,
+     316.84545360609974
+    ],
+    [
+     40.8254720387049,
+     316.84545360609974
+    ],
+    [
+     76.21158199617639,
+     316.84545360609974
+    ],
+    [
+     89.88821599632502,
+     316.84545360609974
+    ],
+    [
+     102.88145003141835,
+     231.5238167304039
+    ],
+    [
+     114.87733403919265,
+     231.5238167304039
+    ],
+    [
+     132.29098601732403,
+     229.15495277528467
+    ],
+    [
+     144.17313499143347,
+     217.7212734123167
+    ],
+    [
+     148.94287200877443,
+     217.7212734123167
+    ],
+    [
+     158.87516003567725,
+     215.35240945719747
+    ],
+    [
+     171.5692060533911,
+     212.98354550207824
+    ],
+    [
+     186.03319203248248,
+     206.0804178330825
+    ],
+    [
+     197.69688398810104,
+     199.90417964002222
+    ],
+    [
+     209.24910495523363,
+     178.67821853835093
+    ],
+    [
+     221.16944997105747,
+     178.67821853835093
+    ],
+    [
+     233.61789400223643,
+     178.67821853835093
+    ],
+    [
+     254.84140997286886,
+     178.67821853835093
+    ],
+    [
+     277.90021494729444,
+     178.67821853835093
+    ],
+    [
+     298.20475191809237,
+     178.67821853835093
+    ],
+    [
+     325.66066994331777,
+     178.67821853835093
+    ],
+    [
+     335.10260097682476,
+     178.67821853835093
+    ],
+    [
+     346.8053239630535,
+     178.67821853835093
+    ],
+    [
+     358.9233009843156,
+     178.67821853835093
+    ],
+    [
+     370.32678100513294,
+     178.67821853835093
+    ]
+   ],
+   "native_exec_ms": 55.81659794552252,
+   "selective_cost_over_exec": 6.634707141531182,
+   "full_cost_over_exec": 6.634707141531182
+  },
+  {
+   "query_id": 64,
+   "n_subjoins": 18,
+   "n_orders": 60,
+   "selective_bound": 3.6552200170239972,
+   "selective_certified": false,
+   "selective_sampled": 18,
+   "selective_ms": 931.0056190006435,
+   "selective_true_regret": 1.0,
+   "full_bound": 3.6552200170239972,
+   "full_certified": false,
+   "full_ms": 931.0056190006435,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     47304.466589549185
+    ],
+    [
+     39.05929997563362,
+     4.651762181134911
+    ],
+    [
+     127.30896892026067,
+     4.651762181134911
+    ],
+    [
+     158.91580592142418,
+     3.93831888403741
+    ],
+    [
+     253.466245951131,
+     3.7014918421908853
+    ],
+    [
+     276.99042297899723,
+     3.7014918421908853
+    ],
+    [
+     292.2218389576301,
+     3.680372074596373
+    ],
+    [
+     310.41887594619766,
+     3.65968112981512
+    ],
+    [
+     330.76044893823564,
+     3.6552200170239972
+    ],
+    [
+     722.4905489129014,
+     3.6552200170239972
+    ],
+    [
+     751.905488956254,
+     3.6552200170239972
+    ],
+    [
+     780.293992953375,
+     3.6552200170239972
+    ],
+    [
+     806.5762429614551,
+     3.6552200170239972
+    ],
+    [
+     840.7651029992849,
+     3.6552200170239972
+    ],
+    [
+     863.9313600142486,
+     3.6552200170239972
+    ],
+    [
+     884.6798700396903,
+     3.6552200170239972
+    ],
+    [
+     901.3319630175829,
+     3.6552200170239972
+    ],
+    [
+     925.8175099967048,
+     3.6552200170239972
+    ],
+    [
+     931.0056190006435,
+     3.6552200170239972
+    ]
+   ],
+   "native_exec_ms": 241.86613300116733,
+   "selective_cost_over_exec": 3.8492599499085314,
+   "full_cost_over_exec": 3.8492599499085314
+  },
+  {
+   "query_id": 65,
+   "n_subjoins": 18,
+   "n_orders": 60,
+   "selective_bound": 33.90396980251181,
+   "selective_certified": false,
+   "selective_sampled": 18,
+   "selective_ms": 566.0976411309093,
+   "selective_true_regret": 1.0,
+   "full_bound": 33.90396980251181,
+   "full_certified": false,
+   "full_ms": 566.0976411309093,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     53738.57096920758
+    ],
+    [
+     58.39134601410478,
+     82.0521432416404
+    ],
+    [
+     149.57356598461047,
+     82.0521432416404
+    ],
+    [
+     193.7057970208116,
+     52.50006848987414
+    ],
+    [
+     253.20939003722742,
+     47.6001226330236
+    ],
+    [
+     275.22406104253605,
+     45.512395900017566
+    ],
+    [
+     294.6648880606517,
+     45.512395900017566
+    ],
+    [
+     310.5672040837817,
+     39.74588037032502
+    ],
+    [
+     330.49925905652344,
+     35.508646162338735
+    ],
+    [
+     335.96722508082166,
+     34.76401004952757
+    ],
+    [
+     357.55295905983075,
+     33.90396980251181
+    ],
+    [
+     388.0730520468205,
+     33.90396980251181
+    ],
+    [
+     413.88635704061016,
+     33.90396980251181
+    ],
+    [
+     442.25175003521144,
+     33.90396980251181
+    ],
+    [
+     468.3767920359969,
+     33.90396980251181
+    ],
+    [
+     498.81650804309174,
+     33.90396980251181
+    ],
+    [
+     522.1605040715076,
+     33.90396980251181
+    ],
+    [
+     546.1545051075518,
+     33.90396980251181
+    ],
+    [
+     566.0976411309093,
+     33.90396980251181
+    ]
+   ],
+   "native_exec_ms": 55.335193988867104,
+   "selective_cost_over_exec": 10.230336252996647,
+   "full_cost_over_exec": 10.230336252996647
+  },
+  {
+   "query_id": 66,
+   "n_subjoins": 18,
+   "n_orders": 60,
+   "selective_bound": 10.259981347015493,
+   "selective_certified": false,
+   "selective_sampled": 18,
+   "selective_ms": 716.1719129071571,
+   "selective_true_regret": 1.1282373477270475,
+   "full_bound": 10.259981347015493,
+   "full_certified": false,
+   "full_ms": 716.1719129071571,
+   "full_true_regret": 1.1282373477270475,
+   "trajectory": [
+    [
+     0.0,
+     50273.560054908645
+    ],
+    [
+     60.292869980912656,
+     32.45180183615406
+    ],
+    [
+     202.297281997744,
+     32.45180183615406
+    ],
+    [
+     243.5534160467796,
+     18.074624641800796
+    ],
+    [
+     267.63159199617803,
+     18.074624641800796
+    ],
+    [
+     284.7257389803417,
+     18.074624641800796
+    ],
+    [
+     340.70957597577944,
+     16.725900918077073
+    ],
+    [
+     369.54836099175736,
+     15.700393502908362
+    ],
+    [
+     388.82298400858417,
+     12.701231427854644
+    ],
+    [
+     420.33223301405087,
+     11.021362076551531
+    ],
+    [
+     426.08820798341185,
+     10.587757710806109
+    ],
+    [
+     485.26606400264427,
+     10.587757710806109
+    ],
+    [
+     519.0529929823242,
+     10.587757710806109
+    ],
+    [
+     584.1289199888706,
+     10.587757710806109
+    ],
+    [
+     615.5159319750965,
+     10.587757710806109
+    ],
+    [
+     648.6046959762461,
+     10.259981347015493
+    ],
+    [
+     674.425964942202,
+     10.259981347015493
+    ],
+    [
+     705.4362929193303,
+     10.259981347015493
+    ],
+    [
+     716.1719129071571,
+     10.259981347015493
+    ]
+   ],
+   "native_exec_ms": 427.51103098271415,
+   "selective_cost_over_exec": 1.6752127103268,
+   "full_cost_over_exec": 1.6752127103268
+  },
+  {
+   "query_id": 67,
+   "n_subjoins": 18,
+   "n_orders": 60,
+   "selective_bound": 46.005491402563216,
+   "selective_certified": false,
+   "selective_sampled": 18,
+   "selective_ms": 400.74438304873183,
+   "selective_true_regret": 1.0,
+   "full_bound": 46.005491402563216,
+   "full_certified": false,
+   "full_ms": 400.74438304873183,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     3823.4228379973674
+    ],
+    [
+     31.07436205027625,
+     277.9871621737223
+    ],
+    [
+     88.25435402104631,
+     277.9871621737223
+    ],
+    [
+     112.27970704203472,
+     150.97184195642467
+    ],
+    [
+     127.36440805019811,
+     150.97184195642467
+    ],
+    [
+     141.41265803482383,
+     150.97184195642467
+    ],
+    [
+     161.67030605720356,
+     144.21890368411155
+    ],
+    [
+     187.84154305467382,
+     139.49358108685945
+    ],
+    [
+     203.42067803721875,
+     63.63015290652885
+    ],
+    [
+     220.52852204069495,
+     55.89396410330346
+    ],
+    [
+     224.55652005737647,
+     47.90938750645932
+    ],
+    [
+     269.63383704423904,
+     47.90938750645932
+    ],
+    [
+     286.9425810640678,
+     47.90938750645932
+    ],
+    [
+     302.81672708224505,
+     47.90938750645932
+    ],
+    [
+     323.97613307693973,
+     47.90938750645932
+    ],
+    [
+     345.1100490638055,
+     46.25743945451127
+    ],
+    [
+     364.8271620622836,
+     46.25743945451127
+    ],
+    [
+     382.3575780261308,
+     46.25743945451127
+    ],
+    [
+     400.74438304873183,
+     46.005491402563216
+    ]
+   ],
+   "native_exec_ms": 14.253930014092475,
+   "selective_cost_over_exec": 28.11465909068774,
+   "full_cost_over_exec": 28.11465909068774
+  },
+  {
+   "query_id": 68,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 3.979463530148445,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 14850.35653313389,
+   "selective_true_regret": 1.0,
+   "full_bound": 3.979463530148445,
+   "full_certified": false,
+   "full_ms": 14850.35653313389,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     69141839.03217773
+    ],
+    [
+     7850.565709988587,
+     4.087955838750685
+    ],
+    [
+     8064.185110968538,
+     4.087955838750685
+    ],
+    [
+     11161.25895298319,
+     4.087955838750685
+    ],
+    [
+     12321.283228986431,
+     3.9933955883709427
+    ],
+    [
+     12869.60737296613,
+     3.9933955883709427
+    ],
+    [
+     12916.990491969045,
+     3.981086131690018
+    ],
+    [
+     13058.266733947676,
+     3.981086131690018
+    ],
+    [
+     13217.036590969656,
+     3.979668170779386
+    ],
+    [
+     13232.994458987378,
+     3.9795866567794462
+    ],
+    [
+     13249.988184019458,
+     3.979490094889838
+    ],
+    [
+     13254.78297000518,
+     3.979463530148445
+    ],
+    [
+     13945.62453898834,
+     3.979463530148445
+    ],
+    [
+     14208.228468953166,
+     3.979463530148445
+    ],
+    [
+     14371.96755799232,
+     3.979463530148445
+    ],
+    [
+     14434.171150031034,
+     3.979463530148445
+    ],
+    [
+     14504.878605075646,
+     3.979463530148445
+    ],
+    [
+     14535.76173709007,
+     3.979463530148445
+    ],
+    [
+     14621.473330073059,
+     3.979463530148445
+    ],
+    [
+     14690.785001032054,
+     3.979463530148445
+    ],
+    [
+     14743.40185301844,
+     3.979463530148445
+    ],
+    [
+     14768.826257030014,
+     3.979463530148445
+    ],
+    [
+     14802.428701077588,
+     3.979463530148445
+    ],
+    [
+     14827.046518097632,
+     3.979463530148445
+    ],
+    [
+     14850.35653313389,
+     3.979463530148445
+    ]
+   ],
+   "native_exec_ms": 75792.44662000565,
+   "selective_cost_over_exec": 0.19593451848292878,
+   "full_cost_over_exec": 0.19593451848292878
+  },
+  {
+   "query_id": 69,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 11.217541047331693,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 3235.2917748503387,
+   "selective_true_regret": 1.0,
+   "full_bound": 11.217541047331693,
+   "full_certified": false,
+   "full_ms": 3235.2917748503387,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     22464794.978395082
+    ],
+    [
+     781.1959649552591,
+     12.362538965492707
+    ],
+    [
+     878.0372169567272,
+     12.362538965492707
+    ],
+    [
+     1854.4164689374156,
+     12.362538965492707
+    ],
+    [
+     1996.7822399339639,
+     11.355581110638346
+    ],
+    [
+     2277.117484889459,
+     11.355581110638346
+    ],
+    [
+     2311.652299889829,
+     11.233214685179947
+    ],
+    [
+     2393.921607872471,
+     11.232278503021787
+    ],
+    [
+     2453.3044439158402,
+     11.22038656872258
+    ],
+    [
+     2476.5402699122205,
+     11.219112853874579
+    ],
+    [
+     2495.660682907328,
+     11.218176788388044
+    ],
+    [
+     2500.4966208944097,
+     11.217541047331693
+    ],
+    [
+     2676.569487899542,
+     11.217541047331693
+    ],
+    [
+     2742.73066688329,
+     11.217541047331693
+    ],
+    [
+     2840.432539873291,
+     11.217541047331693
+    ],
+    [
+     2882.377367874142,
+     11.217541047331693
+    ],
+    [
+     2921.3160258950666,
+     11.217541047331693
+    ],
+    [
+     2957.2322188760154,
+     11.217541047331693
+    ],
+    [
+     3027.6323409052566,
+     11.217541047331693
+    ],
+    [
+     3076.8754518940113,
+     11.217541047331693
+    ],
+    [
+     3127.6830649003386,
+     11.217541047331693
+    ],
+    [
+     3153.474050865043,
+     11.217541047331693
+    ],
+    [
+     3183.176362887025,
+     11.217541047331693
+    ],
+    [
+     3209.5188648672774,
+     11.217541047331693
+    ],
+    [
+     3235.2917748503387,
+     11.217541047331693
+    ]
+   ],
+   "native_exec_ms": 7497.67982197227,
+   "selective_cost_over_exec": 0.43150572599395065,
+   "full_cost_over_exec": 0.43150572599395065
+  },
+  {
+   "query_id": 70,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 7.35228021529469,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 5766.308813996147,
+   "selective_true_regret": 1.0,
+   "full_bound": 7.35228021529469,
+   "full_certified": false,
+   "full_ms": 5766.308813996147,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     10648401.469358826
+    ],
+    [
+     1884.2471599928103,
+     8.285491777076459
+    ],
+    [
+     2096.176950028166,
+     8.285491777076459
+    ],
+    [
+     3839.679048047401,
+     8.285491777076459
+    ],
+    [
+     4178.434049012139,
+     7.481932921148411
+    ],
+    [
+     4531.223102007061,
+     7.481932921148411
+    ],
+    [
+     4581.25797304092,
+     7.365804047411502
+    ],
+    [
+     4965.15382907819,
+     7.364568829667576
+    ],
+    [
+     5036.672475049272,
+     7.354736369594987
+    ],
+    [
+     5055.379633035045,
+     7.353877634388884
+    ],
+    [
+     5072.462160023861,
+     7.352642583563758
+    ],
+    [
+     5076.511427061632,
+     7.35228021529469
+    ],
+    [
+     5364.340858068317,
+     7.35228021529469
+    ],
+    [
+     5416.30313009955,
+     7.35228021529469
+    ],
+    [
+     5466.4936400949955,
+     7.35228021529469
+    ],
+    [
+     5499.65744005749,
+     7.35228021529469
+    ],
+    [
+     5534.039280028082,
+     7.35228021529469
+    ],
+    [
+     5565.3731830534525,
+     7.35228021529469
+    ],
+    [
+     5599.831491010264,
+     7.35228021529469
+    ],
+    [
+     5632.6772249885835,
+     7.35228021529469
+    ],
+    [
+     5671.866782999132,
+     7.35228021529469
+    ],
+    [
+     5699.057438003365,
+     7.35228021529469
+    ],
+    [
+     5720.724039012566,
+     7.35228021529469
+    ],
+    [
+     5744.5122440112755,
+     7.35228021529469
+    ],
+    [
+     5766.308813996147,
+     7.35228021529469
+    ]
+   ],
+   "native_exec_ms": 18417.118499986827,
+   "selective_cost_over_exec": 0.31309505957733136,
+   "full_cost_over_exec": 0.31309505957733136
+  },
+  {
+   "query_id": 71,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 1.9689101832175675,
+   "selective_certified": true,
+   "selective_sampled": 4,
+   "selective_ms": 1395.5114999553189,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.9376641560865417,
+   "full_certified": true,
+   "full_ms": 2783.756417047698,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     1394038.732994461
+    ],
+    [
+     638.153902022168,
+     2.1061326436096315
+    ],
+    [
+     711.372759018559,
+     2.1061326436096315
+    ],
+    [
+     827.9699849663302,
+     2.1061326436096315
+    ],
+    [
+     1395.5114999553189,
+     1.9689101832175675
+    ]
+   ],
+   "native_exec_ms": 4532.95274800621,
+   "selective_cost_over_exec": 0.30785926470756303,
+   "full_cost_over_exec": 0.6141154721438725
+  },
+  {
+   "query_id": 72,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 137.47045624111513,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 3827.4619671865366,
+   "selective_true_regret": 1.0,
+   "full_bound": 137.47045624111513,
+   "full_certified": false,
+   "full_ms": 3827.4619671865366,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     4580674.79662323
+    ],
+    [
+     153.86394003871828,
+     140.45401119800866
+    ],
+    [
+     166.12452402478084,
+     140.45401119800866
+    ],
+    [
+     273.63884006626904,
+     140.45401119800866
+    ],
+    [
+     1452.8122360934503,
+     138.61827032537602
+    ],
+    [
+     1746.4970891014673,
+     138.61827032537602
+    ],
+    [
+     2081.223836110439,
+     138.61827032537602
+    ],
+    [
+     2102.618104137946,
+     138.61827032537602
+    ],
+    [
+     2184.2888511600904,
+     137.67315120338156
+    ],
+    [
+     2196.5436281752773,
+     137.63209859910688
+    ],
+    [
+     2221.546038170345,
+     137.63209859910688
+    ],
+    [
+     2249.7249911539257,
+     137.62583887460684
+    ],
+    [
+     2262.1074541821145,
+     137.58165477049357
+    ],
+    [
+     2268.5984591953456,
+     137.57539504599353
+    ],
+    [
+     2280.8151482022367,
+     137.55160571055995
+    ],
+    [
+     2292.6592031726614,
+     137.47045624111513
+    ],
+    [
+     3444.3313221563585,
+     137.47045624111513
+    ],
+    [
+     3477.8897571377456,
+     137.47045624111513
+    ],
+    [
+     3560.524198168423,
+     137.47045624111513
+    ],
+    [
+     3643.910737184342,
+     137.47045624111513
+    ],
+    [
+     3680.7760042138398,
+     137.47045624111513
+    ],
+    [
+     3710.262605221942,
+     137.47045624111513
+    ],
+    [
+     3744.5557162282057,
+     137.47045624111513
+    ],
+    [
+     3793.6926552210934,
+     137.47045624111513
+    ],
+    [
+     3827.4619671865366,
+     137.47045624111513
+    ]
+   ],
+   "native_exec_ms": 379.69137099571526,
+   "selective_cost_over_exec": 10.080455495075574,
+   "full_cost_over_exec": 10.080455495075574
+  },
+  {
+   "query_id": 73,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 24.359562011391063,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 1405.8645547484048,
+   "selective_true_regret": 1.0,
+   "full_bound": 24.359562011391063,
+   "full_certified": false,
+   "full_ms": 1405.8645547484048,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     574554.6067202091
+    ],
+    [
+     22.89191394811496,
+     31.212948904137875
+    ],
+    [
+     219.1531909047626,
+     31.212948904137875
+    ],
+    [
+     602.0828959299251,
+     31.212948904137875
+    ],
+    [
+     617.199991887901,
+     31.212948904137875
+    ],
+    [
+     655.6985248462297,
+     26.00550308086858
+    ],
+    [
+     706.8147347890772,
+     26.00550308086858
+    ],
+    [
+     852.5544027797878,
+     26.00550308086858
+    ],
+    [
+     953.043297806289,
+     25.842630654165017
+    ],
+    [
+     970.2633998240344,
+     24.539581141344094
+    ],
+    [
+     990.0799817987718,
+     24.495523432058924
+    ],
+    [
+     1037.220942787826,
+     24.495523432058924
+    ],
+    [
+     1066.8569677509367,
+     24.476588344861316
+    ],
+    [
+     1081.6989777958952,
+     24.387857139400396
+    ],
+    [
+     1097.824390802998,
+     24.359562011391063
+    ],
+    [
+     1111.8078248109668,
+     24.359562011391063
+    ],
+    [
+     1190.4602827853523,
+     24.359562011391063
+    ],
+    [
+     1256.8256327649578,
+     24.359562011391063
+    ],
+    [
+     1268.3440977707505,
+     24.359562011391063
+    ],
+    [
+     1306.3498547999188,
+     24.359562011391063
+    ],
+    [
+     1321.4589067501947,
+     24.359562011391063
+    ],
+    [
+     1357.3250607587397,
+     24.359562011391063
+    ],
+    [
+     1376.8831837223843,
+     24.359562011391063
+    ],
+    [
+     1395.807332766708,
+     24.359562011391063
+    ],
+    [
+     1405.8645547484048,
+     24.359562011391063
+    ]
+   ],
+   "native_exec_ms": 238.2259769947268,
+   "selective_cost_over_exec": 5.901390656399843,
+   "full_cost_over_exec": 5.901390656399843
+  },
+  {
+   "query_id": 74,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 3.443572412473887,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 1767.2553620650433,
+   "selective_true_regret": 1.0044259245309333,
+   "full_bound": 3.443572412473887,
+   "full_certified": false,
+   "full_ms": 1767.2553620650433,
+   "full_true_regret": 1.0044259245309333,
+   "trajectory": [
+    [
+     0.0,
+     2301570.698022747
+    ],
+    [
+     385.96226304071024,
+     3.9834991477195647
+    ],
+    [
+     505.69875608198345,
+     3.9834991477195647
+    ],
+    [
+     607.4196820845827,
+     3.9834991477195647
+    ],
+    [
+     766.6117350454442,
+     3.486257371587455
+    ],
+    [
+     814.85937704565,
+     3.486257371587455
+    ],
+    [
+     893.8539390219375,
+     3.4847748449857696
+    ],
+    [
+     960.3838340262882,
+     3.4847748449857696
+    ],
+    [
+     1021.8244430725463,
+     3.461698862453574
+    ],
+    [
+     1071.9186870846897,
+     3.461698862453574
+    ],
+    [
+     1102.0616900641471,
+     3.4525272837304732
+    ],
+    [
+     1140.276923077181,
+     3.443572412473887
+    ],
+    [
+     1244.225348054897,
+     3.443572412473887
+    ],
+    [
+     1344.3128630169667,
+     3.443572412473887
+    ],
+    [
+     1399.0164570277557,
+     3.443572412473887
+    ],
+    [
+     1464.2161630326882,
+     3.443572412473887
+    ],
+    [
+     1483.0722420010716,
+     3.443572412473887
+    ],
+    [
+     1544.737502001226,
+     3.443572412473887
+    ],
+    [
+     1613.5448990389705,
+     3.443572412473887
+    ],
+    [
+     1644.1008090623654,
+     3.443572412473887
+    ],
+    [
+     1683.2428870839067,
+     3.443572412473887
+    ],
+    [
+     1707.1750001050532,
+     3.443572412473887
+    ],
+    [
+     1743.2966121123172,
+     3.443572412473887
+    ],
+    [
+     1755.0567431026138,
+     3.443572412473887
+    ],
+    [
+     1767.2553620650433,
+     3.443572412473887
+    ]
+   ],
+   "native_exec_ms": 2842.6666390150785,
+   "selective_cost_over_exec": 0.6216892750665124,
+   "full_cost_over_exec": 0.6216892750665124
+  },
+  {
+   "query_id": 75,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 26.022133369613673,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 1285.9294709051028,
+   "selective_true_regret": 1.0608565388817426,
+   "full_bound": 26.022133369613673,
+   "full_certified": false,
+   "full_ms": 1285.9294709051028,
+   "full_true_regret": 1.0608565388817426,
+   "trajectory": [
+    [
+     0.0,
+     2301570.698022759
+    ],
+    [
+     117.84544499823824,
+     31.630908372542002
+    ],
+    [
+     223.05630799382925,
+     31.630908372542002
+    ],
+    [
+     301.59431998617947,
+     31.630908372542002
+    ],
+    [
+     390.2603419846855,
+     27.413142598382912
+    ],
+    [
+     427.06898896722123,
+     27.413142598382912
+    ],
+    [
+     475.47013795701787,
+     26.808897623498428
+    ],
+    [
+     491.96343997027725,
+     26.609957716057426
+    ],
+    [
+     516.7064059642144,
+     26.516980608039482
+    ],
+    [
+     548.9700349862687,
+     26.26955988918187
+    ],
+    [
+     560.9511099755764,
+     26.108078605113935
+    ],
+    [
+     571.8192019849084,
+     26.1027624808447
+    ],
+    [
+     655.1965370308608,
+     26.1027624808447
+    ],
+    [
+     741.9232930405997,
+     26.1027624808447
+    ],
+    [
+     793.6261110007763,
+     26.1027624808447
+    ],
+    [
+     842.3333169776015,
+     26.1027624808447
+    ],
+    [
+     895.7513910136186,
+     26.1027624808447
+    ],
+    [
+     952.3206090088934,
+     26.1027624808447
+    ],
+    [
+     1013.2627289858647,
+     26.1027624808447
+    ],
+    [
+     1071.0565109620802,
+     26.1027624808447
+    ],
+    [
+     1147.2793619614094,
+     26.1027624808447
+    ],
+    [
+     1176.236473955214,
+     26.1027624808447
+    ],
+    [
+     1217.5002259318717,
+     26.1027624808447
+    ],
+    [
+     1245.9592459490523,
+     26.1027624808447
+    ],
+    [
+     1285.9294709051028,
+     26.022133369613673
+    ]
+   ],
+   "native_exec_ms": 477.9528910294175,
+   "selective_cost_over_exec": 2.690494178485794,
+   "full_cost_over_exec": 2.690494178485794
+  },
+  {
+   "query_id": 76,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 18.651415738981264,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 936.4383209613152,
+   "selective_true_regret": 1.008512180655932,
+   "full_bound": 18.651415738981264,
+   "full_certified": false,
+   "full_ms": 936.4383209613152,
+   "full_true_regret": 1.008512180655932,
+   "trajectory": [
+    [
+     0.0,
+     244152.40158134475
+    ],
+    [
+     53.89432003721595,
+     244152.40158134475
+    ],
+    [
+     118.1199960410595,
+     29.628714333780252
+    ],
+    [
+     178.64316800842062,
+     29.628714333780252
+    ],
+    [
+     245.67636603023857,
+     29.628714333780252
+    ],
+    [
+     288.05207600817084,
+     29.628714333780252
+    ],
+    [
+     342.99838496372104,
+     23.928445764251666
+    ],
+    [
+     400.968738947995,
+     23.928445764251666
+    ],
+    [
+     427.0245079533197,
+     23.183109678340948
+    ],
+    [
+     479.56781095126644,
+     22.212788270738532
+    ],
+    [
+     499.6821139357053,
+     22.212788270738532
+    ],
+    [
+     528.7975129322149,
+     21.467452184827813
+    ],
+    [
+     562.4785429681651,
+     21.365397844455913
+    ],
+    [
+     585.3415159508586,
+     21.365397844455913
+    ],
+    [
+     623.210625955835,
+     20.80660739952774
+    ],
+    [
+     637.7965819556266,
+     20.67850112420317
+    ],
+    [
+     648.4227759647183,
+     19.908997884042872
+    ],
+    [
+     678.2606169581413,
+     19.12031247711468
+    ],
+    [
+     722.5118109490722,
+     19.12031247711468
+    ],
+    [
+     765.5352059518918,
+     19.12031247711468
+    ],
+    [
+     811.9093949208036,
+     19.12031247711468
+    ],
+    [
+     856.5852529718541,
+     19.12031247711468
+    ],
+    [
+     894.5813049795106,
+     18.682471825984173
+    ],
+    [
+     926.2548129772767,
+     18.651415738981264
+    ],
+    [
+     936.4383209613152,
+     18.651415738981264
+    ]
+   ],
+   "native_exec_ms": 232.53658803878352,
+   "selective_cost_over_exec": 4.027057973367751,
+   "full_cost_over_exec": 4.027057973367751
+  },
+  {
+   "query_id": 77,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 6.64146114827779,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 1089.0309669775888,
+   "selective_true_regret": 1.0,
+   "full_bound": 6.64146114827779,
+   "full_certified": false,
+   "full_ms": 1089.0309669775888,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     830438.5710916519
+    ],
+    [
+     212.37208601087332,
+     7.972958932369825
+    ],
+    [
+     335.11250000447035,
+     7.972958932369825
+    ],
+    [
+     395.34808200551197,
+     7.972958932369825
+    ],
+    [
+     507.0317880017683,
+     6.955908341037337
+    ],
+    [
+     540.061476000119,
+     6.955908341037337
+    ],
+    [
+     601.7835059901699,
+     6.694618330948419
+    ],
+    [
+     615.3873159782961,
+     6.693500502743723
+    ],
+    [
+     631.8775459658355,
+     6.675551845780067
+    ],
+    [
+     655.8393149753101,
+     6.651241972680785
+    ],
+    [
+     676.1597349541262,
+     6.6507636517289
+    ],
+    [
+     681.6505759488791,
+     6.64146114827779
+    ],
+    [
+     719.7040469618514,
+     6.64146114827779
+    ],
+    [
+     757.6078699203208,
+     6.64146114827779
+    ],
+    [
+     821.369650948327,
+     6.64146114827779
+    ],
+    [
+     847.3464419366792,
+     6.64146114827779
+    ],
+    [
+     877.3942049592733,
+     6.64146114827779
+    ],
+    [
+     901.0826479643583,
+     6.64146114827779
+    ],
+    [
+     929.3763469322585,
+     6.64146114827779
+    ],
+    [
+     968.4171178960241,
+     6.64146114827779
+    ],
+    [
+     1000.6091009126976,
+     6.64146114827779
+    ],
+    [
+     1012.2892629005946,
+     6.64146114827779
+    ],
+    [
+     1034.480880945921,
+     6.64146114827779
+    ],
+    [
+     1065.2690579881892,
+     6.64146114827779
+    ],
+    [
+     1089.0309669775888,
+     6.64146114827779
+    ]
+   ],
+   "native_exec_ms": 623.4286680119112,
+   "selective_cost_over_exec": 1.7468413354337144,
+   "full_cost_over_exec": 1.7468413354337144
+  },
+  {
+   "query_id": 78,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 6.278829081800278,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 509.19284409610555,
+   "selective_true_regret": 1.0,
+   "full_bound": 6.278829081800278,
+   "full_certified": false,
+   "full_ms": 509.19284409610555,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     55345.29487382174
+    ],
+    [
+     83.06407096097246,
+     55345.29487382174
+    ],
+    [
+     106.15979396970943,
+     7.229659486022258
+    ],
+    [
+     132.1535559836775,
+     7.229659486022258
+    ],
+    [
+     176.6164000146091,
+     7.229659486022258
+    ],
+    [
+     190.47565996879712,
+     7.229659486022258
+    ],
+    [
+     204.43974598310888,
+     6.473190912682846
+    ],
+    [
+     213.17551896208897,
+     6.458581171891841
+    ],
+    [
+     226.49694397114217,
+     6.314873285745489
+    ],
+    [
+     231.70256399316713,
+     6.289232765445923
+    ],
+    [
+     243.14332398353145,
+     6.284025802691989
+    ],
+    [
+     254.31251002009958,
+     6.278829081800278
+    ],
+    [
+     287.5331999966875,
+     6.278829081800278
+    ],
+    [
+     333.27398099936545,
+     6.278829081800278
+    ],
+    [
+     346.9384229974821,
+     6.278829081800278
+    ],
+    [
+     359.315351000987,
+     6.278829081800278
+    ],
+    [
+     383.37655703071505,
+     6.278829081800278
+    ],
+    [
+     412.11544402176514,
+     6.278829081800278
+    ],
+    [
+     431.3453889917582,
+     6.278829081800278
+    ],
+    [
+     451.5397690120153,
+     6.278829081800278
+    ],
+    [
+     461.2637080135755,
+     6.278829081800278
+    ],
+    [
+     472.7509650401771,
+     6.278829081800278
+    ],
+    [
+     484.61685108486563,
+     6.278829081800278
+    ],
+    [
+     496.33497308241203,
+     6.278829081800278
+    ],
+    [
+     509.19284409610555,
+     6.278829081800278
+    ]
+   ],
+   "native_exec_ms": 75.19347599009052,
+   "selective_cost_over_exec": 6.7717689253148805,
+   "full_cost_over_exec": 6.7717689253148805
+  },
+  {
+   "query_id": 79,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 27.4395965792346,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 938.2486151880585,
+   "selective_true_regret": 1.0319200145363125,
+   "full_bound": 27.4395965792346,
+   "full_certified": false,
+   "full_ms": 938.2486151880585,
+   "full_true_regret": 1.0319200145363125,
+   "trajectory": [
+    [
+     0.0,
+     1733326.7757209004
+    ],
+    [
+     88.91447400674224,
+     32.55758815931494
+    ],
+    [
+     154.9804000533186,
+     32.55758815931494
+    ],
+    [
+     224.54449505312368,
+     32.55758815931494
+    ],
+    [
+     288.8095380621962,
+     28.497397280712466
+    ],
+    [
+     311.6399740683846,
+     28.497397280712466
+    ],
+    [
+     363.80402505164966,
+     28.393754418659096
+    ],
+    [
+     404.41094007110223,
+     28.393754418659096
+    ],
+    [
+     440.8617360750213,
+     28.393754418659096
+    ],
+    [
+     478.6418930743821,
+     27.985961064322897
+    ],
+    [
+     490.43981911381707,
+     27.716233903215794
+    ],
+    [
+     510.450259083882,
+     27.706111840907262
+    ],
+    [
+     531.9065891089849,
+     27.678289044538815
+    ],
+    [
+     540.8654111088254,
+     27.611973969394395
+    ],
+    [
+     559.1707321000285,
+     27.58285937888915
+    ],
+    [
+     589.1432061325759,
+     27.55516035406152
+    ],
+    [
+     599.1712021059357,
+     27.49033357531974
+    ],
+    [
+     671.1072071339004,
+     27.49033357531974
+    ],
+    [
+     732.3013131390326,
+     27.49033357531974
+    ],
+    [
+     767.5787211628631,
+     27.49033357531974
+    ],
+    [
+     806.9888511672616,
+     27.49033357531974
+    ],
+    [
+     844.494526158087,
+     27.49033357531974
+    ],
+    [
+     884.9117071949877,
+     27.49033357531974
+    ],
+    [
+     907.2026122012176,
+     27.49033357531974
+    ],
+    [
+     938.2486151880585,
+     27.4395965792346
+    ]
+   ],
+   "native_exec_ms": 492.7020639879629,
+   "selective_cost_over_exec": 1.9042920331890076,
+   "full_cost_over_exec": 1.9042920331890076
+  },
+  {
+   "query_id": 80,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.2902334767386456,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 36.199413996655494,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.1620414712723746,
+   "full_certified": true,
+   "full_ms": 61.72265694476664,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     21015.5
+    ],
+    [
+     36.199413996655494,
+     1.2902334767386456
+    ]
+   ],
+   "native_exec_ms": 127.01927201123908,
+   "selective_cost_over_exec": 0.2849915089534795,
+   "full_cost_over_exec": 0.48593143361194213
+  },
+  {
+   "query_id": 81,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.1982666053075626,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 29.243594966828823,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 55.50689302617684,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     6463.5
+    ],
+    [
+     29.243594966828823,
+     1.1982666053075626
+    ]
+   ],
+   "native_exec_ms": 78.44506803667173,
+   "selective_cost_over_exec": 0.3727907400521081,
+   "full_cost_over_exec": 0.7075893286271142
+  },
+  {
+   "query_id": 82,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.3706516399690583,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 75.56580501841381,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.2639120293235588,
+   "full_certified": true,
+   "full_ms": 116.93429300794378,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     32823.5
+    ],
+    [
+     75.56580501841381,
+     1.3706516399690583
+    ]
+   ],
+   "native_exec_ms": 193.8410890288651,
+   "selective_cost_over_exec": 0.389833782904311,
+   "full_cost_over_exec": 0.6032482256150086
+  },
+  {
+   "query_id": 83,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.3397695072223375,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 54.719436971936375,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.251243530213851,
+   "full_certified": true,
+   "full_ms": 96.78736893692985,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     39330.0
+    ],
+    [
+     54.719436971936375,
+     1.3397695072223375
+    ]
+   ],
+   "native_exec_ms": 234.71023596357554,
+   "selective_cost_over_exec": 0.2331361337833951,
+   "full_cost_over_exec": 0.4123696120008596
+  },
+  {
+   "query_id": 84,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.0336434906633483,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 338.5181110352278,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.016907798663826,
+   "full_certified": true,
+   "full_ms": 370.8038300392218,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     17385.5
+    ],
+    [
+     338.5181110352278,
+     1.0336434906633483
+    ]
+   ],
+   "native_exec_ms": 705.89172601467,
+   "selective_cost_over_exec": 0.47956095610645055,
+   "full_cost_over_exec": 0.5252984507025029
+  },
+  {
+   "query_id": 85,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.0342128698013786,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 91.14878601394594,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.017582179260774,
+   "full_certified": true,
+   "full_ms": 127.52224499126896,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     17385.5
+    ],
+    [
+     91.14878601394594,
+     1.0342128698013786
+    ]
+   ],
+   "native_exec_ms": 811.6594899911433,
+   "selective_cost_over_exec": 0.11229929192960035,
+   "full_cost_over_exec": 0.15711298464909276
+  },
+  {
+   "query_id": 86,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 2.310613290471646,
+   "selective_certified": false,
+   "selective_sampled": 6,
+   "selective_ms": 283.58619700884447,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.310613290471646,
+   "full_certified": false,
+   "full_ms": 283.58619700884447,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     43764.333333333336
+    ],
+    [
+     79.08959296764806,
+     21882.666666666668
+    ],
+    [
+     169.28984300466254,
+     4.164987223373994
+    ],
+    [
+     190.388296963647,
+     2.525906432748538
+    ],
+    [
+     221.53296798933297,
+     2.310613290471646
+    ],
+    [
+     266.1411429871805,
+     2.310613290471646
+    ],
+    [
+     283.58619700884447,
+     2.310613290471646
+    ]
+   ],
+   "native_exec_ms": 209.13080801256,
+   "selective_cost_over_exec": 1.356023054201621,
+   "full_cost_over_exec": 1.356023054201621
+  },
+  {
+   "query_id": 87,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.9244223123787296,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 30.757718021050096,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.7507035994667457,
+   "full_certified": true,
+   "full_ms": 59.61984797613695,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     34065.5
+    ],
+    [
+     30.757718021050096,
+     1.9244223123787296
+    ]
+   ],
+   "native_exec_ms": 115.96721597015858,
+   "selective_cost_over_exec": 0.26522770046462846,
+   "full_cost_over_exec": 0.5141095048058989
+  },
+  {
+   "query_id": 88,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.078228403425395,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 315.2978399884887,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0644535745857102,
+   "full_certified": true,
+   "full_ms": 343.30006304662675,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     39926.0
+    ],
+    [
+     315.2978399884887,
+     1.078228403425395
+    ]
+   ],
+   "native_exec_ms": 618.1328099919483,
+   "selective_cost_over_exec": 0.5100810616938385,
+   "full_cost_over_exec": 0.555382366859152
+  },
+  {
+   "query_id": 89,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.3668810289389068,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 50.940276007167995,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.2344997821983448,
+   "full_certified": true,
+   "full_ms": 83.73943099286407,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     25103.0
+    ],
+    [
+     50.940276007167995,
+     1.3668810289389068
+    ]
+   ],
+   "native_exec_ms": 165.9588260226883,
+   "selective_cost_over_exec": 0.306945266051737,
+   "full_cost_over_exec": 0.5045795574705741
+  },
+  {
+   "query_id": 90,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.2111195477938075,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 37.822249985765666,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0,
+   "full_certified": true,
+   "full_ms": 71.02842896711081,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     6257.0
+    ],
+    [
+     37.822249985765666,
+     1.2111195477938075
+    ]
+   ],
+   "native_exec_ms": 122.40591604495421,
+   "selective_cost_over_exec": 0.30899037569291377,
+   "full_cost_over_exec": 0.5802695757043741
+  },
+  {
+   "query_id": 91,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.2109031579196274,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 70.8051020046696,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.1616206983375184,
+   "full_certified": true,
+   "full_ms": 103.8227510289289,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     44597.0
+    ],
+    [
+     70.8051020046696,
+     1.2109031579196274
+    ]
+   ],
+   "native_exec_ms": 330.34628903260455,
+   "selective_cost_over_exec": 0.21433599939026796,
+   "full_cost_over_exec": 0.31428459914887014
+  },
+  {
+   "query_id": 92,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.3381047907245558,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 29.95241602184251,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.2212875803903223,
+   "full_certified": true,
+   "full_ms": 79.13988106884062,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     19677.499999999956
+    ],
+    [
+     29.95241602184251,
+     1.3381047907245558
+    ]
+   ],
+   "native_exec_ms": 119.14794403128326,
+   "selective_cost_over_exec": 0.2513884420362156,
+   "full_cost_over_exec": 0.6642152469543394
+  },
+  {
+   "query_id": 93,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.1633983551194675,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 87.88245200412348,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.1392334616569848,
+   "full_certified": true,
+   "full_ms": 114.82874501962215,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     17395.0
+    ],
+    [
+     87.88245200412348,
+     1.1633983551194675
+    ]
+   ],
+   "native_exec_ms": 256.46532099926844,
+   "selective_cost_over_exec": 0.3426679742185266,
+   "full_cost_over_exec": 0.44773595343110617
+  },
+  {
+   "query_id": 94,
+   "n_subjoins": 3,
+   "n_orders": 4,
+   "selective_bound": 1.3262404696482328,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 51.379987969994545,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.243239679302342,
+   "full_certified": true,
+   "full_ms": 79.08503396902233,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     17395.0
+    ],
+    [
+     51.379987969994545,
+     1.3262404696482328
+    ]
+   ],
+   "native_exec_ms": 131.1785279540345,
+   "selective_cost_over_exec": 0.3916798638569744,
+   "full_cost_over_exec": 0.6028809379286071
+  },
+  {
+   "query_id": 95,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 3.3259924224454562,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 403.4756699693389,
+   "selective_true_regret": 1.0,
+   "full_bound": 3.3259924224454562,
+   "full_certified": false,
+   "full_ms": 403.4756699693389,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     460976.9648816027
+    ],
+    [
+     112.9108959576115,
+     4.259393091151826
+    ],
+    [
+     202.13521999539807,
+     4.259393091151826
+    ],
+    [
+     264.68294102232903,
+     3.53962926441546
+    ],
+    [
+     300.7888750289567,
+     3.3259924224454562
+    ],
+    [
+     354.95026799617335,
+     3.3259924224454562
+    ],
+    [
+     381.4481599838473,
+     3.3259924224454562
+    ],
+    [
+     403.4756699693389,
+     3.3259924224454562
+    ]
+   ],
+   "native_exec_ms": 583.105786005035,
+   "selective_cost_over_exec": 0.6919424908019263,
+   "full_cost_over_exec": 0.6919424908019263
+  },
+  {
+   "query_id": 96,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 4.786436148598082,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 423.95708709955215,
+   "selective_true_regret": 1.0246875961810786,
+   "full_bound": 4.786436148598082,
+   "full_certified": false,
+   "full_ms": 423.95708709955215,
+   "full_true_regret": 1.0246875961810786,
+   "trajectory": [
+    [
+     0.0,
+     367713.1435160165
+    ],
+    [
+     139.03148303506896,
+     6.495048246574361
+    ],
+    [
+     220.00240307534114,
+     6.495048246574361
+    ],
+    [
+     289.5860060816631,
+     5.295597981277184
+    ],
+    [
+     323.49797210190445,
+     4.786436148598082
+    ],
+    [
+     378.17230710061267,
+     4.786436148598082
+    ],
+    [
+     404.743051098194,
+     4.786436148598082
+    ],
+    [
+     423.95708709955215,
+     4.786436148598082
+    ]
+   ],
+   "native_exec_ms": 426.11161700915545,
+   "selective_cost_over_exec": 0.9949437428514017,
+   "full_cost_over_exec": 0.9949437428514017
+  },
+  {
+   "query_id": 97,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.0954781618665745,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 1186.8205950013362,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0790601069087205,
+   "full_certified": true,
+   "full_ms": 1579.0810119942762,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     170067.7521765232
+    ],
+    [
+     1186.8205950013362,
+     1.0954781618665745
+    ]
+   ],
+   "native_exec_ms": 3400.699422985781,
+   "selective_cost_over_exec": 0.34899308859214595,
+   "full_cost_over_exec": 0.46434007113979464
+  },
+  {
+   "query_id": 98,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 2.626697367103968,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 541.8288020300679,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.626697367103968,
+   "full_certified": false,
+   "full_ms": 541.8288020300679,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     2289939.0962460837
+    ],
+    [
+     371.4725419995375,
+     2.6988961053023193
+    ],
+    [
+     403.77045702189207,
+     2.6988961053023193
+    ],
+    [
+     449.699730030261,
+     2.6291564032601302
+    ],
+    [
+     463.8174460269511,
+     2.6291564032601302
+    ],
+    [
+     474.1043040412478,
+     2.626697367103968
+    ],
+    [
+     523.5352570307441,
+     2.626697367103968
+    ],
+    [
+     541.8288020300679,
+     2.626697367103968
+    ]
+   ],
+   "native_exec_ms": 2964.8612489691004,
+   "selective_cost_over_exec": 0.18275013787524289,
+   "full_cost_over_exec": 0.18275013787524289
+  },
+  {
+   "query_id": 99,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 4.175118084551785,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 184.6571090281941,
+   "selective_true_regret": 1.0,
+   "full_bound": 4.175118084551785,
+   "full_certified": false,
+   "full_ms": 184.6571090281941,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     204295.08962447444
+    ],
+    [
+     72.29543395806104,
+     4.566856599215626
+    ],
+    [
+     97.90891990996897,
+     4.566856599215626
+    ],
+    [
+     120.91088393935934,
+     4.282132085180098
+    ],
+    [
+     134.82193398522213,
+     4.175118084551785
+    ],
+    [
+     156.85772796859965,
+     4.175118084551785
+    ],
+    [
+     166.67722800048068,
+     4.175118084551785
+    ],
+    [
+     184.6571090281941,
+     4.175118084551785
+    ]
+   ],
+   "native_exec_ms": 218.3230230002664,
+   "selective_cost_over_exec": 0.8457976922936284,
+   "full_cost_over_exec": 0.8457976922936284
+  },
+  {
+   "query_id": 100,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 5.282310207046858,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 240.88793597184122,
+   "selective_true_regret": 1.0,
+   "full_bound": 5.282310207046858,
+   "full_certified": false,
+   "full_ms": 240.88793597184122,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     86835.0
+    ],
+    [
+     51.7979139694944,
+     86835.0
+    ],
+    [
+     111.45221494371071,
+     9.585525014830928
+    ],
+    [
+     149.33805295731872,
+     6.836792741120331
+    ],
+    [
+     178.40981198241934,
+     5.282310207046858
+    ],
+    [
+     200.0270169810392,
+     5.282310207046858
+    ],
+    [
+     229.96651293942705,
+     5.282310207046858
+    ],
+    [
+     240.88793597184122,
+     5.282310207046858
+    ]
+   ],
+   "native_exec_ms": 108.06059901369736,
+   "selective_cost_over_exec": 2.229193046961614,
+   "full_cost_over_exec": 2.229193046961614
+  },
+  {
+   "query_id": 101,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 2.845630453213707,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 322.8554220404476,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.845630453213707,
+   "full_certified": false,
+   "full_ms": 322.8554220404476,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     74867.33333333333
+    ],
+    [
+     67.32328102225438,
+     74867.33333333333
+    ],
+    [
+     160.7598370173946,
+     6.538269961039601
+    ],
+    [
+     214.168876002077,
+     3.9468450901296497
+    ],
+    [
+     254.30048600537702,
+     3.2473148567719496
+    ],
+    [
+     280.25777504080907,
+     2.845630453213707
+    ],
+    [
+     311.86382204759866,
+     2.845630453213707
+    ],
+    [
+     322.8554220404476,
+     2.845630453213707
+    ]
+   ],
+   "native_exec_ms": 180.4699920467101,
+   "selective_cost_over_exec": 1.7889701128644402,
+   "full_cost_over_exec": 1.7889701128644402
+  },
+  {
+   "query_id": 102,
+   "n_subjoins": 6,
+   "n_orders": 8,
+   "selective_bound": 1.659304394677329,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 67.01769703067839,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.408672075303634,
+   "full_certified": true,
+   "full_ms": 174.04783907113597,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     62000.666666666664
+    ],
+    [
+     67.01769703067839,
+     1.659304394677329
+    ]
+   ],
+   "native_exec_ms": 259.71261598169804,
+   "selective_cost_over_exec": 0.2580455969663065,
+   "full_cost_over_exec": 0.6701555040491415
+  },
+  {
+   "query_id": 103,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 2.2839930866103915,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 182.56363994441926,
+   "selective_true_regret": 1.0296010602096028,
+   "full_bound": 2.2839930866103915,
+   "full_certified": false,
+   "full_ms": 182.56363994441926,
+   "full_true_regret": 1.0296010602096028,
+   "trajectory": [
+    [
+     0.0,
+     165462.87537056333
+    ],
+    [
+     65.08625199785456,
+     2.3919994899360066
+    ],
+    [
+     87.56276097847149,
+     2.3919994899360066
+    ],
+    [
+     119.46940294001251,
+     2.2982021595182847
+    ],
+    [
+     138.00182595150545,
+     2.2839930866103915
+    ],
+    [
+     161.2567989504896,
+     2.2839930866103915
+    ],
+    [
+     171.73659894615412,
+     2.2839930866103915
+    ],
+    [
+     182.56363994441926,
+     2.2839930866103915
+    ]
+   ],
+   "native_exec_ms": 352.5443130056374,
+   "selective_cost_over_exec": 0.5178459365518115,
+   "full_cost_over_exec": 0.5178459365518115
+  },
+  {
+   "query_id": 104,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.9904593826377552,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 396.67584595736116,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.9158276077513745,
+   "full_certified": true,
+   "full_ms": 554.2654638993554,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     351350.6186406215
+    ],
+    [
+     396.67584595736116,
+     1.9904593826377552
+    ]
+   ],
+   "native_exec_ms": 3333.6763129918836,
+   "selective_cost_over_exec": 0.11899051038982109,
+   "full_cost_over_exec": 0.16626253176989378
+  },
+  {
+   "query_id": 105,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 2.031164843501523,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 1834.0482840430923,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.031164843501523,
+   "full_certified": false,
+   "full_ms": 1834.0482840430923,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     6822465.862452189
+    ],
+    [
+     1593.5994760366157,
+     2.052287105161211
+    ],
+    [
+     1691.0494560725056,
+     2.052287105161211
+    ],
+    [
+     1723.7851590616629,
+     2.033084924681868
+    ],
+    [
+     1747.3846560460515,
+     2.03132166550253
+    ],
+    [
+     1764.947554038372,
+     2.031164843501523
+    ],
+    [
+     1817.4578330363147,
+     2.031164843501523
+    ],
+    [
+     1834.0482840430923,
+     2.031164843501523
+    ]
+   ],
+   "native_exec_ms": 16570.315930002835,
+   "selective_cost_over_exec": 0.11068275896431738,
+   "full_cost_over_exec": 0.11068275896431738
+  },
+  {
+   "query_id": 106,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 10.009873020965296,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 494.94328000582755,
+   "selective_true_regret": 1.0196787116092745,
+   "full_bound": 10.009873020965296,
+   "full_certified": false,
+   "full_ms": 494.94328000582755,
+   "full_true_regret": 1.0196787116092745,
+   "trajectory": [
+    [
+     0.0,
+     155511.2311217437
+    ],
+    [
+     341.2695809965953,
+     11.302784624469572
+    ],
+    [
+     390.54261398268864,
+     11.302784624469572
+    ],
+    [
+     415.7075659604743,
+     10.501737798859798
+    ],
+    [
+     436.31482997443527,
+     10.225617477126377
+    ],
+    [
+     455.4850399727002,
+     10.009873020965296
+    ],
+    [
+     477.08086896454915,
+     10.009873020965296
+    ],
+    [
+     494.94328000582755,
+     10.009873020965296
+    ]
+   ],
+   "native_exec_ms": 686.8252950371243,
+   "selective_cost_over_exec": 0.7206247113817712,
+   "full_cost_over_exec": 0.7206247113817712
+  },
+  {
+   "query_id": 107,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.0452930588276856,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 11291.142759961076,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.041031519761653,
+   "full_certified": true,
+   "full_ms": 11683.862617006525,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     726410.3527894815
+    ],
+    [
+     11291.142759961076,
+     1.0452930588276856
+    ]
+   ],
+   "native_exec_ms": 32111.20101402048,
+   "selective_cost_over_exec": 0.351626298718354,
+   "full_cost_over_exec": 0.3638562946276935
+  },
+  {
+   "query_id": 108,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.0417500298265425,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 3886.5242860047147,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.037760779475147,
+   "full_certified": true,
+   "full_ms": 4207.708703004755,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     737407.4643921852
+    ],
+    [
+     3886.5242860047147,
+     1.0417500298265425
+    ]
+   ],
+   "native_exec_ms": 36750.51758100744,
+   "selective_cost_over_exec": 0.10575427345853923,
+   "full_cost_over_exec": 0.11449386239880567
+  },
+  {
+   "query_id": 109,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 11.945241137851779,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 812.2332681086846,
+   "selective_true_regret": 1.005248008756036,
+   "full_bound": 11.945241137851779,
+   "full_certified": false,
+   "full_ms": 812.2332681086846,
+   "full_true_regret": 1.005248008756036,
+   "trajectory": [
+    [
+     0.0,
+     327915.6539968252
+    ],
+    [
+     104.18123297858983,
+     14.400132973594264
+    ],
+    [
+     231.29683500155807,
+     14.400132973594264
+    ],
+    [
+     296.6916020377539,
+     14.400132973594264
+    ],
+    [
+     360.5131780495867,
+     12.716683350961738
+    ],
+    [
+     433.0375890713185,
+     12.716683350961738
+    ],
+    [
+     469.8179570841603,
+     12.617298641194681
+    ],
+    [
+     493.839530099649,
+     12.033959609235476
+    ],
+    [
+     499.6145481127314,
+     11.945241137851779
+    ],
+    [
+     585.4402501136065,
+     11.945241137851779
+    ],
+    [
+     647.3516191472299,
+     11.945241137851779
+    ],
+    [
+     707.9637761344202,
+     11.945241137851779
+    ],
+    [
+     734.9108071066439,
+     11.945241137851779
+    ],
+    [
+     753.9685901138,
+     11.945241137851779
+    ],
+    [
+     794.3445960991085,
+     11.945241137851779
+    ],
+    [
+     812.2332681086846,
+     11.945241137851779
+    ]
+   ],
+   "native_exec_ms": 323.0809519882314,
+   "selective_cost_over_exec": 2.5140240026848475,
+   "full_cost_over_exec": 2.5140240026848475
+  },
+  {
+   "query_id": 110,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 10.665128306492738,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 824.2342230514623,
+   "selective_true_regret": 1.0,
+   "full_bound": 10.665128306492738,
+   "full_certified": false,
+   "full_ms": 824.2342230514623,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     327915.6539968252
+    ],
+    [
+     128.02089197793975,
+     12.850801998421598
+    ],
+    [
+     259.300984966103,
+     12.850801998421598
+    ],
+    [
+     321.84795098146424,
+     12.850801998421598
+    ],
+    [
+     386.7744730086997,
+     11.34957122898238
+    ],
+    [
+     463.0493990262039,
+     11.34957122898238
+    ],
+    [
+     498.85239999275655,
+     11.26166896200398
+    ],
+    [
+     522.851518006064,
+     10.739113948419185
+    ],
+    [
+     528.1718579935841,
+     10.665128306492738
+    ],
+    [
+     611.5380810224451,
+     10.665128306492738
+    ],
+    [
+     668.0354230338708,
+     10.665128306492738
+    ],
+    [
+     722.283341048751,
+     10.665128306492738
+    ],
+    [
+     748.8529850379564,
+     10.665128306492738
+    ],
+    [
+     766.343952040188,
+     10.665128306492738
+    ],
+    [
+     805.6692360551096,
+     10.665128306492738
+    ],
+    [
+     824.2342230514623,
+     10.665128306492738
+    ]
+   ],
+   "native_exec_ms": 260.450532019604,
+   "selective_cost_over_exec": 3.1646478763553554,
+   "full_cost_over_exec": 3.1646478763553554
+  },
+  {
+   "query_id": 111,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 6.979802100479106,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 943.1604948476888,
+   "selective_true_regret": 1.0,
+   "full_bound": 6.979802100479106,
+   "full_certified": false,
+   "full_ms": 943.1604948476888,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     353348.05435730517
+    ],
+    [
+     175.0938850454986,
+     8.233159082870467
+    ],
+    [
+     394.6974070277065,
+     8.233159082870467
+    ],
+    [
+     465.02597897779197,
+     8.233159082870467
+    ],
+    [
+     521.3372949510813,
+     7.238595006700595
+    ],
+    [
+     540.4996719444171,
+     7.238595006700595
+    ],
+    [
+     605.8899749186821,
+     7.238595006700595
+    ],
+    [
+     641.301033901982,
+     7.192768647432737
+    ],
+    [
+     660.4056998621672,
+     7.192768647432737
+    ],
+    [
+     688.5015618754551,
+     7.004947747288831
+    ],
+    [
+     693.9985348726623,
+     6.979802100479106
+    ],
+    [
+     775.3469138988294,
+     6.979802100479106
+    ],
+    [
+     822.3626428516582,
+     6.979802100479106
+    ],
+    [
+     878.3217318123206,
+     6.979802100479106
+    ],
+    [
+     904.912483820226,
+     6.979802100479106
+    ],
+    [
+     943.1604948476888,
+     6.979802100479106
+    ]
+   ],
+   "native_exec_ms": 483.04293799446896,
+   "selective_cost_over_exec": 1.9525396619264692,
+   "full_cost_over_exec": 1.9525396619264692
+  },
+  {
+   "query_id": 112,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 7.370696510179547,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 961.0836599604227,
+   "selective_true_regret": 1.0,
+   "full_bound": 7.370696510179547,
+   "full_certified": false,
+   "full_ms": 961.0836599604227,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     353348.05435730517
+    ],
+    [
+     105.89194804197177,
+     8.605812933483403
+    ],
+    [
+     307.7678550616838,
+     8.605812933483403
+    ],
+    [
+     376.274029025808,
+     8.605812933483403
+    ],
+    [
+     446.4354779920541,
+     7.630331162854665
+    ],
+    [
+     472.70809893961996,
+     7.630331162854665
+    ],
+    [
+     558.3754678955302,
+     7.630331162854665
+    ],
+    [
+     600.2296069054864,
+     7.581735591564461
+    ],
+    [
+     621.0107319056988,
+     7.581735591564461
+    ],
+    [
+     647.9763308889233,
+     7.397945858766904
+    ],
+    [
+     657.4651419068687,
+     7.370696510179547
+    ],
+    [
+     752.944924926851,
+     7.370696510179547
+    ],
+    [
+     808.414650906343,
+     7.370696510179547
+    ],
+    [
+     872.5478359265253,
+     7.370696510179547
+    ],
+    [
+     902.3922949563712,
+     7.370696510179547
+    ],
+    [
+     961.0836599604227,
+     7.370696510179547
+    ]
+   ],
+   "native_exec_ms": 413.7364819762297,
+   "selective_cost_over_exec": 2.3229367044689075,
+   "full_cost_over_exec": 2.3229367044689075
+  },
+  {
+   "query_id": 113,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.4528959570181794,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 207.09753700066358,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.3858126230233296,
+   "full_certified": true,
+   "full_ms": 394.97928507626057,
+   "full_true_regret": 1.0002614064518947,
+   "trajectory": [
+    [
+     0.0,
+     271811.6414253066
+    ],
+    [
+     207.09753700066358,
+     1.4528959570181794
+    ]
+   ],
+   "native_exec_ms": 1449.0536369848996,
+   "selective_cost_over_exec": 0.14291916580229508,
+   "full_cost_over_exec": 0.2725774084512902
+  },
+  {
+   "query_id": 114,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.5971993696630307,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 210.46927297720686,
+   "selective_true_regret": 1.0106317599732173,
+   "full_bound": 1.566772904526742,
+   "full_certified": true,
+   "full_ms": 364.4882850931026,
+   "full_true_regret": 1.0106317599732173,
+   "trajectory": [
+    [
+     0.0,
+     405353.85442145664
+    ],
+    [
+     210.46927297720686,
+     1.5971993696630307
+    ]
+   ],
+   "native_exec_ms": 1397.0654069562443,
+   "selective_cost_over_exec": 0.15065098021126416,
+   "full_cost_over_exec": 0.260895648319863
+  },
+  {
+   "query_id": 115,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.32815768303128,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 361.21584102511406,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.2898873224455127,
+   "full_certified": true,
+   "full_ms": 568.9178239554167,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     487990.61719902355
+    ],
+    [
+     361.21584102511406,
+     1.32815768303128
+    ]
+   ],
+   "native_exec_ms": 3256.8934700102545,
+   "selective_cost_over_exec": 0.11090809212865557,
+   "full_cost_over_exec": 0.174681127643277
+  },
+  {
+   "query_id": 116,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 11.195260269533668,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 185.73728791670874,
+   "selective_true_regret": 1.0,
+   "full_bound": 11.195260269533668,
+   "full_certified": false,
+   "full_ms": 185.73728791670874,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     343549.6425007184
+    ],
+    [
+     42.65469801612198,
+     11.867780118122585
+    ],
+    [
+     91.26850398024544,
+     11.867780118122585
+    ],
+    [
+     127.52629700116813,
+     11.290260693599455
+    ],
+    [
+     148.76346895471215,
+     11.207942213572169
+    ],
+    [
+     160.99140292499214,
+     11.195260269533668
+    ],
+    [
+     176.91536288475618,
+     11.195260269533668
+    ],
+    [
+     185.73728791670874,
+     11.195260269533668
+    ]
+   ],
+   "native_exec_ms": 261.48864900460467,
+   "selective_cost_over_exec": 0.7103072681118101,
+   "full_cost_over_exec": 0.7103072681118101
+  },
+  {
+   "query_id": 117,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 5.567191294514576,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 302.2285070037469,
+   "selective_true_regret": 1.0,
+   "full_bound": 5.567191294514576,
+   "full_certified": false,
+   "full_ms": 302.2285070037469,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     102078.83435638288
+    ],
+    [
+     75.60030499007553,
+     102078.83435638288
+    ],
+    [
+     146.9855949981138,
+     9.731317625214514
+    ],
+    [
+     178.37818601401523,
+     8.444629859696878
+    ],
+    [
+     214.0070489840582,
+     7.183045208186371
+    ],
+    [
+     225.9823179920204,
+     6.747711765469128
+    ],
+    [
+     259.0087570133619,
+     6.747711765469128
+    ],
+    [
+     302.2285070037469,
+     5.567191294514576
+    ]
+   ],
+   "native_exec_ms": 155.25265695760027,
+   "selective_cost_over_exec": 1.9466881464468977,
+   "full_cost_over_exec": 1.9466881464468977
+  },
+  {
+   "query_id": 118,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 2.6873243171572496,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 290.8807859639637,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.6873243171572496,
+   "full_certified": false,
+   "full_ms": 290.8807859639637,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     62000.66666666659
+    ],
+    [
+     69.86258400138468,
+     4.365644904458595
+    ],
+    [
+     98.03238499443978,
+     4.365644904458595
+    ],
+    [
+     171.73207795713097,
+     3.6051317313259945
+    ],
+    [
+     208.83467397652566,
+     2.7680615760809126
+    ],
+    [
+     219.33225594693795,
+     2.6873243171572496
+    ],
+    [
+     248.27823898522183,
+     2.6873243171572496
+    ],
+    [
+     290.8807859639637,
+     2.6873243171572496
+    ]
+   ],
+   "native_exec_ms": 223.69960404466838,
+   "selective_cost_over_exec": 1.300318734162268,
+   "full_cost_over_exec": 1.300318734162268
+  },
+  {
+   "query_id": 119,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 4.641525761456246,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 163.50404592230916,
+   "selective_true_regret": 1.0372051556103643,
+   "full_bound": 4.641525761456246,
+   "full_certified": false,
+   "full_ms": 163.50404592230916,
+   "full_true_regret": 1.0372051556103643,
+   "trajectory": [
+    [
+     0.0,
+     250086.54474989572
+    ],
+    [
+     49.163918010890484,
+     5.0265156483944375
+    ],
+    [
+     76.20233099441975,
+     5.0265156483944375
+    ],
+    [
+     105.93868896830827,
+     4.692430342692388
+    ],
+    [
+     122.93143395800143,
+     4.641525761456246
+    ],
+    [
+     144.5397589704953,
+     4.641525761456246
+    ],
+    [
+     154.04376294463873,
+     4.641525761456246
+    ],
+    [
+     163.50404592230916,
+     4.641525761456246
+    ]
+   ],
+   "native_exec_ms": 253.05650604423136,
+   "selective_cost_over_exec": 0.6461167447468453,
+   "full_cost_over_exec": 0.6461167447468453
+  },
+  {
+   "query_id": 120,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.004084606455541,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 84145.30995901441,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0028374311669823,
+   "full_certified": true,
+   "full_ms": 84809.14477811893,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     1626058.6926498413
+    ],
+    [
+     84145.30995901441,
+     1.004084606455541
+    ]
+   ],
+   "native_exec_ms": null
+  },
+  {
+   "query_id": 121,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 6.878407377018643,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 200.97356499172747,
+   "selective_true_regret": 1.0,
+   "full_bound": 6.878407377018643,
+   "full_certified": false,
+   "full_ms": 200.97356499172747,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     249177.2982894381
+    ],
+    [
+     77.47644797200337,
+     7.6614585567990074
+    ],
+    [
+     111.93646700121462,
+     7.6614585567990074
+    ],
+    [
+     143.12821702333167,
+     7.154473240755222
+    ],
+    [
+     163.31907600397244,
+     6.878407377018643
+    ],
+    [
+     179.2780989781022,
+     6.878407377018643
+    ],
+    [
+     190.08724199375138,
+     6.878407377018643
+    ],
+    [
+     200.97356499172747,
+     6.878407377018643
+    ]
+   ],
+   "native_exec_ms": 823.4050640021451,
+   "selective_cost_over_exec": 0.24407618288731328,
+   "full_cost_over_exec": 0.24407618288731328
+  },
+  {
+   "query_id": 122,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.0038037445211139,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 84526.15992998471,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0023599462338528,
+   "full_certified": true,
+   "full_ms": 85096.87322890386,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     1455009.9678872426
+    ],
+    [
+     84526.15992998471,
+     1.0038037445211139
+    ]
+   ],
+   "native_exec_ms": null
+  },
+  {
+   "query_id": 123,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.3054778413611703,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 1026.8328759702854,
+   "selective_true_regret": 1.0004329377929146,
+   "full_bound": 1.2916981035220834,
+   "full_certified": true,
+   "full_ms": 1250.584450957831,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     1617591.6019770305
+    ],
+    [
+     1026.8328759702854,
+     1.3054778413611703
+    ]
+   ],
+   "native_exec_ms": 9637.92415196076,
+   "selective_cost_over_exec": 0.1065408753773378,
+   "full_cost_over_exec": 0.12975661887766665
+  },
+  {
+   "query_id": 124,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.7718950474261315,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 73.13119404716417,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.6214603908505614,
+   "full_certified": true,
+   "full_ms": 209.5401689875871,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     154482.15692983568
+    ],
+    [
+     73.13119404716417,
+     1.7718950474261315
+    ]
+   ],
+   "native_exec_ms": 531.7821140051819,
+   "selective_cost_over_exec": 0.13752097357387155,
+   "full_cost_over_exec": 0.3940338786677305
+  },
+  {
+   "query_id": 125,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 14.731119738090838,
+   "selective_certified": false,
+   "selective_sampled": 7,
+   "selective_ms": 147.79983315384015,
+   "selective_true_regret": 1.1546038708684443,
+   "full_bound": 14.731119738090838,
+   "full_certified": false,
+   "full_ms": 147.79983315384015,
+   "full_true_regret": 1.1546038708684443,
+   "trajectory": [
+    [
+     0.0,
+     39548.57082729833
+    ],
+    [
+     25.414640025701374,
+     22.693675714371
+    ],
+    [
+     51.419828028883785,
+     22.693675714371
+    ],
+    [
+     75.38043207023293,
+     18.856231006061225
+    ],
+    [
+     93.9357741153799,
+     16.915331583393346
+    ],
+    [
+     115.1870671310462,
+     14.731119738090838
+    ],
+    [
+     137.77902914443985,
+     14.731119738090838
+    ],
+    [
+     147.79983315384015,
+     14.731119738090838
+    ]
+   ],
+   "native_exec_ms": 59.29665797157213,
+   "selective_cost_over_exec": 2.492549128564683,
+   "full_cost_over_exec": 2.492549128564683
+  },
+  {
+   "query_id": 126,
+   "n_subjoins": 7,
+   "n_orders": 12,
+   "selective_bound": 1.0075051578871859,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 34401.30964998389,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.0027358602449272,
+   "full_certified": true,
+   "full_ms": 34801.33063090034,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     737407.4643923441
+    ],
+    [
+     34401.30964998389,
+     1.0075051578871859
+    ]
+   ],
+   "native_exec_ms": 191194.1352750291,
+   "selective_cost_over_exec": 0.17992868662262188,
+   "full_cost_over_exec": 0.18202091073996224
+  },
+  {
+   "query_id": 127,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 21.092495736850037,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 744.5601719082333,
+   "selective_true_regret": 1.0,
+   "full_bound": 21.092495736850037,
+   "full_certified": false,
+   "full_ms": 744.5601719082333,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     305466.0599583555
+    ],
+    [
+     67.17243400635198,
+     25.215871729064787
+    ],
+    [
+     177.87816503550857,
+     25.215871729064787
+    ],
+    [
+     229.27072999300435,
+     25.215871729064787
+    ],
+    [
+     276.44813695224,
+     22.348408421306882
+    ],
+    [
+     347.32821298530325,
+     22.348408421306882
+    ],
+    [
+     384.82705695787445,
+     22.16950764668497
+    ],
+    [
+     423.67646493948996,
+     21.206603935637844
+    ],
+    [
+     434.25470299553126,
+     21.092495736850037
+    ],
+    [
+     497.100242995657,
+     21.092495736850037
+    ],
+    [
+     549.3158499593846,
+     21.092495736850037
+    ],
+    [
+     610.1344929775223,
+     21.092495736850037
+    ],
+    [
+     642.8221359383315,
+     21.092495736850037
+    ],
+    [
+     668.547996901907,
+     21.092495736850037
+    ],
+    [
+     711.9168139179237,
+     21.092495736850037
+    ],
+    [
+     744.5601719082333,
+     21.092495736850037
+    ]
+   ],
+   "native_exec_ms": 154.08741403371096,
+   "selective_cost_over_exec": 4.832063517824628,
+   "full_cost_over_exec": 4.832063517824628
+  },
+  {
+   "query_id": 128,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 8.85827051409104,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 851.1469199438579,
+   "selective_true_regret": 1.006187675977842,
+   "full_bound": 8.85827051409104,
+   "full_certified": false,
+   "full_ms": 851.1469199438579,
+   "full_true_regret": 1.006187675977842,
+   "trajectory": [
+    [
+     0.0,
+     111229.38695243327
+    ],
+    [
+     104.58031896268949,
+     10.56597608707231
+    ],
+    [
+     237.21187794581056,
+     10.56597608707231
+    ],
+    [
+     298.1023299507797,
+     10.56597608707231
+    ],
+    [
+     360.00836599851027,
+     9.277218625469278
+    ],
+    [
+     429.23463199986145,
+     9.277218625469278
+    ],
+    [
+     472.24167798412964,
+     9.20665171149748
+    ],
+    [
+     508.9871740201488,
+     8.899858528929194
+    ],
+    [
+     515.9789060126059,
+     8.85827051409104
+    ],
+    [
+     596.9459270127118,
+     8.85827051409104
+    ],
+    [
+     654.1063089971431,
+     8.85827051409104
+    ],
+    [
+     714.1107299830765,
+     8.85827051409104
+    ],
+    [
+     751.4156919787638,
+     8.85827051409104
+    ],
+    [
+     790.093611984048,
+     8.85827051409104
+    ],
+    [
+     817.786447936669,
+     8.85827051409104
+    ],
+    [
+     851.1469199438579,
+     8.85827051409104
+    ]
+   ],
+   "native_exec_ms": 206.67562098242342,
+   "selective_cost_over_exec": 4.118274404586127,
+   "full_cost_over_exec": 4.118274404586127
+  },
+  {
+   "query_id": 129,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 12.48430349048013,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 1081.176239065826,
+   "selective_true_regret": 1.069817039876442,
+   "full_bound": 12.48430349048013,
+   "full_certified": false,
+   "full_ms": 1081.176239065826,
+   "full_true_regret": 1.069817039876442,
+   "trajectory": [
+    [
+     0.0,
+     319068.6771610845
+    ],
+    [
+     113.83477901108563,
+     14.9813188362072
+    ],
+    [
+     274.08742799889296,
+     14.9813188362072
+    ],
+    [
+     349.9692400218919,
+     14.9813188362072
+    ],
+    [
+     424.1444580256939,
+     13.12571105053641
+    ],
+    [
+     518.628771067597,
+     13.12571105053641
+    ],
+    [
+     575.8271410595626,
+     12.697343725807194
+    ],
+    [
+     628.1099970801733,
+     12.594450611345335
+    ],
+    [
+     637.8087530611083,
+     12.48430349048013
+    ],
+    [
+     728.1659710570239,
+     12.48430349048013
+    ],
+    [
+     798.1850080541335,
+     12.48430349048013
+    ],
+    [
+     887.5755790504627,
+     12.48430349048013
+    ],
+    [
+     934.7160430625081,
+     12.48430349048013
+    ],
+    [
+     986.6575820487924,
+     12.48430349048013
+    ],
+    [
+     1034.2409790609963,
+     12.48430349048013
+    ],
+    [
+     1081.176239065826,
+     12.48430349048013
+    ]
+   ],
+   "native_exec_ms": 219.98570300638676,
+   "selective_cost_over_exec": 4.91475684233187,
+   "full_cost_over_exec": 4.91475684233187
+  },
+  {
+   "query_id": 130,
+   "n_subjoins": 12,
+   "n_orders": 28,
+   "selective_bound": 11.250492740160908,
+   "selective_certified": false,
+   "selective_sampled": 12,
+   "selective_ms": 970.6129999831319,
+   "selective_true_regret": 1.0,
+   "full_bound": 11.250492740160908,
+   "full_certified": false,
+   "full_ms": 970.6129999831319,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     52235.945302701206
+    ],
+    [
+     138.39685695711523,
+     52235.945302701206
+    ],
+    [
+     319.3566089612432,
+     62.07564490231068
+    ],
+    [
+     447.4777419818565,
+     44.48020497246567
+    ],
+    [
+     569.3853900302202,
+     36.19087985969015
+    ],
+    [
+     609.5518519869074,
+     36.19087985969015
+    ],
+    [
+     665.9889920265414,
+     20.346589975349218
+    ],
+    [
+     728.5579650197178,
+     19.072459318391157
+    ],
+    [
+     740.7964190351777,
+     16.680719656283568
+    ],
+    [
+     792.4818200408481,
+     16.680719656283568
+    ],
+    [
+     874.820297001861,
+     16.680719656283568
+    ],
+    [
+     904.5131599996239,
+     16.680719656283568
+    ],
+    [
+     970.6129999831319,
+     11.250492740160908
+    ]
+   ],
+   "native_exec_ms": 130.38660999154672,
+   "selective_cost_over_exec": 7.4441156192806845,
+   "full_cost_over_exec": 7.4441156192806845
+  },
+  {
+   "query_id": 131,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 2021.181431081882,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 619.5341420825571,
+   "selective_true_regret": 1.0,
+   "full_bound": 2021.181431081882,
+   "full_certified": false,
+   "full_ms": 619.5341420825571,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     110832789.3930664
+    ],
+    [
+     90.40769498096779,
+     2114.7781836624754
+    ],
+    [
+     163.41702098725364,
+     2114.7781836624754
+    ],
+    [
+     259.9923569941893,
+     2114.7781836624754
+    ],
+    [
+     280.9415769879706,
+     2027.1428721635898
+    ],
+    [
+     328.6566610331647,
+     2027.1428721635898
+    ],
+    [
+     349.6197390486486,
+     2022.5484820829095
+    ],
+    [
+     371.5871420572512,
+     2021.9388780776574
+    ],
+    [
+     391.4258310687728,
+     2021.901384988247
+    ],
+    [
+     411.9600460981019,
+     2021.181431081882
+    ],
+    [
+     431.5029541030526,
+     2021.181431081882
+    ],
+    [
+     499.6961771394126,
+     2021.181431081882
+    ],
+    [
+     522.7975401212461,
+     2021.181431081882
+    ],
+    [
+     559.3586061149836,
+     2021.181431081882
+    ],
+    [
+     597.8271720814519,
+     2021.181431081882
+    ],
+    [
+     619.5341420825571,
+     2021.181431081882
+    ]
+   ],
+   "native_exec_ms": 1372.9424659977667,
+   "selective_cost_over_exec": 0.45124552370249493,
+   "full_cost_over_exec": 0.45124552370249493
+  },
+  {
+   "query_id": 132,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 472.33133081120434,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 409.3970009707846,
+   "selective_true_regret": 1.0208087295157968,
+   "full_bound": 472.33133081120434,
+   "full_certified": false,
+   "full_ms": 409.3970009707846,
+   "full_true_regret": 1.0208087295157968,
+   "trajectory": [
+    [
+     0.0,
+     311074.6798372865
+    ],
+    [
+     21.845248993486166,
+     546.0261582782067
+    ],
+    [
+     97.46662998804823,
+     546.0261582782067
+    ],
+    [
+     111.43915296997875,
+     546.0261582782067
+    ],
+    [
+     132.86711496766657,
+     489.81442803502784
+    ],
+    [
+     171.25679494347423,
+     489.81442803502784
+    ],
+    [
+     191.56421395018697,
+     478.46294726257474
+    ],
+    [
+     208.3083629840985,
+     478.04565846100303
+    ],
+    [
+     229.091148939915,
+     476.7027607453713
+    ],
+    [
+     262.9521729541011,
+     476.2966421985262
+    ],
+    [
+     277.79834397369996,
+     472.33133081120434
+    ],
+    [
+     318.627214001026,
+     472.33133081120434
+    ],
+    [
+     336.98286197613925,
+     472.33133081120434
+    ],
+    [
+     367.1541399671696,
+     472.33133081120434
+    ],
+    [
+     389.8177709779702,
+     472.33133081120434
+    ],
+    [
+     409.3970009707846,
+     472.33133081120434
+    ]
+   ],
+   "native_exec_ms": 637.2788239968941,
+   "selective_cost_over_exec": 0.6424142550400825,
+   "full_cost_over_exec": 0.6424142550400825
+  },
+  {
+   "query_id": 133,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 23.344528677625213,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 4193.999395822175,
+   "selective_true_regret": 1.0,
+   "full_bound": 23.344528677625213,
+   "full_certified": false,
+   "full_ms": 4193.999395822175,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     5260323.775266886
+    ],
+    [
+     103.35303202737123,
+     23.966729866123906
+    ],
+    [
+     3856.071966991294,
+     23.966729866123906
+    ],
+    [
+     3880.9860599576496,
+     23.966729866123906
+    ],
+    [
+     3908.633248938713,
+     23.397700558975266
+    ],
+    [
+     3971.9161249231547,
+     23.397700558975266
+    ],
+    [
+     3987.379281898029,
+     23.363543222848218
+    ],
+    [
+     4012.317052925937,
+     23.345646121604037
+    ],
+    [
+     4024.800193903502,
+     23.344528677625213
+    ],
+    [
+     4041.789277922362,
+     23.344528677625213
+    ],
+    [
+     4104.493983904831,
+     23.344528677625213
+    ],
+    [
+     4120.130619907286,
+     23.344528677625213
+    ],
+    [
+     4150.9161028661765,
+     23.344528677625213
+    ],
+    [
+     4164.430687844288,
+     23.344528677625213
+    ],
+    [
+     4177.312955842353,
+     23.344528677625213
+    ],
+    [
+     4193.999395822175,
+     23.344528677625213
+    ]
+   ],
+   "native_exec_ms": 1011.6343249683268,
+   "selective_cost_over_exec": 4.145766204555668,
+   "full_cost_over_exec": 4.145766204555668
+  },
+  {
+   "query_id": 134,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 64.83553211546423,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 633.4196599200368,
+   "selective_true_regret": 1.0,
+   "full_bound": 64.83553211546423,
+   "full_certified": false,
+   "full_ms": 633.4196599200368,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     34583.440289292485
+    ],
+    [
+     115.48687296453863,
+     98.00544260671104
+    ],
+    [
+     156.87744494061917,
+     98.00544260671104
+    ],
+    [
+     209.7517589572817,
+     98.00544260671104
+    ],
+    [
+     265.74942690785974,
+     73.78868065320482
+    ],
+    [
+     315.0929049006663,
+     73.78868065320482
+    ],
+    [
+     376.3278748956509,
+     73.78868065320482
+    ],
+    [
+     460.38369089365005,
+     70.47693452202216
+    ],
+    [
+     470.71807592874393,
+     68.00492241914772
+    ],
+    [
+     484.795490920078,
+     67.44969167817082
+    ],
+    [
+     514.322446892038,
+     67.44969167817082
+    ],
+    [
+     539.932576881256,
+     67.44969167817082
+    ],
+    [
+     559.7480398719199,
+     67.44969167817082
+    ],
+    [
+     580.926310911309,
+     67.44969167817082
+    ],
+    [
+     623.5187269048765,
+     67.44969167817082
+    ],
+    [
+     633.4196599200368,
+     64.83553211546423
+    ]
+   ],
+   "native_exec_ms": 168.32634096499532,
+   "selective_cost_over_exec": 3.7630453813034586,
+   "full_cost_over_exec": 3.7630453813034586
+  },
+  {
+   "query_id": 135,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 1.209583937808168,
+   "selective_certified": true,
+   "selective_sampled": 1,
+   "selective_ms": 37060.38862100104,
+   "selective_true_regret": 1.0,
+   "full_bound": 1.207701068057362,
+   "full_certified": true,
+   "full_ms": 161485.5506250169,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     11765625.829742432
+    ],
+    [
+     37060.38862100104,
+     1.209583937808168
+    ]
+   ],
+   "native_exec_ms": 231841.89263399458,
+   "selective_cost_over_exec": 0.1598519930973292,
+   "full_cost_over_exec": 0.6965330932660725
+  },
+  {
+   "query_id": 136,
+   "n_subjoins": 15,
+   "n_orders": 48,
+   "selective_bound": 2.1073400232140465,
+   "selective_certified": false,
+   "selective_sampled": 15,
+   "selective_ms": 7497.35842802329,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.1073400232140465,
+   "full_certified": false,
+   "full_ms": 7497.35842802329,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     7550249.093329906
+    ],
+    [
+     5562.773659999948,
+     2.145891403771757
+    ],
+    [
+     6128.871727036312,
+     2.145891403771757
+    ],
+    [
+     6269.005602051038,
+     2.145891403771757
+    ],
+    [
+     6930.906750087161,
+     2.1107133996970657
+    ],
+    [
+     7009.452676051296,
+     2.1107133996970657
+    ],
+    [
+     7075.546451029368,
+     2.1084806026187244
+    ],
+    [
+     7106.580127030611,
+     2.1073400232140465
+    ],
+    [
+     7185.022790043149,
+     2.1073400232140465
+    ],
+    [
+     7311.653303040657,
+     2.1073400232140465
+    ],
+    [
+     7372.704358014744,
+     2.1073400232140465
+    ],
+    [
+     7427.698807965498,
+     2.1073400232140465
+    ],
+    [
+     7442.772821930703,
+     2.1073400232140465
+    ],
+    [
+     7457.578810979612,
+     2.1073400232140465
+    ],
+    [
+     7488.958764995914,
+     2.1073400232140465
+    ],
+    [
+     7497.35842802329,
+     2.1073400232140465
+    ]
+   ],
+   "native_exec_ms": 26078.691692033317,
+   "selective_cost_over_exec": 0.2874898218269757,
+   "full_cost_over_exec": 0.2874898218269757
+  },
+  {
+   "query_id": 137,
+   "n_subjoins": 12,
+   "n_orders": 28,
+   "selective_bound": 2.9772439834529414,
+   "selective_certified": false,
+   "selective_sampled": 12,
+   "selective_ms": 317.8214119398035,
+   "selective_true_regret": 1.0,
+   "full_bound": 2.9772439834529414,
+   "full_certified": false,
+   "full_ms": 317.8214119398035,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     18366.077981077135
+    ],
+    [
+     41.58720897976309,
+     4.729517790745217
+    ],
+    [
+     84.88951995968819,
+     4.729517790745217
+    ],
+    [
+     96.44291392760351,
+     3.344966316851294
+    ],
+    [
+     113.0794298951514,
+     3.135666496384508
+    ],
+    [
+     119.0764608909376,
+     3.0058276916087334
+    ],
+    [
+     132.65000993851572,
+     2.9772439834529414
+    ],
+    [
+     146.8186819110997,
+     2.9772439834529414
+    ],
+    [
+     194.7297019069083,
+     2.9772439834529414
+    ],
+    [
+     234.13978290045634,
+     2.9772439834529414
+    ],
+    [
+     261.9068699423224,
+     2.9772439834529414
+    ],
+    [
+     309.29538793861866,
+     2.9772439834529414
+    ],
+    [
+     317.8214119398035,
+     2.9772439834529414
+    ]
+   ],
+   "native_exec_ms": 151.0819570394233,
+   "selective_cost_over_exec": 2.1036357892615283,
+   "full_cost_over_exec": 2.1036357892615283
+  },
+  {
+   "query_id": 138,
+   "n_subjoins": 12,
+   "n_orders": 28,
+   "selective_bound": 1.1838822495404178,
+   "selective_certified": true,
+   "selective_sampled": 2,
+   "selective_ms": 7230.163704953156,
+   "selective_true_regret": 1.0004689105629772,
+   "full_bound": 1.1775547310082897,
+   "full_certified": true,
+   "full_ms": 7792.987173888832,
+   "full_true_regret": 1.0004689105629772,
+   "trajectory": [
+    [
+     0.0,
+     67944.25
+    ],
+    [
+     6486.741560976952,
+     67944.25
+    ],
+    [
+     7230.163704953156,
+     1.1838822495404178
+    ]
+   ],
+   "native_exec_ms": 3701.9706939463504,
+   "selective_cost_over_exec": 1.9530580608799215,
+   "full_cost_over_exec": 2.1050915358763698
+  },
+  {
+   "query_id": 139,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 6.757179231760698,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 4208.1630998291075,
+   "selective_true_regret": 1.0,
+   "full_bound": 6.757179231760698,
+   "full_certified": false,
+   "full_ms": 4208.1630998291075,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     569433.3079030036
+    ],
+    [
+     210.20175202284008,
+     7.50350177714611
+    ],
+    [
+     307.4419640470296,
+     7.50350177714611
+    ],
+    [
+     2093.5497020254843,
+     7.50350177714611
+    ],
+    [
+     2315.696489997208,
+     6.959832663855187
+    ],
+    [
+     2486.878331983462,
+     6.959832663855187
+    ],
+    [
+     2581.213233002927,
+     6.941399952784756
+    ],
+    [
+     2629.9944040365517,
+     6.790916578259574
+    ],
+    [
+     2651.37516905088,
+     6.77288347196374
+    ],
+    [
+     2661.3689590012655,
+     6.76496099123597
+    ],
+    [
+     2687.083205964882,
+     6.757179231760698
+    ],
+    [
+     3032.7550039510243,
+     6.757179231760698
+    ],
+    [
+     3133.688675938174,
+     6.757179231760698
+    ],
+    [
+     3258.196381968446,
+     6.757179231760698
+    ],
+    [
+     3408.9324409724213,
+     6.757179231760698
+    ],
+    [
+     3589.7809379384853,
+     6.757179231760698
+    ],
+    [
+     3706.3363699126057,
+     6.757179231760698
+    ],
+    [
+     3784.3618709011935,
+     6.757179231760698
+    ],
+    [
+     3849.562359857373,
+     6.757179231760698
+    ],
+    [
+     3954.9968448118307,
+     6.757179231760698
+    ],
+    [
+     3993.778467818629,
+     6.757179231760698
+    ],
+    [
+     4065.748911816627,
+     6.757179231760698
+    ],
+    [
+     4119.478604814503,
+     6.757179231760698
+    ],
+    [
+     4186.389598820824,
+     6.757179231760698
+    ],
+    [
+     4208.1630998291075,
+     6.757179231760698
+    ]
+   ],
+   "native_exec_ms": 383.0753489746712,
+   "selective_cost_over_exec": 10.985209857780093,
+   "full_cost_over_exec": 10.985209857780093
+  },
+  {
+   "query_id": 140,
+   "n_subjoins": 34,
+   "n_orders": 312,
+   "selective_bound": 9.564992594992999,
+   "selective_certified": false,
+   "selective_sampled": 34,
+   "selective_ms": 16486.448666953947,
+   "selective_true_regret": 1.000120039337477,
+   "full_bound": 9.564992594992999,
+   "full_certified": false,
+   "full_ms": 16486.448666953947,
+   "full_true_regret": 1.000120039337477,
+   "trajectory": [
+    [
+     0.0,
+     18115197.6556104
+    ],
+    [
+     6152.0612930180505,
+     10.129622681944955
+    ],
+    [
+     6543.20994898444,
+     10.129622681944955
+    ],
+    [
+     11568.428564991336,
+     10.129622681944955
+    ],
+    [
+     12464.874295983464,
+     9.64365433853152
+    ],
+    [
+     13055.47707399819,
+     9.64365433853152
+    ],
+    [
+     13156.63109900197,
+     9.580200388768981
+    ],
+    [
+     13321.900590963196,
+     9.575546556677763
+    ],
+    [
+     13470.60761594912,
+     9.569209301147758
+    ],
+    [
+     13501.568814914208,
+     9.568564009219187
+    ],
+    [
+     13537.020399875473,
+     9.568564009219187
+    ],
+    [
+     13565.684450906701,
+     9.56643596738658
+    ],
+    [
+     13606.022189895157,
+     9.564992594992999
+    ],
+    [
+     14458.040044875816,
+     9.564992594992999
+    ],
+    [
+     14662.432277866174,
+     9.564992594992999
+    ],
+    [
+     14840.55862686364,
+     9.564992594992999
+    ],
+    [
+     15022.939127869904,
+     9.564992594992999
+    ],
+    [
+     15156.163176870905,
+     9.564992594992999
+    ],
+    [
+     15285.163353895769,
+     9.564992594992999
+    ],
+    [
+     15461.142582877073,
+     9.564992594992999
+    ],
+    [
+     15601.744340849109,
+     9.564992594992999
+    ],
+    [
+     15681.192038871814,
+     9.564992594992999
+    ],
+    [
+     15774.75911390502,
+     9.564992594992999
+    ],
+    [
+     15845.167781924829,
+     9.564992594992999
+    ],
+    [
+     15928.093944909051,
+     9.564992594992999
+    ],
+    [
+     16028.938757895958,
+     9.564992594992999
+    ],
+    [
+     16091.774005908519,
+     9.564992594992999
+    ],
+    [
+     16176.479497924447,
+     9.564992594992999
+    ],
+    [
+     16254.917458980344,
+     9.564992594992999
+    ],
+    [
+     16299.576379999053,
+     9.564992594992999
+    ],
+    [
+     16364.590820972808,
+     9.564992594992999
+    ],
+    [
+     16413.999214943033,
+     9.564992594992999
+    ],
+    [
+     16455.669730901718,
+     9.564992594992999
+    ],
+    [
+     16476.38406092301,
+     9.564992594992999
+    ],
+    [
+     16486.448666953947,
+     9.564992594992999
+    ]
+   ],
+   "native_exec_ms": 7333.088340004906,
+   "selective_cost_over_exec": 2.248227200129832,
+   "full_cost_over_exec": 2.248227200129832
+  },
+  {
+   "query_id": 141,
+   "n_subjoins": 34,
+   "n_orders": 312,
+   "selective_bound": 4.79477653638058,
+   "selective_certified": false,
+   "selective_sampled": 34,
+   "selective_ms": 18772.43739197729,
+   "selective_true_regret": 1.0,
+   "full_bound": 4.79477653638058,
+   "full_certified": false,
+   "full_ms": 18772.43739197729,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     22339893.142724354
+    ],
+    [
+     5357.681416964624,
+     5.129146197136142
+    ],
+    [
+     5834.665059985127,
+     5.129146197136142
+    ],
+    [
+     11892.139386967756,
+     5.129146197136142
+    ],
+    [
+     12861.722468980588,
+     4.843754410444442
+    ],
+    [
+     14018.649427976925,
+     4.843754410444442
+    ],
+    [
+     14144.714373978786,
+     4.804552620979806
+    ],
+    [
+     14403.430512989871,
+     4.804509890926648
+    ],
+    [
+     14458.600170037244,
+     4.804509890926648
+    ],
+    [
+     14531.484697072301,
+     4.804245771708323
+    ],
+    [
+     14590.219137025997,
+     4.8039024305662235
+    ],
+    [
+     14605.486299027689,
+     4.803791135916743
+    ],
+    [
+     15499.970520031638,
+     4.803791135916743
+    ],
+    [
+     15638.149925041944,
+     4.803791135916743
+    ],
+    [
+     15936.360676016193,
+     4.803791135916743
+    ],
+    [
+     16307.716757059097,
+     4.799476783767268
+    ],
+    [
+     16335.09991306346,
+     4.797109460389853
+    ],
+    [
+     16394.499895046465,
+     4.79477653638058
+    ],
+    [
+     16665.49099702388,
+     4.79477653638058
+    ],
+    [
+     17014.494133996777,
+     4.79477653638058
+    ],
+    [
+     17141.432972974144,
+     4.79477653638058
+    ],
+    [
+     17291.43463197397,
+     4.79477653638058
+    ],
+    [
+     17430.187088961247,
+     4.79477653638058
+    ],
+    [
+     17562.170249933843,
+     4.79477653638058
+    ],
+    [
+     17649.195377947763,
+     4.79477653638058
+    ],
+    [
+     17850.314309936948,
+     4.79477653638058
+    ],
+    [
+     17952.971256920137,
+     4.79477653638058
+    ],
+    [
+     18129.15182794677,
+     4.79477653638058
+    ],
+    [
+     18267.130518972408,
+     4.79477653638058
+    ],
+    [
+     18427.883331954945,
+     4.79477653638058
+    ],
+    [
+     18515.11486194795,
+     4.79477653638058
+    ],
+    [
+     18603.03928691428,
+     4.79477653638058
+    ],
+    [
+     18673.531910928432,
+     4.79477653638058
+    ],
+    [
+     18751.87040993478,
+     4.79477653638058
+    ],
+    [
+     18772.43739197729,
+     4.79477653638058
+    ]
+   ],
+   "native_exec_ms": 18725.551993993577,
+   "selective_cost_over_exec": 1.0025038192731917,
+   "full_cost_over_exec": 1.0025038192731917
+  },
+  {
+   "query_id": 142,
+   "n_subjoins": 34,
+   "n_orders": 312,
+   "selective_bound": 7.055893444359472,
+   "selective_certified": false,
+   "selective_sampled": 34,
+   "selective_ms": 14338.938305911142,
+   "selective_true_regret": 1.0,
+   "full_bound": 7.055893444359472,
+   "full_certified": false,
+   "full_ms": 14338.938305911142,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     33449825.766916912
+    ],
+    [
+     5215.3234299621545,
+     7.359666555311231
+    ],
+    [
+     5455.726583953947,
+     7.359666555311231
+    ],
+    [
+     8166.827755921986,
+     7.359666555311231
+    ],
+    [
+     9126.740447885823,
+     7.097076835574668
+    ],
+    [
+     9813.21287684841,
+     7.097076835574668
+    ],
+    [
+     9896.687265834771,
+     7.063678955427802
+    ],
+    [
+     10074.075899843592,
+     7.061345468118216
+    ],
+    [
+     10264.078264881391,
+     7.058922752915658
+    ],
+    [
+     10314.521146879997,
+     7.058619273440935
+    ],
+    [
+     10357.690351898782,
+     7.058619273440935
+    ],
+    [
+     10385.80144487787,
+     7.057242040629613
+    ],
+    [
+     10445.509170880541,
+     7.055893444359472
+    ],
+    [
+     10880.4621429299,
+     7.055893444359472
+    ],
+    [
+     11325.800564896781,
+     7.055893444359472
+    ],
+    [
+     11946.131479926407,
+     7.055893444359472
+    ],
+    [
+     12217.433302896097,
+     7.055893444359472
+    ],
+    [
+     12458.431207865942,
+     7.055893444359472
+    ],
+    [
+     12723.640999873169,
+     7.055893444359472
+    ],
+    [
+     12933.65323083708,
+     7.055893444359472
+    ],
+    [
+     13237.201310810633,
+     7.055893444359472
+    ],
+    [
+     13310.12861180352,
+     7.055893444359472
+    ],
+    [
+     13418.700004811399,
+     7.055893444359472
+    ],
+    [
+     13567.646885756403,
+     7.055893444359472
+    ],
+    [
+     13657.304758788086,
+     7.055893444359472
+    ],
+    [
+     13761.273135780357,
+     7.055893444359472
+    ],
+    [
+     13881.496735790279,
+     7.055893444359472
+    ],
+    [
+     14031.440731778275,
+     7.055893444359472
+    ],
+    [
+     14098.573427821975,
+     7.055893444359472
+    ],
+    [
+     14131.319217849523,
+     7.055893444359472
+    ],
+    [
+     14195.852841832675,
+     7.055893444359472
+    ],
+    [
+     14248.514060862362,
+     7.055893444359472
+    ],
+    [
+     14308.471868862398,
+     7.055893444359472
+    ],
+    [
+     14328.436509880703,
+     7.055893444359472
+    ],
+    [
+     14338.938305911142,
+     7.055893444359472
+    ]
+   ],
+   "native_exec_ms": 20190.584802010562,
+   "selective_cost_over_exec": 0.7101794448511111,
+   "full_cost_over_exec": 0.7101794448511111
+  },
+  {
+   "query_id": 143,
+   "n_subjoins": 34,
+   "n_orders": 312,
+   "selective_bound": 8.920497176608436,
+   "selective_certified": false,
+   "selective_sampled": 34,
+   "selective_ms": 19800.734682008624,
+   "selective_true_regret": 1.000147728308963,
+   "full_bound": 8.920497176608436,
+   "full_certified": false,
+   "full_ms": 19800.734682008624,
+   "full_true_regret": 1.000147728308963,
+   "trajectory": [
+    [
+     0.0,
+     23011307.220732372
+    ],
+    [
+     9141.104076988995,
+     9.68170118259577
+    ],
+    [
+     9702.125094016083,
+     9.68170118259577
+    ],
+    [
+     15138.193166989367,
+     9.68170118259577
+    ],
+    [
+     16122.782387014013,
+     9.023783256198405
+    ],
+    [
+     16799.18060201453,
+     9.023783256198405
+    ],
+    [
+     16898.791555024218,
+     8.93258437126751
+    ],
+    [
+     17163.848684052937,
+     8.929185704195342
+    ],
+    [
+     17335.53105505416,
+     8.924557642573097
+    ],
+    [
+     17381.69392204145,
+     8.923837294647527
+    ],
+    [
+     17416.592411056627,
+     8.923837294647527
+    ],
+    [
+     17446.861501026433,
+     8.921938099445324
+    ],
+    [
+     17487.001691013575,
+     8.920497176608436
+    ],
+    [
+     18454.164276015945,
+     8.920497176608436
+    ],
+    [
+     18564.84329100931,
+     8.920497176608436
+    ],
+    [
+     18677.903303992935,
+     8.920497176608436
+    ],
+    [
+     18767.535816994496,
+     8.920497176608436
+    ],
+    [
+     18861.931148043368,
+     8.920497176608436
+    ],
+    [
+     18941.854049044196,
+     8.920497176608436
+    ],
+    [
+     19007.666308025364,
+     8.920497176608436
+    ],
+    [
+     19084.831055020913,
+     8.920497176608436
+    ],
+    [
+     19152.89584104903,
+     8.920497176608436
+    ],
+    [
+     19203.103679057676,
+     8.920497176608436
+    ],
+    [
+     19271.233509061858,
+     8.920497176608436
+    ],
+    [
+     19335.33971902216,
+     8.920497176608436
+    ],
+    [
+     19408.559515024535,
+     8.920497176608436
+    ],
+    [
+     19483.438255032524,
+     8.920497176608436
+    ],
+    [
+     19546.989928989206,
+     8.920497176608436
+    ],
+    [
+     19598.388825019356,
+     8.920497176608436
+    ],
+    [
+     19644.75266903173,
+     8.920497176608436
+    ],
+    [
+     19693.68890300393,
+     8.920497176608436
+    ],
+    [
+     19732.715999998618,
+     8.920497176608436
+    ],
+    [
+     19763.840631989297,
+     8.920497176608436
+    ],
+    [
+     19788.035919016693,
+     8.920497176608436
+    ],
+    [
+     19800.734682008624,
+     8.920497176608436
+    ]
+   ],
+   "native_exec_ms": 9855.191281996667,
+   "selective_cost_over_exec": 2.009167972029152,
+   "full_cost_over_exec": 2.009167972029152
+  },
+  {
+   "query_id": 144,
+   "n_subjoins": 24,
+   "n_orders": 132,
+   "selective_bound": 12.058671515892987,
+   "selective_certified": false,
+   "selective_sampled": 24,
+   "selective_ms": 3335.126785095781,
+   "selective_true_regret": 1.0065885471913658,
+   "full_bound": 12.058671515892987,
+   "full_certified": false,
+   "full_ms": 3335.126785095781,
+   "full_true_regret": 1.0065885471913658,
+   "trajectory": [
+    [
+     0.0,
+     4848065.028326797
+    ],
+    [
+     749.3636889848858,
+     14.022243428733967
+    ],
+    [
+     1042.3922929912806,
+     14.022243428733967
+    ],
+    [
+     1284.800063003786,
+     14.022243428733967
+    ],
+    [
+     1661.1403949791566,
+     12.350894452286434
+    ],
+    [
+     1714.6931830211543,
+     12.350894452286434
+    ],
+    [
+     1790.24991102051,
+     12.350894452286434
+    ],
+    [
+     1848.6106130294502,
+     12.350894452286434
+    ],
+    [
+     1971.0405500372872,
+     12.178612703824612
+    ],
+    [
+     2024.798292084597,
+     12.161906904666914
+    ],
+    [
+     2107.8629250987433,
+     12.116173267892183
+    ],
+    [
+     2142.71924411878,
+     12.097285633262983
+    ],
+    [
+     2189.195357146673,
+     12.084143969141689
+    ],
+    [
+     2220.567137177568,
+     12.077356802900436
+    ],
+    [
+     2244.7819681838155,
+     12.058671515892987
+    ],
+    [
+     2469.307294173632,
+     12.058671515892987
+    ],
+    [
+     2701.4101191889495,
+     12.058671515892987
+    ],
+    [
+     2856.974816240836,
+     12.058671515892987
+    ],
+    [
+     2951.6759142279625,
+     12.058671515892987
+    ],
+    [
+     3064.444944204297,
+     12.058671515892987
+    ],
+    [
+     3198.0270872008987,
+     12.058671515892987
+    ],
+    [
+     3242.2665241756476,
+     12.058671515892987
+    ],
+    [
+     3285.570028121583,
+     12.058671515892987
+    ],
+    [
+     3311.5342491073534,
+     12.058671515892987
+    ],
+    [
+     3335.126785095781,
+     12.058671515892987
+    ]
+   ],
+   "native_exec_ms": 1694.5663099759258,
+   "selective_cost_over_exec": 1.968129996130492,
+   "full_cost_over_exec": 1.968129996130492
+  },
+  {
+   "query_id": 145,
+   "n_subjoins": 31,
+   "n_orders": 240,
+   "selective_bound": 12.611593800773395,
+   "selective_certified": false,
+   "selective_sampled": 31,
+   "selective_ms": 2412.3348587891087,
+   "selective_true_regret": 1.0,
+   "full_bound": 12.611593800773395,
+   "full_certified": false,
+   "full_ms": 2412.3348587891087,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     147259.16521046162
+    ],
+    [
+     155.834996025078,
+     17.71754480967028
+    ],
+    [
+     288.63796504447237,
+     17.71754480967028
+    ],
+    [
+     534.6365250297822,
+     17.71754480967028
+    ],
+    [
+     626.1553240474313,
+     17.71754480967028
+    ],
+    [
+     726.1207990231924,
+     17.71754480967028
+    ],
+    [
+     803.1949520227499,
+     14.753343153072452
+    ],
+    [
+     908.8823030469939,
+     14.753343153072452
+    ],
+    [
+     957.0267760427669,
+     13.596919080695814
+    ],
+    [
+     985.0731530459598,
+     13.596919080695814
+    ],
+    [
+     1041.8827650137246,
+     13.38864561779027
+    ],
+    [
+     1097.8156399796717,
+     13.38864561779027
+    ],
+    [
+     1131.5986879635602,
+     13.219051448430623
+    ],
+    [
+     1196.5357139706612,
+     13.219051448430623
+    ],
+    [
+     1256.345921952743,
+     13.114258532374986
+    ],
+    [
+     1282.061175967101,
+     12.910597966651194
+    ],
+    [
+     1295.3717339551076,
+     12.689515069333243
+    ],
+    [
+     1323.008568957448,
+     12.626965259183937
+    ],
+    [
+     1470.758841955103,
+     12.611593800773395
+    ],
+    [
+     1675.6762989098206,
+     12.611593800773395
+    ],
+    [
+     1759.7187898936681,
+     12.611593800773395
+    ],
+    [
+     1869.4515379029326,
+     12.611593800773395
+    ],
+    [
+     1955.5527628981508,
+     12.611593800773395
+    ],
+    [
+     2020.4828649293631,
+     12.611593800773395
+    ],
+    [
+     2068.3878799318336,
+     12.611593800773395
+    ],
+    [
+     2129.2216199217364,
+     12.611593800773395
+    ],
+    [
+     2178.6748358863406,
+     12.611593800773395
+    ],
+    [
+     2231.9713108590804,
+     12.611593800773395
+    ],
+    [
+     2281.889391830191,
+     12.611593800773395
+    ],
+    [
+     2315.1616738177836,
+     12.611593800773395
+    ],
+    [
+     2360.3164898231626,
+     12.611593800773395
+    ],
+    [
+     2412.3348587891087,
+     12.611593800773395
+    ]
+   ],
+   "native_exec_ms": 232.6374450349249,
+   "selective_cost_over_exec": 10.369503750468695,
+   "full_cost_over_exec": 10.369503750468695
+  },
+  {
+   "query_id": 146,
+   "n_subjoins": 31,
+   "n_orders": 240,
+   "selective_bound": 7.895190765817754,
+   "selective_certified": false,
+   "selective_sampled": 31,
+   "selective_ms": 3705.5884830770083,
+   "selective_true_regret": 1.0,
+   "full_bound": 7.895190765817754,
+   "full_certified": false,
+   "full_ms": 3705.5884830770083,
+   "full_true_regret": 1.0,
+   "trajectory": [
+    [
+     0.0,
+     276419.7132268995
+    ],
+    [
+     258.5603499901481,
+     276419.7132268995
+    ],
+    [
+     519.1394729772583,
+     9.65810665999184
+    ],
+    [
+     917.3558899783529,
+     9.65810665999184
+    ],
+    [
+     984.966924006585,
+     9.65810665999184
+    ],
+    [
+     1088.4114209911786,
+     9.65810665999184
+    ],
+    [
+     1216.0088649834506,
+     8.359759497969318
+    ],
+    [
+     1267.599794024136,
+     8.359759497969318
+    ],
+    [
+     1340.7305670552887,
+     8.359759497969318
+    ],
+    [
+     1531.643893045839,
+     8.359759497969318
+    ],
+    [
+     1607.8207570826635,
+     8.359759497969318
+    ],
+    [
+     1665.5709070619196,
+     8.359759497969318
+    ],
+    [
+     1756.6172730876133,
+     8.300026928102382
+    ],
+    [
+     1815.1078010560013,
+     8.300026928102382
+    ],
+    [
+     1900.7510941009969,
+     8.024921824185132
+    ],
+    [
+     1965.835063077975,
+     8.024921824185132
+    ],
+    [
+     1991.4156511076726,
+     7.967214707707487
+    ],
+    [
+     2003.2186991302297,
+     7.930690572888212
+    ],
+    [
+     2017.7213421557099,
+     7.895190765817754
+    ],
+    [
+     2355.984787165653,
+     7.895190765817754
+    ],
+    [
+     2559.2043572105467,
+     7.895190765817754
+    ],
+    [
+     2780.3034932003357,
+     7.895190765817754
+    ],
+    [
+     2941.6533911717124,
+     7.895190765817754
+    ],
+    [
+     3015.3046111227013,
+     7.895190765817754
+    ],
+    [
+     3131.514987151604,
+     7.895190765817754
+    ],
+    [
+     3262.2269001440145,
+     7.895190765817754
+    ],
+    [
+     3377.386492153164,
+     7.895190765817754
+    ],
+    [
+     3424.0456791594625,
+     7.895190765817754
+    ],
+    [
+     3495.2079431386665,
+     7.895190765817754
+    ],
+    [
+     3566.6617731330916,
+     7.895190765817754
+    ],
+    [
+     3647.7049640961923,
+     7.895190765817754
+    ],
+    [
+     3705.5884830770083,
+     7.895190765817754
+    ]
+   ],
+   "native_exec_ms": 291.97773698251694,
+   "selective_cost_over_exec": 12.691339145829778,
+   "full_cost_over_exec": 12.691339145829778
+  }
+ ]
+}

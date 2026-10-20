@@ -1,0 +1,40 @@
+{
+  "experiment": "bidirectional_bracket",
+  "dataset": "job_light",
+  "n_queries": 83,
+  "rates": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "per_rate": {
+    "0.1": {
+      "lower_validity": 1.0,
+      "upper_validity": 1.0,
+      "bracket_validity": 1.0,
+      "bracket_width_median": 13.500000000000007,
+      "bracket_width_mean": 14.036072862880093
+    },
+    "0.25": {
+      "lower_validity": 1.0,
+      "upper_validity": 1.0,
+      "bracket_validity": 1.0,
+      "bracket_width_median": 5.318181818181819,
+      "bracket_width_mean": 5.827281345562706
+    },
+    "0.5": {
+      "lower_validity": 1.0,
+      "upper_validity": 1.0,
+      "bracket_validity": 1.0,
+      "bracket_width_median": 2.687499999999999,
+      "bracket_width_mean": 3.0823915503870483
+    }
+  }
+}

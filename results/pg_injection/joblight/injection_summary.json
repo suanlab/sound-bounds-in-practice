@@ -1,0 +1,1249 @@
+{
+  "n_queries": 70,
+  "n_high_load": 0,
+  "truth_injection_failures": [],
+  "pairs": {
+    "native->native_raw": {
+      "n": 70,
+      "plans_differ": 0,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "native_raw->native_upper": {
+      "n": 70,
+      "plans_differ": 0,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "native_raw->native_upper_t1": {
+      "n": 70,
+      "plans_differ": 2,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.0064562603160168,
+        "ci_low": 1.0,
+        "ci_high": 1.018051984036858,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.0072531020725521,
+        "ci_low": 1.0,
+        "ci_high": 1.0270631352774473,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.02857142857142857,
+        "ci_low": 0.0,
+        "ci_high": 0.07142857142857142,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.0003779759280802,
+        "ci_low": 1.0,
+        "ci_high": 1.0010764159472192,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "native_raw->native_lower": {
+      "n": 70,
+      "plans_differ": 5,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.0846724452377503,
+        "ci_low": 1.0004583148968242,
+        "ci_high": 1.2020814825791706,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.0112284731358525,
+        "ci_low": 1.001055049017272,
+        "ci_high": 1.0327232347212951,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.04285714285714286,
+        "ci_low": 0.0,
+        "ci_high": 0.1,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.003758633202741,
+        "ci_low": 1.0006124155575151,
+        "ci_high": 1.0075926199109526,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "native_raw->native_bi": {
+      "n": 70,
+      "plans_differ": 5,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.0846724452377503,
+        "ci_low": 1.0004583148968242,
+        "ci_high": 1.2020814825791706,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.0112284731358525,
+        "ci_low": 1.001055049017272,
+        "ci_high": 1.0327232347212951,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.04285714285714286,
+        "ci_low": 0.0,
+        "ci_high": 0.1,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.003758633202741,
+        "ci_low": 1.0006124155575151,
+        "ci_high": 1.0075926199109526,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "native_raw->native_bi_hat": {
+      "n": 70,
+      "plans_differ": 21,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.1082875662746299,
+        "ci_low": 1.021265460107149,
+        "ci_high": 1.2295405781820932,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.0515492556053072,
+        "ci_low": 1.002711406912436,
+        "ci_high": 1.14755269721877,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.15714285714285714,
+        "ci_low": 0.07142857142857142,
+        "ci_high": 0.24285714285714285,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.02857142857142857,
+        "ci_low": 0.0,
+        "ci_high": 0.07142857142857142,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 0.999415124185904,
+        "ci_low": 0.9922638311191736,
+        "ci_high": 1.0058883542055688,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "native_raw->lpbound_est": {
+      "n": 70,
+      "plans_differ": 36,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 0.9789741025648035,
+        "ci_low": 0.9056210156430609,
+        "ci_high": 1.066150859928024,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.0279376478749258,
+        "ci_low": 0.9591789960830613,
+        "ci_high": 1.1201179013106979,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.2,
+        "ci_low": 0.11428571428571428,
+        "ci_high": 0.3,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.18571428571428572,
+        "ci_low": 0.1,
+        "ci_high": 0.2857142857142857,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 0.9694088539500682,
+        "ci_low": 0.9405248068009769,
+        "ci_high": 0.9940240513041794,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "native_raw->lhat_est": {
+      "n": 70,
+      "plans_differ": 27,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.1267005100244996,
+        "ci_low": 1.0374764509791472,
+        "ci_high": 1.251075167920856,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.0500796559616206,
+        "ci_low": 0.999530660869839,
+        "ci_high": 1.1477094925582643,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.2,
+        "ci_low": 0.11428571428571428,
+        "ci_high": 0.3,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.05714285714285714,
+        "ci_low": 0.014285714285714285,
+        "ci_high": 0.11428571428571428,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 0.9823168882613489,
+        "ci_low": 0.9519265170506667,
+        "ci_high": 1.004137938598802,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "postgres_raw->postgres_upper": {
+      "n": 70,
+      "plans_differ": 27,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.0654746799152974,
+        "ci_low": 0.9939973597374357,
+        "ci_high": 1.1509051257763014,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 0.9710201583594611,
+        "ci_low": 0.7951427055272889,
+        "ci_high": 1.1346651885945935,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.18571428571428572,
+        "ci_low": 0.1,
+        "ci_high": 0.2714285714285714,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.014285714285714285,
+        "ci_low": 0.0,
+        "ci_high": 0.04285714285714286,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.1137384335610956,
+        "ci_low": 1.0591327958794037,
+        "ci_high": 1.1800637626913448,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "postgres_raw->postgres_upper_t1": {
+      "n": 70,
+      "plans_differ": 30,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.0644159099416521,
+        "ci_low": 0.9929984097743345,
+        "ci_high": 1.1492211061823427,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 0.9712416304284426,
+        "ci_low": 0.7953398286302368,
+        "ci_high": 1.1347192835067499,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.18571428571428572,
+        "ci_low": 0.1,
+        "ci_high": 0.2714285714285714,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.02857142857142857,
+        "ci_low": 0.0,
+        "ci_high": 0.07142857142857142,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.1145633624251625,
+        "ci_low": 1.0599011363763668,
+        "ci_high": 1.180819502952651,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "postgres_raw->postgres_lower": {
+      "n": 70,
+      "plans_differ": 16,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.3297577832807528,
+        "ci_low": 1.1383023798754972,
+        "ci_high": 1.5842708569331763,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.5439933978504585,
+        "ci_low": 1.1268186390016848,
+        "ci_high": 2.531347255601773,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.17142857142857143,
+        "ci_low": 0.08571428571428572,
+        "ci_high": 0.2571428571428571,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.218466233281425,
+        "ci_low": 1.0765098372017257,
+        "ci_high": 1.435489588426019,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "postgres_raw->postgres_bi": {
+      "n": 70,
+      "plans_differ": 39,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.4031354684802093,
+        "ci_low": 1.2002374683993493,
+        "ci_high": 1.6746222201942247,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.5865231575200442,
+        "ci_low": 1.1535572318486398,
+        "ci_high": 2.6519002863085803,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.32857142857142857,
+        "ci_low": 0.21428571428571427,
+        "ci_high": 0.44285714285714284,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.3402697916824327,
+        "ci_low": 1.1803231016686706,
+        "ci_high": 1.5788931489992906,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "postgres_raw->postgres_bi_hat": {
+      "n": 70,
+      "plans_differ": 51,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.8693989724138291,
+        "ci_low": 1.490434356721584,
+        "ci_high": 2.3956089147530206,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.817810013351786,
+        "ci_low": 1.255093729033992,
+        "ci_high": 3.444190993176388,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.5285714285714286,
+        "ci_low": 0.4142857142857143,
+        "ci_high": 0.6428571428571429,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.014285714285714285,
+        "ci_low": 0.0,
+        "ci_high": 0.04285714285714286,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.5398782034429248,
+        "ci_low": 1.3358987814733894,
+        "ci_high": 1.821944591707928,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "duckdb_raw->duckdb_upper": {
+      "n": 70,
+      "plans_differ": 9,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.0936199763897303,
+        "ci_low": 1.0218861036199454,
+        "ci_high": 1.1994522057509076,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.0023678776045588,
+        "ci_low": 1.0003379869259783,
+        "ci_high": 1.0087301424726498,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.07142857142857142,
+        "ci_low": 0.014285714285714285,
+        "ci_high": 0.14285714285714285,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.0845919690040278,
+        "ci_low": 1.0099279069686646,
+        "ci_high": 1.2179553827203369,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "duckdb_raw->duckdb_lower": {
+      "n": 70,
+      "plans_differ": 16,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.0845525305583663,
+        "ci_low": 1.0209924007960418,
+        "ci_high": 1.1714832276818208,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.3016653376832756,
+        "ci_low": 1.0145967649038212,
+        "ci_high": 1.9739180757207768,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.12857142857142856,
+        "ci_low": 0.05714285714285714,
+        "ci_high": 0.21428571428571427,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.014285714285714285,
+        "ci_low": 0.0,
+        "ci_high": 0.04285714285714286,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.051938448099897,
+        "ci_low": 0.9980224496613098,
+        "ci_high": 1.1385103432601529,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "duckdb_raw->duckdb_bi": {
+      "n": 70,
+      "plans_differ": 25,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.186088312862663,
+        "ci_low": 1.0792702975623745,
+        "ci_high": 1.3259481156016004,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.305680177849841,
+        "ci_low": 1.0174609661962357,
+        "ci_high": 1.9879750103668334,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.2,
+        "ci_low": 0.11428571428571428,
+        "ci_high": 0.3,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.014285714285714285,
+        "ci_low": 0.0,
+        "ci_high": 0.04285714285714286,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.1409239926957084,
+        "ci_low": 1.0311049405144208,
+        "ci_high": 1.3050660868729935,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "duckdb_raw->duckdb_bi_hat": {
+      "n": 70,
+      "plans_differ": 43,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.2994715501619467,
+        "ci_low": 1.159067628902583,
+        "ci_high": 1.4840662020991227,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.518868711270655,
+        "ci_low": 1.0708637889849721,
+        "ci_high": 2.7525797628699697,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.4142857142857143,
+        "ci_low": 0.3,
+        "ci_high": 0.5285714285714286,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.04285714285714286,
+        "ci_low": 0.0,
+        "ci_high": 0.1,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.1848530514240594,
+        "ci_low": 1.0663642295326645,
+        "ci_high": 1.3564068186821596,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "postgres_raw->lpbound_est": {
+      "n": 70,
+      "plans_differ": 57,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.6911792153707566,
+        "ci_low": 1.3836457230648564,
+        "ci_high": 2.1128203128151566,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.790128471255249,
+        "ci_low": 1.2471344074498405,
+        "ci_high": 3.3277914046492985,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.5428571428571428,
+        "ci_low": 0.42857142857142855,
+        "ci_high": 0.6571428571428571,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.02857142857142857,
+        "ci_low": 0.0,
+        "ci_high": 0.07142857142857142,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.5562768876689737,
+        "ci_low": 1.3566360272854847,
+        "ci_high": 1.8369241212992642,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "postgres_raw->lhat_est": {
+      "n": 70,
+      "plans_differ": 56,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.9463768035425963,
+        "ci_low": 1.5523415080479146,
+        "ci_high": 2.487682314447096,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.8286882410707608,
+        "ci_low": 1.2593878400425442,
+        "ci_high": 3.497458840005813,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.5428571428571428,
+        "ci_low": 0.42857142857142855,
+        "ci_high": 0.6571428571428571,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.04285714285714286,
+        "ci_low": 0.0,
+        "ci_high": 0.1,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.5769992850166246,
+        "ci_low": 1.3639685151582017,
+        "ci_high": 1.8680067887793101,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "postgres_raw->truth": {
+      "n": 70,
+      "plans_differ": 56,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.936502609961524,
+        "ci_low": 1.5482784557822098,
+        "ci_high": 2.4662568709046604,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.8285208096882921,
+        "ci_low": 1.2593179767639413,
+        "ci_high": 3.496153286030391,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.5428571428571428,
+        "ci_low": 0.42857142857142855,
+        "ci_high": 0.6571428571428571,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.04285714285714286,
+        "ci_low": 0.0,
+        "ci_high": 0.1,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.5769562391858067,
+        "ci_low": 1.3638959157150754,
+        "ci_high": 1.867955799596905,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "native->truth": {
+      "n": 70,
+      "plans_differ": 27,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.120984628637285,
+        "ci_low": 1.0365463533286972,
+        "ci_high": 1.2388985850793695,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.0499835125706634,
+        "ci_low": 0.9994875972856704,
+        "ci_high": 1.1475611239907153,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.2,
+        "ci_low": 0.11428571428571428,
+        "ci_high": 0.3,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.05714285714285714,
+        "ci_low": 0.014285714285714285,
+        "ci_high": 0.11428571428571428,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 0.9822900749032304,
+        "ci_low": 0.9519194876711986,
+        "ci_high": 1.0040908394379673,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "native_raw->truth": {
+      "n": 70,
+      "plans_differ": 27,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.120984628637285,
+        "ci_low": 1.0365463533286972,
+        "ci_high": 1.2388985850793695,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.0499835125706634,
+        "ci_low": 0.9994875972856704,
+        "ci_high": 1.1475611239907153,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.2,
+        "ci_low": 0.11428571428571428,
+        "ci_high": 0.3,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.05714285714285714,
+        "ci_low": 0.014285714285714285,
+        "ci_high": 0.11428571428571428,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 0.9822900749032304,
+        "ci_low": 0.9519194876711986,
+        "ci_high": 1.0040908394379673,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "duckdb_raw->truth": {
+      "n": 70,
+      "plans_differ": 47,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.329366528829281,
+        "ci_low": 1.186222087701844,
+        "ci_high": 1.5179574705430587,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.5220750244575443,
+        "ci_low": 1.073475997217855,
+        "ci_high": 2.7496147951807623,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.4857142857142857,
+        "ci_low": 0.37142857142857144,
+        "ci_high": 0.6,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.05714285714285714,
+        "ci_low": 0.014285714285714285,
+        "ci_high": 0.11428571428571428,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.180376402927659,
+        "ci_low": 1.0556517849917455,
+        "ci_high": 1.3635273904288032,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "duckdb_raw->lhat_est": {
+      "n": 70,
+      "plans_differ": 47,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.3361449459500923,
+        "ci_low": 1.1920435433577206,
+        "ci_high": 1.5231911863569878,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.5222143956499397,
+        "ci_low": 1.0734774518505958,
+        "ci_high": 2.7509963804659003,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.5,
+        "ci_low": 0.38571428571428573,
+        "ci_high": 0.6142857142857143,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.04285714285714286,
+        "ci_low": 0.0,
+        "ci_high": 0.1,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.1804086234051074,
+        "ci_low": 1.0556806008884774,
+        "ci_high": 1.3635292517861812,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "duckdb_raw->lpbound_est": {
+      "n": 70,
+      "plans_differ": 52,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.1609574041370998,
+        "ci_low": 1.0212145402211537,
+        "ci_high": 1.3466592063361342,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.490116941645559,
+        "ci_low": 1.0470461106422344,
+        "ci_high": 2.6890273124398862,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.38571428571428573,
+        "ci_low": 0.2714285714285714,
+        "ci_high": 0.5,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.2,
+        "ci_low": 0.11428571428571428,
+        "ci_high": 0.3,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.1648975849669787,
+        "ci_low": 1.0386939761405214,
+        "ci_high": 1.3539186020243996,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "truth->lhat_est": {
+      "n": 70,
+      "plans_differ": 1,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 1.0050989828416852,
+        "ci_low": 1.0,
+        "ci_high": 1.015375079974762,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 1.000091566572052,
+        "ci_low": 1.0,
+        "ci_high": 1.000451976747131,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.014285714285714285,
+        "ci_low": 0.0,
+        "ci_high": 0.04285714285714286,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 1.0000272967820845,
+        "ci_low": 1.0,
+        "ci_high": 1.0000818925816168,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    },
+    "truth->lpbound_est": {
+      "n": 70,
+      "plans_differ": 39,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "geo_speedup": {
+        "point": 0.8733162592558334,
+        "ci_low": 0.8154832660197151,
+        "ci_high": 0.929018511661738,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "total_ratio": {
+        "point": 0.9790036086930901,
+        "ci_low": 0.9303315227117274,
+        "ci_high": 1.0015752449764317,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_faster": {
+        "point": 0.07142857142857142,
+        "ci_low": 0.014285714285714285,
+        "ci_high": 0.14285714285714285,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "share_slower": {
+        "point": 0.2714285714285714,
+        "ci_low": 0.17142857142857143,
+        "ci_high": 0.38571428571428573,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      },
+      "geo_cout_ratio": {
+        "point": 0.986886540664242,
+        "ci_low": 0.9493980706798577,
+        "ci_high": 1.0280284843557224,
+        "n_rows": 70,
+        "n_clusters": 70,
+        "replicates": 10000
+      }
+    }
+  }
+}

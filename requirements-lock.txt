@@ -1,0 +1,19 @@
+# Exact pins of the environment that produced the ICDE results (CPython 3.10.12, Linux),
+# read from the installed packages on 2026-10-16.
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements-lock.txt
+# torch is the CPU build; install the matching CUDA wheel separately if needed.
+duckdb==1.5.4
+matplotlib==3.10.8
+mypy==1.19.1
+networkx==3.4.2
+numpy==1.26.4
+psycopg2-binary==2.9.13
+pytest-cov==7.0.0
+pytest==9.0.2
+pyyaml==6.0.3
+ruff==0.15.2
+torch==2.7.1
+types-networkx==3.6.1.20260303
+types-PyYAML==6.0.12.20250915
+types-psycopg2==2.9.21.20260911

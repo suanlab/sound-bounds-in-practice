@@ -1,0 +1,95 @@
+{
+  "experiment": "join_order_honoured_manipulation_check",
+  "note": "Every left-deep permutation of a query's aliases is timed. An engine that reorders internally would run one plan regardless and show no spread; a large spread therefore proves the FROM order is honoured. A small spread is not evidence of the converse. Orders that exceed the timeout are recorded at the timeout, so a spread marked as a lower bound understates the real one.",
+  "min_spread_required": 3.0,
+  "queries": [
+    25,
+    26,
+    27
+  ],
+  "n_aliases": 4,
+  "engines": {
+    "duckdb": {
+      "max_spread": 2576.5207263024276,
+      "order_honoured": true,
+      "all_counts_agree": true,
+      "per_query": [
+        {
+          "query_id": 25,
+          "n_orders": 24,
+          "ms_fastest": 11.71156670898199,
+          "ms_slowest": 44.26166228950024,
+          "spread": 3.7793118025408585,
+          "spread_is_lower_bound": false,
+          "orders_censored_at_timeout": 0,
+          "counts_agree": true,
+          "count": 176191
+        },
+        {
+          "query_id": 26,
+          "n_orders": 24,
+          "ms_fastest": 7.762406021356583,
+          "ms_slowest": 20000.0,
+          "spread": 2576.5207263024276,
+          "spread_is_lower_bound": true,
+          "orders_censored_at_timeout": 9,
+          "counts_agree": true,
+          "count": 25033
+        },
+        {
+          "query_id": 27,
+          "n_orders": 24,
+          "ms_fastest": 11.2478481605649,
+          "ms_slowest": 5040.562801063061,
+          "spread": 448.1357437536665,
+          "spread_is_lower_bound": false,
+          "orders_censored_at_timeout": 0,
+          "counts_agree": true,
+          "count": 42036
+        }
+      ]
+    },
+    "sqlite": {
+      "max_spread": 998.1308192980431,
+      "order_honoured": true,
+      "all_counts_agree": true,
+      "per_query": [
+        {
+          "query_id": 25,
+          "n_orders": 24,
+          "ms_fastest": 97.91004937142134,
+          "ms_slowest": 742.3749677836895,
+          "spread": 7.582214211408406,
+          "spread_is_lower_bound": false,
+          "orders_censored_at_timeout": 0,
+          "counts_agree": true,
+          "count": 176191
+        },
+        {
+          "query_id": 26,
+          "n_orders": 24,
+          "ms_fastest": 20.0374536216259,
+          "ms_slowest": 20000.0,
+          "spread": 998.1308192980431,
+          "spread_is_lower_bound": true,
+          "orders_censored_at_timeout": 10,
+          "counts_agree": true,
+          "count": 25033
+        },
+        {
+          "query_id": 27,
+          "n_orders": 24,
+          "ms_fastest": 45.593295246362686,
+          "ms_slowest": 20000.0,
+          "spread": 438.6609893391188,
+          "spread_is_lower_bound": true,
+          "orders_censored_at_timeout": 8,
+          "counts_agree": true,
+          "count": 42036
+        }
+      ]
+    }
+  },
+  "all_honoured": true,
+  "all_counts_agree": true
+}

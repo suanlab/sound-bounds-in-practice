@@ -1,0 +1,38 @@
+{
+  "mean": 11.408354240084154,
+  "median": 7.699267589081625,
+  "p95": 28.90727465632885,
+  "p99": 55.304107470703144,
+  "fallback_rate": 0.0,
+  "upper_fallback_rate": 0.0,
+  "lower_fallback_rate": 0.0,
+  "config_accuracy": 0.5055555555555555,
+  "expected_q_error": 11.44145045015547,
+  "expected_safety_penalty": 6.791216951555385,
+  "final_differs_from_pessimistic_rate": 1.0,
+  "final_better_than_ml_rate": 0.0,
+  "final_better_than_pessimistic_rate": 1.0,
+  "ml_better_than_pessimistic_rate": 1.0,
+  "helpful_fallback_rate": 0.0,
+  "safety_violation_rate": 0.0,
+  "ml_safety_violation_rate": 0.0,
+  "ml_only_violating_q_error": {
+    "median": 0.0,
+    "p90": 0.0,
+    "max": 0.0
+  },
+  "ml_only_violating_count": 0,
+  "ml_only_safe_q_error": {
+    "mean": 11.408354240084154,
+    "median": 7.699267589081625,
+    "p95": 28.90727465632885,
+    "p99": 55.304107470703144
+  },
+  "ml_only_safe_count": 360,
+  "bound_valid_fraction": 1.0,
+  "bound_valid_mean": 11.408354240084154,
+  "bound_valid_median": 7.699267589081625,
+  "bound_invalid_mean": 0.0,
+  "bound_invalid_median": 0.0,
+  "plan_cost_ratio_mean": 21436.696766260564
+}

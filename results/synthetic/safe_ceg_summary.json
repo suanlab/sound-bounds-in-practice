@@ -1,0 +1,36 @@
+{
+  "epochs": 10,
+  "eval_corpus_path": null,
+  "eval_count": 16,
+  "eval_family": "cycle",
+  "evaluation": {
+    "config_accuracy": 0.125,
+    "expected_q_error": 1.0001798123121262,
+    "expected_safety_penalty": 0.03390525432769209,
+    "fallback_rate": 0.0,
+    "mean": 1.0000000000000002,
+    "median": 1.0000000000000002,
+    "ml_safety_violation_rate": 0.0,
+    "p95": 1.0000000000000004,
+    "p99": 1.0000000000000004,
+    "safety_violation_rate": 0.0
+  },
+  "name": "safe-ceg-synthetic",
+  "relation_count": 4,
+  "seed": 42,
+  "train_corpus_path": null,
+  "train_count": 32,
+  "train_family": "path",
+  "training_losses": [
+    72556731.00976562,
+    41391.67222213745,
+    35897.39879119396,
+    35846.96201616526,
+    35836.58751830459,
+    35831.46448563039,
+    35828.47750969231,
+    35826.598647765815,
+    35825.345887705684,
+    35824.46881072968
+  ]
+}

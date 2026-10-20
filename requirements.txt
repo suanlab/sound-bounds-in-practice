@@ -1,0 +1,34 @@
+# Direct dependencies (loose bounds for development).
+# For a reproducible environment use requirements-lock.txt (exact pins).
+# NOTE: torch_geometric / scipy / seaborn / pandas were previously listed but
+# are NOT imported anywhere in the codebase; removed to shrink the install
+# surface and avoid torch-geometric/CUDA wheel-compatibility issues.
+
+# Core
+networkx>=3.2
+numpy>=1.26
+
+# CSV parsing with PostgreSQL quoting (real IMDb dump) and the
+# execution engine used by the plan-runtime experiment.
+duckdb>=1.0
+
+# ML (hand-rolled GNN; no torch-geometric needed)
+torch>=2.2
+
+# Config
+pyyaml>=6.0
+
+# Visualization (plotting scripts only)
+matplotlib>=3.8
+
+# Testing
+pytest>=8.0
+pytest-cov>=4.1
+
+# Dev tools
+ruff>=0.4
+mypy>=1.9
+types-networkx>=3.2
+types-PyYAML>=6.0
+psycopg2-binary==2.9.13  # PostgreSQL sub-plan injection (experiments/pg_injection)
+types-psycopg2>=2.9  # stubs for mypy --strict

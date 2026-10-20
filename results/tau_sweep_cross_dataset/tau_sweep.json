@@ -1,0 +1,78 @@
+{
+  "seed": 142,
+  "train_workload": "cross_dataset",
+  "eval_workload": "cross_dataset",
+  "train_count": 32,
+  "eval_count": 16,
+  "epochs": 10,
+  "tau_values": [
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    5.0,
+    10.0
+  ],
+  "mean_q_errors": [
+    22.51947675412286,
+    22.504724738889507,
+    22.504724738889507,
+    22.322909269974172,
+    22.034561249209315,
+    20.35428372206555
+  ],
+  "fallback_rates": [
+    0.9375,
+    0.875,
+    0.875,
+    0.75,
+    0.625,
+    0.375
+  ],
+  "ml_violation_rates": [
+    0.9375,
+    0.875,
+    0.875,
+    0.75,
+    0.625,
+    0.375
+  ],
+  "per_tau": [
+    {
+      "tau": 1.0,
+      "mean_q_error": 22.51947675412286,
+      "fallback_rate": 0.9375,
+      "ml_violation_rate": 0.9375
+    },
+    {
+      "tau": 1.5,
+      "mean_q_error": 22.504724738889507,
+      "fallback_rate": 0.875,
+      "ml_violation_rate": 0.875
+    },
+    {
+      "tau": 2.0,
+      "mean_q_error": 22.504724738889507,
+      "fallback_rate": 0.875,
+      "ml_violation_rate": 0.875
+    },
+    {
+      "tau": 3.0,
+      "mean_q_error": 22.322909269974172,
+      "fallback_rate": 0.75,
+      "ml_violation_rate": 0.75
+    },
+    {
+      "tau": 5.0,
+      "mean_q_error": 22.034561249209315,
+      "fallback_rate": 0.625,
+      "ml_violation_rate": 0.625
+    },
+    {
+      "tau": 10.0,
+      "mean_q_error": 20.35428372206555,
+      "fallback_rate": 0.375,
+      "ml_violation_rate": 0.375
+    }
+  ]
+}

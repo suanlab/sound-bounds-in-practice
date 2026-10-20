@@ -1,0 +1,25 @@
+# Train a Safe-CEG selector on a synthetic workload.
+# Consumed by: python -m src.training.train --config <this file>
+experiment:
+  name: safe-ceg-train
+  seed: 42
+
+workload:
+  families: [path, star, cycle]
+  query_count: 40
+  relation_counts: [3, 4, 5]
+
+model:
+  hidden_dim: 64
+  num_layers: 3
+
+training:
+  epochs: 30
+  learning_rate: 0.001
+  safety_lambda: 0.5
+  safety_tau: 2.0
+  ce_lambda: 0.5
+
+output:
+  checkpoint: results/checkpoints/safe_ceg.pt
+  log: results/logs/train_log.json

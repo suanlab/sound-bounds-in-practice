@@ -1,0 +1,742 @@
+[2026-10-16 10:48:37] 1. STATS-CEB injection (postgres, duckdb, native in context; tau 1; 3 reps)
+q1: 19 policies -> 1 distinct plans; truth injected True; {'native': 22, 'truth': 22}
+q2: 19 policies -> 1 distinct plans; truth injected True; {'native': 2795, 'truth': 2795}
+q3: 19 policies -> 1 distinct plans; truth injected True; {'native': 586, 'truth': 586}
+q4: 19 policies -> 1 distinct plans; truth injected True; {'native': 190, 'truth': 190}
+q5: 19 policies -> 1 distinct plans; truth injected True; {'native': 620, 'truth': 620}
+q6: 19 policies -> 1 distinct plans; truth injected True; {'native': 190, 'truth': 190}
+q7: 19 policies -> 2 distinct plans; truth injected True; {'native': 85, 'truth': 85}
+q8: 19 policies -> 2 distinct plans; truth injected True; {'native': 189, 'truth': 189}
+q9: 19 policies -> 3 distinct plans; truth injected True; {'native': 157, 'truth': 157}
+q10: 19 policies -> 2 distinct plans; truth injected True; {'native': 98, 'truth': 98}
+q11: 19 policies -> 3 distinct plans; truth injected True; {'native': 88, 'truth': 88}
+q12: 19 policies -> 2 distinct plans; truth injected True; {'native': 181, 'truth': 181}
+q13: 19 policies -> 3 distinct plans; truth injected True; {'native': 64, 'truth': 64}
+q14: 19 policies -> 2 distinct plans; truth injected True; {'native': 23, 'truth': 23}
+q15: 19 policies -> 3 distinct plans; truth injected True; {'native': 791, 'truth': 791}
+q16: 19 policies -> 4 distinct plans; truth injected True; {'native': 80, 'truth': 81}
+q17: 19 policies -> 2 distinct plans; truth injected True; {'native': 16, 'truth': 16}
+q18: 19 policies -> 2 distinct plans; truth injected True; {'native': 47, 'truth': 47}
+q19: 19 policies -> 2 distinct plans; truth injected True; {'native': 31, 'truth': 31}
+q20: 19 policies -> 3 distinct plans; truth injected True; {'native': 171, 'truth': 123}
+q21: 19 policies -> 2 distinct plans; truth injected True; {'native': 73, 'truth': 73}
+q22: 19 policies -> 3 distinct plans; truth injected True; {'native': 295, 'truth': 295}
+q23: 19 policies -> 2 distinct plans; truth injected True; {'native': 102, 'truth': 102}
+q24: 19 policies -> 1 distinct plans; truth injected True; {'native': 31, 'truth': 31}
+q25: 19 policies -> 2 distinct plans; truth injected True; {'native': 109, 'truth': 109}
+q26: 19 policies -> 3 distinct plans; truth injected True; {'native': 51, 'truth': 51}
+q27: 19 policies -> 6 distinct plans; truth injected True; {'native': 47, 'truth': 45}
+q28: 19 policies -> 3 distinct plans; truth injected True; {'native': 1659, 'truth': 1659}
+q29: 19 policies -> 3 distinct plans; truth injected True; {'native': 177, 'truth': 171}
+q30: 19 policies -> 4 distinct plans; truth injected True; {'native': 86490, 'truth': 58569}
+q31: 19 policies -> 4 distinct plans; truth injected True; {'native': 5454, 'truth': 1557}
+q32: 18 policies -> 7 distinct plans; truth injected True; {'native': 11065, 'truth': 3377}
+q33: 19 policies -> 4 distinct plans; truth injected True; {'native': 197, 'truth': 197}
+q34: 19 policies -> 3 distinct plans; truth injected True; {'native': 109757, 'truth': 109757}
+q35: 19 policies -> 6 distinct plans; truth injected True; {'native': 2317, 'truth': 664}
+q36: 19 policies -> 8 distinct plans; truth injected True; {'native': 127, 'truth': 87}
+q37: 19 policies -> 6 distinct plans; truth injected True; {'native': 726, 'truth': 679}
+q38: 19 policies -> 5 distinct plans; truth injected True; {'native': 18420, 'truth': 14830}
+q39: 18 policies -> 6 distinct plans; truth injected True; {'native': 595, 'truth': 329}
+q40: 19 policies -> 3 distinct plans; truth injected True; {'native': 125, 'truth': 99}
+q41: 19 policies -> 3 distinct plans; truth injected True; {'native': 31, 'truth': 31}
+q42: 19 policies -> 3 distinct plans; truth injected True; {'native': 635, 'truth': 593}
+q43: 19 policies -> 5 distinct plans; truth injected True; {'native': 1365, 'truth': 1365}
+q44: 19 policies -> 5 distinct plans; truth injected True; {'native': 1317, 'truth': 515}
+q45: 19 policies -> 6 distinct plans; truth injected True; {'native': 32, 'truth': 28}
+q46: 19 policies -> 6 distinct plans; truth injected True; {'native': 502, 'truth': 351}
+q47: 19 policies -> 8 distinct plans; truth injected True; {'native': 8425, 'truth': 10448}
+q48: 18 policies -> 6 distinct plans; truth injected True; {'native': 138, 'truth': 57}
+q49: 18 policies -> 7 distinct plans; truth injected True; {'native': 3707, 'truth': 2146}
+q50: 19 policies -> 5 distinct plans; truth injected True; {'native': 625, 'truth': 67}
+q51: 18 policies -> 6 distinct plans; truth injected True; {'native': 18175, 'truth': 9720}
+q52: 18 policies -> 6 distinct plans; truth injected True; {'native': 41778, 'truth': 28311}
+q53: 19 policies -> 5 distinct plans; truth injected True; {'native': 154, 'truth': 154}
+q54: 19 policies -> 4 distinct plans; truth injected True; {'native': 17, 'truth': 16}
+q55: 18 policies -> 3 distinct plans; truth injected True; {'native': 19, 'truth': 19}
+q56: 19 policies -> 5 distinct plans; truth injected True; {'native': 1745, 'truth': 1534}
+q57: 19 policies -> 5 distinct plans; truth injected True; {'native': 9177, 'truth': 19}
+q58: 18 policies -> 7 distinct plans; truth injected True; {'native': 300000, 'truth': 300000}
+q59: 19 policies -> 8 distinct plans; truth injected True; {'native': 12479, 'truth': 6837}
+q60: 19 policies -> 8 distinct plans; truth injected True; {'native': 1521, 'truth': 1174}
+q61: 19 policies -> 5 distinct plans; truth injected True; {'native': 174, 'truth': 175}
+q62: 19 policies -> 10 distinct plans; truth injected True; {'native': 45, 'truth': 41}
+q63: 19 policies -> 10 distinct plans; truth injected True; {'native': 97, 'truth': 35}
+q64: 19 policies -> 6 distinct plans; truth injected True; {'native': 273, 'truth': 99}
+q65: 19 policies -> 6 distinct plans; truth injected True; {'native': 65, 'truth': 49}
+q66: 19 policies -> 8 distinct plans; truth injected True; {'native': 592, 'truth': 222}
+q67: 19 policies -> 6 distinct plans; truth injected True; {'native': 20, 'truth': 19}
+q68: 19 policies -> 9 distinct plans; truth injected True; {'native': 91666, 'truth': 74524}
+q69: 19 policies -> 9 distinct plans; truth injected True; {'native': 7830, 'truth': 6812}
+q70: 19 policies -> 12 distinct plans; truth injected True; {'native': 18858, 'truth': 9079}
+q71: 19 policies -> 9 distinct plans; truth injected True; {'native': 4573, 'truth': 3781}
+q72: 19 policies -> 8 distinct plans; truth injected True; {'native': 387, 'truth': 387}
+q73: 19 policies -> 7 distinct plans; truth injected True; {'native': 235, 'truth': 138}
+q74: 19 policies -> 6 distinct plans; truth injected True; {'native': 2855, 'truth': 2720}
+q75: 19 policies -> 6 distinct plans; truth injected True; {'native': 482, 'truth': 514}
+q76: 19 policies -> 5 distinct plans; truth injected True; {'native': 236, 'truth': 190}
+q77: 19 policies -> 5 distinct plans; truth injected True; {'native': 623, 'truth': 491}
+q78: 19 policies -> 8 distinct plans; truth injected True; {'native': 71, 'truth': 67}
+q79: 19 policies -> 6 distinct plans; truth injected True; {'native': 492, 'truth': 438}
+q80: 19 policies -> 3 distinct plans; truth injected True; {'native': 132, 'truth': 132}
+q81: 19 policies -> 4 distinct plans; truth injected True; {'native': 76, 'truth': 76}
+q82: 19 policies -> 3 distinct plans; truth injected True; {'native': 206, 'truth': 206}
+q83: 19 policies -> 2 distinct plans; truth injected True; {'native': 232, 'truth': 232}
+q84: 19 policies -> 3 distinct plans; truth injected True; {'native': 682, 'truth': 682}
+q85: 19 policies -> 2 distinct plans; truth injected True; {'native': 829, 'truth': 829}
+q86: 19 policies -> 4 distinct plans; truth injected True; {'native': 198, 'truth': 114}
+q87: 19 policies -> 2 distinct plans; truth injected True; {'native': 104, 'truth': 104}
+q88: 19 policies -> 3 distinct plans; truth injected True; {'native': 671, 'truth': 671}
+q89: 19 policies -> 3 distinct plans; truth injected True; {'native': 159, 'truth': 159}
+q90: 19 policies -> 3 distinct plans; truth injected True; {'native': 132, 'truth': 132}
+q91: 19 policies -> 3 distinct plans; truth injected True; {'native': 360, 'truth': 360}
+q92: 19 policies -> 3 distinct plans; truth injected True; {'native': 132, 'truth': 73}
+q93: 19 policies -> 2 distinct plans; truth injected True; {'native': 273, 'truth': 273}
+q94: 19 policies -> 3 distinct plans; truth injected True; {'native': 139, 'truth': 139}
+q95: 19 policies -> 4 distinct plans; truth injected True; {'native': 602, 'truth': 602}
+q96: 19 policies -> 5 distinct plans; truth injected True; {'native': 439, 'truth': 421}
+q97: 19 policies -> 6 distinct plans; truth injected True; {'native': 3361, 'truth': 3499}
+q98: 19 policies -> 6 distinct plans; truth injected True; {'native': 3000, 'truth': 2929}
+q99: 19 policies -> 6 distinct plans; truth injected True; {'native': 227, 'truth': 140}
+q100: 19 policies -> 5 distinct plans; truth injected True; {'native': 103, 'truth': 152}
+q101: 19 policies -> 4 distinct plans; truth injected True; {'native': 197, 'truth': 197}
+q102: 19 policies -> 3 distinct plans; truth injected True; {'native': 277, 'truth': 277}
+q103: 19 policies -> 6 distinct plans; truth injected True; {'native': 331, 'truth': 331}
+q104: 18 policies -> 4 distinct plans; truth injected True; {'native': 3389, 'truth': 1205}
+q105: 18 policies -> 5 distinct plans; truth injected True; {'native': 16642, 'truth': 13088}
+q106: 19 policies -> 5 distinct plans; truth injected True; {'native': 674, 'truth': 638}
+q107: 19 policies -> 6 distinct plans; truth injected True; {'native': 33172, 'truth': 31460}
+q108: 19 policies -> 4 distinct plans; truth injected True; {'native': 36512, 'truth': 36512}
+q109: 19 policies -> 6 distinct plans; truth injected True; {'native': 334, 'truth': 210}
+q110: 19 policies -> 7 distinct plans; truth injected True; {'native': 259, 'truth': 202}
+q111: 19 policies -> 7 distinct plans; truth injected True; {'native': 454, 'truth': 309}
+q112: 19 policies -> 7 distinct plans; truth injected True; {'native': 403, 'truth': 244}
+q113: 18 policies -> 4 distinct plans; truth injected True; {'native': 1445, 'truth': 1192}
+q114: 19 policies -> 6 distinct plans; truth injected True; {'native': 1434, 'truth': 1287}
+q115: 18 policies -> 5 distinct plans; truth injected True; {'native': 3202, 'truth': 2781}
+q116: 19 policies -> 5 distinct plans; truth injected True; {'native': 259, 'truth': 108}
+q117: 19 policies -> 4 distinct plans; truth injected True; {'native': 160, 'truth': 160}
+q118: 19 policies -> 5 distinct plans; truth injected True; {'native': 241, 'truth': 180}
+q119: 19 policies -> 6 distinct plans; truth injected True; {'native': 247, 'truth': 199}
+q120: 18 policies -> 4 distinct plans; truth injected True; {'native': 300000, 'truth': 300000}
+q121: 19 policies -> 6 distinct plans; truth injected True; {'native': 857, 'truth': 159}
+q122: 19 policies -> 4 distinct plans; truth injected True; {'native': 300000, 'truth': 300000}
+q123: 19 policies -> 5 distinct plans; truth injected True; {'native': 9538, 'truth': 8788}
+q124: 19 policies -> 5 distinct plans; truth injected True; {'native': 538, 'truth': 538}
+q125: 19 policies -> 5 distinct plans; truth injected True; {'native': 59, 'truth': 57}
+q126: 19 policies -> 6 distinct plans; truth injected True; {'native': 300000, 'truth': 300000}
+q127: 19 policies -> 6 distinct plans; truth injected True; {'native': 143, 'truth': 99}
+q128: 19 policies -> 5 distinct plans; truth injected True; {'native': 191, 'truth': 124}
+q129: 19 policies -> 6 distinct plans; truth injected True; {'native': 221, 'truth': 212}
+q130: 19 policies -> 6 distinct plans; truth injected True; {'native': 125, 'truth': 58}
+q131: 18 policies -> 8 distinct plans; truth injected True; {'native': 1304, 'truth': 425}
+q132: 19 policies -> 6 distinct plans; truth injected True; {'native': 575, 'truth': 89}
+q133: 18 policies -> 8 distinct plans; truth injected True; {'native': 1087, 'truth': 965}
+q134: 18 policies -> 5 distinct plans; truth injected True; {'native': 155, 'truth': 27}
+q135: 18 policies -> 6 distinct plans; truth injected True; {'native': 217716, 'truth': 122345}
+q136: 18 policies -> 7 distinct plans; truth injected True; {'native': 24867, 'truth': 17896}
+q137: 19 policies -> 6 distinct plans; truth injected True; {'native': 150, 'truth': 55}
+q138: 19 policies -> 5 distinct plans; truth injected True; {'native': 3519, 'truth': 1126}
+q139: 19 policies -> 8 distinct plans; truth injected True; {'native': 421, 'truth': 342}
+q140: 19 policies -> 9 distinct plans; truth injected True; {'native': 6977, 'truth': 7097}
+q141: 19 policies -> 9 distinct plans; truth injected True; {'native': 18529, 'truth': 17862}
+q142: 19 policies -> 8 distinct plans; truth injected True; {'native': 19188, 'truth': 18204}
+q143: 19 policies -> 9 distinct plans; truth injected True; {'native': 9368, 'truth': 8949}
+q144: 19 policies -> 7 distinct plans; truth injected True; {'native': 1615, 'truth': 1455}
+q145: 19 policies -> 7 distinct plans; truth injected True; {'native': 212, 'truth': 127}
+q146: 19 policies -> 7 distinct plans; truth injected True; {'native': 275, 'truth': 275}
+[2026-10-16 19:07:39] 2. forced left-deep orders
+q7: {'native': 65, 'cout_opt': 65, 'native_lo': 66, 'certified': 64}
+q8: {'native': 138, 'cout_opt': 132, 'native_lo': 138, 'certified': 144}
+q9: {'native': 135, 'cout_opt': 131, 'native_lo': 130}
+q10: {'native': 82, 'cout_opt': 82, 'native_lo': 82, 'certified': 82}
+q11: {'native': 59, 'cout_opt': 58, 'native_lo': 58, 'certified': 58}
+q12: {'native': 131, 'cout_opt': 131, 'native_lo': 130, 'certified': 131}
+q13: {'native': 47, 'cout_opt': 46, 'native_lo': 48, 'certified': 49}
+q14: {'native': 23, 'cout_opt': 22, 'native_lo': 23, 'certified': 23}
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/projects/CEG/Safe-CEG/experiments/pg_injection/run_forced_orders.py", line 216, in <module>
+    main()
+  File "/projects/CEG/Safe-CEG/experiments/pg_injection/run_forced_orders.py", line 162, in main
+    sql = forced_join_sql(queries[query_id], order)
+  File "/projects/CEG/Safe-CEG/experiments/pg_injection/forced_order.py", line 74, in forced_join_sql
+    raise ValueError(msg)
+ValueError: no join predicate connects u to ['b']
+[2026-10-17 01:16:42] resuming from step 2 (run_pipeline_v3_resume.sh)
+[2026-10-17 01:26:42] 2. forced left-deep orders
+q15: {'native': 643, 'cout_opt': 700, 'native_lo': 637, 'certified': 684}
+q16: {'native': 59, 'cout_opt': 65, 'native_lo': 59, 'certified': 65}
+q17: {'native': 13, 'cout_opt': 14, 'native_lo': 13, 'certified': 13}
+q18: {'native': 42, 'cout_opt': 44, 'native_lo': 44, 'certified': 43}
+q19: {'native': 25, 'cout_opt': 25, 'native_lo': 26, 'certified': 25}
+q20: {'native': 144, 'cout_opt': 113, 'native_lo': 139}
+q21: {'native': 56, 'cout_opt': 56, 'native_lo': 56, 'certified': 55}
+q22: {'native': 237, 'cout_opt': 203, 'native_lo': 238, 'certified': 200}
+q23: {'native': 89, 'cout_opt': 25, 'native_lo': 89, 'certified': 26}
+q24: {'native': 27, 'cout_opt': 22, 'native_lo': 29, 'certified': 22}
+q25: {'native': 112, 'cout_opt': 122, 'native_lo': 221}
+q26: {'native': 44, 'cout_opt': 43, 'native_lo': 42}
+q27: {'native': 36, 'cout_opt': 33, 'native_lo': 34}
+q28: {'native': 1081, 'cout_opt': 1124, 'certified': 1156}
+q29: {'native': 124, 'cout_opt': 114, 'native_lo': 126}
+q30: {'native': 32976, 'cout_opt': 13623, 'native_lo': 31829, 'certified': 16774}
+q31: {'native': 1797, 'cout_opt': 513, 'native_lo': 1722}
+q32: {'native': 3860, 'cout_opt': 1243, 'certified': 1249}
+q33: {'native': 68, 'cout_opt': 21, 'native_lo': 66, 'certified': 21}
+q34: {'native': 37620, 'cout_opt': 33252, 'certified': 33185}
+q35: {'native': 883, 'cout_opt': 883, 'native_lo': 925}
+q36: {'native': 44, 'cout_opt': 37, 'native_lo': 43}
+q37: {'native': 254, 'cout_opt': 255, 'native_lo': 255}
+q38: {'native': 7231, 'cout_opt': 6183, 'native_lo': 6176, 'certified': 6256}
+q39: {'native': 242, 'cout_opt': 204, 'native_lo': 204}
+q40: {'native': 43, 'cout_opt': 45, 'native_lo': 43, 'certified': 42}
+q41: {'native': 12, 'cout_opt': 13, 'native_lo': 12}
+q42: {'native': 249, 'cout_opt': 209, 'native_lo': 241}
+q43: {'native': 565, 'cout_opt': 597, 'native_lo': 595, 'certified': 597}
+q44: {'native': 526, 'cout_opt': 247, 'native_lo': 516, 'certified': 242}
+q45: {'native': 12, 'cout_opt': 10, 'native_lo': 12}
+q46: {'native': 194, 'cout_opt': 193, 'native_lo': 193}
+q47: {'native': 4788, 'cout_opt': 19652, 'native_lo': 4859}
+q48: {'native': 52, 'cout_opt': 26, 'native_lo': 22}
+q49: {'native': 2249, 'cout_opt': 8459, 'native_lo': 24544}
+q50: {'native': 219, 'cout_opt': 30}
+q51: {'native': 8478, 'cout_opt': 6173, 'native_lo': 6241}
+q52: {'native': 23199, 'cout_opt': 17212, 'native_lo': 15152, 'certified': 16799}
+q53: {'native': 109, 'cout_opt': 116, 'native_lo': 114}
+q54: {'native': 16, 'cout_opt': 14, 'native_lo': 15}
+q55: {'native': 16, 'cout_opt': 15, 'native_lo': 13}
+q56: {'native': 1169, 'cout_opt': 1176, 'native_lo': 1168, 'certified': 1668}
+q57: {'native': 6064, 'cout_opt': 12, 'native_lo': 5976}
+q58: {'native': 300000, 'cout_opt': 300000, 'native_lo': 300000}
+q59: {'native': 9232, 'cout_opt': 50373, 'native_lo': 50494}
+q60: {'native': 1028, 'cout_opt': 855, 'native_lo': 1028}
+q61: {'native': 123, 'cout_opt': 121, 'native_lo': 119}
+q62: {'native': 31, 'cout_opt': 33, 'native_lo': 30}
+q63: {'native': 61, 'cout_opt': 36, 'native_lo': 61}
+q64: {'native': 209, 'cout_opt': 208, 'native_lo': 209}
+q65: {'native': 50, 'cout_opt': 39, 'native_lo': 48}
+q66: {'native': 415, 'cout_opt': 96, 'native_lo': 679}
+q67: {'native': 16, 'cout_opt': 13, 'native_lo': 15}
+q68: {'native': 74338, 'cout_opt': 74124, 'native_lo': 75017}
+q69: {'native': 7600, 'cout_opt': 7544, 'native_lo': 7594}
+q70: {'native': 20186, 'cout_opt': 20168, 'native_lo': 19980}
+q71: {'native': 5110, 'cout_opt': 4422, 'native_lo': 5049, 'certified': 4454}
+q72: {'native': 411, 'cout_opt': 438, 'native_lo': 421}
+q73: {'native': 249, 'cout_opt': 159, 'native_lo': 253}
+q74: {'native': 3154, 'cout_opt': 3081}
+q75: {'native': 516, 'cout_opt': 577}
+q76: {'native': 258, 'cout_opt': 221}
+q77: {'native': 672, 'cout_opt': 644, 'native_lo': 674}
+q78: {'native': 80, 'cout_opt': 76, 'native_lo': 75}
+q79: {'native': 519, 'cout_opt': 471}
+q80: {'native': 146, 'cout_opt': 146, 'native_lo': 149, 'certified': 146}
+q81: {'native': 80, 'cout_opt': 80, 'native_lo': 79, 'certified': 79}
+q82: {'native': 217, 'cout_opt': 219, 'native_lo': 555, 'certified': 222}
+q83: {'native': 249, 'cout_opt': 264, 'native_lo': 363, 'certified': 258}
+q84: {'native': 752, 'cout_opt': 707, 'native_lo': 722, 'certified': 705}
+q85: {'native': 902, 'cout_opt': 887, 'native_lo': 884, 'certified': 888}
+q86: {'native': 217, 'cout_opt': 131, 'native_lo': 218}
+q87: {'native': 114, 'cout_opt': 310, 'native_lo': 307, 'certified': 315}
+q88: {'native': 698, 'cout_opt': 3691, 'native_lo': 3779, 'certified': 3608}
+q89: {'native': 176, 'cout_opt': 171, 'native_lo': 592, 'certified': 168}
+q90: {'native': 143, 'cout_opt': 213, 'native_lo': 213, 'certified': 203}
+q91: {'native': 376, 'cout_opt': 1217, 'native_lo': 1375, 'certified': 1214}
+q92: {'native': 132, 'cout_opt': 99, 'native_lo': 143, 'certified': 105}
+q93: {'native': 282, 'cout_opt': 199, 'native_lo': 283, 'certified': 201}
+q94: {'native': 146, 'cout_opt': 150, 'native_lo': 143, 'certified': 144}
+q95: {'native': 682, 'cout_opt': 628}
+q96: {'native': 497, 'cout_opt': 532}
+q97: {'native': 3615, 'cout_opt': 12005, 'native_lo': 11922, 'certified': 11998}
+q98: {'native': 3281, 'cout_opt': 2601, 'native_lo': 2629}
+q99: {'native': 235, 'cout_opt': 143, 'native_lo': 141}
+q100: {'native': 110, 'cout_opt': 153, 'native_lo': 112}
+q101: {'native': 218, 'cout_opt': 208, 'native_lo': 212}
+q102: {'native': 307, 'cout_opt': 312, 'certified': 316}
+q103: {'native': 376, 'cout_opt': 308, 'native_lo': 320}
+q104: {'native': 3696, 'cout_opt': 915, 'certified': 909}
+q105: {'native': 17970, 'cout_opt': 12882}
+q106: {'native': 721, 'cout_opt': 218}
+q107: {'native': 34906, 'cout_opt': 33540, 'native_lo': 33432, 'certified': 33226}
+q108: {'native': 36216, 'cout_opt': 33099, 'native_lo': 32792, 'certified': 32596}
+q109: {'native': 312, 'cout_opt': 245}
+q110: {'native': 250, 'cout_opt': 176}
+q111: {'native': 462, 'cout_opt': 359}
+q112: {'native': 386, 'cout_opt': 279}
+q113: {'native': 1421, 'cout_opt': 1242, 'native_lo': 1353, 'certified': 1156}
+q114: {'native': 1450, 'cout_opt': 1243, 'native_lo': 1218, 'certified': 1255}
+q115: {'native': 3243, 'cout_opt': 2713, 'native_lo': 3036, 'certified': 2683}
+q116: {'native': 283, 'cout_opt': 121}
+q117: {'native': 151, 'cout_opt': 143, 'native_lo': 154}
+q118: {'native': 216, 'cout_opt': 168, 'native_lo': 215}
+q119: {'native': 233, 'cout_opt': 689, 'native_lo': 957}
+q120: {'native': 300000, 'cout_opt': 300000, 'native_lo': 300000, 'certified': 300000}
+q121: {'native': 802, 'cout_opt': 810, 'native_lo': 784}
+q122: {'native': 300000, 'cout_opt': 300000, 'native_lo': 300000, 'certified': 300000}
+q123: {'native': 9331, 'cout_opt': 11098, 'native_lo': 11088, 'certified': 9204}
+q124: {'native': 487, 'cout_opt': 500, 'native_lo': 503, 'certified': 515}
+q125: {'native': 67, 'cout_opt': 66, 'native_lo': 64}
+q126: {'native': 183757, 'cout_opt': 184540, 'native_lo': 184566, 'certified': 184508}
+q127: {'native': 140, 'cout_opt': 257, 'native_lo': 148}
+q128: {'native': 189, 'cout_opt': 188, 'native_lo': 187}
+q129: {'native': 210, 'cout_opt': 241, 'native_lo': 210}
+q130: {'native': 131, 'cout_opt': 119, 'native_lo': 132}
+q131: {'native': 1324, 'cout_opt': 692}
+q132: {'native': 583, 'cout_opt': 40}
+q133: {'native': 981, 'cout_opt': 1050, 'native_lo': 1065}
+q134: {'native': 153, 'cout_opt': 66, 'native_lo': 74}
+q135: {'native': 219461, 'cout_opt': 136815, 'native_lo': 300000, 'certified': 136906}
+q136: {'native': 25132, 'cout_opt': 16307, 'native_lo': 16599}
+q137: {'native': 142, 'cout_opt': 44, 'native_lo': 143}
+q138: {'native': 3537, 'cout_opt': 3559, 'native_lo': 3514, 'certified': 1607}
+q139: {'native': 364, 'cout_opt': 373, 'native_lo': 367}
+q140: {'native': 7009, 'cout_opt': 28289, 'native_lo': 28065}
+q141: {'native': 18623, 'cout_opt': 20473, 'native_lo': 20293}
+q142: {'native': 19197, 'cout_opt': 21405, 'native_lo': 21866}
+q143: {'native': 9576, 'cout_opt': 38484, 'native_lo': 38213}
+q144: {'native': 1620, 'cout_opt': 2572}
+q145: {'native': 209, 'cout_opt': 206, 'native_lo': 205}
+q146: {'native': 286, 'cout_opt': 284, 'native_lo': 279}
+[2026-10-17 05:03:36] 3. JOB-light injection (postgres, duckdb, factorjoin, bayescard, native in context)
+q1: 29 policies -> 2 distinct plans; truth injected True; {'native': 74, 'truth': 74}
+q2: 29 policies -> 1 distinct plans; truth injected True; {'native': 70, 'truth': 70}
+q3: 29 policies -> 1 distinct plans; truth injected True; {'native': 70, 'truth': 70}
+q4: 29 policies -> 1 distinct plans; truth injected True; {'native': 68, 'truth': 68}
+q5: 29 policies -> 2 distinct plans; truth injected True; {'native': 325, 'truth': 325}
+q6: 29 policies -> 2 distinct plans; truth injected True; {'native': 7559, 'truth': 7559}
+q7: 29 policies -> 2 distinct plans; truth injected True; {'native': 2755, 'truth': 2755}
+q8: 29 policies -> 3 distinct plans; truth injected True; {'native': 13491, 'truth': 14975}
+q9: 29 policies -> 3 distinct plans; truth injected True; {'native': 915, 'truth': 915}
+q10: 29 policies -> 4 distinct plans; truth injected True; {'native': 792, 'truth': 510}
+q11: 29 policies -> 2 distinct plans; truth injected True; {'native': 1638, 'truth': 1638}
+q12: 29 policies -> 3 distinct plans; truth injected True; {'native': 2518, 'truth': 2518}
+q13: 29 policies -> 4 distinct plans; truth injected True; {'native': 1096, 'truth': 1096}
+q14: 29 policies -> 3 distinct plans; truth injected True; {'native': 3787, 'truth': 3787}
+q15: 29 policies -> 3 distinct plans; truth injected True; {'native': 228, 'truth': 219}
+q16: 29 policies -> 2 distinct plans; truth injected True; {'native': 210, 'truth': 210}
+q17: 29 policies -> 3 distinct plans; truth injected True; {'native': 207, 'truth': 207}
+q18: 29 policies -> 3 distinct plans; truth injected True; {'native': 219, 'truth': 225}
+q19: 29 policies -> 3 distinct plans; truth injected True; {'native': 13782, 'truth': 13782}
+q20: 29 policies -> 1 distinct plans; truth injected True; {'native': 1042, 'truth': 1042}
+q21: 29 policies -> 1 distinct plans; truth injected True; {'native': 376, 'truth': 376}
+q22: 29 policies -> 1 distinct plans; truth injected True; {'native': 9965, 'truth': 9965}
+q23: 29 policies -> 2 distinct plans; truth injected True; {'native': 5542, 'truth': 5542}
+q24: 29 policies -> 1 distinct plans; truth injected True; {'native': 4150, 'truth': 4150}
+q25: 29 policies -> 2 distinct plans; truth injected True; {'native': 3097, 'truth': 3097}
+q26: 29 policies -> 3 distinct plans; truth injected True; {'native': 5263, 'truth': 5263}
+q27: 29 policies -> 4 distinct plans; truth injected True; {'native': 4669, 'truth': 4669}
+q28: 29 policies -> 3 distinct plans; truth injected True; {'native': 6350, 'truth': 6350}
+q29: 29 policies -> 4 distinct plans; truth injected True; {'native': 6065, 'truth': 6065}
+q30: 29 policies -> 3 distinct plans; truth injected True; {'native': 8522, 'truth': 8522}
+q31: 29 policies -> 1 distinct plans; truth injected True; {'native': 271, 'truth': 271}
+q32: 29 policies -> 1 distinct plans; truth injected True; {'native': 265, 'truth': 265}
+q33: 29 policies -> 2 distinct plans; truth injected True; {'native': 3705, 'truth': 3705}
+q34: 29 policies -> 3 distinct plans; truth injected True; {'native': 900, 'truth': 900}
+q35: 29 policies -> 3 distinct plans; truth injected True; {'native': 69, 'truth': 69}
+q36: 29 policies -> 7 distinct plans; truth injected True; {'native': 2427, 'truth': 2141}
+q37: 29 policies -> 6 distinct plans; truth injected True; {'native': 3333, 'truth': 2498}
+q38: 29 policies -> 4 distinct plans; truth injected True; {'native': 566, 'truth': 566}
+q39: 29 policies -> 6 distinct plans; truth injected True; {'native': 3475, 'truth': 2705}
+q40: 29 policies -> 6 distinct plans; truth injected True; {'native': 2069, 'truth': 1983}
+q41: 29 policies -> 7 distinct plans; truth injected True; {'native': 32630, 'truth': 32630}
+q42: 29 policies -> 7 distinct plans; truth injected True; {'native': 14718, 'truth': 17916}
+q43: 29 policies -> 6 distinct plans; truth injected True; {'native': 42512, 'truth': 38991}
+q44: 29 policies -> 6 distinct plans; truth injected True; {'native': 1099, 'truth': 1298}
+q45: 29 policies -> 3 distinct plans; truth injected True; {'native': 1527, 'truth': 1527}
+q46: 29 policies -> 5 distinct plans; truth injected True; {'native': 1557, 'truth': 1557}
+q47: 29 policies -> 7 distinct plans; truth injected True; {'native': 3844, 'truth': 3844}
+q48: 29 policies -> 7 distinct plans; truth injected True; {'native': 9238, 'truth': 9238}
+q49: 29 policies -> 6 distinct plans; truth injected True; {'native': 15585, 'truth': 17795}
+q50: 29 policies -> 6 distinct plans; truth injected True; {'native': 12991, 'truth': 12977}
+q51: 29 policies -> 3 distinct plans; truth injected True; {'native': 17188, 'truth': 14121}
+q52: 29 policies -> 3 distinct plans; truth injected True; {'native': 7472, 'truth': 7472}
+q53: 29 policies -> 5 distinct plans; truth injected True; {'native': 305, 'truth': 305}
+q54: 29 policies -> 5 distinct plans; truth injected True; {'native': 282, 'truth': 282}
+q55: 29 policies -> 4 distinct plans; truth injected True; {'native': 338, 'truth': 338}
+q56: 29 policies -> 8 distinct plans; truth injected True; {'native': 3897, 'truth': 2184}
+q57: 29 policies -> 8 distinct plans; truth injected True; {'native': 2388, 'truth': 2085}
+q58: 29 policies -> 12 distinct plans; truth injected True; {'native': 104722, 'truth': 79843}
+q59: 29 policies -> 9 distinct plans; truth injected True; {'native': 885, 'truth': 228}
+q60: 29 policies -> 11 distinct plans; truth injected True; {'native': 300000, 'truth': 300000}
+q61: 29 policies -> 9 distinct plans; truth injected True; {'native': 33906, 'truth': 35055}
+q62: 29 policies -> 10 distinct plans; truth injected True; {'native': 5206, 'truth': 3597}
+q63: 29 policies -> 8 distinct plans; truth injected True; {'native': 8726, 'truth': 6873}
+q64: 29 policies -> 5 distinct plans; truth injected True; {'native': 5154, 'truth': 4789}
+q65: 29 policies -> 4 distinct plans; truth injected True; {'native': 475, 'truth': 475}
+q66: 29 policies -> 6 distinct plans; truth injected True; {'native': 4337, 'truth': 4337}
+q67: 29 policies -> 8 distinct plans; truth injected True; {'native': 5098, 'truth': 3321}
+q68: 29 policies -> 8 distinct plans; truth injected True; {'native': 3892, 'truth': 376}
+q69: 29 policies -> 8 distinct plans; truth injected True; {'native': 1207, 'truth': 270}
+q70: 29 policies -> 12 distinct plans; truth injected True; {'native': 19086, 'truth': 19781}
+[2026-10-17 09:59:32] 4. sampling cost against query execution, one run
+q1: native 17 ms, 1 samples 8 ms (0.48x)
+q2: native 2264 ms, 1 samples 241 ms (0.11x)
+q3: native 423 ms, 1 samples 56 ms (0.13x)
+q4: native 158 ms, 1 samples 24 ms (0.15x)
+q5: native 504 ms, 1 samples 98 ms (0.19x)
+q6: native 189 ms, 1 samples 19 ms (0.10x)
+q7: native 67 ms, 3 samples 1317 ms (19.62x)
+q8: native 143 ms, 3 samples 808 ms (5.65x)
+q9: native 143 ms, 4 samples 144 ms (1.00x)
+q10: native 81 ms, 4 samples 68 ms (0.84x)
+q11: native 58 ms, 4 samples 776 ms (13.30x)
+q12: native 140 ms, 4 samples 1638 ms (11.67x)
+q13: native 46 ms, 4 samples 165 ms (3.56x)
+q14: native 16 ms, 4 samples 41 ms (2.53x)
+q15: native 604 ms, 4 samples 339 ms (0.56x)
+q16: native 54 ms, 4 samples 272 ms (5.02x)
+q17: native 13 ms, 3 samples 73 ms (5.76x)
+q18: native 39 ms, 4 samples 66 ms (1.68x)
+q19: native 26 ms, 3 samples 29 ms (1.11x)
+q20: native 123 ms, 3 samples 76 ms (0.61x)
+q21: native 43 ms, 3 samples 63 ms (1.47x)
+q22: native 224 ms, 4 samples 153 ms (0.68x)
+q23: native 86 ms, 4 samples 58 ms (0.68x)
+q24: native 22 ms, 4 samples 32 ms (1.45x)
+q25: native 84 ms, 10 samples 318 ms (3.77x)
+q26: native 37 ms, 8 samples 98 ms (2.68x)
+q27: native 34 ms, 11 samples 8066 ms (234.69x)
+q28: native 1021 ms, 8 samples 484 ms (0.47x)
+q29: native 123 ms, 8 samples 242 ms (1.97x)
+q30: native 31579 ms, 11 samples 3035 ms (0.10x)
+q31: native 1777 ms, 11 samples 597 ms (0.34x)
+q32: native 3754 ms, 10 samples 124979 ms (33.29x)
+q33: native 62 ms, 10 samples 20036 ms (321.89x)
+q34: native 36927 ms, 11 samples 7041 ms (0.19x)
+q35: native 879 ms, 11 samples 2197 ms (2.50x)
+q36: native 41 ms, 11 samples 2064 ms (49.86x)
+q37: native 249 ms, 10 samples 542 ms (2.17x)
+q38: native 6885 ms, 11 samples 4168 ms (0.61x)
+q39: native 229 ms, 11 samples 122180 ms (533.70x)
+q40: native 37 ms, 8 samples 118 ms (3.15x)
+q41: native 11 ms, 8 samples 34 ms (2.93x)
+q42: native 226 ms, 8 samples 290 ms (1.28x)
+q43: native 546 ms, 10 samples 1937 ms (3.55x)
+q44: native 506 ms, 10 samples 1337 ms (2.64x)
+q45: native 13 ms, 11 samples 3376 ms (262.00x)
+q46: native 189 ms, 26 samples 1187 ms (6.29x)
+q47: native 4595 ms, 21 samples 27585 ms (6.00x)
+q48: native 51 ms, 21 samples 144808 ms (2855.57x)
+q49: native 2097 ms, 21 samples 204131 ms (97.35x)
+q50: native 212 ms, 21 samples 73361 ms (345.75x)
+q51: native 8038 ms, 26 samples 299372 ms (37.24x)
+q52: native 21840 ms, 26 samples 248862 ms (11.39x)
+q53: native 107 ms, 17 samples 280 ms (2.63x)
+q54: native 11 ms, 17 samples 132 ms (11.94x)
+q55: native 13 ms, 19 samples 130489 ms (9919.13x)
+q56: native 1161 ms, 19 samples 6277 ms (5.40x)
+q57: native 5950 ms, 19 samples 1393 ms (0.23x)
+q58: native 300000 ms, 42 samples 717977 ms (2.39x)
+q59: native 9016 ms, 42 samples 157919 ms (17.52x)
+q60: native 1004 ms, 36 samples 2608 ms (2.60x)
+q61: native 116 ms, 36 samples 870 ms (7.48x)
+q62: native 30 ms, 36 samples 625 ms (20.49x)
+q63: native 55 ms, 36 samples 459 ms (8.28x)
+q64: native 212 ms, 36 samples 3006 ms (14.20x)
+q65: native 46 ms, 36 samples 1340 ms (29.22x)
+q66: native 406 ms, 36 samples 1343 ms (3.31x)
+q67: native 15 ms, 36 samples 1115 ms (76.16x)
+q68: native 72832 ms, 42 samples 26869 ms (0.37x)
+q69: native 7349 ms, 42 samples 8674 ms (1.18x)
+q70: native 18128 ms, 42 samples 31673 ms (1.75x)
+q71: native 4530 ms, 42 samples 3977 ms (0.88x)
+q72: native 385 ms, 42 samples 6102 ms (15.86x)
+q73: native 211 ms, 42 samples 2102 ms (9.94x)
+q74: native 2649 ms, 36 samples 2618 ms (0.99x)
+q75: native 482 ms, 36 samples 2000 ms (4.15x)
+q76: native 204 ms, 36 samples 1384 ms (6.77x)
+q77: native 593 ms, 36 samples 1732 ms (2.92x)
+q78: native 69 ms, 36 samples 633 ms (9.23x)
+q79: native 425 ms, 36 samples 2234 ms (5.26x)
+q80: native 124 ms, 4 samples 1156 ms (9.32x)
+q81: native 70 ms, 4 samples 60 ms (0.85x)
+q82: native 188 ms, 4 samples 4822 ms (25.59x)
+q83: native 215 ms, 4 samples 1631 ms (7.58x)
+q84: native 640 ms, 4 samples 362 ms (0.56x)
+q85: native 769 ms, 4 samples 184 ms (0.24x)
+q86: native 193 ms, 8 samples 323 ms (1.67x)
+q87: native 94 ms, 4 samples 150 ms (1.59x)
+q88: native 637 ms, 4 samples 529 ms (0.83x)
+q89: native 154 ms, 4 samples 1381 ms (8.96x)
+q90: native 120 ms, 4 samples 80 ms (0.67x)
+q91: native 316 ms, 4 samples 1266 ms (4.01x)
+q92: native 105 ms, 3 samples 64 ms (0.60x)
+q93: native 239 ms, 4 samples 147 ms (0.61x)
+q94: native 131 ms, 4 samples 133 ms (1.02x)
+q95: native 565 ms, 11 samples 545 ms (0.96x)
+q96: native 405 ms, 11 samples 675 ms (1.67x)
+q97: native 3135 ms, 11 samples 2307 ms (0.74x)
+q98: native 2916 ms, 11 samples 2868 ms (0.98x)
+q99: native 205 ms, 11 samples 1927 ms (9.40x)
+q100: native 96 ms, 8 samples 218 ms (2.27x)
+q101: native 173 ms, 8 samples 323 ms (1.87x)
+q102: native 247 ms, 8 samples 256 ms (1.03x)
+q103: native 314 ms, 11 samples 394 ms (1.26x)
+q104: native 3293 ms, 11 samples 122315 ms (37.15x)
+q105: native 16011 ms, 11 samples 126609 ms (7.91x)
+q106: native 671 ms, 11 samples 87126 ms (129.90x)
+q107: native 30725 ms, 11 samples 44613 ms (1.45x)
+q108: native 35219 ms, 11 samples 7055 ms (0.20x)
+q109: native 311 ms, 26 samples 1194 ms (3.84x)
+q110: native 255 ms, 26 samples 1154 ms (4.52x)
+q111: native 453 ms, 26 samples 1294 ms (2.86x)
+q112: native 388 ms, 26 samples 1139 ms (2.94x)
+q113: native 1377 ms, 11 samples 125113 ms (90.83x)
+q114: native 1329 ms, 11 samples 78157 ms (58.80x)
+q115: native 3159 ms, 11 samples 125818 ms (39.82x)
+q116: native 243 ms, 11 samples 43884 ms (180.42x)
+q117: native 146 ms, 8 samples 304 ms (2.08x)
+q118: native 216 ms, 8 samples 309 ms (1.43x)
+q119: native 239 ms, 11 samples 1373 ms (5.73x)
+q120: native 300000 ms, 11 samples 193000 ms (0.64x)
+q121: native 778 ms, 11 samples 477 ms (0.61x)
+q122: native 300000 ms, 11 samples 166198 ms (0.55x)
+q123: native 9221 ms, 11 samples 2281 ms (0.25x)
+q124: native 485 ms, 11 samples 18893 ms (38.97x)
+q125: native 58 ms, 11 samples 417 ms (7.16x)
+q126: native 190550 ms, 11 samples 34570 ms (0.18x)
+q127: native 144 ms, 26 samples 801 ms (5.54x)
+q128: native 184 ms, 26 samples 1119 ms (6.08x)
+q129: native 225 ms, 26 samples 1039 ms (4.63x)
+q130: native 129 ms, 19 samples 681 ms (5.26x)
+q131: native 1331 ms, 26 samples 151836 ms (114.04x)
+q132: native 598 ms, 26 samples 82827 ms (138.42x)
+q133: native 969 ms, 26 samples 261828 ms (270.16x)
+q134: native 164 ms, 26 samples 266943 ms (1628.39x)
+q135: native 219386 ms, 26 samples 276660 ms (1.26x)
+q136: native 24922 ms, 26 samples 279113 ms (11.20x)
+q137: native 146 ms, 17 samples 193 ms (1.32x)
+q138: native 3607 ms, 19 samples 14413 ms (4.00x)
+q139: native 364 ms, 36 samples 3580 ms (9.83x)
+q140: native 6917 ms, 75 samples 39479 ms (5.71x)
+q141: native 18380 ms, 75 samples 40846 ms (2.22x)
+q142: native 19905 ms, 75 samples 24067 ms (1.21x)
+q143: native 9360 ms, 75 samples 53366 ms (5.70x)
+q144: native 1662 ms, 36 samples 5170 ms (3.11x)
+q145: native 216 ms, 42 samples 1498 ms (6.95x)
+q146: native 277 ms, 42 samples 2421 ms (8.75x)
+[2026-10-17 13:37:55] 5. r = 0.25 samples that timed out under load
+43 sub-plans, 0 already done
+0/43 q32 ['c', 'ph', 'v'] exact 120000ms sample 120000ms
+backend crashed; censoring and reconnecting
+2577 rows, 43 replaced, 39 samples still censored -> /home/suan/ceg_v3_staging/subset_counts_r025_merged.jsonl
+[2026-10-17 16:34:09] 6. sampling seed 1 at r = 0.10 (sampled count only)
+2577 sub-plans, 0 already done
+0/2577 q1 ['b', 'u'] exact 0ms sample 9ms
+50/2577 q18 ['p', 'ph', 'pl'] exact 0ms sample 32ms
+100/2577 q27 ['c', 'p', 'u', 'v'] exact 0ms sample 11ms
+150/2577 q33 ['ph', 'u'] exact 0ms sample 18ms
+200/2577 q37 ['c', 'ph', 'v'] exact 0ms sample 145ms
+250/2577 q43 ['p', 'ph'] exact 0ms sample 30ms
+300/2577 q46 ['c', 'p', 'pl', 'v'] exact 0ms sample 25ms
+350/2577 q49 ['c', 'v'] exact 0ms sample 17ms
+400/2577 q51 ['c', 'ph', 'u'] exact 0ms sample 41ms
+450/2577 q53 ['c', 'p', 'u'] exact 0ms sample 22ms
+500/2577 q56 ['b', 'v'] exact 0ms sample 23ms
+550/2577 q58 ['b', 'p', 'ph'] exact 0ms sample 110622ms
+600/2577 q59 ['p', 'ph', 'pl', 'u'] exact 0ms sample 39ms
+650/2577 q60 ['b', 'p', 'pl', 'u', 'v'] exact 0ms sample 86ms
+700/2577 q62 ['b', 'c', 'p'] exact 0ms sample 13ms
+750/2577 q63 ['p', 'pl', 'u', 'v'] exact 0ms sample 10ms
+800/2577 q65 ['c', 'pl'] exact 0ms sample 7ms
+850/2577 q66 ['c', 'ph', 'v'] exact 0ms sample 56ms
+900/2577 q67 ['c', 'p', 'pl', 'u', 'v'] exact 0ms sample 19ms
+950/2577 q69 ['c', 'pl'] exact 0ms sample 8ms
+1000/2577 q70 ['c', 'p', 'ph'] exact 0ms sample 39ms
+1050/2577 q71 ['b', 'c', 'pl'] exact 0ms sample 33ms
+1100/2577 q72 ['c', 'p', 'ph', 'v'] exact 0ms sample 38ms
+1150/2577 q73 ['c', 'p', 'ph', 'pl', 'v'] exact 0ms sample 12ms
+1200/2577 q75 ['ph', 'v'] exact 0ms sample 42ms
+1250/2577 q76 ['b', 'p', 'u', 'v'] exact 0ms sample 37ms
+1300/2577 q78 ['p', 'u'] exact 0ms sample 5ms
+1350/2577 q79 ['b', 'p', 'ph'] exact 0ms sample 48ms
+1400/2577 q86 ['c', 'p', 'u'] exact 0ms sample 21ms
+1450/2577 q96 ['p', 'v'] exact 0ms sample 28ms
+1500/2577 q101 ['c', 'p'] exact 0ms sample 21ms
+1550/2577 q106 ['c', 'u'] exact 0ms sample 14ms
+1600/2577 q109 ['c', 'p', 'pl', 'v'] exact 0ms sample 54ms
+1650/2577 q111 ['p', 'ph', 'v'] exact 0ms sample 73ms
+1700/2577 q114 ['c', 'ph'] exact 0ms sample 314ms
+1750/2577 q119 ['b', 'p', 'u'] exact 0ms sample 17ms
+1800/2577 q124 ['ph', 'u'] exact 0ms sample 17ms
+1850/2577 q127 ['c', 'ph', 'pl'] exact 0ms sample 30ms
+1900/2577 q129 ['ph', 'pl', 'v'] exact 0ms sample 33ms
+1950/2577 q131 ['c', 'ph', 'u', 'v'] exact 0ms sample 12ms
+2000/2577 q133 ['b', 'c', 'v'] exact 0ms sample 484ms
+2050/2577 q135 ['b', 'c', 'ph'] exact 0ms sample 120000ms
+2100/2577 q137 ['b', 'c', 'p', 'pl'] exact 0ms sample 18ms
+2150/2577 q139 ['b', 'c', 'p', 'v'] exact 0ms sample 875ms
+2200/2577 q140 ['b', 'c', 'pl', 'u'] exact 0ms sample 52ms
+2250/2577 q141 ['c', 'p', 'v'] exact 0ms sample 56ms
+2300/2577 q141 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 0ms sample 352ms
+2350/2577 q142 ['b', 'c', 'pl', 'u'] exact 0ms sample 28ms
+2400/2577 q143 ['c', 'p', 'v'] exact 0ms sample 34ms
+2450/2577 q143 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 0ms sample 600ms
+2500/2577 q145 ['ph', 'v'] exact 0ms sample 36ms
+2550/2577 q146 ['c', 'p', 'v'] exact 0ms sample 70ms
+[2026-10-17 18:15:50] 6. sampling seed 2 at r = 0.10 (sampled count only)
+2577 sub-plans, 0 already done
+0/2577 q1 ['b', 'u'] exact 0ms sample 9ms
+50/2577 q18 ['p', 'ph', 'pl'] exact 0ms sample 26ms
+100/2577 q27 ['c', 'p', 'u', 'v'] exact 0ms sample 11ms
+150/2577 q33 ['ph', 'u'] exact 0ms sample 16ms
+200/2577 q37 ['c', 'ph', 'v'] exact 0ms sample 137ms
+250/2577 q43 ['p', 'ph'] exact 0ms sample 34ms
+300/2577 q46 ['c', 'p', 'pl', 'v'] exact 0ms sample 25ms
+350/2577 q49 ['c', 'v'] exact 0ms sample 17ms
+400/2577 q51 ['c', 'ph', 'u'] exact 0ms sample 41ms
+450/2577 q53 ['c', 'p', 'u'] exact 0ms sample 26ms
+500/2577 q56 ['b', 'v'] exact 0ms sample 19ms
+550/2577 q58 ['b', 'p', 'ph'] exact 0ms sample 104245ms
+600/2577 q59 ['p', 'ph', 'pl', 'u'] exact 0ms sample 29ms
+650/2577 q60 ['b', 'p', 'pl', 'u', 'v'] exact 0ms sample 92ms
+700/2577 q62 ['b', 'c', 'p'] exact 0ms sample 11ms
+750/2577 q63 ['p', 'pl', 'u', 'v'] exact 0ms sample 10ms
+800/2577 q65 ['c', 'pl'] exact 0ms sample 7ms
+850/2577 q66 ['c', 'ph', 'v'] exact 0ms sample 104ms
+900/2577 q67 ['c', 'p', 'pl', 'u', 'v'] exact 0ms sample 25ms
+950/2577 q69 ['c', 'pl'] exact 0ms sample 9ms
+1000/2577 q70 ['c', 'p', 'ph'] exact 0ms sample 30ms
+1050/2577 q71 ['b', 'c', 'pl'] exact 0ms sample 38ms
+1100/2577 q72 ['c', 'p', 'ph', 'v'] exact 0ms sample 30ms
+1150/2577 q73 ['c', 'p', 'ph', 'pl', 'v'] exact 0ms sample 8ms
+1200/2577 q75 ['ph', 'v'] exact 0ms sample 41ms
+1250/2577 q76 ['b', 'p', 'u', 'v'] exact 0ms sample 37ms
+1300/2577 q78 ['p', 'u'] exact 0ms sample 4ms
+1350/2577 q79 ['b', 'p', 'ph'] exact 0ms sample 51ms
+1400/2577 q86 ['c', 'p', 'u'] exact 0ms sample 23ms
+1450/2577 q96 ['p', 'v'] exact 0ms sample 29ms
+1500/2577 q101 ['c', 'p'] exact 0ms sample 22ms
+1550/2577 q106 ['c', 'u'] exact 0ms sample 19ms
+1600/2577 q109 ['c', 'p', 'pl', 'v'] exact 0ms sample 53ms
+1650/2577 q111 ['p', 'ph', 'v'] exact 0ms sample 70ms
+1700/2577 q114 ['c', 'ph'] exact 0ms sample 335ms
+1750/2577 q119 ['b', 'p', 'u'] exact 0ms sample 17ms
+1800/2577 q124 ['ph', 'u'] exact 0ms sample 19ms
+1850/2577 q127 ['c', 'ph', 'pl'] exact 0ms sample 31ms
+1900/2577 q129 ['ph', 'pl', 'v'] exact 0ms sample 35ms
+1950/2577 q131 ['c', 'ph', 'u', 'v'] exact 0ms sample 15ms
+2000/2577 q133 ['b', 'c', 'v'] exact 0ms sample 1151ms
+2050/2577 q135 ['b', 'c', 'ph'] exact 0ms sample 120000ms
+2100/2577 q137 ['b', 'c', 'p', 'pl'] exact 0ms sample 21ms
+2150/2577 q139 ['b', 'c', 'p', 'v'] exact 0ms sample 854ms
+2200/2577 q140 ['b', 'c', 'pl', 'u'] exact 0ms sample 53ms
+2250/2577 q141 ['c', 'p', 'v'] exact 0ms sample 56ms
+2300/2577 q141 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 0ms sample 363ms
+2350/2577 q142 ['b', 'c', 'pl', 'u'] exact 0ms sample 33ms
+2400/2577 q143 ['c', 'p', 'v'] exact 0ms sample 29ms
+2450/2577 q143 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 0ms sample 528ms
+2500/2577 q145 ['ph', 'v'] exact 0ms sample 41ms
+2550/2577 q146 ['c', 'p', 'v'] exact 0ms sample 62ms
+[2026-10-17 19:56:45] 6. sampling seed 3 at r = 0.10 (sampled count only)
+2577 sub-plans, 0 already done
+0/2577 q1 ['b', 'u'] exact 0ms sample 10ms
+50/2577 q18 ['p', 'ph', 'pl'] exact 0ms sample 26ms
+100/2577 q27 ['c', 'p', 'u', 'v'] exact 0ms sample 11ms
+150/2577 q33 ['ph', 'u'] exact 0ms sample 17ms
+200/2577 q37 ['c', 'ph', 'v'] exact 0ms sample 144ms
+250/2577 q43 ['p', 'ph'] exact 0ms sample 32ms
+300/2577 q46 ['c', 'p', 'pl', 'v'] exact 0ms sample 25ms
+350/2577 q49 ['c', 'v'] exact 0ms sample 16ms
+400/2577 q51 ['c', 'ph', 'u'] exact 0ms sample 39ms
+450/2577 q53 ['c', 'p', 'u'] exact 0ms sample 24ms
+500/2577 q56 ['b', 'v'] exact 0ms sample 24ms
+550/2577 q58 ['b', 'p', 'ph'] exact 0ms sample 105507ms
+600/2577 q59 ['p', 'ph', 'pl', 'u'] exact 0ms sample 31ms
+650/2577 q60 ['b', 'p', 'pl', 'u', 'v'] exact 0ms sample 86ms
+700/2577 q62 ['b', 'c', 'p'] exact 0ms sample 14ms
+750/2577 q63 ['p', 'pl', 'u', 'v'] exact 0ms sample 10ms
+800/2577 q65 ['c', 'pl'] exact 0ms sample 7ms
+850/2577 q66 ['c', 'ph', 'v'] exact 0ms sample 94ms
+900/2577 q67 ['c', 'p', 'pl', 'u', 'v'] exact 0ms sample 20ms
+950/2577 q69 ['c', 'pl'] exact 0ms sample 9ms
+1000/2577 q70 ['c', 'p', 'ph'] exact 0ms sample 30ms
+1050/2577 q71 ['b', 'c', 'pl'] exact 0ms sample 32ms
+1100/2577 q72 ['c', 'p', 'ph', 'v'] exact 0ms sample 29ms
+1150/2577 q73 ['c', 'p', 'ph', 'pl', 'v'] exact 0ms sample 9ms
+1200/2577 q75 ['ph', 'v'] exact 0ms sample 46ms
+1250/2577 q76 ['b', 'p', 'u', 'v'] exact 0ms sample 39ms
+1300/2577 q78 ['p', 'u'] exact 0ms sample 6ms
+1350/2577 q79 ['b', 'p', 'ph'] exact 0ms sample 50ms
+1400/2577 q86 ['c', 'p', 'u'] exact 0ms sample 22ms
+1450/2577 q96 ['p', 'v'] exact 0ms sample 28ms
+1500/2577 q101 ['c', 'p'] exact 0ms sample 20ms
+1550/2577 q106 ['c', 'u'] exact 0ms sample 14ms
+1600/2577 q109 ['c', 'p', 'pl', 'v'] exact 0ms sample 58ms
+1650/2577 q111 ['p', 'ph', 'v'] exact 0ms sample 75ms
+1700/2577 q114 ['c', 'ph'] exact 0ms sample 329ms
+1750/2577 q119 ['b', 'p', 'u'] exact 0ms sample 16ms
+1800/2577 q124 ['ph', 'u'] exact 0ms sample 17ms
+1850/2577 q127 ['c', 'ph', 'pl'] exact 0ms sample 32ms
+1900/2577 q129 ['ph', 'pl', 'v'] exact 0ms sample 44ms
+1950/2577 q131 ['c', 'ph', 'u', 'v'] exact 0ms sample 12ms
+2000/2577 q133 ['b', 'c', 'v'] exact 0ms sample 1002ms
+2050/2577 q135 ['b', 'c', 'ph'] exact 0ms sample 120000ms
+2100/2577 q137 ['b', 'c', 'p', 'pl'] exact 0ms sample 19ms
+2150/2577 q139 ['b', 'c', 'p', 'v'] exact 0ms sample 967ms
+2200/2577 q140 ['b', 'c', 'pl', 'u'] exact 0ms sample 54ms
+2250/2577 q141 ['c', 'p', 'v'] exact 0ms sample 80ms
+2300/2577 q141 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 0ms sample 337ms
+2350/2577 q142 ['b', 'c', 'pl', 'u'] exact 0ms sample 28ms
+2400/2577 q143 ['c', 'p', 'v'] exact 0ms sample 29ms
+2450/2577 q143 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 0ms sample 532ms
+2500/2577 q145 ['ph', 'v'] exact 0ms sample 46ms
+2550/2577 q146 ['c', 'p', 'v'] exact 0ms sample 61ms
+[2026-10-17 21:40:09] 6. sampling seed 4 at r = 0.10 (sampled count only)
+2577 sub-plans, 0 already done
+0/2577 q1 ['b', 'u'] exact 0ms sample 9ms
+50/2577 q18 ['p', 'ph', 'pl'] exact 0ms sample 37ms
+100/2577 q27 ['c', 'p', 'u', 'v'] exact 0ms sample 12ms
+150/2577 q33 ['ph', 'u'] exact 0ms sample 16ms
+200/2577 q37 ['c', 'ph', 'v'] exact 0ms sample 139ms
+250/2577 q43 ['p', 'ph'] exact 0ms sample 31ms
+300/2577 q46 ['c', 'p', 'pl', 'v'] exact 0ms sample 24ms
+350/2577 q49 ['c', 'v'] exact 0ms sample 15ms
+400/2577 q51 ['c', 'ph', 'u'] exact 0ms sample 44ms
+450/2577 q53 ['c', 'p', 'u'] exact 0ms sample 26ms
+500/2577 q56 ['b', 'v'] exact 0ms sample 20ms
+550/2577 q58 ['b', 'p', 'ph'] exact 0ms sample 104978ms
+600/2577 q59 ['p', 'ph', 'pl', 'u'] exact 0ms sample 60ms
+650/2577 q60 ['b', 'p', 'pl', 'u', 'v'] exact 0ms sample 80ms
+700/2577 q62 ['b', 'c', 'p'] exact 0ms sample 12ms
+750/2577 q63 ['p', 'pl', 'u', 'v'] exact 0ms sample 10ms
+800/2577 q65 ['c', 'pl'] exact 0ms sample 11ms
+850/2577 q66 ['c', 'ph', 'v'] exact 0ms sample 43ms
+900/2577 q67 ['c', 'p', 'pl', 'u', 'v'] exact 0ms sample 21ms
+950/2577 q69 ['c', 'pl'] exact 0ms sample 8ms
+1000/2577 q70 ['c', 'p', 'ph'] exact 0ms sample 30ms
+1050/2577 q71 ['b', 'c', 'pl'] exact 0ms sample 31ms
+1100/2577 q72 ['c', 'p', 'ph', 'v'] exact 0ms sample 30ms
+1150/2577 q73 ['c', 'p', 'ph', 'pl', 'v'] exact 0ms sample 9ms
+1200/2577 q75 ['ph', 'v'] exact 0ms sample 42ms
+1250/2577 q76 ['b', 'p', 'u', 'v'] exact 0ms sample 37ms
+1300/2577 q78 ['p', 'u'] exact 0ms sample 5ms
+1350/2577 q79 ['b', 'p', 'ph'] exact 0ms sample 50ms
+1400/2577 q86 ['c', 'p', 'u'] exact 0ms sample 23ms
+1450/2577 q96 ['p', 'v'] exact 0ms sample 29ms
+1500/2577 q101 ['c', 'p'] exact 0ms sample 20ms
+1550/2577 q106 ['c', 'u'] exact 0ms sample 14ms
+1600/2577 q109 ['c', 'p', 'pl', 'v'] exact 0ms sample 54ms
+1650/2577 q111 ['p', 'ph', 'v'] exact 0ms sample 75ms
+1700/2577 q114 ['c', 'ph'] exact 0ms sample 318ms
+1750/2577 q119 ['b', 'p', 'u'] exact 0ms sample 18ms
+1800/2577 q124 ['ph', 'u'] exact 0ms sample 17ms
+1850/2577 q127 ['c', 'ph', 'pl'] exact 0ms sample 32ms
+1900/2577 q129 ['ph', 'pl', 'v'] exact 0ms sample 44ms
+1950/2577 q131 ['c', 'ph', 'u', 'v'] exact 0ms sample 11ms
+2000/2577 q133 ['b', 'c', 'v'] exact 0ms sample 645ms
+2050/2577 q135 ['b', 'c', 'ph'] exact 0ms sample 120000ms
+2100/2577 q137 ['b', 'c', 'p', 'pl'] exact 0ms sample 19ms
+2150/2577 q139 ['b', 'c', 'p', 'v'] exact 0ms sample 1003ms
+2200/2577 q140 ['b', 'c', 'pl', 'u'] exact 0ms sample 53ms
+2250/2577 q141 ['c', 'p', 'v'] exact 0ms sample 61ms
+2300/2577 q141 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 0ms sample 340ms
+2350/2577 q142 ['b', 'c', 'pl', 'u'] exact 0ms sample 39ms
+2400/2577 q143 ['c', 'p', 'v'] exact 0ms sample 29ms
+2450/2577 q143 ['b', 'c', 'p', 'pl', 'u', 'v'] exact 0ms sample 552ms
+2500/2577 q145 ['ph', 'v'] exact 0ms sample 35ms
+2550/2577 q146 ['c', 'p', 'v'] exact 0ms sample 86ms
+[2026-10-17 23:10:46] pipeline v3 done

@@ -1,0 +1,21 @@
+{
+  "experiment": "c3_lower_certificate_cost_vs_scale",
+  "note": "In-sandbox measurement of the C3 single-point-of-failure: is the sample-based lower certificate cheaper than the full join it is meant to avoid? Measured on real IMDb (JOB queries 10a/10b/10c, 7-way joins) at increasing per-table row caps. cost_ratio = lower_cert_time / full_count_time.",
+  "generated_by": "experiments.scripts.run_job_real --max-rows <rows> --lower-seeds <k> --lower-rate 0.1 --limit-queries N",
+  "points": [
+    {"max_rows": 200,  "lower_seeds": 3, "n_queries": 3, "cost_ratio_median": 2.195, "full_count_ms_median": 0.7, "lower_cert_ms_median": 1.8},
+    {"max_rows": 2000, "lower_seeds": 1, "n_queries": 12, "cost_ratio_median": 0.666, "full_count_ms_median": 9.1, "lower_cert_ms_median": 6.4},
+    {"max_rows": 5000, "lower_seeds": 1, "n_queries": 3, "cost_ratio_median": 0.712, "full_count_ms_median": 17.0, "lower_cert_ms_median": 12.0}
+  ],
+  "unreachable_in_sandbox": [
+    {"max_rows": 20000, "reason": "7-way count_join frontier exceeds the sandbox time/memory budget for both the full count and the certificate; needs the local full run"},
+    {"max_rows": 50000, "reason": "same"},
+    {"max_rows": 100000, "reason": "same"}
+  ],
+  "findings": {
+    "seed_multiplier": "The 200-row 2.2x is a 3-seed aggregation overhead, not the certificate itself: with lower_seeds=1 the ratio drops below 1.0. Cost scales ~linearly in seeds, so use 1 seed for the cost-sensitive path and more only when L_hat stability is needed.",
+    "scale_trend": "At single seed the certificate is ~0.67-0.71x the full-join cost at 2k-5k rows (i.e. ~30% cheaper), because only the largest relation is sub-sampled while the join dominates cost. The ratio is stable, not exploding, across the reachable range.",
+    "floor": "The certificate's speedup is bounded below by the cost of joining the non-sampled relations; sampling only the largest relation cannot beat that floor. Sampling the cost-dominant relation (not merely the largest by row count) is the design lever to push cost_ratio lower.",
+    "verdict": "C3 PARTIALLY DE-RISKED in-sandbox: single-seed certificate is cheaper than execution at measurable scales and the trend is favorable. The definitive real-JOB-scale answer requires the local full run (7-way joins blow up past ~20k rows here). This is the W4 kill-gate input."
+  }
+}

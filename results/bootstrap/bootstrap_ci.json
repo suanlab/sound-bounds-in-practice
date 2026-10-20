@@ -1,0 +1,353 @@
+{
+  "experiment": "query_clustered_bootstrap_ci",
+  "note": "Percentile 95% CIs under resampling of whole queries. Rows within a query share a true cardinality and a bound, so row-level resampling would understate the width. Intervals cover sampling error only; for the real-JOB row they do not cover the censoring selection.",
+  "replicates": 10000,
+  "seed": 0,
+  "statistics": {
+    "guard policy / no_guard / median q-error": {
+      "point": 18.15913562304123,
+      "ci_low": 15.312551603657514,
+      "ci_high": 23.462365043418725,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "guard policy / no_guard / p95 q-error": {
+      "point": 233692.67919874797,
+      "ci_low": 78612.98275250326,
+      "ci_high": 956482.0377800314,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "guard policy / upper_only / median q-error": {
+      "point": 9.701073262856978,
+      "ci_low": 7.202183221579638,
+      "ci_high": 13.953392909838051,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "guard policy / upper_only / p95 q-error": {
+      "point": 6423.310803283082,
+      "ci_low": 3240.937589057452,
+      "ci_high": 20353.483918753955,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "guard policy / lower_only / median q-error": {
+      "point": 1.430884637485383,
+      "ci_low": 1.2511022090622388,
+      "ci_high": 1.773755553783476,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "guard policy / lower_only / p95 q-error": {
+      "point": 30573.084038318342,
+      "ci_low": 7984.0668745583325,
+      "ci_high": 315135.18713987595,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "guard policy / bidirectional / median q-error": {
+      "point": 1.3851132277724114,
+      "ci_low": 1.2426402664017684,
+      "ci_high": 1.654197578869542,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "guard policy / bidirectional / p95 q-error": {
+      "point": 295.6080640728173,
+      "ci_low": 97.37839072015821,
+      "ci_high": 798.9306075902252,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "guard policy / lower_only_sound / median q-error": {
+      "point": 9.809682940744967,
+      "ci_low": 9.628076923076923,
+      "ci_high": 9.985327523036789,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "guard policy / lower_only_sound / p95 q-error": {
+      "point": 30573.084038318342,
+      "ci_low": 7984.0668745583325,
+      "ci_high": 315135.18713987595,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "guard policy / bidirectional_sound / median q-error": {
+      "point": 8.879341067660775,
+      "ci_low": 7.061604037560054,
+      "ci_high": 9.522957568986994,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "guard policy / bidirectional_sound / p95 q-error": {
+      "point": 295.6080640728173,
+      "ci_low": 97.37839072015821,
+      "ci_high": 798.9306075902252,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "plan runtime / duckdb / aggregate guarded-over-unguarded": {
+      "point": 2.041808893150762,
+      "ci_low": 0.1468158693953868,
+      "ci_high": 5.5610931380572355,
+      "n_rows": 78,
+      "n_clusters": 22,
+      "replicates": 10000
+    },
+    "plan runtime / duckdb / median speedup": {
+      "point": 0.89948070803875,
+      "ci_low": 0.7453607279047679,
+      "ci_high": 1.103592231700529,
+      "n_rows": 78,
+      "n_clusters": 22,
+      "replicates": 10000
+    },
+    "plan runtime / duckdb / share of pairs slower": {
+      "point": 0.6666666666666666,
+      "ci_low": 0.45569620253164556,
+      "ci_high": 0.8571428571428571,
+      "n_rows": 78,
+      "n_clusters": 22,
+      "replicates": 10000
+    },
+    "plan runtime / sqlite / aggregate guarded-over-unguarded": {
+      "point": 0.998363151133101,
+      "ci_low": 0.5692821380132349,
+      "ci_high": 1.8259031500657004,
+      "n_rows": 65,
+      "n_clusters": 17,
+      "replicates": 10000
+    },
+    "plan runtime / sqlite / median speedup": {
+      "point": 0.8172781904684702,
+      "ci_low": 0.36517166601981316,
+      "ci_high": 0.9680209672530976,
+      "n_rows": 65,
+      "n_clusters": 17,
+      "replicates": 10000
+    },
+    "plan runtime / sqlite / share of pairs slower": {
+      "point": 0.8615384615384616,
+      "ci_low": 0.676923076923077,
+      "ci_high": 1.0,
+      "n_rows": 65,
+      "n_clusters": 17,
+      "replicates": 10000
+    },
+    "real JOB / median lower-certificate cost ratio (3 draws, as run)": {
+      "point": 1.8025683799612946,
+      "ci_low": 1.6646714261953648,
+      "ci_high": 1.9661624419099353,
+      "n_rows": 53,
+      "n_clusters": 53,
+      "replicates": 10000
+    },
+    "real JOB / median lower-certificate cost ratio (per draw, derived)": {
+      "point": 0.6008561266537649,
+      "ci_low": 0.5548904753984549,
+      "ci_high": 0.6553874806366451,
+      "n_rows": 53,
+      "n_clusters": 53,
+      "replicates": 10000
+    },
+    "real JOB / share of templates with per-draw cost ratio above 1": {
+      "point": 0.03773584905660377,
+      "ci_low": 0.0,
+      "ci_high": 0.09433962264150944,
+      "n_rows": 53,
+      "n_clusters": 53,
+      "replicates": 10000
+    },
+    "real JOB / median lower-certificate cost ratio (1 draw, measured)": {
+      "point": 0.6336809923260914,
+      "ci_low": 0.5420823286494691,
+      "ci_high": 0.6678846367142793,
+      "n_rows": 53,
+      "n_clusters": 53,
+      "replicates": 10000
+    },
+    "real JOB / share of templates with 1-draw cost ratio above 1": {
+      "point": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "n_rows": 53,
+      "n_clusters": 53,
+      "replicates": 10000
+    },
+    "real JOB / three-draw over one-draw certificate time (linearity)": {
+      "point": 2.9231275434093433,
+      "ci_low": 2.7491757176798552,
+      "ci_high": 3.1653278158793343,
+      "n_rows": 15,
+      "n_clusters": 15,
+      "replicates": 10000
+    },
+    "tail composition / over-estimate share of worst 5%": {
+      "point": 0.7692307692307693,
+      "ci_low": 0.5641025641025641,
+      "ci_high": 0.8974358974358975,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "direction / LpBound fires on over-estimates": {
+      "point": 0.3407079646017699,
+      "ci_low": 0.29723502304147464,
+      "ci_high": 0.38596491228070173,
+      "n_rows": 2532,
+      "n_clusters": 146,
+      "replicates": 10000
+    },
+    "direction / SafeBound fires on over-estimates": {
+      "point": 0.334070796460177,
+      "ci_low": 0.28936036397698384,
+      "ci_high": 0.37939459610612036,
+      "n_rows": 2532,
+      "n_clusters": 146,
+      "replicates": 10000
+    },
+    "direction / sample-LB fires on under-estimates": {
+      "point": 0.8241758241758241,
+      "ci_low": 0.7795678246484697,
+      "ci_high": 0.8677685950413223,
+      "n_rows": 2532,
+      "n_clusters": 146,
+      "replicates": 10000
+    },
+    "direction / under-estimate share of errors": {
+      "point": 0.4840182648401826,
+      "ci_low": 0.4497716894977169,
+      "ci_high": 0.5171232876712328,
+      "n_rows": 2532,
+      "n_clusters": 146,
+      "replicates": 10000
+    },
+    "tightness / max_degree / fire rate": {
+      "point": 0.1125,
+      "ci_low": 0.0875,
+      "ci_high": 0.1375,
+      "n_rows": 720,
+      "n_clusters": 40,
+      "replicates": 10000
+    },
+    "tightness / safebound / fire rate": {
+      "point": 0.2375,
+      "ci_low": 0.19583333333333333,
+      "ci_high": 0.2791666666666667,
+      "n_rows": 720,
+      "n_clusters": 40,
+      "replicates": 10000
+    },
+    "tightness / lpbound / fire rate": {
+      "point": 0.225,
+      "ci_low": 0.18333333333333332,
+      "ci_high": 0.26666666666666666,
+      "n_rows": 720,
+      "n_clusters": 40,
+      "replicates": 10000
+    },
+    "tightness / SafeBound minus max-degree (pp, paired)": {
+      "point": 12.499999999999998,
+      "ci_low": 8.75,
+      "ci_high": 16.25,
+      "n_rows": 720,
+      "n_clusters": 40,
+      "replicates": 10000
+    },
+    "cost / STATS-CEB lower-certificate cost ratio": {
+      "point": 0.6563947977227277,
+      "ci_low": 0.6371370032430925,
+      "ci_high": 0.6834801915992748,
+      "n_rows": 780,
+      "n_clusters": 130,
+      "replicates": 10000
+    },
+    "plan regret / no_guard / worst case": {
+      "point": 2754.034566126503,
+      "ci_low": 34.75694840460218,
+      "ci_high": 2754.034566126503,
+      "n_rows": 1080,
+      "n_clusters": 120,
+      "replicates": 10000
+    },
+    "plan regret / no_guard / p95": {
+      "point": 1.5790328976651964,
+      "ci_low": 1.2035262552702184,
+      "ci_high": 2.7654693631150016,
+      "n_rows": 1080,
+      "n_clusters": 120,
+      "replicates": 10000
+    },
+    "plan regret / guarded / worst case": {
+      "point": 149.79202187550266,
+      "ci_low": 5.288656284044766,
+      "ci_high": 149.79202187550266,
+      "n_rows": 1080,
+      "n_clusters": 120,
+      "replicates": 10000
+    },
+    "plan regret / guarded / p95": {
+      "point": 1.5790328976651964,
+      "ci_low": 1.1492647420146473,
+      "ci_high": 2.7654693631150016,
+      "n_rows": 1080,
+      "n_clusters": 120,
+      "replicates": 10000
+    },
+    "plan regret / worst-case ratio (unguarded over guarded, paired)": {
+      "point": 18.385722628241687,
+      "ci_low": 1.0,
+      "ci_high": 520.7437235872353,
+      "n_rows": 1080,
+      "n_clusters": 120,
+      "replicates": 10000
+    },
+    "plan regret / p95 difference (guarded minus unguarded, paired)": {
+      "point": 0.0,
+      "ci_low": -0.580795570563529,
+      "ci_high": 0.49900104970887355,
+      "n_rows": 1080,
+      "n_clusters": 120,
+      "replicates": 10000
+    }
+  },
+  "zero_event_bounds": {
+    "pessimistic bound violations (synthetic)": {
+      "events": 0,
+      "trials": 3600,
+      "upper_95": 0.0008318017147593837
+    },
+    "MOLP bound violations (certificate upgrade)": {
+      "events": 0,
+      "trials": 400,
+      "upper_95": 0.0074613555287995625
+    },
+    "one-draw JOB certificates costing more than the exact count": {
+      "events": 0,
+      "trials": 53,
+      "upper_95": 0.05495548846517784
+    },
+    "interventions that worsened an estimate": {
+      "events": 0,
+      "trials": 525,
+      "trials_with_multiplicity_across_tau": 1564,
+      "upper_95": 0.005689907520823656,
+      "conservative_upper_95_query_level": 0.016877163787066496,
+      "note": "Both real benchmarks, tau in {1, 2, 4, 8}. Firing sets are nested in tau, so trials counts distinct (query, proposal, certificate) firings at tau = 1. Interventions within a query are not independent, so the conservative bound uses the number of distinct queries with a firing as the effective sample size. The paper quotes that one."
+    }
+  }
+}

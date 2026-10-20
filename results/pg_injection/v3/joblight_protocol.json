@@ -1,0 +1,23 @@
+{
+  "n_queries": 70,
+  "n_plans": 317,
+  "n_censored_plans": 11,
+  "n_crashed_plans": 0,
+  "n_queries_with_censored_plan": 1,
+  "native_reproduced": 70,
+  "truth_injection_verified": 70,
+  "n_high_load": 0,
+  "load_start_median": 2.89794921875,
+  "load_start_max": 11.31005859375,
+  "load_end_max": 11.31005859375,
+  "load_start_max_query": 20,
+  "n_end_above_60": 0,
+  "n_start_above_30": 0,
+  "queries_start_above_30": [],
+  "queries_with_censored_plan": [
+    60
+  ],
+  "uncensored_plans_timed_reps": [
+    3
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "experiment": "certificate_upgrade_molp_vs_geomean",
+  "family": "cycle",
+  "relation_counts": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "queries_per_size": 20,
+  "seeds": [
+    42,
+    1042,
+    2042,
+    3042,
+    4042
+  ],
+  "n_queries": 400,
+  "aggregated": {
+    "molp_fallback_qerr_mean": 38.23735656086271,
+    "molp_fallback_qerr_median": 35.196503107329846,
+    "geo_fallback_qerr_mean": 3.6390217579577246,
+    "geo_fallback_qerr_median": 2.234396215746048,
+    "qerr_mean_improvement_factor": 10.50759217837766,
+    "qerr_median_improvement_factor": 15.752131541978109,
+    "mean_bound_tightness_ratio_geo_over_molp": 0.03323228591236256,
+    "bound_tightness_factor": 30.09121920282936,
+    "geo_strictly_tighter_fraction": 1.0,
+    "molp_bound_violation_rate": 0.0,
+    "geo_bound_violation_rate": 0.6875
+  },
+  "per_size": {
+    "3": {
+      "n": 100.0,
+      "molp_qerr_mean": 21.541724914481193,
+      "molp_qerr_median": 21.36019661079724,
+      "geo_qerr_mean": 1.9782792443793187,
+      "geo_qerr_median": 1.9869852910588048,
+      "mean_tightness_ratio": 0.09341947479658044
+    },
+    "4": {
+      "n": 100.0,
+      "molp_qerr_mean": 32.11612017200105,
+      "molp_qerr_median": 31.47746555003411,
+      "geo_qerr_mean": 1.2519891148443074,
+      "geo_qerr_median": 1.1842769686793946,
+      "mean_tightness_ratio": 0.028373191938938294
+    },
+    "5": {
+      "n": 100.0,
+      "molp_qerr_mean": 43.564825844774965,
+      "molp_qerr_median": 42.75791432491299,
+      "geo_qerr_mean": 3.0013439138166165,
+      "geo_qerr_median": 2.973093133878659,
+      "mean_tightness_ratio": 0.00857651854870869
+    },
+    "6": {
+      "n": 100.0,
+      "molp_qerr_mean": 55.726755312193625,
+      "molp_qerr_median": 55.15277869990355,
+      "geo_qerr_mean": 8.324474758790656,
+      "geo_qerr_median": 7.721232407627138,
+      "mean_tightness_ratio": 0.0025599583652230317
+    }
+  }
+}

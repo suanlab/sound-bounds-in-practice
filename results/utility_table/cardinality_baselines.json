@@ -1,0 +1,284 @@
+{
+  "experiment": "cardinality_baselines",
+  "preregistered": false,
+  "n_pairs": 780,
+  "n_queries": 130,
+  "pooled": {
+    "none": {
+      "median": {
+        "point": 18.15913562304123,
+        "ci_low": 15.312551603657514,
+        "ci_high": 23.462365043418725,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "p95": {
+        "point": 233692.67919874797,
+        "ci_low": 78612.98275250326,
+        "ci_high": 956482.0377800314,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "max": 46715884153.675
+    },
+    "upper_t2": {
+      "median": {
+        "point": 9.701073262856978,
+        "ci_low": 7.202183221579638,
+        "ci_high": 13.953392909838051,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "p95": {
+        "point": 6423.310803283082,
+        "ci_low": 3240.937589057452,
+        "ci_high": 20353.483918753955,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "max": 207549232.20930234
+    },
+    "upper_t1": {
+      "median": {
+        "point": 9.456923214285428,
+        "ci_low": 7.0989997696203035,
+        "ci_high": 13.38835857304435,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "p95": {
+        "point": 6423.310803283082,
+        "ci_low": 3240.937589057452,
+        "ci_high": 19899.400582666945,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "max": 207549232.20930234
+    },
+    "bi_sound_t2": {
+      "median": {
+        "point": 8.879341067660775,
+        "ci_low": 7.061604037560054,
+        "ci_high": 9.522957568986994,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "p95": {
+        "point": 295.6080640728173,
+        "ci_low": 97.37839072015821,
+        "ci_high": 798.9306075902252,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "max": 40659.307002043686
+    },
+    "bi_sound_t1": {
+      "median": {
+        "point": 8.80555324008657,
+        "ci_low": 6.873081178747284,
+        "ci_high": 9.444347166799176,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "p95": {
+        "point": 295.6080640728173,
+        "ci_low": 97.37839072015821,
+        "ci_high": 794.98765003816,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "max": 40659.307002043686
+    },
+    "bi_hat_t2": {
+      "median": {
+        "point": 1.3851132277724114,
+        "ci_low": 1.2426402664017684,
+        "ci_high": 1.654197578869542,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "p95": {
+        "point": 295.6080640728173,
+        "ci_low": 97.37839072015821,
+        "ci_high": 798.9306075902252,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "max": 40659.307002043686
+    },
+    "lpbound_as_estimate": {
+      "median": {
+        "point": 17.874439853944974,
+        "ci_low": 7.861271109873057,
+        "ci_high": 38.63611898153771,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "p95": {
+        "point": 4621.715195241024,
+        "ci_low": 1135.466534801266,
+        "ci_high": 26506.371243370766,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "max": 1060812.7119857334
+    },
+    "safebound_as_estimate": {
+      "median": {
+        "point": 18.120153875476255,
+        "ci_low": 9.216517832272487,
+        "ci_high": 37.21294520363574,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "p95": {
+        "point": 5058.1105662011005,
+        "ci_low": 1494.3110719831411,
+        "ci_high": 57654.275178009026,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "max": 9887735.297907308
+    },
+    "l_sound_as_estimate": {
+      "median": {
+        "point": 9.980482011720333,
+        "ci_low": 9.909496595015419,
+        "ci_high": 10.038878971536835,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "p95": {
+        "point": 11.033860619946823,
+        "ci_low": 10.633025804336627,
+        "ci_high": 13.310077519379846,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "max": 18.666666666666668
+    },
+    "l_hat_as_estimate": {
+      "median": {
+        "point": 1.0259750277009931,
+        "ci_low": 1.0212634540264771,
+        "ci_high": 1.0360877126868675,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "p95": {
+        "point": 1.2720172792624012,
+        "ci_low": 1.1111111111111112,
+        "ci_high": 1.5762295373325275,
+        "n_rows": 780,
+        "n_clusters": 130,
+        "replicates": 10000
+      },
+      "max": 1.8948239542962695
+    }
+  },
+  "by_proposal": {
+    "dbx": {
+      "n": 130,
+      "under_share": 0.8307692307692308,
+      "p95_none": 4282.569953743234,
+      "p95_upper_t2": 4282.569953743234,
+      "p95_upper_t1": 4282.569953743234,
+      "p95_bi_sound_t2": 15.579828827472916,
+      "p95_bi_sound_t1": 10.755506376808832,
+      "p95_bi_hat_t2": 3.329999783971651,
+      "p95_lpbound_as_estimate": 3829.6740923164307,
+      "p95_safebound_as_estimate": 4427.611747616405,
+      "p95_l_sound_as_estimate": 11.01446598693629,
+      "p95_l_hat_as_estimate": 1.2607490766509057
+    },
+    "duckdb": {
+      "n": 130,
+      "under_share": 0.9692307692307692,
+      "p95_none": 383416.7233720928,
+      "p95_upper_t2": 383416.7233720928,
+      "p95_upper_t1": 383416.7233720928,
+      "p95_bi_sound_t2": 11.436815526107285,
+      "p95_bi_sound_t1": 10.805753363060257,
+      "p95_bi_hat_t2": 1.3095366610253678,
+      "p95_lpbound_as_estimate": 3829.6740923164307,
+      "p95_safebound_as_estimate": 4427.611747616405,
+      "p95_l_sound_as_estimate": 11.01446598693629,
+      "p95_l_hat_as_estimate": 1.2607490766509062
+    },
+    "factorjoin": {
+      "n": 130,
+      "under_share": 0.13846153846153847,
+      "p95_none": 1806.2630833385963,
+      "p95_upper_t2": 821.4058244032512,
+      "p95_upper_t1": 821.4058244032512,
+      "p95_bi_sound_t2": 821.4058244032512,
+      "p95_bi_sound_t1": 821.4058244032512,
+      "p95_bi_hat_t2": 821.4058244032512,
+      "p95_lpbound_as_estimate": 3829.6740923164307,
+      "p95_safebound_as_estimate": 4427.611747616405,
+      "p95_l_sound_as_estimate": 11.01446598693629,
+      "p95_l_hat_as_estimate": 1.2607490766509057
+    },
+    "flat": {
+      "n": 130,
+      "under_share": 0.4461538461538462,
+      "p95_none": 258.2207217661213,
+      "p95_upper_t2": 90.70351509913098,
+      "p95_upper_t1": 90.70351509913098,
+      "p95_bi_sound_t2": 65.6079749380672,
+      "p95_bi_sound_t1": 59.57328050926557,
+      "p95_bi_hat_t2": 65.6079749380672,
+      "p95_lpbound_as_estimate": 3829.6740923164307,
+      "p95_safebound_as_estimate": 4427.611747616405,
+      "p95_l_sound_as_estimate": 11.01446598693629,
+      "p95_l_hat_as_estimate": 1.2607490766509062
+    },
+    "neurocard": {
+      "n": 130,
+      "under_share": 0.015384615384615385,
+      "p95_none": 298001426.83974594,
+      "p95_upper_t2": 1173.2955772525693,
+      "p95_upper_t1": 1173.2955772525693,
+      "p95_bi_sound_t2": 1173.2955772525693,
+      "p95_bi_sound_t1": 1173.2955772525693,
+      "p95_bi_hat_t2": 1173.2955772525693,
+      "p95_lpbound_as_estimate": 3829.6740923164307,
+      "p95_safebound_as_estimate": 4427.611747616405,
+      "p95_l_sound_as_estimate": 11.01446598693629,
+      "p95_l_hat_as_estimate": 1.2607490766509062
+    },
+    "postgres": {
+      "n": 130,
+      "under_share": 0.4,
+      "p95_none": 877.5220473494837,
+      "p95_upper_t2": 463.2234176312169,
+      "p95_upper_t1": 463.2234176312169,
+      "p95_bi_sound_t2": 266.6206588760826,
+      "p95_bi_sound_t1": 259.5560557363493,
+      "p95_bi_hat_t2": 266.6206588760826,
+      "p95_lpbound_as_estimate": 3829.6740923164307,
+      "p95_safebound_as_estimate": 4427.611747616405,
+      "p95_l_sound_as_estimate": 11.01446598693629,
+      "p95_l_hat_as_estimate": 1.2607490766509049
+    }
+  }
+}

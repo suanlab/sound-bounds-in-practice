@@ -1,0 +1,78 @@
+{
+  "n_queries": 83,
+  "n_violations": 6,
+  "violation_rate": 0.07228915662650602,
+  "violation_rate_cyclic": 0.0,
+  "violation_rate_acyclic": 0.21428571428571427,
+  "all_violators_cyclic": false,
+  "all_violators_below_cartesian": true,
+  "max_true_over_bound": 1.0000000000000002,
+  "violators": [
+    {
+      "n_relations": 2,
+      "n_joins": 1,
+      "cyclic": false,
+      "true_cardinality": 60.0,
+      "pessimistic_bound": 59.999999999999986,
+      "cartesian_bound": 3060.0,
+      "violation": true,
+      "true_over_bound": 1.0000000000000002,
+      "bound_below_cartesian": true
+    },
+    {
+      "n_relations": 2,
+      "n_joins": 1,
+      "cyclic": false,
+      "true_cardinality": 60.0,
+      "pessimistic_bound": 59.999999999999986,
+      "cartesian_bound": 1800.0,
+      "violation": true,
+      "true_over_bound": 1.0000000000000002,
+      "bound_below_cartesian": true
+    },
+    {
+      "n_relations": 2,
+      "n_joins": 1,
+      "cyclic": false,
+      "true_cardinality": 39.0,
+      "pessimistic_bound": 38.99999999999999,
+      "cartesian_bound": 546.0,
+      "violation": true,
+      "true_over_bound": 1.0000000000000002,
+      "bound_below_cartesian": true
+    },
+    {
+      "n_relations": 2,
+      "n_joins": 1,
+      "cyclic": false,
+      "true_cardinality": 39.0,
+      "pessimistic_bound": 38.99999999999999,
+      "cartesian_bound": 1170.0,
+      "violation": true,
+      "true_over_bound": 1.0000000000000002,
+      "bound_below_cartesian": true
+    },
+    {
+      "n_relations": 3,
+      "n_joins": 2,
+      "cyclic": false,
+      "true_cardinality": 60.0,
+      "pessimistic_bound": 59.999999999999986,
+      "cartesian_bound": 91800.0,
+      "violation": true,
+      "true_over_bound": 1.0000000000000002,
+      "bound_below_cartesian": true
+    },
+    {
+      "n_relations": 3,
+      "n_joins": 2,
+      "cyclic": false,
+      "true_cardinality": 39.0,
+      "pessimistic_bound": 38.99999999999999,
+      "cartesian_bound": 16380.0,
+      "violation": true,
+      "true_over_bound": 1.0000000000000002,
+      "bound_below_cartesian": true
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "max_load": 60.0,
+  "n_subplans": 548,
+  "n_queries": 58,
+  "max_load_seen": 12.7724609375,
+  "n_high_load_rows_excluded": 2004,
+  "all": {
+    "n_subplans": 548,
+    "cost_r010": {
+      "point": 0.34618006890389696,
+      "ci_low": 0.312066180906933,
+      "ci_high": 0.3793804883107528,
+      "n_rows": 548,
+      "n_clusters": 58,
+      "replicates": 10000
+    },
+    "cost_r025": {
+      "point": 0.55728090488695,
+      "ci_low": 0.5126373929041097,
+      "ci_high": 0.5924740933217825,
+      "n_rows": 548,
+      "n_clusters": 58,
+      "replicates": 10000
+    }
+  },
+  "exact_over_1s": {
+    "n_subplans": 80,
+    "cost_r010": {
+      "point": 0.1026007267385858,
+      "ci_low": 0.09897094330640374,
+      "ci_high": 0.1136375508659775,
+      "n_rows": 80,
+      "n_clusters": 30,
+      "replicates": 10000
+    },
+    "cost_r025": {
+      "point": 0.2526936916324864,
+      "ci_low": 0.24350458009022777,
+      "ci_high": 0.25738261558806347,
+      "n_rows": 80,
+      "n_clusters": 30,
+      "replicates": 10000
+    }
+  }
+}

@@ -1,0 +1,72 @@
+[2026-10-20T05:59:01+09:00] H7 witness floors
+q7 ('c', 'p', 'pl') floor 69761: witness 7 ms, sample 28 ms
+q8 ('c', 'p', 'pl') floor 47797: witness 17 ms, sample 21 ms
+q10 ('c', 'u') floor 16896: witness 5 ms, sample 11 ms
+q11 ('c', 'u') floor 5330: witness 15 ms, sample 11 ms
+q11 ('c', 'p', 'u') floor 32875: witness 30 ms, sample 29 ms
+q12 ('c', 'ph', 'u') floor 101190: witness 25 ms, sample 41 ms
+q13 ('c', 'u') floor 6376: witness 14 ms, sample 11 ms
+q13 ('c', 'u', 'v') floor 31524: witness 20 ms, sample 30 ms
+q14 ('c', 'u') floor 1960: witness 20 ms, sample 12 ms
+q15 ('b', 'c', 'u') floor 1020728: witness 88 ms, sample 75 ms
+q16 ('b', 'c') floor 1021602: witness 228 ms, sample 229 ms
+q17 ('p', 't', 'v') floor 6917: witness 4 ms, sample 20 ms
+q18 ('ph', 'pl') floor 6385: witness 8 ms, sample 13 ms
+q19 ('p', 'u') floor 8872: witness 3 ms, sample 9 ms
+q21 ('p', 'v') floor 28871: witness 20 ms, sample 33 ms
+q22 ('p', 'v') floor 266151: witness 20 ms, sample 51 ms
+q23 ('b', 'v') floor 103910: witness 8 ms, sample 23 ms
+q24 ('b', 'v') floor 2664: witness 2 ms, sample 8 ms
+q28 ('b', 'p', 'u', 'v') floor 1601999: witness 145 ms, sample 149 ms
+q30 ('b', 'p', 'u', 'v') floor 22189529: witness 1776 ms, sample 1565 ms
+q32 ('c', 'ph') floor 24014275: witness 5672 ms, sample 4310 ms
+q32 ('ph', 'v') floor 1208189: witness 112 ms, sample 159 ms
+q33 ('ph', 'v') floor 48005: witness 5 ms, sample 14 ms
+q33 ('c', 'ph', 'v') floor 264867338: witness 17341 ms, sample 18253 ms
+q34 ('b', 'c', 'u', 'v') floor 52987251: witness 4130 ms, sample 3535 ms
+q38 ('b', 'c', 'ph', 'u') floor 11138892: witness 785 ms, sample 697 ms
+q40 ('p', 'u') floor 4142: witness 13 ms, sample 12 ms
+q40 ('b', 'p', 'u') floor 18870: witness 17 ms, sample 38 ms
+q40 ('b', 'p', 'pl', 'u') floor 3095: witness 6 ms, sample 33 ms
+q43 ('p', 'ph') floor 97851: witness 27 ms, sample 42 ms
+q43 ('b', 'p', 'ph') floor 6865051: witness 1561 ms, sample 1653 ms
+q44 ('b', 'p', 'ph') floor 12420886: witness 2755 ms, sample 935 ms
+q44 ('p', 'ph', 'u') floor 18344: witness 13 ms, sample 29 ms
+q52 ('b', 'c', 'p', 'ph', 'u') floor 23391039: witness 2164 ms, sample 1653 ms
+q56 ('b', 'p', 't', 'u', 'v') floor 1498003: witness 122 ms, sample 106 ms
+q71 ('b', 'c', 'p', 'ph', 'pl') floor 439175: witness 38 ms, sample 54 ms
+q71 ('b', 'c', 'p', 'ph', 'v') floor 942686: witness 95 ms, sample 104 ms
+q71 ('b', 'c', 'p', 'pl', 'v') floor 6301400: witness 483 ms, sample 525 ms
+q71 ('b', 'c', 'p', 'ph', 'pl', 'v') floor 6301400: witness 532 ms, sample 490 ms
+q80 ('c', 'p', 'u') floor 144810: witness 31 ms, sample 32 ms
+q81 ('c', 'u') floor 13228: witness 5 ms, sample 10 ms
+q82 ('c', 'ph', 'u') floor 177106: witness 39 ms, sample 48 ms
+q83 ('c', 'ph', 'u') floor 231503: witness 29 ms, sample 47 ms
+q84 ('c', 'u', 'v') floor 1033453: witness 83 ms, sample 207 ms
+q85 ('c', 'u', 'v') floor 1016254: witness 80 ms, sample 75 ms
+q87 ('b', 'c', 'u') floor 73698: witness 16 ms, sample 22 ms
+q88 ('b', 'c', 'u') floor 1020728: witness 262 ms, sample 261 ms
+q89 ('p', 'ph', 'u') floor 136839: witness 19 ms, sample 50 ms
+q90 ('ph', 'u') floor 20620: witness 33 ms, sample 24 ms
+q91 ('p', 'ph', 'u') floor 422904: witness 76 ms, sample 66 ms
+q92 ('p', 'ph') floor 29410: witness 6 ms, sample 27 ms
+q93 ('p', 'u', 'v') floor 212902: witness 27 ms, sample 86 ms
+q94 ('p', 'u', 'v') floor 106632: witness 19 ms, sample 50 ms
+q97 ('c', 'p', 'u', 'v') floor 5343631: witness 1071 ms, sample 1055 ms
+q102 ('b', 'p', 'u', 'v') floor 282112: witness 76 ms, sample 69 ms
+q104 ('c', 'ph', 'u', 'v') floor 1064200: witness 1437 ms, sample 347 ms
+q107 ('b', 'c', 'u', 'v') floor 48113950: witness 11121 ms, sample 10700 ms
+q108 ('b', 'c', 'u', 'v') floor 52987251: witness 4135 ms, sample 3538 ms
+q113 ('b', 'c', 'ph', 'u') floor 1800482: witness 150 ms, sample 175 ms
+q114 ('b', 'c', 'ph', 'u') floor 2036267: witness 261 ms, sample 154 ms
+q115 ('b', 'c', 'ph', 'u') floor 4461173: witness 452 ms, sample 314 ms
+q120 ('b', 'p', 'ph', 'u') floor 1194282270: witness 78738 ms, sample 67013 ms
+q122 ('b', 'p', 'ph', 'u') floor 1147560482: witness 75770 ms, sample 66173 ms
+q123 ('b', 'p', 'ph', 'u') floor 15885837: witness 1185 ms, sample 971 ms
+q124 ('b', 'ph', 'u', 'v') floor 600395: witness 74 ms, sample 62 ms
+q126 ('b', 'ph', 'u') floor 1657020: witness 113 ms, sample 116 ms
+q126 ('b', 'u', 'v') floor 103910: witness 12 ms, sample 25 ms
+q126 ('ph', 'u', 'v') floor 1373710: witness 107 ms, sample 98 ms
+q135 ('b', 'c', 'p', 'ph', 'u') floor 224552030: witness 14346 ms, sample 15394 ms
+q138 ('b', 'p', 't', 'u', 'v') floor 1477970: witness 345 ms, sample 341 ms
+[2026-10-20T06:07:03+09:00] done

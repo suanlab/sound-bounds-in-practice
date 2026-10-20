@@ -1,0 +1,48 @@
+{
+  "experiment": "sample_based_lower_certificate",
+  "dataset": "job_medium",
+  "n_queries": 83,
+  "rates": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "pessimistic_qerr_mean": 3.763954036685101,
+  "pessimistic_qerr_median": 4.171042516825235,
+  "per_rate": {
+    "0.1": {
+      "oracle_qerr_mean": 223.2683717332865,
+      "oracle_qerr_median": 11.375619999999998,
+      "floored_qerr_mean": 5.551869621220682,
+      "floored_qerr_median": 1.0199443346799446,
+      "lhat_qerr_mean": 1.0496534762166017,
+      "lhat_qerr_median": 1.0197216507908957,
+      "sound_lb_validity": 1.0
+    },
+    "0.25": {
+      "oracle_qerr_mean": 223.2683717332865,
+      "oracle_qerr_median": 11.375619999999998,
+      "floored_qerr_mean": 5.537184477593913,
+      "floored_qerr_median": 1.0333855201082256,
+      "lhat_qerr_mean": 1.0339956021465928,
+      "lhat_qerr_median": 1.0328422998397173,
+      "sound_lb_validity": 1.0
+    },
+    "0.5": {
+      "oracle_qerr_mean": 223.2683717332865,
+      "oracle_qerr_median": 11.375619999999998,
+      "floored_qerr_mean": 5.518843238084953,
+      "floored_qerr_median": 1.0077936086150339,
+      "lhat_qerr_mean": 1.0092344611261106,
+      "lhat_qerr_median": 1.0075001930114702,
+      "sound_lb_validity": 1.0
+    }
+  }
+}

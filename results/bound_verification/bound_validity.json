@@ -1,0 +1,29 @@
+{
+  "total_queries": 3600,
+  "num_queries_tested": 3600,
+  "num_violations": 0,
+  "violation_rate": 0.0,
+  "valid_rate": 1.0,
+  "per_family": {
+    "cycle": {
+      "tested": 1200,
+      "violations": 0,
+      "valid_rate": 1.0
+    },
+    "path": {
+      "tested": 1200,
+      "violations": 0,
+      "valid_rate": 1.0
+    },
+    "star": {
+      "tested": 1200,
+      "violations": 0,
+      "valid_rate": 1.0
+    }
+  },
+  "mean_ratio": 0.033246326886446784,
+  "median_ratio": 0.014298768020241267,
+  "max_ratio": 0.3826262626262628,
+  "stdev_ratio": 0.05101279857701585,
+  "violations": []
+}

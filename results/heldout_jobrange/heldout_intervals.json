@@ -1,0 +1,41 @@
+{
+  "n_queries": 179,
+  "n_relations_min": 3,
+  "n_relations_max": 5,
+  "cout|none": {
+    "point": 0.8659217877094972,
+    "ci_low": 0.8156424581005587,
+    "ci_high": 0.9162011173184358,
+    "n_rows": 179,
+    "n_clusters": 179,
+    "replicates": 10000,
+    "replicates_dropped": 0
+  },
+  "cout|sample": {
+    "point": 0.888268156424581,
+    "ci_low": 0.8379888268156425,
+    "ci_high": 0.9329608938547486,
+    "n_rows": 179,
+    "n_clusters": 179,
+    "replicates": 10000,
+    "replicates_dropped": 0
+  },
+  "cout_minus_final|none": {
+    "point": 0.07262569832402235,
+    "ci_low": 0.03910614525139665,
+    "ci_high": 0.11173184357541899,
+    "n_rows": 179,
+    "n_clusters": 179,
+    "replicates": 10000,
+    "replicates_dropped": 0
+  },
+  "cout_minus_final|sample": {
+    "point": 0.3575418994413408,
+    "ci_low": 0.2905027932960894,
+    "ci_high": 0.4301675977653631,
+    "n_rows": 179,
+    "n_clusters": 179,
+    "replicates": 10000,
+    "replicates_dropped": 0
+  }
+}

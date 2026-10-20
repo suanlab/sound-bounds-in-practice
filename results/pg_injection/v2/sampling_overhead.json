@@ -1,0 +1,26 @@
+{
+  "n_queries": 127,
+  "n_excluded_native_timeout": 3,
+  "n_excluded_sample_timeout": 16,
+  "median": {
+    "point": 2.816730549388075,
+    "ci_low": 2.0323020272669776,
+    "ci_high": 4.495434624835477,
+    "n_rows": 127,
+    "n_clusters": 127,
+    "replicates": 10000
+  },
+  "share_above_one": 0.7322834645669292,
+  "with_sample_timeouts_at_cap": {
+    "n_queries": 143,
+    "median": {
+      "point": 3.6483500896181025,
+      "ci_low": 2.544128035443699,
+      "ci_high": 5.315924829196839,
+      "n_rows": 143,
+      "n_clusters": 143,
+      "replicates": 10000
+    },
+    "share_above_one": 0.7622377622377622
+  }
+}

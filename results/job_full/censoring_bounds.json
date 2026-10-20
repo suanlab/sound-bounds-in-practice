@@ -1,0 +1,42 @@
+{
+  "experiment": "censoring_sensitivity_real_job",
+  "templates_total": 113,
+  "evaluated": 53,
+  "censored_at_budget": 58,
+  "unparsed": 2,
+  "observed_median_cost_ratio": 1.8025683799612946,
+  "observed_min": 0.7278978910730235,
+  "observed_max": 4.197713678940039,
+  "share_of_evaluated_above_one": 0.9245283018867925,
+  "manski_bounds_on_median_over_evaluable": {
+    "n_evaluable": 111,
+    "lower": 0.7278978910730235,
+    "upper": 4.197713678940039,
+    "note": "Assumption-free: every censored query placed at the observed minimum (lower) or maximum (upper). Wide by construction; reported to show what the data alone can identify."
+  },
+  "per_draw": {
+    "draws_aggregated_in_run": 3,
+    "observed_median_cost_ratio": 0.6008561266537649,
+    "share_of_evaluated_above_one": 0.03773584905660377,
+    "manski_lower": 0.2426326303576745,
+    "manski_upper": 1.3992378929800129,
+    "note": "The real-JOB run aggregated three sampling draws per query (--lower-seeds 1 2 3); the certificate's cost is linear in the draws, so these are the as-run figures divided by the draw count, the quantity comparable to the one-draw STATS-CEB run."
+  },
+  "one_draw_measured": {
+    "source": "results/job_full/job_full_1draw_verification.json",
+    "evaluated": 53,
+    "observed_median_cost_ratio": 0.6336809923260914,
+    "share_of_evaluated_above_one": 0.0,
+    "manski_lower": 0.11147480912014142,
+    "manski_upper": 0.9145206564062515,
+    "note": "One-draw certificate re-timed on the same templates (verify_draw_cost); the censored count is the as-run one, since the re-timing covered exactly the templates that finished."
+  },
+  "size_association": {
+    "statistic": "Spearman(full exact-count time, cost ratio)",
+    "rho": -0.05757135945815191,
+    "ci_low": -0.3520082988955276,
+    "ci_high": 0.23456419346434781,
+    "n": 53,
+    "interpretation": "A positive rho means the certificate gets relatively more expensive on larger joins, so the censored (larger) queries would sit above the observed ones and the reported median understates the full-benchmark value."
+  }
+}

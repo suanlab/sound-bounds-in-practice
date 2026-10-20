@@ -1,0 +1,76 @@
+[2026-10-05 10:37:00] phase 2 finished
+[2026-10-05 10:37:00] STATS native estimates
+2577 sub-plan estimates -> results/pg_injection/native_subquery_estimations.csv
+[2026-10-05 10:37:04] STATS guarded-native injection
+q1: 10 policies -> 1 distinct plans; truth injected True; {'native': 65, 'truth': 65}
+q2: 10 policies -> 1 distinct plans; truth injected True; {'native': 5401, 'truth': 5401}
+q3: 10 policies -> 1 distinct plans; truth injected True; {'native': 1156, 'truth': 1156}
+q4: 10 policies -> 1 distinct plans; truth injected True; {'native': 233, 'truth': 233}
+q5: 10 policies -> 1 distinct plans; truth injected True; {'native': 808, 'truth': 808}
+q6: 10 policies -> 1 distinct plans; truth injected True; {'native': 559, 'truth': 559}
+q7: 10 policies -> 1 distinct plans; truth injected True; {'native': 97, 'truth': 97}
+q8: 10 policies -> 1 distinct plans; truth injected True; {'native': 449, 'truth': 449}
+q9: 10 policies -> 1 distinct plans; truth injected True; {'native': 183, 'truth': 183}
+q10: 10 policies -> 1 distinct plans; truth injected True; {'native': 139, 'truth': 139}
+q11: 10 policies -> 1 distinct plans; truth injected True; {'native': 122, 'truth': 122}
+q12: 10 policies -> 1 distinct plans; truth injected True; {'native': 232, 'truth': 232}
+q13: 10 policies -> 1 distinct plans; truth injected True; {'native': 94, 'truth': 94}
+q14: 10 policies -> 1 distinct plans; truth injected True; {'native': 43, 'truth': 43}
+q15: 10 policies -> 1 distinct plans; truth injected True; {'native': 912, 'truth': 912}
+q16: 10 policies -> 2 distinct plans; truth injected True; {'native': 121, 'truth': 120}
+q17: 10 policies -> 1 distinct plans; truth injected True; {'native': 22, 'truth': 22}
+q18: 10 policies -> 1 distinct plans; truth injected True; {'native': 69, 'truth': 69}
+q19: 10 policies -> 1 distinct plans; truth injected True; {'native': 45, 'truth': 45}
+q20: 10 policies -> 2 distinct plans; truth injected True; {'native': 315, 'truth': 173}
+q21: 10 policies -> 1 distinct plans; truth injected True; {'native': 100, 'truth': 100}
+q22: 10 policies -> 1 distinct plans; truth injected True; {'native': 344, 'truth': 344}
+q23: 10 policies -> 2 distinct plans; truth injected True; {'native': 162, 'truth': 162}
+q24: 10 policies -> 1 distinct plans; truth injected True; {'native': 90, 'truth': 90}
+q25: 10 policies -> 1 distinct plans; truth injected True; {'native': 286, 'truth': 286}
+q26: 10 policies -> 2 distinct plans; truth injected True; {'native': 128, 'truth': 128}
+q27: 10 policies -> 2 distinct plans; truth injected True; {'native': 126, 'truth': 112}
+q28: 10 policies -> 1 distinct plans; truth injected True; {'native': 1812, 'truth': 1812}
+q29: 10 policies -> 2 distinct plans; truth injected True; {'native': 259, 'truth': 258}
+q30: 10 policies -> 4 distinct plans; truth injected True; {'native': 50245, 'truth': 32209}
+q31: 10 policies -> 4 distinct plans; truth injected True; {'native': 2914, 'truth': 862}
+q32: 9 policies -> 3 distinct plans; truth injected True; {'native': 6727, 'truth': 1883}
+q33: 10 policies -> 2 distinct plans; truth injected True; {'native': 196, 'truth': 196}
+q34: 10 policies -> 2 distinct plans; truth injected True; {'native': 59345, 'truth': 59345}
+q35: 10 policies -> 3 distinct plans; truth injected True; {'native': 1388, 'truth': 502}
+q36: 10 policies -> 4 distinct plans; truth injected True; {'native': 78, 'truth': 56}
+q37: 10 policies -> 3 distinct plans; truth injected True; {'native': 608, 'truth': 503}
+q38: 10 policies -> 2 distinct plans; truth injected True; {'native': 13028, 'truth': 10295}
+q39: 9 policies -> 4 distinct plans; truth injected True; {'native': 413, 'truth': 327}
+q40: 10 policies -> 2 distinct plans; truth injected True; {'native': 110, 'truth': 88}
+q41: 10 policies -> 2 distinct plans; truth injected True; {'native': 22, 'truth': 22}
+q42: 10 policies -> 2 distinct plans; truth injected True; {'native': 426, 'truth': 400}
+q43: 10 policies -> 2 distinct plans; truth injected True; {'native': 942, 'truth': 942}
+q44: 10 policies -> 5 distinct plans; truth injected True; {'native': 772, 'truth': 323}
+q45: 10 policies -> 3 distinct plans; truth injected True; {'native': 20, 'truth': 16}
+q46: 10 policies -> 3 distinct plans; truth injected True; {'native': 407, 'truth': 223}
+q47: 10 policies -> 5 distinct plans; truth injected True; {'native': 7294, 'truth': 6077}
+q48: 9 policies -> 4 distinct plans; truth injected True; {'native': 84, 'truth': 49}
+q49: 9 policies -> 5 distinct plans; truth injected True; {'native': 3148, 'truth': 1932}
+q50: 10 policies -> 4 distinct plans; truth injected True; {'native': 305, 'truth': 43}
+q51: 9 policies -> 5 distinct plans; truth injected True; {'native': 13035, 'truth': 8981}
+q52: 9 policies -> 6 distinct plans; truth injected True; {'native': 38170, 'truth': 26463}
+q53: 10 policies -> 3 distinct plans; truth injected True; {'native': 221, 'truth': 191}
+q54: 10 policies -> 3 distinct plans; truth injected True; {'native': 23, 'truth': 22}
+q55: 9 policies -> 2 distinct plans; truth injected True; {'native': 36, 'truth': 36}
+q56: 10 policies -> 2 distinct plans; truth injected True; {'native': 1958, 'truth': 1537}
+q57: 10 policies -> 4 distinct plans; truth injected True; {'native': 8925, 'truth': 23}
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/projects/CEG/Safe-CEG/experiments/pg_injection/inject_plans.py", line 402, in <module>
+    main()
+  File "/projects/CEG/Safe-CEG/experiments/pg_injection/inject_plans.py", line 370, in main
+    timings = run_interleaved(
+  File "/projects/CEG/Safe-CEG/experiments/pg_injection/inject_plans.py", line 236, in run_interleaved
+    cursor.execute(sql)
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+

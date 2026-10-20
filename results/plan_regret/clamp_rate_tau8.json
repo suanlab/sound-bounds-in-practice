@@ -1,0 +1,667 @@
+{
+  "experiment": "clamp_rate_vs_plan_speedup",
+  "hypothesis": "Plan choice depends on the ranking of subplan estimates. Clamping few subplans fixes the worst outlier and improves the ranking; clamping many rewrites the ranking and the chosen order becomes arbitrary.",
+  "tau": 8.0,
+  "n_pairs": 81,
+  "spearman_clamp_rate_vs_speedup": -0.15861242048995713,
+  "low_clamp_rate_le_25pct": {
+    "n": 3,
+    "median_speedup": 28.123652666478886,
+    "n_faster": 3
+  },
+  "high_clamp_rate_gt_25pct": {
+    "n": 78,
+    "median_speedup": 0.875286935949606,
+    "n_faster": 31
+  },
+  "per_pair": [
+    {
+      "query_id": 28,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 4.960323814243426
+    },
+    {
+      "query_id": 28,
+      "config": "min_hop-max",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 4.960323814243426
+    },
+    {
+      "query_id": 28,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 4.960323814243426
+    },
+    {
+      "query_id": 28,
+      "config": "all_hops-max",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 4.960323814243426
+    },
+    {
+      "query_id": 29,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 1.4041495819984329
+    },
+    {
+      "query_id": 29,
+      "config": "min_hop-max",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 1.4041495819984329
+    },
+    {
+      "query_id": 29,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 1.4041495819984329
+    },
+    {
+      "query_id": 29,
+      "config": "all_hops-max",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 1.4041495819984329
+    },
+    {
+      "query_id": 45,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.2857142857142857,
+      "clamped": 2,
+      "subplans": 7,
+      "speedup": 0.6413665030832857
+    },
+    {
+      "query_id": 45,
+      "config": "min_hop-max",
+      "clamp_rate": 0.42857142857142855,
+      "clamped": 3,
+      "subplans": 7,
+      "speedup": 0.6413665030832857
+    },
+    {
+      "query_id": 45,
+      "config": "all_hops-max",
+      "clamp_rate": 0.42857142857142855,
+      "clamped": 3,
+      "subplans": 7,
+      "speedup": 0.6413665030832857
+    },
+    {
+      "query_id": 46,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.7647180786924438
+    },
+    {
+      "query_id": 46,
+      "config": "min_hop-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.7647180786924438
+    },
+    {
+      "query_id": 46,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.7647180786924438
+    },
+    {
+      "query_id": 46,
+      "config": "all_hops-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.7647180786924438
+    },
+    {
+      "query_id": 47,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.3,
+      "clamped": 3,
+      "subplans": 10,
+      "speedup": 0.11115879067691709
+    },
+    {
+      "query_id": 47,
+      "config": "min_hop-max",
+      "clamp_rate": 0.3,
+      "clamped": 3,
+      "subplans": 10,
+      "speedup": 0.11115879067691709
+    },
+    {
+      "query_id": 47,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.3,
+      "clamped": 3,
+      "subplans": 10,
+      "speedup": 0.11115879067691709
+    },
+    {
+      "query_id": 47,
+      "config": "all_hops-max",
+      "clamp_rate": 0.3,
+      "clamped": 3,
+      "subplans": 10,
+      "speedup": 0.11115879067691709
+    },
+    {
+      "query_id": 49,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.3,
+      "clamped": 3,
+      "subplans": 10,
+      "speedup": 3.24309131094588
+    },
+    {
+      "query_id": 49,
+      "config": "min_hop-max",
+      "clamp_rate": 0.3,
+      "clamped": 3,
+      "subplans": 10,
+      "speedup": 3.24309131094588
+    },
+    {
+      "query_id": 49,
+      "config": "all_hops-max",
+      "clamp_rate": 0.3,
+      "clamped": 3,
+      "subplans": 10,
+      "speedup": 3.24309131094588
+    },
+    {
+      "query_id": 55,
+      "config": "min_hop-min",
+      "clamp_rate": 0.16666666666666666,
+      "clamped": 2,
+      "subplans": 12,
+      "speedup": 9.558210315435922
+    },
+    {
+      "query_id": 56,
+      "config": "min_hop-min",
+      "clamp_rate": 0.08333333333333333,
+      "clamped": 1,
+      "subplans": 12,
+      "speedup": 39.13069833226986
+    },
+    {
+      "query_id": 57,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.6666666666666666,
+      "clamped": 8,
+      "subplans": 12,
+      "speedup": 0.7631895415944017
+    },
+    {
+      "query_id": 57,
+      "config": "min_hop-max",
+      "clamp_rate": 0.6666666666666666,
+      "clamped": 8,
+      "subplans": 12,
+      "speedup": 0.7631895415944017
+    },
+    {
+      "query_id": 57,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.6666666666666666,
+      "clamped": 8,
+      "subplans": 12,
+      "speedup": 0.7631895415944017
+    },
+    {
+      "query_id": 57,
+      "config": "all_hops-max",
+      "clamp_rate": 0.6666666666666666,
+      "clamped": 8,
+      "subplans": 12,
+      "speedup": 0.7631895415944017
+    },
+    {
+      "query_id": 96,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.6225771546294181
+    },
+    {
+      "query_id": 96,
+      "config": "min_hop-max",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.6225771546294181
+    },
+    {
+      "query_id": 96,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.6225771546294181
+    },
+    {
+      "query_id": 96,
+      "config": "all_hops-max",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.6225771546294181
+    },
+    {
+      "query_id": 102,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 2.8693800962233498
+    },
+    {
+      "query_id": 102,
+      "config": "min_hop-max",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 2.8693800962233498
+    },
+    {
+      "query_id": 102,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 2.8693800962233498
+    },
+    {
+      "query_id": 102,
+      "config": "all_hops-max",
+      "clamp_rate": 0.5,
+      "clamped": 3,
+      "subplans": 6,
+      "speedup": 2.8693800962233498
+    },
+    {
+      "query_id": 107,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.23379379569191253
+    },
+    {
+      "query_id": 107,
+      "config": "min_hop-max",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.23379379569191253
+    },
+    {
+      "query_id": 107,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.23379379569191253
+    },
+    {
+      "query_id": 107,
+      "config": "all_hops-max",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.23379379569191253
+    },
+    {
+      "query_id": 109,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8192829641979132
+    },
+    {
+      "query_id": 109,
+      "config": "min_hop-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8192829641979132
+    },
+    {
+      "query_id": 109,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8192829641979132
+    },
+    {
+      "query_id": 109,
+      "config": "all_hops-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8192829641979132
+    },
+    {
+      "query_id": 110,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.9275432849968727
+    },
+    {
+      "query_id": 110,
+      "config": "min_hop-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.9275432849968727
+    },
+    {
+      "query_id": 110,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.9275432849968727
+    },
+    {
+      "query_id": 110,
+      "config": "all_hops-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.9275432849968727
+    },
+    {
+      "query_id": 111,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 1.0279914756775785
+    },
+    {
+      "query_id": 111,
+      "config": "min_hop-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 1.0279914756775785
+    },
+    {
+      "query_id": 111,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 1.0279914756775785
+    },
+    {
+      "query_id": 111,
+      "config": "all_hops-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 1.0279914756775785
+    },
+    {
+      "query_id": 112,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8553573125846422
+    },
+    {
+      "query_id": 112,
+      "config": "min_hop-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8553573125846422
+    },
+    {
+      "query_id": 112,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8553573125846422
+    },
+    {
+      "query_id": 112,
+      "config": "all_hops-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8553573125846422
+    },
+    {
+      "query_id": 119,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.35266908180794054
+    },
+    {
+      "query_id": 119,
+      "config": "min_hop-max",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.35266908180794054
+    },
+    {
+      "query_id": 119,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.35266908180794054
+    },
+    {
+      "query_id": 119,
+      "config": "all_hops-max",
+      "clamp_rate": 0.5714285714285714,
+      "clamped": 4,
+      "subplans": 7,
+      "speedup": 0.35266908180794054
+    },
+    {
+      "query_id": 127,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 1.1303125320235836
+    },
+    {
+      "query_id": 127,
+      "config": "min_hop-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 1.1303125320235836
+    },
+    {
+      "query_id": 127,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 1.1303125320235836
+    },
+    {
+      "query_id": 127,
+      "config": "all_hops-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 1.1303125320235836
+    },
+    {
+      "query_id": 128,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.5380124729667438
+    },
+    {
+      "query_id": 128,
+      "config": "min_hop-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.5380124729667438
+    },
+    {
+      "query_id": 128,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.5380124729667438
+    },
+    {
+      "query_id": 128,
+      "config": "all_hops-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.5380124729667438
+    },
+    {
+      "query_id": 129,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8952165593145698
+    },
+    {
+      "query_id": 129,
+      "config": "min_hop-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8952165593145698
+    },
+    {
+      "query_id": 129,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8952165593145698
+    },
+    {
+      "query_id": 129,
+      "config": "all_hops-max",
+      "clamp_rate": 0.7333333333333333,
+      "clamped": 11,
+      "subplans": 15,
+      "speedup": 0.8952165593145698
+    },
+    {
+      "query_id": 130,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.6666666666666666,
+      "clamped": 8,
+      "subplans": 12,
+      "speedup": 1.0142310726058108
+    },
+    {
+      "query_id": 130,
+      "config": "min_hop-max",
+      "clamp_rate": 0.6666666666666666,
+      "clamped": 8,
+      "subplans": 12,
+      "speedup": 1.0142310726058108
+    },
+    {
+      "query_id": 130,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.6666666666666666,
+      "clamped": 8,
+      "subplans": 12,
+      "speedup": 1.0142310726058108
+    },
+    {
+      "query_id": 130,
+      "config": "all_hops-max",
+      "clamp_rate": 0.6666666666666666,
+      "clamped": 8,
+      "subplans": 12,
+      "speedup": 1.0142310726058108
+    },
+    {
+      "query_id": 131,
+      "config": "min_hop-avg",
+      "clamp_rate": 0.6666666666666666,
+      "clamped": 10,
+      "subplans": 15,
+      "speedup": 1.0618677440956765
+    },
+    {
+      "query_id": 131,
+      "config": "min_hop-max",
+      "clamp_rate": 0.6666666666666666,
+      "clamped": 10,
+      "subplans": 15,
+      "speedup": 1.0618677440956765
+    },
+    {
+      "query_id": 131,
+      "config": "all_hops-avg",
+      "clamp_rate": 0.5333333333333333,
+      "clamped": 8,
+      "subplans": 15,
+      "speedup": 1.0618677440956765
+    },
+    {
+      "query_id": 131,
+      "config": "all_hops-max",
+      "clamp_rate": 0.6666666666666666,
+      "clamped": 10,
+      "subplans": 15,
+      "speedup": 1.0618677440956765
+    },
+    {
+      "query_id": 138,
+      "config": "min_hop-min",
+      "clamp_rate": 0.08333333333333333,
+      "clamped": 1,
+      "subplans": 12,
+      "speedup": 28.123652666478886
+    }
+  ]
+}

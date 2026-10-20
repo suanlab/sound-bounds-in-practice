@@ -1,0 +1,170 @@
+{
+  "experiment": "plan_certificate_posthoc",
+  "status": "POST-HOC: not pre-registered; exploratory, not a finding",
+  "bracket": "lpboundxsample0.25",
+  "censoring_sensitivity": {
+    "n_queries": 140,
+    "n_uncensored_queries": 124,
+    "uncensored": {
+      "certified_share": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 124,
+        "n_clusters": 124,
+        "replicates": 10000
+      },
+      "mean_pruning_rate": {
+        "point": 0.036290322580645164,
+        "ci_low": 0.016129032258064516,
+        "ci_high": 0.06048387096774194,
+        "n_rows": 124,
+        "n_clusters": 124,
+        "replicates": 10000
+      },
+      "median_G": {
+        "point": 132.07935587551336,
+        "ci_low": 59.0376628427171,
+        "ci_high": 245.4194478019317,
+        "n_rows": 124,
+        "n_clusters": 124,
+        "replicates": 10000
+      },
+      "median_width": {
+        "point": 4.504235744345596,
+        "ci_low": 3.6008442832341427,
+        "ci_high": 5.202337833521419,
+        "n_rows": 124,
+        "n_clusters": 124,
+        "replicates": 10000
+      }
+    }
+  },
+  "minimax_plan": {
+    "median_regret": {
+      "point": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "n_rows": 140,
+      "n_clusters": 140,
+      "replicates": 10000
+    },
+    "p95_regret": {
+      "point": 1.116262736858597,
+      "ci_low": 1.0372051556103643,
+      "ci_high": 1.2125495777249344,
+      "n_rows": 140,
+      "n_clusters": 140,
+      "replicates": 10000
+    },
+    "max_regret": 2.1696959948528227,
+    "median_bound": {
+      "point": 143.2909060476626,
+      "ci_low": 56.836512584935626,
+      "ci_high": 237.6639747509889,
+      "n_rows": 140,
+      "n_clusters": 140,
+      "replicates": 10000
+    },
+    "p95_bound": {
+      "point": 95350.45762059177,
+      "ci_low": 26833.943122646077,
+      "ci_high": 136590.7795894617,
+      "n_rows": 140,
+      "n_clusters": 140,
+      "replicates": 10000
+    },
+    "optimal_plan_rate": {
+      "point": 0.7071428571428572,
+      "ci_low": 0.6285714285714286,
+      "ci_high": 0.7785714285714286,
+      "n_rows": 140,
+      "n_clusters": 140,
+      "replicates": 10000
+    },
+    "vs_duckdb": {
+      "estimator_p95_regret": {
+        "point": 1.8511231834805615,
+        "ci_low": 1.3266324355745012,
+        "ci_high": 3.895425418298327,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000
+      },
+      "estimator_optimal_plan_rate": {
+        "point": 0.37142857142857144,
+        "ci_low": 0.29285714285714287,
+        "ci_high": 0.45714285714285713,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000
+      },
+      "share_minimax_strictly_better": {
+        "point": 0.5142857142857142,
+        "ci_low": 0.42857142857142855,
+        "ci_high": 0.5928571428571429,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000
+      },
+      "share_minimax_strictly_worse": {
+        "point": 0.10714285714285714,
+        "ci_low": 0.05714285714285714,
+        "ci_high": 0.15714285714285714,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000
+      },
+      "mean_log_regret_ratio": {
+        "point": -0.11161034186425005,
+        "ci_low": -0.1973829545028053,
+        "ci_high": -0.04698072046610652,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000
+      }
+    },
+    "vs_postgres": {
+      "estimator_p95_regret": {
+        "point": 25.708196109907064,
+        "ci_low": 5.455635727896206,
+        "ci_high": 360.60791772507486,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000
+      },
+      "estimator_optimal_plan_rate": {
+        "point": 0.22142857142857142,
+        "ci_low": 0.15714285714285714,
+        "ci_high": 0.29285714285714287,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000
+      },
+      "share_minimax_strictly_better": {
+        "point": 0.7285714285714285,
+        "ci_low": 0.6571428571428571,
+        "ci_high": 0.8,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000
+      },
+      "share_minimax_strictly_worse": {
+        "point": 0.07142857142857142,
+        "ci_low": 0.02857142857142857,
+        "ci_high": 0.11428571428571428,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000
+      },
+      "mean_log_regret_ratio": {
+        "point": -0.5692844187238317,
+        "ci_low": -0.8684313234362923,
+        "ci_high": -0.32616728532111955,
+        "n_rows": 140,
+        "n_clusters": 140,
+        "replicates": 10000
+      }
+    }
+  }
+}

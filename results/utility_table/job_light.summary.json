@@ -1,0 +1,22 @@
+{
+  "upper/over": {
+    "n": 312,
+    "fire_rate": 0.7307692307692307,
+    "help_rate": 0.7307692307692307
+  },
+  "upper/under": {
+    "n": 518,
+    "fire_rate": 0.0,
+    "help_rate": 0.0
+  },
+  "lower/over": {
+    "n": 312,
+    "fire_rate": 0.0,
+    "help_rate": 0.0
+  },
+  "lower/under": {
+    "n": 518,
+    "fire_rate": 0.5617760617760618,
+    "help_rate": 0.5617760617760618
+  }
+}

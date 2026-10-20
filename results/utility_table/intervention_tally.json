@@ -1,0 +1,107 @@
+{
+  "experiment": "intervention_tally",
+  "note": "Every (query, proposal, certificate) row on both real benchmarks at every swept threshold. 'Worsened' is reported twice: any increase in q-error, and an increase beyond a relative tolerance. The difference is exact-tight ties where the bound equals the truth to within floating-point error.",
+  "tolerance": 1e-09,
+  "interventions": 1564,
+  "helped": 1561,
+  "worsened_any_amount": 3,
+  "worsened_beyond_tolerance": 0,
+  "distinct_queries_with_a_firing": 176,
+  "degradation_rate_upper_95": 0.0019135965773688923,
+  "degradation_rate_upper_95_query_level": 0.016877163787066496,
+  "ties_at_floating_point": [
+    {
+      "benchmark": "stats-ceb",
+      "tau": 1,
+      "query_id": "1",
+      "proposal": "postgres",
+      "certificate": "lpbound",
+      "qerror_before": 1.0,
+      "qerror_after": 1.000000000000003
+    },
+    {
+      "benchmark": "stats-ceb",
+      "tau": 1,
+      "query_id": "1",
+      "proposal": "flat",
+      "certificate": "lpbound",
+      "qerror_before": 1.0000000000000002,
+      "qerror_after": 1.000000000000003
+    },
+    {
+      "benchmark": "stats-ceb",
+      "tau": 1,
+      "query_id": "1",
+      "proposal": "factorjoin",
+      "certificate": "lpbound",
+      "qerror_before": 1.0,
+      "qerror_after": 1.000000000000003
+    }
+  ],
+  "per_table": [
+    {
+      "benchmark": "job-light",
+      "tau": 1,
+      "rows": 1120,
+      "fired": 138,
+      "worsened_any": 0,
+      "worsened_beyond_tolerance": 0
+    },
+    {
+      "benchmark": "stats-ceb",
+      "tau": 1,
+      "rows": 1752,
+      "fired": 387,
+      "worsened_any": 3,
+      "worsened_beyond_tolerance": 0
+    },
+    {
+      "benchmark": "job-light",
+      "tau": 2,
+      "rows": 1120,
+      "fired": 117,
+      "worsened_any": 0,
+      "worsened_beyond_tolerance": 0
+    },
+    {
+      "benchmark": "stats-ceb",
+      "tau": 2,
+      "rows": 1752,
+      "fired": 305,
+      "worsened_any": 0,
+      "worsened_beyond_tolerance": 0
+    },
+    {
+      "benchmark": "job-light",
+      "tau": 4,
+      "rows": 1120,
+      "fired": 103,
+      "worsened_any": 0,
+      "worsened_beyond_tolerance": 0
+    },
+    {
+      "benchmark": "stats-ceb",
+      "tau": 4,
+      "rows": 1752,
+      "fired": 236,
+      "worsened_any": 0,
+      "worsened_beyond_tolerance": 0
+    },
+    {
+      "benchmark": "job-light",
+      "tau": 8,
+      "rows": 1120,
+      "fired": 78,
+      "worsened_any": 0,
+      "worsened_beyond_tolerance": 0
+    },
+    {
+      "benchmark": "stats-ceb",
+      "tau": 8,
+      "rows": 1752,
+      "fired": 200,
+      "worsened_any": 0,
+      "worsened_beyond_tolerance": 0
+    }
+  ]
+}

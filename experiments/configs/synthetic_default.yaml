@@ -1,0 +1,21 @@
+experiment:
+  name: "safe-ceg-synthetic"
+  seed: 42
+
+synthetic_workload:
+  train_family: "path"
+  eval_family: "cycle"
+  train_count: 32
+  eval_count: 16
+  relation_count: 4
+  train_corpus_path: null
+  eval_corpus_path: null
+
+training:
+  epochs: 10
+  learning_rate: 0.001
+  safety_lambda: 0.5
+  safety_tau: 2.0
+
+output:
+  summary_path: "results/synthetic/safe_ceg_summary.json"

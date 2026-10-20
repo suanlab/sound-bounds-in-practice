@@ -1,0 +1,76 @@
+{
+  "experiment": "guard_policy_leave_one_out",
+  "preregistered": false,
+  "tau": 2.0,
+  "n_pairs": 780,
+  "worst_5pct_unguarded": {
+    "n": 39,
+    "by_proposal": {
+      "neurocard": 27,
+      "duckdb": 9,
+      "postgres": 2,
+      "factorjoin": 1
+    }
+  },
+  "all": {
+    "no_guard": 233692.67919874797,
+    "upper_only": 6423.310803283082,
+    "lower_only": 30573.084038318342,
+    "bidirectional": 295.6080640728173,
+    "bidirectional_sound": 295.6080640728173
+  },
+  "drop": {
+    "dbx": {
+      "n_pairs": 650,
+      "no_guard": 698538.5459767624,
+      "upper_only": 10836.104789798788,
+      "lower_only": 88557.27191034963,
+      "bidirectional": 394.0345358637537,
+      "bidirectional_sound": 394.0345358637537
+    },
+    "duckdb": {
+      "n_pairs": 650,
+      "no_guard": 107041.17900815187,
+      "upper_only": 1453.4766187562902,
+      "lower_only": 88557.27191034963,
+      "bidirectional": 394.0345358637537,
+      "bidirectional_sound": 394.0345358637537
+    },
+    "factorjoin": {
+      "n_pairs": 650,
+      "no_guard": 463853.19511990866,
+      "upper_only": 14603.677078632722,
+      "lower_only": 80693.99891182058,
+      "bidirectional": 183.15992562473048,
+      "bidirectional_sound": 183.15992562473048
+    },
+    "flat": {
+      "n_pairs": 650,
+      "no_guard": 698538.5459767624,
+      "upper_only": 15766.56154950793,
+      "lower_only": 80148.21427352788,
+      "bidirectional": 307.904136193333,
+      "bidirectional_sound": 307.904136193333
+    },
+    "neurocard": {
+      "n_pairs": 650,
+      "no_guard": 18734.39573392472,
+      "upper_only": 14603.677078632722,
+      "lower_only": 314.8056618573539,
+      "bidirectional": 97.37839072015821,
+      "bidirectional_sound": 97.37839072015821
+    },
+    "postgres": {
+      "n_pairs": 650,
+      "no_guard": 386308.6983530815,
+      "upper_only": 13329.67926988266,
+      "lower_only": 70457.79491266725,
+      "bidirectional": 268.31141116988584,
+      "bidirectional_sound": 268.31141116988584
+    }
+  },
+  "bidirectional_p95_range_leave_one_out": [
+    97.37839072015821,
+    394.0345358637537
+  ]
+}
