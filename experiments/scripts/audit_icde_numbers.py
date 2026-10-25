@@ -32,6 +32,7 @@ from experiments.scripts.render_icde_tables import (
     certificate_rows,
     direction_rows,
     execution_rows,
+    pg16_rows,
     replication_rows,
     sampling_rate_rows,
     tightness_rows,
@@ -74,6 +75,11 @@ POINTS_K2 = "time::bi_k2::share_of_truth_speedup::point"
 HELDOUT = R / "heldout_jobrange/confirmatory_results.json"
 WITNESS = R / "pg_injection/v3/witness_floor_summary.json"
 HINT = R / "heldout_jobrange/heldout_intervals.json"
+PG16CMP = R / "pg_injection/pg16/pg16_comparison.json"
+PG16PROT = R / "pg_injection/pg16/stats_protocol.json"
+JRL_STATS = R / "pg_injection/v3/joinrel_log_stats_pg13.summary.json"
+JRL_JL = R / "pg_injection/v3/joinrel_log_joblight_pg13.summary.json"
+PREFIX = R / "pg_injection/v3/prefix_estimates_stats_pg13.summary.json"
 SEEDS = R / "pg_injection/v3/seed_robustness.json"
 BRACKET = R / "pg_injection/v3/native_bracket.json"
 TSENS = R / "pg_injection/v3/stats_timing_sensitivity.json"
@@ -193,6 +199,13 @@ def real_bracket_share() -> int:
     gain = pairs["native_raw->native_bi"]["geo_speedup"]["point"]
     headroom = pairs["native_raw->truth"]["geo_speedup"]["point"]
     return round(100 * math.log(gain) / math.log(headroom))
+
+
+def log_share(block: dict[str, Any]) -> int:
+    """Share of the headroom that both sound guards recover (log scale), in %."""
+    return round(
+        100 * math.log(block["both"]["point"]) / math.log(block["headroom"]["point"])
+    )
 
 
 def oracle_above_range() -> str:
@@ -1285,7 +1298,7 @@ CHECKS: tuple[Check, ...] = (
         MINT,
         "h1",
         lambda v: (
-            "proposition, $\\rho\\ge1/2$ certifies that plan within $2\\times$ ("
+            "proposition, $\\rho\\ge1/2$ certifies $p_{hi}$ within $2\\times$ ("
             f"{value(MECH, 'h1_shared_mass::stats_r010::n_rho_at_least_half'):.0f} "
             "STATS-CEB and "
             f"{value(MECH, 'h1_shared_mass::joblight_r010::n_rho_at_least_half'):.0f} "
@@ -1526,6 +1539,76 @@ CHECKS: tuple[Check, ...] = (
             "(from the main run, at a lower host load, where the true sizes gave "
             f"${v:.2f}\\times$)"
         ),
+    ),
+    # --- PostgreSQL 16 (post-hoc replication; docs/vldb_2027/PREDICTIONS_PG16.md)
+    Check(
+        "pg16 estimate extraction",
+        JRL_STATS,
+        "",
+        lambda v: (
+            "on 13.1 it reproduces the patch's values on all "
+            f"{v['n_compared'] // 1000}{{,}}{v['n_compared'] % 1000:03d} STATS-CEB and "
+            f"{value(JRL_JL, 'n_compared'):.0f} JOB-light sub-plans"
+            if v["n_equal_after_rounding"] == v["n_compared"] == v["n_subplans"]
+            and value(JRL_JL, "n_equal_after_rounding") == value(JRL_JL, "n_compared")
+            else "MISMATCH"
+        ),
+        transform=lambda v: v,
+    ),
+    Check(
+        "pg16 prefix negative",
+        PREFIX,
+        "",
+        lambda v: (
+            "rounded input sizes give another estimate, and "
+            f"{(v['n_compared'] - v['n_equal_after_rounding']) // 1000}{{,}}"
+            f"{(v['n_compared'] - v['n_equal_after_rounding']) % 1000:03d} of the "
+            f"{v['n_compared'] // 1000}{{,}}{v['n_compared'] % 1000:03d} values differ "
+            "by more than one row"
+        ),
+        transform=lambda v: v,
+    ),
+    Check(
+        "pg16 reproduced and predictions",
+        PG16CMP,
+        "",
+        lambda v: (
+            (
+                "Injecting PostgreSQL 16's own estimates reproduces its native plan on "
+                f"all {v['native_reproduced']} queries"
+                if v["native_reproduced"] == v["n_queries"]
+                else "MISMATCH"
+            )
+            + ". Table~\\ref{tab:pg16} sets the two versions side by side; we "
+            "froze six predictions before reading the results (supplement), and "
+            f"{NUMBER[sum(x == 'holds' for x in v['verdicts'].values())]} held"
+        ),
+        transform=lambda v: v,
+    ),
+    Check(
+        "pg16 guards text",
+        PG16CMP,
+        "",
+        lambda v: (
+            f"estimates, {iv(v['pg16']['both'])} of a "
+            f"${v['pg16']['headroom']['point']:.2f}\\times$ headroom ("
+            f"{log_share(v['pg16'])}\\%, against {log_share(v['pg13'])}\\% on "
+            "13.1), above the $1.12\\times$ we predicted, and an $8\\times$ synthetic "
+            f"bracket recovers {pct_iv(v['pg16']['bi_k8_share'])} of the headroom"
+            if v["verdicts"]["R3"] == "fails" and v["verdicts"]["R6"] == "fails"
+            else "MISMATCH"
+        ),
+        transform=lambda v: v,
+    ),
+    Check(
+        "pg16 load and cap",
+        PG16PROT,
+        "",
+        lambda v: (
+            f"In this run {v['n_start_above_30']} queries started at a load above 30, "
+            f"and {NUMBER[v['n_crashed_plans']]} plan reached the 8\\,GB cap"
+        ),
+        transform=lambda v: v,
     ),
     # --- replication against the artifact's own end-to-end runs
     Check(
@@ -2103,7 +2186,7 @@ CHECKS: tuple[Check, ...] = (
 def main() -> None:
     """CLI entry point."""
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--paper", type=Path, default=Path("docs/icde_2027/paper.tex"))
+    parser.add_argument("--paper", type=Path, default=Path("docs/vldb_2027/paper.tex"))
     args = parser.parse_args()
     tex = normalise(args.paper.read_text())
     cache: dict[Path, Any] = {}
@@ -2161,6 +2244,7 @@ def main() -> None:
             (f"tightness row {i}", row)
             for i, row in enumerate(tightness_rows(), start=1)
         ]
+        + [(f"pg16 row {i}", row) for i, row in enumerate(pg16_rows(), start=1)]
     )
     for label, row in rows:
         found = normalise(row) in tex

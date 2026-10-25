@@ -209,3 +209,14 @@ JOB-range test is pre-registered in `PREREGISTRATION_JOBRANGE.md` and its addend
 | Summary of the executed tightness points | `experiments.pg_injection.summarize_tightness_points` | `results/pg_injection/v3/tightness_points_summary.json` |
 | Summary of the witness floors | `experiments.pg_injection.summarize_witness_floor` | `results/pg_injection/v3/witness_floor_summary.json` |
 | Held-out paragraph of the paper (wording hashed before the results) | `experiments.scripts.render_heldout_section` | printed; checked verbatim by the audit |
+
+## PostgreSQL 16 cross-version check (PVLDB revision, 2026-10-20)
+
+| Step | Command | Output |
+|---|---|---|
+| Image (PostgreSQL 16.15, pg_hint_plan 1.6.2 from PGDG, `joinrel_log` extension) | `docker build -t ceb-pg16 experiments/pg_injection/docker16` | image `ceb-pg16` |
+| Container (cores 36-39, 24 GB, data on a host volume, GEQO and parallel workers off, 4 GB shared buffers) | `docker run -d --name ceb-pg16 -p 127.0.0.1:55433:5432 --cpuset-cpus=36-39 --memory=24g -e POSTGRES_PASSWORD=postgres -v <dir>:/var/lib/postgresql/data ceb-pg16 -c shared_buffers=4GB -c jit=off -c geqo=off -c max_parallel_workers=0 -c max_parallel_workers_per_gather=0 -c max_wal_size=50GB` | — |
+| STATS load | the benchmark's `stats.sql`, `stats_load.sql`, `stats_index.sql`, then `ANALYZE`; `ALTER DATABASE stats SET temp_file_limit = '8GB'` | identical row counts to the 13.1 instance |
+| In-context estimates without the benchmark patch (validated on 13.1: 2,577/2,577 STATS-CEB and 696/696 JOB-light equal to the hook values) | `experiments.pg_injection.incontext_by_joinrel_log --dsn "…port=55433…" --output results/pg_injection/pg16/native_incontext_estimations_stats.csv` | that CSV |
+| Execution run and tightness points | `bash experiments/pg_injection/run_pipeline_pg16.sh` | `results/pg_injection/pg16/` |
+| A forced-prefix alternative that does **not** reproduce in-context estimates (kept as a negative result) | `experiments.pg_injection.incontext_by_prefix` | `results/pg_injection/v3/prefix_estimates_stats_pg13.*` |

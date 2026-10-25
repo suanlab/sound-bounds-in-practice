@@ -1,0 +1,9 @@
+{
+  "n_subplans": 696,
+  "n_estimated": 696,
+  "n_missing": 0,
+  "missing_examples": [],
+  "n_compared": 696,
+  "n_equal_after_rounding": 696,
+  "max_rel_diff": 0.0
+}

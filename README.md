@@ -1,7 +1,10 @@
 # Sound Cardinality Bounds in Practice: Guards, Estimates, and Plan Certificates — code and data
 
-Artifact for the ICDE 2027 Experiment, Analysis & Benchmark submission of the same title (Suan Lee,
-Semyung University). The paper itself will be added after review.
+Reproducibility package for the PVLDB Vol. 20 (VLDB 2027) Experiment, Analysis & Benchmark submission of the
+same title (Suan Lee, Semyung University). The paper itself will be added after review.
+
+The directory `docs/icde_2027/` keeps its name from an earlier, never-submitted target: the hash files of the
+frozen predictions and the pre-registration record those paths.
 
 ## Start here
 | File | What it is |
@@ -12,11 +15,13 @@ Semyung University). The paper itself will be added after review.
 | `docs/c4_preregistration.md` | the pre-registered plan-certificate study whose two rules the paper reports as unattainable |
 | `docs/icde_2027/PREDICTIONS.md`, `PREDICTIONS_RESULTS.md` | predictions frozen before the post-hoc mechanism analyses, and how each fared |
 | `docs/icde_2027/PREREGISTRATION_JOBRANGE*.md` | the held-out JOB-range pre-registration and its two addenda (each with a `.sha256` file); results in `results/heldout_jobrange/confirmatory_results.json` |
+| `docs/vldb_2027/PREDICTIONS_PG16*.md` | predictions frozen for the PostgreSQL 16 replication and how each fared; results in `results/pg_injection/pg16*/` |
+| `experiments/pg_injection/joinrel_log/`, `docker16/` | the extension that reads PostgreSQL's in-context sub-plan estimates on a stock server, and the PostgreSQL 16 image |
 
 ## Checks without any data download
 ```bash
 pip install -r requirements.txt
-PYTHONHASHSEED=0 python -m experiments.scripts.audit_icde_numbers   # needs docs/icde_2027/paper.tex (added after review)
+PYTHONHASHSEED=0 python -m experiments.scripts.audit_icde_numbers   # needs docs/vldb_2027/paper.tex (added after review)
 pytest tests/
 ```
 
@@ -41,7 +46,7 @@ Provenance logs and the frozen pre-registration refer to earlier internal drafts
 them was submitted to any venue.
 
 ## Code this paper does not use
-The repository grew out of an earlier project (a learned CEG configuration selector). The ICDE paper's
+The repository grew out of an earlier project (a learned CEG configuration selector). The paper's
 results come only from `experiments/pg_injection/`, the scripts named in `docs/icde_2027/REPRODUCE.md`,
 and the `src/` modules they import (`src/core/ceg.py` for the max-degree bound, `src/utils/`). The GNN and
 training code (`src/models/`, `src/training/`), the CEG configuration estimators

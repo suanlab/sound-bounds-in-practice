@@ -1,0 +1,324 @@
+{
+  "runs": "results/pg_injection/pg16/stats_inject.jsonl",
+  "n_queries": 146,
+  "duckdb_raw->truth": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.6917808219178082,
+      "share_slower": 0.07534246575342465
+    },
+    "band_10": {
+      "share_faster": 0.6712328767123288,
+      "share_slower": 0.0547945205479452
+    },
+    "band_20": {
+      "share_faster": 0.636986301369863,
+      "share_slower": 0.02054794520547945
+    },
+    "geo_cap_300s": 1.770094163091746,
+    "geo_cap_120s": 1.7438638013070358,
+    "geo_cap_60s": 1.7198169427724797,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 1.7036038975675676
+  },
+  "duckdb_raw->duckdb_upper": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.02054794520547945,
+      "share_slower": 0.0
+    },
+    "band_10": {
+      "share_faster": 0.02054794520547945,
+      "share_slower": 0.0
+    },
+    "band_20": {
+      "share_faster": 0.02054794520547945,
+      "share_slower": 0.0
+    },
+    "geo_cap_300s": 1.025256246338193,
+    "geo_cap_120s": 1.025256246338193,
+    "geo_cap_60s": 1.025256246338193,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 1.036118603035698
+  },
+  "duckdb_raw->duckdb_lower": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.4589041095890411,
+      "share_slower": 0.06164383561643835
+    },
+    "band_10": {
+      "share_faster": 0.4383561643835616,
+      "share_slower": 0.0547945205479452
+    },
+    "band_20": {
+      "share_faster": 0.4246575342465753,
+      "share_slower": 0.04794520547945205
+    },
+    "geo_cap_300s": 1.4504793928088267,
+    "geo_cap_120s": 1.428867499584457,
+    "geo_cap_60s": 1.4117156314942638,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 1.423794615533348
+  },
+  "duckdb_raw->lpbound_est": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.5684931506849316,
+      "share_slower": 0.21232876712328766
+    },
+    "band_10": {
+      "share_faster": 0.547945205479452,
+      "share_slower": 0.1917808219178082
+    },
+    "band_20": {
+      "share_faster": 0.4931506849315068,
+      "share_slower": 0.136986301369863
+    },
+    "geo_cap_300s": 1.4355925053335414,
+    "geo_cap_120s": 1.4205321271727676,
+    "geo_cap_60s": 1.4045947252258588,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 1.3626476490966708
+  },
+  "native_raw->truth": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.4315068493150685,
+      "share_slower": 0.0684931506849315
+    },
+    "band_10": {
+      "share_faster": 0.3767123287671233,
+      "share_slower": 0.0547945205479452
+    },
+    "band_20": {
+      "share_faster": 0.3150684931506849,
+      "share_slower": 0.0273972602739726
+    },
+    "geo_cap_300s": 1.4160507527744912,
+    "geo_cap_120s": 1.4116955622770466,
+    "geo_cap_60s": 1.4109951854270075,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 1.4762682709976762
+  },
+  "native_raw->native_upper": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.06164383561643835,
+      "share_slower": 0.04794520547945205
+    },
+    "band_10": {
+      "share_faster": 0.04794520547945205,
+      "share_slower": 0.03424657534246575
+    },
+    "band_20": {
+      "share_faster": 0.04794520547945205,
+      "share_slower": 0.0136986301369863
+    },
+    "geo_cap_300s": 1.0667657425852595,
+    "geo_cap_120s": 1.0667657425852595,
+    "geo_cap_60s": 1.0667657425852595,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 1.0902458342549517
+  },
+  "native_raw->native_lower": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.0547945205479452,
+      "share_slower": 0.0136986301369863
+    },
+    "band_10": {
+      "share_faster": 0.0547945205479452,
+      "share_slower": 0.0136986301369863
+    },
+    "band_20": {
+      "share_faster": 0.04794520547945205,
+      "share_slower": 0.0136986301369863
+    },
+    "geo_cap_300s": 1.0608238200294138,
+    "geo_cap_120s": 1.0608238200294138,
+    "geo_cap_60s": 1.0608238200294138,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 1.071580125845554
+  },
+  "native_raw->lpbound_est": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.3082191780821918,
+      "share_slower": 0.2808219178082192
+    },
+    "band_10": {
+      "share_faster": 0.2945205479452055,
+      "share_slower": 0.2602739726027397
+    },
+    "band_20": {
+      "share_faster": 0.2534246575342466,
+      "share_slower": 0.1917808219178082
+    },
+    "geo_cap_300s": 1.1484540711123814,
+    "geo_cap_120s": 1.1499515607232296,
+    "geo_cap_60s": 1.1523763637163138,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 1.1808105697475992
+  },
+  "postgres_raw->truth": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.821917808219178,
+      "share_slower": 0.0410958904109589
+    },
+    "band_10": {
+      "share_faster": 0.8013698630136986,
+      "share_slower": 0.0410958904109589
+    },
+    "band_20": {
+      "share_faster": 0.7602739726027398,
+      "share_slower": 0.03424657534246575
+    },
+    "geo_cap_300s": 3.8129244413887413,
+    "geo_cap_120s": 3.6689604441823063,
+    "geo_cap_60s": 3.569637065002052,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 4.1959839064988005
+  },
+  "postgres_raw->postgres_upper": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.6506849315068494,
+      "share_slower": 0.07534246575342465
+    },
+    "band_10": {
+      "share_faster": 0.636986301369863,
+      "share_slower": 0.07534246575342465
+    },
+    "band_20": {
+      "share_faster": 0.6095890410958904,
+      "share_slower": 0.0684931506849315
+    },
+    "geo_cap_300s": 2.423151765475532,
+    "geo_cap_120s": 2.354807946956586,
+    "geo_cap_60s": 2.3100402689818553,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 2.543260098187215
+  },
+  "postgres_raw->postgres_lower": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.1095890410958904,
+      "share_slower": 0.0
+    },
+    "band_10": {
+      "share_faster": 0.1095890410958904,
+      "share_slower": 0.0
+    },
+    "band_20": {
+      "share_faster": 0.10273972602739725,
+      "share_slower": 0.0
+    },
+    "geo_cap_300s": 1.2531868329073637,
+    "geo_cap_120s": 1.2463197044776402,
+    "geo_cap_60s": 1.2404167212422954,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 1.2735535171696037
+  },
+  "postgres_raw->lpbound_est": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.7602739726027398,
+      "share_slower": 0.0958904109589041
+    },
+    "band_10": {
+      "share_faster": 0.7397260273972602,
+      "share_slower": 0.0958904109589041
+    },
+    "band_20": {
+      "share_faster": 0.6986301369863014,
+      "share_slower": 0.08904109589041095
+    },
+    "geo_cap_300s": 3.0923811092060203,
+    "geo_cap_120s": 2.9886945186778364,
+    "geo_cap_60s": 2.9153645761797233,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 3.3562071641194273
+  },
+  "native->postgres_upper": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.23972602739726026,
+      "share_slower": 0.3424657534246575
+    },
+    "band_10": {
+      "share_faster": 0.2191780821917808,
+      "share_slower": 0.3219178082191781
+    },
+    "band_20": {
+      "share_faster": 0.19863013698630136,
+      "share_slower": 0.2602739726027397
+    },
+    "geo_cap_300s": 0.8999144709877116,
+    "geo_cap_120s": 0.9060528123175797,
+    "geo_cap_60s": 0.9131056290379577,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 0.8947923232100928
+  },
+  "native->postgres_lower": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.1780821917808219,
+      "share_slower": 0.6575342465753424
+    },
+    "band_10": {
+      "share_faster": 0.15753424657534246,
+      "share_slower": 0.636986301369863
+    },
+    "band_20": {
+      "share_faster": 0.11643835616438356,
+      "share_slower": 0.6027397260273972
+    },
+    "geo_cap_300s": 0.4654107851817852,
+    "geo_cap_120s": 0.47954291760745443,
+    "geo_cap_60s": 0.49030811528595214,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 0.44807289320224614
+  },
+  "native->postgres_bi": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.2876712328767123,
+      "share_slower": 0.3013698630136986
+    },
+    "band_10": {
+      "share_faster": 0.2671232876712329,
+      "share_slower": 0.2808219178082192
+    },
+    "band_20": {
+      "share_faster": 0.23972602739726026,
+      "share_slower": 0.22602739726027396
+    },
+    "geo_cap_300s": 1.0840921568126842,
+    "geo_cap_120s": 1.0855057237831565,
+    "geo_cap_60s": 1.0877946354364298,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 1.13262585816033
+  },
+  "truth->lpbound_est": {
+    "n": 146,
+    "band_5": {
+      "share_faster": 0.10273972602739725,
+      "share_slower": 0.3904109589041096
+    },
+    "band_10": {
+      "share_faster": 0.08904109589041095,
+      "share_slower": 0.3767123287671233
+    },
+    "band_20": {
+      "share_faster": 0.06164383561643835,
+      "share_slower": 0.3356164383561644
+    },
+    "geo_cap_300s": 0.8110260658823116,
+    "geo_cap_120s": 0.8145889180726562,
+    "geo_cap_60s": 0.8167117617538657,
+    "n_quiet_start": 97,
+    "geo_quiet_start": 0.7998617818627207
+  }
+}

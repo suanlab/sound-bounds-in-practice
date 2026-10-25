@@ -268,6 +268,38 @@ def tightness_rows(path: Path = TIGHTNESS) -> list[str]:
 
 
 # Every result file a generated table reads (checked by the audit).
+PG16 = Path("results/pg_injection/pg16/pg16_comparison.json")
+PG16_ROWS = (
+    ("Our estimates $\\to$ true sizes", "headroom", "speedup"),
+    ("Upper guard on our estimates", "upper", "speedup"),
+    ("Floor on our estimates", "floor", "speedup"),
+    ("Both guards on our estimates", "both", "speedup"),
+    ("Both, synthetic $k=2$ (share)", "bi_k2_share", "share"),
+    ("Both, synthetic $k=8$ (share)", "bi_k8_share", "share"),
+    ("Published PG: upper guard", "published_upper", "speedup"),
+    ("DuckDB: floor", "duckdb_floor", "speedup"),
+    ("True sizes $\\to$ LpBound", "lpbound_vs_truth", "speedup"),
+)
+
+
+def pg16_rows(path: Path = PG16) -> list[str]:
+    """PostgreSQL 13.1 against 16: point for 13.1, interval for 16."""
+    data = json.loads(path.read_text())
+    rows = []
+    for label, key, kind in PG16_ROWS:
+        old, new = data["pg13"][key], data["pg16"][key]
+        if kind == "share":
+            cells = (
+                f"{round(100 * old['point'])}\\%",
+                f"{round(100 * new['point'])}\\% "
+                f"[{round(100 * new['ci_low'])}, {round(100 * new['ci_high'])}]",
+            )
+        else:
+            cells = (f"{old['point']:.2f}", interval(new))
+        rows.append(f"{label} & {cells[0]} & {cells[1]} \\\\")
+    return rows
+
+
 TABLE_SOURCES: set[Path] = {
     *DIRECTION_SOURCES.values(),
     *(path for path, _ in EXECUTION_SOURCES.values()),
@@ -277,6 +309,7 @@ TABLE_SOURCES: set[Path] = {
     RATE_COST,
     *RATE_CARD.values(),
     TIGHTNESS,
+    PG16,
 }
 
 
@@ -292,6 +325,9 @@ def main() -> None:
             logger.info("%s", row)
     logger.info("%s", "% plan certificates (in-engine samples)")
     for row in certificate_rows():
+        logger.info("%s", row)
+    logger.info("%s", "% PostgreSQL 13.1 against 16")
+    for row in pg16_rows():
         logger.info("%s", row)
     logger.info("%s", "% tightness: firing per estimator")
     for row in tightness_rows():

@@ -1,0 +1,296 @@
+[2026-10-20T20:00:30+09:00] 1. execution run (published PostgreSQL, DuckDB, PostgreSQL 16's own estimates)
+q1: 19 policies -> 1 distinct plans; truth injected True; {'native': 19, 'truth': 19}
+q2: 19 policies -> 1 distinct plans; truth injected True; {'native': 481, 'truth': 481}
+q3: 19 policies -> 1 distinct plans; truth injected True; {'native': 214, 'truth': 214}
+q4: 19 policies -> 1 distinct plans; truth injected True; {'native': 191, 'truth': 191}
+q5: 19 policies -> 1 distinct plans; truth injected True; {'native': 325, 'truth': 325}
+q6: 19 policies -> 1 distinct plans; truth injected True; {'native': 84, 'truth': 84}
+q7: 19 policies -> 2 distinct plans; truth injected True; {'native': 80, 'truth': 80}
+q8: 19 policies -> 2 distinct plans; truth injected True; {'native': 182, 'truth': 182}
+q9: 19 policies -> 2 distinct plans; truth injected True; {'native': 178, 'truth': 178}
+q10: 19 policies -> 2 distinct plans; truth injected True; {'native': 99, 'truth': 99}
+q11: 19 policies -> 4 distinct plans; truth injected True; {'native': 68, 'truth': 68}
+q12: 19 policies -> 2 distinct plans; truth injected True; {'native': 221, 'truth': 221}
+q13: 19 policies -> 3 distinct plans; truth injected True; {'native': 58, 'truth': 58}
+q14: 19 policies -> 2 distinct plans; truth injected True; {'native': 24, 'truth': 24}
+q15: 19 policies -> 3 distinct plans; truth injected True; {'native': 693, 'truth': 693}
+q16: 19 policies -> 4 distinct plans; truth injected True; {'native': 66, 'truth': 63}
+q17: 19 policies -> 2 distinct plans; truth injected True; {'native': 7, 'truth': 7}
+q18: 19 policies -> 2 distinct plans; truth injected True; {'native': 47, 'truth': 47}
+q19: 19 policies -> 2 distinct plans; truth injected True; {'native': 28, 'truth': 28}
+q20: 19 policies -> 2 distinct plans; truth injected True; {'native': 124, 'truth': 124}
+q21: 19 policies -> 1 distinct plans; truth injected True; {'native': 54, 'truth': 54}
+q22: 19 policies -> 2 distinct plans; truth injected True; {'native': 140, 'truth': 140}
+q23: 19 policies -> 2 distinct plans; truth injected True; {'native': 114, 'truth': 114}
+q24: 19 policies -> 1 distinct plans; truth injected True; {'native': 27, 'truth': 27}
+q25: 19 policies -> 4 distinct plans; truth injected True; {'native': 94, 'truth': 94}
+q26: 19 policies -> 3 distinct plans; truth injected True; {'native': 50, 'truth': 50}
+q27: 19 policies -> 6 distinct plans; truth injected True; {'native': 38, 'truth': 37}
+q28: 19 policies -> 3 distinct plans; truth injected True; {'native': 1140, 'truth': 1140}
+q29: 19 policies -> 3 distinct plans; truth injected True; {'native': 131, 'truth': 131}
+q30: 19 policies -> 3 distinct plans; truth injected True; {'native': 37007, 'truth': 19616}
+q31: 19 policies -> 4 distinct plans; truth injected True; {'native': 2134, 'truth': 677}
+q32: 18 policies -> 6 distinct plans; truth injected True; {'native': 3694, 'truth': 1335}
+q33: 19 policies -> 6 distinct plans; truth injected True; {'native': 73, 'truth': 74}
+q34: 19 policies -> 3 distinct plans; truth injected True; {'native': 40269, 'truth': 40269}
+q35: 19 policies -> 5 distinct plans; truth injected True; {'native': 1033, 'truth': 247}
+q36: 19 policies -> 6 distinct plans; truth injected True; {'native': 46, 'truth': 26}
+q37: 19 policies -> 5 distinct plans; truth injected True; {'native': 223, 'truth': 162}
+q38: 19 policies -> 4 distinct plans; truth injected True; {'native': 4337, 'truth': 4337}
+q39: 18 policies -> 6 distinct plans; truth injected True; {'native': 672, 'truth': 229}
+q40: 19 policies -> 4 distinct plans; truth injected True; {'native': 38, 'truth': 44}
+q41: 19 policies -> 3 distinct plans; truth injected True; {'native': 13, 'truth': 13}
+q42: 19 policies -> 3 distinct plans; truth injected True; {'native': 256, 'truth': 200}
+q43: 19 policies -> 5 distinct plans; truth injected True; {'native': 608, 'truth': 576}
+q44: 19 policies -> 6 distinct plans; truth injected True; {'native': 556, 'truth': 209}
+q45: 19 policies -> 6 distinct plans; truth injected True; {'native': 14, 'truth': 12}
+q46: 19 policies -> 6 distinct plans; truth injected True; {'native': 211, 'truth': 117}
+q47: 19 policies -> 6 distinct plans; truth injected True; {'native': 5329, 'truth': 3600}
+q48: 18 policies -> 5 distinct plans; truth injected True; {'native': 683, 'truth': 16}
+q49: 18 policies -> 7 distinct plans; truth injected True; {'native': 1329, 'truth': 1351}
+q50: 19 policies -> 6 distinct plans; truth injected True; {'native': 368, 'truth': 29}
+q51: 18 policies -> 5 distinct plans; truth injected True; {'native': 7227, 'truth': 5142}
+q52: 18 policies -> 6 distinct plans; truth injected True; {'native': 11292, 'truth': 14111}
+q53: 19 policies -> 5 distinct plans; truth injected True; {'native': 112, 'truth': 111}
+q54: 19 policies -> 4 distinct plans; truth injected True; {'native': 13, 'truth': 12}
+q55: 18 policies -> 3 distinct plans; truth injected True; {'native': 5, 'truth': 5}
+q56: 19 policies -> 5 distinct plans; truth injected True; {'native': 1313, 'truth': 1323}
+q57: 19 policies -> 5 distinct plans; truth injected True; {'native': 6587, 'truth': 13}
+q58: server terminated while executing plan 576df23d8d3d8f62; reconnecting
+q58: 18 policies -> 8 distinct plans; truth injected True; {'native': 300000, 'truth': 300000}
+q59: 19 policies -> 9 distinct plans; truth injected True; {'native': 13652, 'truth': 11025}
+q60: 19 policies -> 8 distinct plans; truth injected True; {'native': 2427, 'truth': 2293}
+q61: 19 policies -> 5 distinct plans; truth injected True; {'native': 240, 'truth': 239}
+q62: 19 policies -> 8 distinct plans; truth injected True; {'native': 87, 'truth': 82}
+q63: 19 policies -> 10 distinct plans; truth injected True; {'native': 113, 'truth': 53}
+q64: 19 policies -> 4 distinct plans; truth injected True; {'native': 603, 'truth': 212}
+q65: 19 policies -> 6 distinct plans; truth injected True; {'native': 87, 'truth': 67}
+q66: 19 policies -> 9 distinct plans; truth injected True; {'native': 769, 'truth': 306}
+q67: 19 policies -> 6 distinct plans; truth injected True; {'native': 28, 'truth': 29}
+q68: 19 policies -> 6 distinct plans; truth injected True; {'native': 84984, 'truth': 84984}
+q69: 19 policies -> 8 distinct plans; truth injected True; {'native': 7647, 'truth': 6824}
+q70: 19 policies -> 9 distinct plans; truth injected True; {'native': 32267, 'truth': 5189}
+q71: 19 policies -> 9 distinct plans; truth injected True; {'native': 5060, 'truth': 3837}
+q72: 19 policies -> 9 distinct plans; truth injected True; {'native': 685, 'truth': 152}
+q73: 19 policies -> 9 distinct plans; truth injected True; {'native': 417, 'truth': 168}
+q74: 19 policies -> 6 distinct plans; truth injected True; {'native': 5036, 'truth': 4299}
+q75: 19 policies -> 6 distinct plans; truth injected True; {'native': 1091, 'truth': 937}
+q76: 19 policies -> 5 distinct plans; truth injected True; {'native': 327, 'truth': 303}
+q77: 19 policies -> 6 distinct plans; truth injected True; {'native': 1132, 'truth': 910}
+q78: 19 policies -> 7 distinct plans; truth injected True; {'native': 140, 'truth': 129}
+q79: 19 policies -> 7 distinct plans; truth injected True; {'native': 674, 'truth': 710}
+q80: 19 policies -> 3 distinct plans; truth injected True; {'native': 252, 'truth': 252}
+q81: 19 policies -> 4 distinct plans; truth injected True; {'native': 140, 'truth': 140}
+q82: 19 policies -> 3 distinct plans; truth injected True; {'native': 426, 'truth': 426}
+q83: 19 policies -> 2 distinct plans; truth injected True; {'native': 458, 'truth': 458}
+q84: 19 policies -> 3 distinct plans; truth injected True; {'native': 1321, 'truth': 1321}
+q85: 19 policies -> 2 distinct plans; truth injected True; {'native': 1853, 'truth': 1853}
+q86: 19 policies -> 3 distinct plans; truth injected True; {'native': 282, 'truth': 282}
+q87: 19 policies -> 2 distinct plans; truth injected True; {'native': 177, 'truth': 177}
+q88: 19 policies -> 3 distinct plans; truth injected True; {'native': 1267, 'truth': 1267}
+q89: 19 policies -> 3 distinct plans; truth injected True; {'native': 282, 'truth': 282}
+q90: 19 policies -> 3 distinct plans; truth injected True; {'native': 220, 'truth': 220}
+q91: 19 policies -> 3 distinct plans; truth injected True; {'native': 577, 'truth': 577}
+q92: 19 policies -> 2 distinct plans; truth injected True; {'native': 157, 'truth': 157}
+q93: 19 policies -> 2 distinct plans; truth injected True; {'native': 548, 'truth': 205}
+q94: 19 policies -> 3 distinct plans; truth injected True; {'native': 129, 'truth': 129}
+q95: 19 policies -> 4 distinct plans; truth injected True; {'native': 1053, 'truth': 1053}
+q96: 19 policies -> 4 distinct plans; truth injected True; {'native': 783, 'truth': 677}
+q97: 19 policies -> 4 distinct plans; truth injected True; {'native': 6824, 'truth': 6824}
+q98: 19 policies -> 6 distinct plans; truth injected True; {'native': 4633, 'truth': 5109}
+q99: 19 policies -> 6 distinct plans; truth injected True; {'native': 470, 'truth': 264}
+q100: 19 policies -> 4 distinct plans; truth injected True; {'native': 194, 'truth': 219}
+q101: 19 policies -> 4 distinct plans; truth injected True; {'native': 255, 'truth': 255}
+q102: 19 policies -> 3 distinct plans; truth injected True; {'native': 493, 'truth': 493}
+q103: 19 policies -> 6 distinct plans; truth injected True; {'native': 652, 'truth': 647}
+q104: 18 policies -> 4 distinct plans; truth injected True; {'native': 5767, 'truth': 5767}
+q105: 18 policies -> 4 distinct plans; truth injected True; {'native': 22205, 'truth': 22205}
+q106: 19 policies -> 4 distinct plans; truth injected True; {'native': 1238, 'truth': 111}
+q107: 19 policies -> 5 distinct plans; truth injected True; {'native': 64508, 'truth': 36991}
+q108: 19 policies -> 4 distinct plans; truth injected True; {'native': 38064, 'truth': 38064}
+q109: 19 policies -> 7 distinct plans; truth injected True; {'native': 272, 'truth': 238}
+q110: 19 policies -> 7 distinct plans; truth injected True; {'native': 275, 'truth': 231}
+q111: 19 policies -> 5 distinct plans; truth injected True; {'native': 580, 'truth': 580}
+q112: 19 policies -> 7 distinct plans; truth injected True; {'native': 517, 'truth': 443}
+q113: 18 policies -> 3 distinct plans; truth injected True; {'native': 2711, 'truth': 1799}
+q114: 19 policies -> 6 distinct plans; truth injected True; {'native': 1701, 'truth': 1882}
+q115: 18 policies -> 4 distinct plans; truth injected True; {'native': 3884, 'truth': 3538}
+q116: 19 policies -> 6 distinct plans; truth injected True; {'native': 471, 'truth': 154}
+q117: 19 policies -> 3 distinct plans; truth injected True; {'native': 228, 'truth': 228}
+q118: 19 policies -> 4 distinct plans; truth injected True; {'native': 330, 'truth': 263}
+q119: 19 policies -> 6 distinct plans; truth injected True; {'native': 329, 'truth': 311}
+q120: 18 policies -> 4 distinct plans; truth injected True; {'native': 300000, 'truth': 300000}
+q121: 19 policies -> 7 distinct plans; truth injected True; {'native': 838, 'truth': 146}
+q122: 19 policies -> 5 distinct plans; truth injected True; {'native': 300000, 'truth': 300000}
+q123: 19 policies -> 6 distinct plans; truth injected True; {'native': 8897, 'truth': 7826}
+q124: 19 policies -> 5 distinct plans; truth injected True; {'native': 460, 'truth': 449}
+q125: 19 policies -> 6 distinct plans; truth injected True; {'native': 55, 'truth': 46}
+q126: 19 policies -> 5 distinct plans; truth injected True; {'native': 193057, 'truth': 123132}
+q127: 19 policies -> 5 distinct plans; truth injected True; {'native': 157, 'truth': 109}
+q128: 19 policies -> 5 distinct plans; truth injected True; {'native': 225, 'truth': 118}
+q129: 19 policies -> 6 distinct plans; truth injected True; {'native': 231, 'truth': 212}
+q130: 19 policies -> 6 distinct plans; truth injected True; {'native': 63, 'truth': 64}
+q131: 18 policies -> 8 distinct plans; truth injected True; {'native': 1615, 'truth': 510}
+q132: 19 policies -> 6 distinct plans; truth injected True; {'native': 667, 'truth': 104}
+q133: 18 policies -> 9 distinct plans; truth injected True; {'native': 1001, 'truth': 998}
+q134: 18 policies -> 5 distinct plans; truth injected True; {'native': 6994, 'truth': 30}
+q135: 18 policies -> 4 distinct plans; truth injected True; {'native': 86389, 'truth': 86389}
+q136: 18 policies -> 7 distinct plans; truth injected True; {'native': 19069, 'truth': 15793}
+q137: 19 policies -> 6 distinct plans; truth injected True; {'native': 160, 'truth': 60}
+q138: 19 policies -> 6 distinct plans; truth injected True; {'native': 3909, 'truth': 1321}
+q139: 19 policies -> 8 distinct plans; truth injected True; {'native': 366, 'truth': 362}
+q140: 19 policies -> 9 distinct plans; truth injected True; {'native': 7461, 'truth': 10628}
+q141: 19 policies -> 8 distinct plans; truth injected True; {'native': 30565, 'truth': 24943}
+q142: 19 policies -> 10 distinct plans; truth injected True; {'native': 20629, 'truth': 25745}
+q143: 19 policies -> 9 distinct plans; truth injected True; {'native': 10124, 'truth': 14586}
+q144: 19 policies -> 6 distinct plans; truth injected True; {'native': 1561, 'truth': 1510}
+q145: 19 policies -> 7 distinct plans; truth injected True; {'native': 229, 'truth': 138}
+q146: 19 policies -> 7 distinct plans; truth injected True; {'native': 295, 'truth': 285}
+[2026-10-21T02:42:17+09:00] 2. tightness points (both synthetic guards, k = 2 and 8)
+q1: 1 distinct plans, {'raw': 19, 'truth': 19, 'bi_k2': 19, 'bi_k8': 19}
+q2: 1 distinct plans, {'raw': 453, 'truth': 453, 'bi_k2': 453, 'bi_k8': 453}
+q3: 1 distinct plans, {'raw': 181, 'truth': 181, 'bi_k2': 181, 'bi_k8': 181}
+q4: 1 distinct plans, {'raw': 193, 'truth': 193, 'bi_k2': 193, 'bi_k8': 193}
+q5: 1 distinct plans, {'raw': 331, 'truth': 331, 'bi_k2': 331, 'bi_k8': 331}
+q6: 1 distinct plans, {'raw': 74, 'truth': 74, 'bi_k2': 74, 'bi_k8': 74}
+q7: 1 distinct plans, {'raw': 74, 'truth': 74, 'bi_k2': 74, 'bi_k8': 74}
+q8: 1 distinct plans, {'raw': 150, 'truth': 150, 'bi_k2': 150, 'bi_k8': 150}
+q9: 1 distinct plans, {'raw': 164, 'truth': 164, 'bi_k2': 164, 'bi_k8': 164}
+q10: 1 distinct plans, {'raw': 86, 'truth': 86, 'bi_k2': 86, 'bi_k8': 86}
+q11: 1 distinct plans, {'raw': 64, 'truth': 64, 'bi_k2': 64, 'bi_k8': 64}
+q12: 1 distinct plans, {'raw': 250, 'truth': 250, 'bi_k2': 250, 'bi_k8': 250}
+q13: 1 distinct plans, {'raw': 58, 'truth': 58, 'bi_k2': 58, 'bi_k8': 58}
+q14: 1 distinct plans, {'raw': 25, 'truth': 25, 'bi_k2': 25, 'bi_k8': 25}
+q15: 1 distinct plans, {'raw': 678, 'truth': 678, 'bi_k2': 678, 'bi_k8': 678}
+q16: 2 distinct plans, {'raw': 61, 'truth': 60, 'bi_k2': 60, 'bi_k8': 61}
+q17: 1 distinct plans, {'raw': 7, 'truth': 7, 'bi_k2': 7, 'bi_k8': 7}
+q18: 1 distinct plans, {'raw': 43, 'truth': 43, 'bi_k2': 43, 'bi_k8': 43}
+q19: 1 distinct plans, {'raw': 26, 'truth': 26, 'bi_k2': 26, 'bi_k8': 26}
+q20: 1 distinct plans, {'raw': 98, 'truth': 98, 'bi_k2': 98, 'bi_k8': 98}
+q21: 1 distinct plans, {'raw': 47, 'truth': 47, 'bi_k2': 47, 'bi_k8': 47}
+q22: 1 distinct plans, {'raw': 128, 'truth': 128, 'bi_k2': 128, 'bi_k8': 128}
+q23: 1 distinct plans, {'raw': 102, 'truth': 102, 'bi_k2': 102, 'bi_k8': 102}
+q24: 1 distinct plans, {'raw': 24, 'truth': 24, 'bi_k2': 24, 'bi_k8': 24}
+q25: 1 distinct plans, {'raw': 87, 'truth': 87, 'bi_k2': 87, 'bi_k8': 87}
+q26: 1 distinct plans, {'raw': 47, 'truth': 47, 'bi_k2': 47, 'bi_k8': 47}
+q27: 2 distinct plans, {'raw': 42, 'truth': 45, 'bi_k2': 42, 'bi_k8': 42}
+q28: 1 distinct plans, {'raw': 1120, 'truth': 1120, 'bi_k2': 1120, 'bi_k8': 1120}
+q29: 1 distinct plans, {'raw': 122, 'truth': 122, 'bi_k2': 122, 'bi_k8': 122}
+q30: 2 distinct plans, {'raw': 35925, 'truth': 19151, 'bi_k2': 19151, 'bi_k8': 19151}
+q31: 4 distinct plans, {'raw': 2139, 'truth': 659, 'bi_k2': 771, 'bi_k8': 685}
+q32: 2 distinct plans, {'raw': 3568, 'truth': 1399, 'bi_k2': 1399, 'bi_k8': 3568}
+q33: 2 distinct plans, {'raw': 69, 'truth': 69, 'bi_k2': 69, 'bi_k8': 69}
+q34: 1 distinct plans, {'raw': 39888, 'truth': 39888, 'bi_k2': 39888, 'bi_k8': 39888}
+q35: 3 distinct plans, {'raw': 1031, 'truth': 255, 'bi_k2': 315, 'bi_k8': 1031}
+q36: 2 distinct plans, {'raw': 42, 'truth': 24, 'bi_k2': 42, 'bi_k8': 42}
+q37: 2 distinct plans, {'raw': 231, 'truth': 157, 'bi_k2': 231, 'bi_k8': 231}
+q38: 1 distinct plans, {'raw': 4338, 'truth': 4338, 'bi_k2': 4338, 'bi_k8': 4338}
+q39: 3 distinct plans, {'raw': 614, 'truth': 202, 'bi_k2': 202, 'bi_k8': 255}
+q40: 2 distinct plans, {'raw': 36, 'truth': 36, 'bi_k2': 36, 'bi_k8': 36}
+q41: 1 distinct plans, {'raw': 12, 'truth': 12, 'bi_k2': 12, 'bi_k8': 12}
+q42: 2 distinct plans, {'raw': 277, 'truth': 239, 'bi_k2': 277, 'bi_k8': 277}
+q43: 2 distinct plans, {'raw': 583, 'truth': 558, 'bi_k2': 583, 'bi_k8': 583}
+q44: 4 distinct plans, {'raw': 565, 'truth': 200, 'bi_k2': 200, 'bi_k8': 200}
+q45: 3 distinct plans, {'raw': 13, 'truth': 10, 'bi_k2': 9, 'bi_k8': 13}
+q46: 3 distinct plans, {'raw': 201, 'truth': 111, 'bi_k2': 121, 'bi_k8': 201}
+q47: 3 distinct plans, {'raw': 5262, 'truth': 3554, 'bi_k2': 4091, 'bi_k8': 5262}
+q48: 2 distinct plans, {'raw': 627, 'truth': 16, 'bi_k2': 16, 'bi_k8': 16}
+q49: 3 distinct plans, {'raw': 1362, 'truth': 1271, 'bi_k2': 2271, 'bi_k8': 1362}
+q50: 4 distinct plans, {'raw': 359, 'truth': 27, 'bi_k2': 23, 'bi_k8': 116}
+q51: 3 distinct plans, {'raw': 7176, 'truth': 5173, 'bi_k2': 8896, 'bi_k8': 8896}
+q52: 2 distinct plans, {'raw': 11118, 'truth': 13726, 'bi_k2': 13726, 'bi_k8': 13726}
+q53: 2 distinct plans, {'raw': 119, 'truth': 113, 'bi_k2': 119, 'bi_k8': 119}
+q54: 2 distinct plans, {'raw': 13, 'truth': 12, 'bi_k2': 12, 'bi_k8': 13}
+q55: 1 distinct plans, {'raw': 5, 'truth': 5, 'bi_k2': 5, 'bi_k8': 5}
+q56: 2 distinct plans, {'raw': 1281, 'truth': 1241, 'bi_k2': 1241, 'bi_k8': 1241}
+q57: 3 distinct plans, {'raw': 6549, 'truth': 12, 'bi_k2': 75, 'bi_k8': 75}
+q58: 2 distinct plans, {'raw': 300000, 'truth': 300000, 'bi_k2': 300000, 'bi_k8': 300000}
+q59: 3 distinct plans, {'raw': 6052, 'truth': 4948, 'bi_k2': 6300, 'bi_k8': 6300}
+q60: 3 distinct plans, {'raw': 1172, 'truth': 891, 'bi_k2': 1360, 'bi_k8': 1172}
+q61: 2 distinct plans, {'raw': 130, 'truth': 126, 'bi_k2': 130, 'bi_k8': 130}
+q62: 2 distinct plans, {'raw': 35, 'truth': 32, 'bi_k2': 35, 'bi_k8': 35}
+q63: 2 distinct plans, {'raw': 57, 'truth': 28, 'bi_k2': 57, 'bi_k8': 57}
+q64: 2 distinct plans, {'raw': 228, 'truth': 81, 'bi_k2': 81, 'bi_k8': 228}
+q65: 4 distinct plans, {'raw': 47, 'truth': 35, 'bi_k2': 35, 'bi_k8': 38}
+q66: 3 distinct plans, {'raw': 441, 'truth': 172, 'bi_k2': 172, 'bi_k8': 340}
+q67: 2 distinct plans, {'raw': 15, 'truth': 14, 'bi_k2': 14, 'bi_k8': 15}
+q68: 1 distinct plans, {'raw': 42716, 'truth': 42716, 'bi_k2': 42716, 'bi_k8': 42716}
+q69: 3 distinct plans, {'raw': 4483, 'truth': 3819, 'bi_k2': 3883, 'bi_k8': 4483}
+q70: 3 distinct plans, {'raw': 19092, 'truth': 2868, 'bi_k2': 2769, 'bi_k8': 2769}
+q71: 2 distinct plans, {'raw': 2964, 'truth': 2067, 'bi_k2': 2067, 'bi_k8': 2067}
+q72: 2 distinct plans, {'raw': 412, 'truth': 86, 'bi_k2': 86, 'bi_k8': 412}
+q73: 3 distinct plans, {'raw': 224, 'truth': 91, 'bi_k2': 142, 'bi_k8': 224}
+q74: 4 distinct plans, {'raw': 2946, 'truth': 2314, 'bi_k2': 2438, 'bi_k8': 2660}
+q75: 3 distinct plans, {'raw': 608, 'truth': 531, 'bi_k2': 548, 'bi_k8': 608}
+q76: 3 distinct plans, {'raw': 205, 'truth': 185, 'bi_k2': 197, 'bi_k8': 205}
+q77: 3 distinct plans, {'raw': 628, 'truth': 509, 'bi_k2': 509, 'bi_k8': 588}
+q78: 2 distinct plans, {'raw': 76, 'truth': 71, 'bi_k2': 71, 'bi_k8': 76}
+q79: 2 distinct plans, {'raw': 364, 'truth': 384, 'bi_k2': 384, 'bi_k8': 364}
+q80: 1 distinct plans, {'raw': 134, 'truth': 134, 'bi_k2': 134, 'bi_k8': 134}
+q81: 1 distinct plans, {'raw': 82, 'truth': 82, 'bi_k2': 82, 'bi_k8': 82}
+q82: 1 distinct plans, {'raw': 303, 'truth': 303, 'bi_k2': 303, 'bi_k8': 303}
+q83: 1 distinct plans, {'raw': 284, 'truth': 284, 'bi_k2': 284, 'bi_k8': 284}
+q84: 1 distinct plans, {'raw': 690, 'truth': 690, 'bi_k2': 690, 'bi_k8': 690}
+q85: 1 distinct plans, {'raw': 939, 'truth': 939, 'bi_k2': 939, 'bi_k8': 939}
+q86: 1 distinct plans, {'raw': 177, 'truth': 177, 'bi_k2': 177, 'bi_k8': 177}
+q87: 1 distinct plans, {'raw': 103, 'truth': 103, 'bi_k2': 103, 'bi_k8': 103}
+q88: 1 distinct plans, {'raw': 643, 'truth': 643, 'bi_k2': 643, 'bi_k8': 643}
+q89: 1 distinct plans, {'raw': 166, 'truth': 166, 'bi_k2': 166, 'bi_k8': 166}
+q90: 1 distinct plans, {'raw': 154, 'truth': 154, 'bi_k2': 154, 'bi_k8': 154}
+q91: 1 distinct plans, {'raw': 328, 'truth': 328, 'bi_k2': 328, 'bi_k8': 328}
+q92: 1 distinct plans, {'raw': 93, 'truth': 93, 'bi_k2': 93, 'bi_k8': 93}
+q93: 2 distinct plans, {'raw': 286, 'truth': 125, 'bi_k2': 286, 'bi_k8': 286}
+q94: 1 distinct plans, {'raw': 70, 'truth': 70, 'bi_k2': 70, 'bi_k8': 70}
+q95: 1 distinct plans, {'raw': 572, 'truth': 572, 'bi_k2': 572, 'bi_k8': 572}
+q96: 2 distinct plans, {'raw': 490, 'truth': 398, 'bi_k2': 490, 'bi_k8': 490}
+q97: 1 distinct plans, {'raw': 3581, 'truth': 3581, 'bi_k2': 3581, 'bi_k8': 3581}
+q98: 2 distinct plans, {'raw': 2522, 'truth': 2629, 'bi_k2': 2522, 'bi_k8': 2522}
+q99: 3 distinct plans, {'raw': 278, 'truth': 147, 'bi_k2': 147, 'bi_k8': 251}
+q100: 2 distinct plans, {'raw': 122, 'truth': 132, 'bi_k2': 122, 'bi_k8': 122}
+q101: 1 distinct plans, {'raw': 152, 'truth': 152, 'bi_k2': 152, 'bi_k8': 152}
+q102: 1 distinct plans, {'raw': 279, 'truth': 279, 'bi_k2': 279, 'bi_k8': 279}
+q103: 2 distinct plans, {'raw': 342, 'truth': 324, 'bi_k2': 342, 'bi_k8': 342}
+q104: 1 distinct plans, {'raw': 3239, 'truth': 3239, 'bi_k2': 3239, 'bi_k8': 3239}
+q105: 1 distinct plans, {'raw': 11482, 'truth': 11482, 'bi_k2': 11482, 'bi_k8': 11482}
+q106: 2 distinct plans, {'raw': 762, 'truth': 70, 'bi_k2': 70, 'bi_k8': 762}
+q107: 2 distinct plans, {'raw': 33653, 'truth': 20512, 'bi_k2': 20512, 'bi_k8': 33653}
+q108: 1 distinct plans, {'raw': 33821, 'truth': 33821, 'bi_k2': 33821, 'bi_k8': 33821}
+q109: 2 distinct plans, {'raw': 203, 'truth': 167, 'bi_k2': 203, 'bi_k8': 203}
+q110: 2 distinct plans, {'raw': 192, 'truth': 155, 'bi_k2': 192, 'bi_k8': 192}
+q111: 1 distinct plans, {'raw': 379, 'truth': 379, 'bi_k2': 379, 'bi_k8': 379}
+q112: 2 distinct plans, {'raw': 354, 'truth': 313, 'bi_k2': 354, 'bi_k8': 354}
+q113: 3 distinct plans, {'raw': 1936, 'truth': 1239, 'bi_k2': 1239, 'bi_k8': 991}
+q114: 3 distinct plans, {'raw': 1198, 'truth': 1373, 'bi_k2': 1566, 'bi_k8': 1566}
+q115: 3 distinct plans, {'raw': 3014, 'truth': 2681, 'bi_k2': 2624, 'bi_k8': 2624}
+q116: 3 distinct plans, {'raw': 326, 'truth': 109, 'bi_k2': 109, 'bi_k8': 123}
+q117: 1 distinct plans, {'raw': 138, 'truth': 138, 'bi_k2': 138, 'bi_k8': 138}
+q118: 2 distinct plans, {'raw': 217, 'truth': 163, 'bi_k2': 163, 'bi_k8': 217}
+q119: 2 distinct plans, {'raw': 227, 'truth': 213, 'bi_k2': 227, 'bi_k8': 227}
+q120: 2 distinct plans, {'raw': 300000, 'truth': 300000, 'bi_k2': 300000, 'bi_k8': 300000}
+q121: 3 distinct plans, {'raw': 818, 'truth': 141, 'bi_k2': 217, 'bi_k8': 818}
+q122: 3 distinct plans, {'raw': 300000, 'truth': 300000, 'bi_k2': 300000, 'bi_k8': 300000}
+q123: 2 distinct plans, {'raw': 9175, 'truth': 7911, 'bi_k2': 7911, 'bi_k8': 9175}
+q124: 2 distinct plans, {'raw': 461, 'truth': 449, 'bi_k2': 461, 'bi_k8': 461}
+q125: 2 distinct plans, {'raw': 43, 'truth': 41, 'bi_k2': 41, 'bi_k8': 43}
+q126: 4 distinct plans, {'raw': 187850, 'truth': 118242, 'bi_k2': 261313, 'bi_k8': 163493}
+q127: 3 distinct plans, {'raw': 149, 'truth': 106, 'bi_k2': 97, 'bi_k8': 149}
+q128: 3 distinct plans, {'raw': 202, 'truth': 110, 'bi_k2': 120, 'bi_k8': 202}
+q129: 3 distinct plans, {'raw': 230, 'truth': 213, 'bi_k2': 222, 'bi_k8': 230}
+q130: 3 distinct plans, {'raw': 61, 'truth': 66, 'bi_k2': 84, 'bi_k8': 61}
+q131: 3 distinct plans, {'raw': 1424, 'truth': 502, 'bi_k2': 891, 'bi_k8': 1424}
+q132: 3 distinct plans, {'raw': 671, 'truth': 96, 'bi_k2': 96, 'bi_k8': 68}
+q133: 3 distinct plans, {'raw': 1002, 'truth': 1017, 'bi_k2': 1087, 'bi_k8': 1002}
+q134: 3 distinct plans, {'raw': 6870, 'truth': 30, 'bi_k2': 30, 'bi_k8': 75}
+q135: 1 distinct plans, {'raw': 84056, 'truth': 84056, 'bi_k2': 84056, 'bi_k8': 84056}
+q136: 3 distinct plans, {'raw': 19064, 'truth': 15916, 'bi_k2': 14807, 'bi_k8': 14807}
+q137: 4 distinct plans, {'raw': 162, 'truth': 60, 'bi_k2': 47, 'bi_k8': 49}
+q138: 3 distinct plans, {'raw': 3869, 'truth': 1308, 'bi_k2': 1308, 'bi_k8': 1633}
+q139: 3 distinct plans, {'raw': 368, 'truth': 359, 'bi_k2': 364, 'bi_k8': 368}
+q140: 4 distinct plans, {'raw': 7609, 'truth': 10623, 'bi_k2': 10608, 'bi_k8': 7342}
+q141: 2 distinct plans, {'raw': 30598, 'truth': 25047, 'bi_k2': 25047, 'bi_k8': 30598}
+q142: 4 distinct plans, {'raw': 20930, 'truth': 29092, 'bi_k2': 29701, 'bi_k8': 29863}
+q143: 3 distinct plans, {'raw': 10227, 'truth': 14542, 'bi_k2': 14618, 'bi_k8': 14618}
+q144: 2 distinct plans, {'raw': 1529, 'truth': 1523, 'bi_k2': 1529, 'bi_k8': 1529}
+q145: 4 distinct plans, {'raw': 228, 'truth': 139, 'bi_k2': 136, 'bi_k8': 144}
+q146: 2 distinct plans, {'raw': 300, 'truth': 285, 'bi_k2': 300, 'bi_k8': 300}
+[2026-10-21T04:37:55+09:00] done
