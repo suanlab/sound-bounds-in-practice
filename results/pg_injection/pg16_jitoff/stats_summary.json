@@ -1,0 +1,2030 @@
+{
+  "inputs": {
+    "results/pg_injection/pg16_jitoff/stats_inject.jsonl": "f2fee8d41496572c146768dc98f9282d9f0a928c6b1848fc25d873734fe55819"
+  },
+  "n_queries": 146,
+  "n_high_load": 0,
+  "truth_injection_failures": [],
+  "pairs": {
+    "native->duckdb_raw": {
+      "n": 146,
+      "plans_differ": 118,
+      "censored_base": 3,
+      "censored_policy": 4,
+      "n_cout_undefined": 3,
+      "geo_speedup": {
+        "point": 0.8151800155144993,
+        "ci_low": 0.6905495500816862,
+        "ci_high": 0.9663819731846589,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 0.7302640961596537,
+        "ci_low": 0.48137211874062474,
+        "ci_high": 0.9139413434225322,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.17123287671232876,
+        "ci_low": 0.1095890410958904,
+        "ci_high": 0.2328767123287671,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.5,
+        "ci_low": 0.4178082191780822,
+        "ci_high": 0.5821917808219178,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.2478419031576524,
+        "ci_low": 1.0349699576980862,
+        "ci_high": 1.5544281252065624,
+        "n_rows": 143,
+        "n_clusters": 143,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 0.7632280145967271,
+          "ci_low": 0.6496176062200214,
+          "ci_high": 0.8971462156358556,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.3020443110449882,
+          "ci_low": 0.6769513357310343,
+          "ci_high": 2.842822525185876,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "duckdb_raw->duckdb_upper": {
+      "n": 146,
+      "plans_differ": 3,
+      "censored_base": 4,
+      "censored_policy": 4,
+      "n_cout_undefined": 2,
+      "geo_speedup": {
+        "point": 1.0253153244862538,
+        "ci_low": 1.0,
+        "ci_high": 1.069412834700684,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.0002475203756451,
+        "ci_low": 1.0,
+        "ci_high": 1.000993678747083,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.02054794520547945,
+        "ci_low": 0.0,
+        "ci_high": 0.04794520547945205,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.0198829904224083,
+        "ci_low": 1.0,
+        "ci_high": 1.0549363612869753,
+        "n_rows": 144,
+        "n_clusters": 144,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.0289263211423314,
+          "ci_low": 1.0,
+          "ci_high": 1.0811890388801053,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "duckdb_raw->duckdb_lower": {
+      "n": 146,
+      "plans_differ": 81,
+      "censored_base": 4,
+      "censored_policy": 3,
+      "n_cout_undefined": 2,
+      "geo_speedup": {
+        "point": 1.4360281643557047,
+        "ci_low": 1.2873633821876758,
+        "ci_high": 1.6212851120831073,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.398947014831185,
+        "ci_low": 1.1094068843429994,
+        "ci_high": 2.168763318828017,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.4520547945205479,
+        "ci_low": 0.3698630136986301,
+        "ci_high": 0.5342465753424658,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.04794520547945205,
+        "ci_low": 0.0136986301369863,
+        "ci_high": 0.0821917808219178,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.032114709001962,
+        "ci_low": 0.9506399376927759,
+        "ci_high": 1.1060678160187867,
+        "n_rows": 144,
+        "n_clusters": 144,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.424677808154509,
+          "ci_low": 1.2623814136023384,
+          "ci_high": 1.6200764550217321,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.519392460914529,
+          "ci_low": 1.1374544834082818,
+          "ci_high": 2.1478735404088116,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "duckdb_raw->duckdb_bi": {
+      "n": 146,
+      "plans_differ": 82,
+      "censored_base": 4,
+      "censored_policy": 3,
+      "n_cout_undefined": 2,
+      "geo_speedup": {
+        "point": 1.4674154051879875,
+        "ci_low": 1.3182773730141255,
+        "ci_high": 1.6616831664668474,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.3990892773743508,
+        "ci_low": 1.109443306098232,
+        "ci_high": 2.1688572683511187,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.4657534246575342,
+        "ci_low": 0.3835616438356164,
+        "ci_high": 0.547945205479452,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0410958904109589,
+        "ci_low": 0.0136986301369863,
+        "ci_high": 0.07534246575342465,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.0737721486704432,
+        "ci_low": 1.0270094362757314,
+        "ci_high": 1.1363023493839246,
+        "n_rows": 144,
+        "n_clusters": 144,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.4602501548771751,
+          "ci_low": 1.2975496250073735,
+          "ci_high": 1.662816084051492,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.519392460914529,
+          "ci_low": 1.1374544834082818,
+          "ci_high": 2.1478735404088116,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "duckdb_raw->duckdb_bi_hat": {
+      "n": 146,
+      "plans_differ": 120,
+      "censored_base": 4,
+      "censored_policy": 3,
+      "n_cout_undefined": 4,
+      "geo_speedup": {
+        "point": 1.7018352286342102,
+        "ci_low": 1.5150460802190435,
+        "ci_high": 1.9330183572119166,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.423299382590848,
+        "ci_low": 1.1309105215179271,
+        "ci_high": 2.2444782323493047,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.6438356164383562,
+        "ci_low": 0.5616438356164384,
+        "ci_high": 0.7191780821917808,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0547945205479452,
+        "ci_low": 0.02054794520547945,
+        "ci_high": 0.0958904109589041,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.1008067274549798,
+        "ci_low": 1.0304366065864436,
+        "ci_high": 1.1846231490972288,
+        "n_rows": 142,
+        "n_clusters": 142,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.7000784328551886,
+          "ci_low": 1.5070291398695903,
+          "ci_high": 1.9373412335384503,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.7143804643644438,
+          "ci_low": 1.1744671962109456,
+          "ci_high": 2.591417864147735,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "duckdb_raw->truth": {
+      "n": 146,
+      "plans_differ": 120,
+      "censored_base": 4,
+      "censored_policy": 3,
+      "n_cout_undefined": 3,
+      "geo_speedup": {
+        "point": 1.7171850856651512,
+        "ci_low": 1.5241643212940315,
+        "ci_high": 1.954207616450796,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.427232776459993,
+        "ci_low": 1.1323688850135503,
+        "ci_high": 2.2466138465566443,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.6575342465753424,
+        "ci_low": 0.5753424657534246,
+        "ci_high": 0.7328767123287672,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0547945205479452,
+        "ci_low": 0.02054794520547945,
+        "ci_high": 0.0958904109589041,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.0703033802282194,
+        "ci_low": 0.9695272762225389,
+        "ci_high": 1.1737983150902929,
+        "n_rows": 143,
+        "n_clusters": 143,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.7178181613213208,
+          "ci_low": 1.5184599195368653,
+          "ci_high": 1.9614940058009642,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.7126899378392937,
+          "ci_low": 1.1744671962109456,
+          "ci_high": 2.5859836124796414,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "duckdb_raw->lhat_est": {
+      "n": 128,
+      "plans_differ": 106,
+      "censored_base": 2,
+      "censored_policy": 1,
+      "n_cout_undefined": 1,
+      "geo_speedup": {
+        "point": 1.709802469379923,
+        "ci_low": 1.5104676695747155,
+        "ci_high": 1.954664375842338,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.7592372440617723,
+        "ci_low": 1.2099645431800021,
+        "ci_high": 3.4815482730286114,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.65625,
+        "ci_low": 0.5703125,
+        "ci_high": 0.734375,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0546875,
+        "ci_low": 0.015625,
+        "ci_high": 0.09375,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.0581374331513858,
+        "ci_low": 0.9548372804444168,
+        "ci_high": 1.1599863423335561,
+        "n_rows": 127,
+        "n_clusters": 127,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.709802469379923,
+          "ci_low": 1.5104676695747155,
+          "ci_high": 1.954664375842338,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 0,
+        "geo_speedup": null
+      }
+    },
+    "duckdb_raw->lpbound_est": {
+      "n": 146,
+      "plans_differ": 126,
+      "censored_base": 4,
+      "censored_policy": 3,
+      "n_cout_undefined": 3,
+      "geo_speedup": {
+        "point": 1.4142906017578338,
+        "ci_low": 1.241866683015413,
+        "ci_high": 1.6280594454291544,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.30540365934982,
+        "ci_low": 1.0161368119999197,
+        "ci_high": 1.965437526906472,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.4863013698630137,
+        "ci_low": 0.4041095890410959,
+        "ci_high": 0.5684931506849316,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.19863013698630136,
+        "ci_low": 0.136986301369863,
+        "ci_high": 0.2671232876712329,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.0115209194532258,
+        "ci_low": 0.9109268757808868,
+        "ci_high": 1.122403962440814,
+        "n_rows": 143,
+        "n_clusters": 143,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.4365636893620743,
+          "ci_low": 1.2522029304023004,
+          "ci_high": 1.6625396907878556,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.2655549966089876,
+          "ci_low": 0.8640591112781301,
+          "ci_high": 1.8262382894651454,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "native->native_raw": {
+      "n": 146,
+      "plans_differ": 0,
+      "censored_base": 3,
+      "censored_policy": 3,
+      "n_cout_undefined": 3,
+      "geo_speedup": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n_rows": 143,
+        "n_clusters": 143,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "native_raw->native_upper": {
+      "n": 146,
+      "plans_differ": 22,
+      "censored_base": 3,
+      "censored_policy": 3,
+      "n_cout_undefined": 3,
+      "geo_speedup": {
+        "point": 1.0716296804373084,
+        "ci_low": 1.0064559810847706,
+        "ci_high": 1.1699594904842108,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.0109300300840118,
+        "ci_low": 0.9995325617728986,
+        "ci_high": 1.0375053476421863,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.04794520547945205,
+        "ci_low": 0.0136986301369863,
+        "ci_high": 0.08236301369862764,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0273972602739726,
+        "ci_low": 0.00684931506849315,
+        "ci_high": 0.0547945205479452,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.1420004747624997,
+        "ci_low": 1.00049482986365,
+        "ci_high": 1.3784210268481627,
+        "n_rows": 143,
+        "n_clusters": 143,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.00333253586038,
+          "ci_low": 0.9911372782536848,
+          "ci_high": 1.0203628442924049,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.7116752003456983,
+          "ci_low": 1.0591851129724528,
+          "ci_high": 3.2801422830521707,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "native_raw->native_lower": {
+      "n": 146,
+      "plans_differ": 13,
+      "censored_base": 3,
+      "censored_policy": 3,
+      "n_cout_undefined": 3,
+      "geo_speedup": {
+        "point": 1.0593030807502823,
+        "ci_low": 1.0058004585643965,
+        "ci_high": 1.1421348721574112,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.0165538934375422,
+        "ci_low": 0.9875854364867173,
+        "ci_high": 1.069312362153788,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.0547945205479452,
+        "ci_low": 0.02054794520547945,
+        "ci_high": 0.0958904109589041,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0136986301369863,
+        "ci_low": 0.0,
+        "ci_high": 0.03424657534246575,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.046454242295041,
+        "ci_low": 1.0024961100461998,
+        "ci_high": 1.1312236783629255,
+        "n_rows": 143,
+        "n_clusters": 143,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.0679199652704379,
+          "ci_low": 1.0067707569763507,
+          "ci_high": 1.1681231252908117,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "native_raw->native_bi": {
+      "n": 146,
+      "plans_differ": 35,
+      "censored_base": 3,
+      "censored_policy": 3,
+      "n_cout_undefined": 3,
+      "geo_speedup": {
+        "point": 1.1378410943760342,
+        "ci_low": 1.0420276502681318,
+        "ci_high": 1.2664071342632803,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.0296531453247582,
+        "ci_low": 0.9984844815597358,
+        "ci_high": 1.098256760719908,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.10273972602739725,
+        "ci_low": 0.0547945205479452,
+        "ci_high": 0.15753424657534246,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.03424657534246575,
+        "ci_low": 0.00684931506849315,
+        "ci_high": 0.0684931506849315,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.1950867109501757,
+        "ci_low": 1.021969408184468,
+        "ci_high": 1.4648854935914968,
+        "n_rows": 143,
+        "n_clusters": 143,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.0743436303078997,
+          "ci_low": 1.0104528337428391,
+          "ci_high": 1.1762741571013633,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.7116752003456983,
+          "ci_low": 1.0591851129724528,
+          "ci_high": 3.2801422830521707,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "native_raw->native_bi_hat": {
+      "n": 146,
+      "plans_differ": 80,
+      "censored_base": 3,
+      "censored_policy": 3,
+      "n_cout_undefined": 3,
+      "geo_speedup": {
+        "point": 1.2575902110363717,
+        "ci_low": 1.135852425214881,
+        "ci_high": 1.4124766585816282,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.0312110395430751,
+        "ci_low": 0.9978824455778706,
+        "ci_high": 1.099190645682085,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.2671232876712329,
+        "ci_low": 0.19863013698630136,
+        "ci_high": 0.3424657534246575,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.06164383561643835,
+        "ci_low": 0.0273972602739726,
+        "ci_high": 0.10273972602739725,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.2477784342053109,
+        "ci_low": 1.0656412826662192,
+        "ci_high": 1.5309360014859057,
+        "n_rows": 143,
+        "n_clusters": 143,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.202387023577357,
+          "ci_low": 1.1035964596742724,
+          "ci_high": 1.329113873410913,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.7304908917906512,
+          "ci_low": 1.0594557266881555,
+          "ci_high": 3.3193025543194192,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "native_raw->truth": {
+      "n": 146,
+      "plans_differ": 90,
+      "censored_base": 3,
+      "censored_policy": 3,
+      "n_cout_undefined": 4,
+      "geo_speedup": {
+        "point": 1.3998149647737843,
+        "ci_low": 1.233597597633935,
+        "ci_high": 1.6199228331111695,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.0422568535109897,
+        "ci_low": 1.0073739899357508,
+        "ci_high": 1.1235245160093386,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.3767123287671233,
+        "ci_low": 0.2945205479452055,
+        "ci_high": 0.4520547945205479,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0410958904109589,
+        "ci_low": 0.0136986301369863,
+        "ci_high": 0.07534246575342465,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.2791791888172732,
+        "ci_low": 1.0995871226408729,
+        "ci_high": 1.5546409349645611,
+        "n_rows": 142,
+        "n_clusters": 142,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.3110869447034716,
+          "ci_low": 1.1766787110792705,
+          "ci_high": 1.5045982313468382,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 2.229998190147647,
+          "ci_low": 1.2535900015583203,
+          "ci_high": 4.734766175452139,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "native_raw->lhat_est": {
+      "n": 128,
+      "plans_differ": 76,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "n_cout_undefined": 1,
+      "geo_speedup": {
+        "point": 1.3049691440574196,
+        "ci_low": 1.169129932698253,
+        "ci_high": 1.49930559126815,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.0471390170511332,
+        "ci_low": 0.9866259781532655,
+        "ci_high": 1.187668006772212,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.34375,
+        "ci_low": 0.265625,
+        "ci_high": 0.4296875,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0546875,
+        "ci_low": 0.015625,
+        "ci_high": 0.09375,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.202457267903122,
+        "ci_low": 1.0593824887329595,
+        "ci_high": 1.4333487921132104,
+        "n_rows": 127,
+        "n_clusters": 127,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.3049691440574196,
+          "ci_low": 1.169129932698253,
+          "ci_high": 1.49930559126815,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 0,
+        "geo_speedup": null
+      }
+    },
+    "native_raw->lpbound_est": {
+      "n": 146,
+      "plans_differ": 98,
+      "censored_base": 3,
+      "censored_policy": 3,
+      "n_cout_undefined": 4,
+      "geo_speedup": {
+        "point": 1.1529014346829611,
+        "ci_low": 1.028696593078223,
+        "ci_high": 1.310748140612558,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 0.9532894234186006,
+        "ci_low": 0.8204166771742721,
+        "ci_high": 1.0439570654011376,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.2328767123287671,
+        "ci_low": 0.1643835616438356,
+        "ci_high": 0.3013698630136986,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.2534246575342466,
+        "ci_low": 0.18493150684931506,
+        "ci_high": 0.3287671232876712,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.262043535534419,
+        "ci_low": 1.0547088705202765,
+        "ci_high": 1.5799595183760187,
+        "n_rows": 142,
+        "n_clusters": 142,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.0964256524735652,
+          "ci_low": 0.9987965448390532,
+          "ci_high": 1.228287131925953,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.6478086836492916,
+          "ci_low": 0.9084570594677908,
+          "ci_high": 3.3111159122003966,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "native->postgres_raw": {
+      "n": 146,
+      "plans_differ": 129,
+      "censored_base": 3,
+      "censored_policy": 9,
+      "n_cout_undefined": 8,
+      "geo_speedup": {
+        "point": 0.3641257002341888,
+        "ci_low": 0.2781257320678016,
+        "ci_high": 0.46618179900036333,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 0.45770104195310474,
+        "ci_low": 0.2506398249344286,
+        "ci_high": 0.6791209731469973,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.0684931506849315,
+        "ci_low": 0.03424657534246575,
+        "ci_high": 0.1095890410958904,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.6917808219178082,
+        "ci_low": 0.6164383561643836,
+        "ci_high": 0.7671232876712328,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 0.24152098849582465,
+        "ci_low": 0.16702824563195867,
+        "ci_high": 0.3387867079629961,
+        "n_rows": 138,
+        "n_clusters": 138,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 0.3865030674366513,
+          "ci_low": 0.29136622842760945,
+          "ci_high": 0.497592845724328,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 0.23826600912470683,
+          "ci_low": 0.07959330875323993,
+          "ci_high": 0.5805417007371193,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "postgres_raw->postgres_upper": {
+      "n": 146,
+      "plans_differ": 117,
+      "censored_base": 9,
+      "censored_policy": 4,
+      "n_cout_undefined": 8,
+      "geo_speedup": {
+        "point": 2.476867074301816,
+        "ci_low": 1.955137208419168,
+        "ci_high": 3.1920414235365255,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.689650515093189,
+        "ci_low": 1.2086833708573024,
+        "ci_high": 2.686536037659799,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.6575342465753424,
+        "ci_low": 0.5821917808219178,
+        "ci_high": 0.7328767123287672,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.06164383561643835,
+        "ci_low": 0.0273972602739726,
+        "ci_high": 0.10273972602739725,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 3.633717550286691,
+        "ci_low": 2.573385628376236,
+        "ci_high": 5.359959192221034,
+        "n_rows": 138,
+        "n_clusters": 138,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 2.1594122237296673,
+          "ci_low": 1.7041862601472517,
+          "ci_high": 2.812684161868008,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 6.5688793214443395,
+          "ci_low": 3.006165935233015,
+          "ci_high": 15.653719658274701,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "postgres_raw->postgres_lower": {
+      "n": 146,
+      "plans_differ": 16,
+      "censored_base": 9,
+      "censored_policy": 8,
+      "n_cout_undefined": 9,
+      "geo_speedup": {
+        "point": 1.2486157700943272,
+        "ci_low": 1.1096415307522371,
+        "ci_high": 1.4524138720683595,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.111398474166796,
+        "ci_low": 1.0075057940025145,
+        "ci_high": 1.3809076498865323,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.10273972602739725,
+        "ci_low": 0.0547945205479452,
+        "ci_high": 0.15753424657534246,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.1583753268666375,
+        "ci_low": 1.0609676088600684,
+        "ci_high": 1.2966587835268357,
+        "n_rows": 137,
+        "n_clusters": 137,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.2882172728266088,
+          "ci_low": 1.123123490843962,
+          "ci_high": 1.5319702729555775,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "postgres_raw->postgres_bi": {
+      "n": 146,
+      "plans_differ": 122,
+      "censored_base": 9,
+      "censored_policy": 3,
+      "n_cout_undefined": 8,
+      "geo_speedup": {
+        "point": 2.983582233717381,
+        "ci_low": 2.3081114069612583,
+        "ci_high": 3.941754806382437,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 2.056581018464224,
+        "ci_low": 1.385629089139646,
+        "ci_high": 3.649979666629813,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.6917808219178082,
+        "ci_low": 0.6164383561643836,
+        "ci_high": 0.7671232876712328,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.04794520547945205,
+        "ci_low": 0.0136986301369863,
+        "ci_high": 0.0821917808219178,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 4.432815266202347,
+        "ci_low": 3.0464329218956268,
+        "ci_high": 6.784329266355341,
+        "n_rows": 138,
+        "n_clusters": 138,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 2.6701664430564644,
+          "ci_low": 2.0494013236483806,
+          "ci_high": 3.590151317670513,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 6.5688793214443395,
+          "ci_low": 3.006165935233015,
+          "ci_high": 15.653719658274701,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "postgres_raw->postgres_bi_hat": {
+      "n": 146,
+      "plans_differ": 131,
+      "censored_base": 9,
+      "censored_policy": 3,
+      "n_cout_undefined": 8,
+      "geo_speedup": {
+        "point": 3.2367589890009705,
+        "ci_low": 2.5185186912504314,
+        "ci_high": 4.262149163153508,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 2.217110627520809,
+        "ci_low": 1.4859071421200722,
+        "ci_high": 4.123212524912145,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.773972602739726,
+        "ci_low": 0.7054794520547946,
+        "ci_high": 0.8424657534246576,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.02054794520547945,
+        "ci_low": 0.0,
+        "ci_high": 0.04794520547945205,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 4.8528542583344185,
+        "ci_low": 3.3605405512074844,
+        "ci_high": 7.36176646623702,
+        "n_rows": 138,
+        "n_clusters": 138,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 2.9301167211912515,
+          "ci_low": 2.2626998823826128,
+          "ci_high": 3.9040601861783273,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 6.5688793214443395,
+          "ci_low": 3.006165935233015,
+          "ci_high": 15.653719658274701,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "postgres_raw->truth": {
+      "n": 146,
+      "plans_differ": 133,
+      "censored_base": 9,
+      "censored_policy": 3,
+      "n_cout_undefined": 8,
+      "geo_speedup": {
+        "point": 3.844317948097286,
+        "ci_low": 2.904781161708849,
+        "ci_high": 5.223712535524979,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 2.2771563924422478,
+        "ci_low": 1.5170709384592302,
+        "ci_high": 4.325015214169262,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.815068493150685,
+        "ci_low": 0.7465753424657534,
+        "ci_high": 0.8767123287671232,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0410958904109589,
+        "ci_low": 0.0136986301369863,
+        "ci_high": 0.07534246575342465,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 5.168311828886778,
+        "ci_low": 3.5741540247930175,
+        "ci_high": 7.836418591859064,
+        "n_rows": 138,
+        "n_clusters": 138,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 3.392177333543054,
+          "ci_low": 2.5726443989827845,
+          "ci_high": 4.6405686875440475,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 9.3592795646335,
+          "ci_low": 3.592061887500322,
+          "ci_high": 27.489102916568715,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "postgres_raw->lhat_est": {
+      "n": 128,
+      "plans_differ": 115,
+      "censored_base": 5,
+      "censored_policy": 1,
+      "n_cout_undefined": 5,
+      "geo_speedup": {
+        "point": 3.3763487382187627,
+        "ci_low": 2.557085336110253,
+        "ci_high": 4.634576454627476,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 2.586398211158442,
+        "ci_low": 1.4905983447561841,
+        "ci_high": 6.300057090189752,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.8046875,
+        "ci_low": 0.734375,
+        "ci_high": 0.875,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.046875,
+        "ci_low": 0.015625,
+        "ci_high": 0.0859375,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 4.131071646263217,
+        "ci_low": 2.8792874662900236,
+        "ci_high": 6.081444430947157,
+        "n_rows": 123,
+        "n_clusters": 123,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 3.3763487382187627,
+          "ci_low": 2.557085336110253,
+          "ci_high": 4.634576454627476,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 0,
+        "geo_speedup": null
+      }
+    },
+    "postgres_raw->lpbound_est": {
+      "n": 146,
+      "plans_differ": 133,
+      "censored_base": 9,
+      "censored_policy": 3,
+      "n_cout_undefined": 8,
+      "geo_speedup": {
+        "point": 3.166218242605423,
+        "ci_low": 2.444159470209797,
+        "ci_high": 4.1874209108258755,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 2.082777481455402,
+        "ci_low": 1.402548570286787,
+        "ci_high": 3.750030684620064,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.7465753424657534,
+        "ci_low": 0.678082191780822,
+        "ci_high": 0.815068493150685,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0821917808219178,
+        "ci_low": 0.0410958904109589,
+        "ci_high": 0.13013698630136986,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 4.932794385891886,
+        "ci_low": 3.3972430922835413,
+        "ci_high": 7.522103158993939,
+        "n_rows": 138,
+        "n_clusters": 138,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 2.8367838313554183,
+          "ci_low": 2.1754069407607184,
+          "ci_high": 3.817002367127772,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 6.9158361685860115,
+          "ci_low": 3.0388154516136607,
+          "ci_high": 17.39659368189684,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "native->truth": {
+      "n": 146,
+      "plans_differ": 90,
+      "censored_base": 3,
+      "censored_policy": 3,
+      "n_cout_undefined": 4,
+      "geo_speedup": {
+        "point": 1.3998149647737843,
+        "ci_low": 1.233597597633935,
+        "ci_high": 1.6199228331111695,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 1.0422568535109897,
+        "ci_low": 1.0073739899357508,
+        "ci_high": 1.1235245160093386,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.3767123287671233,
+        "ci_low": 0.2945205479452055,
+        "ci_high": 0.4520547945205479,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0410958904109589,
+        "ci_low": 0.0136986301369863,
+        "ci_high": 0.07534246575342465,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.2791791888172732,
+        "ci_low": 1.0995871226408729,
+        "ci_high": 1.5546409349645611,
+        "n_rows": 142,
+        "n_clusters": 142,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 1.3110869447034716,
+          "ci_low": 1.1766787110792705,
+          "ci_high": 1.5045982313468382,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 2.229998190147647,
+          "ci_low": 1.2535900015583203,
+          "ci_high": 4.734766175452139,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    },
+    "truth->lhat_est": {
+      "n": 128,
+      "plans_differ": 6,
+      "censored_base": 1,
+      "censored_policy": 1,
+      "n_cout_undefined": 1,
+      "geo_speedup": {
+        "point": 0.9953337948556601,
+        "ci_low": 0.9849997260381306,
+        "ci_high": 1.0046917893232574,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 0.9986931913963355,
+        "ci_low": 0.9929331036872148,
+        "ci_high": 1.0000742574094281,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.0078125,
+        "ci_low": 0.0,
+        "ci_high": 0.0234375,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.0234375,
+        "ci_low": 0.0,
+        "ci_high": 0.0546875,
+        "n_rows": 128,
+        "n_clusters": 128,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 1.011260881413192,
+        "ci_low": 0.99831761112014,
+        "ci_high": 1.0364988228121512,
+        "n_rows": 127,
+        "n_clusters": 127,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 0.9953337948556601,
+          "ci_low": 0.9849997260381306,
+          "ci_high": 1.0046917893232574,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 0,
+        "geo_speedup": null
+      }
+    },
+    "truth->lpbound_est": {
+      "n": 146,
+      "plans_differ": 87,
+      "censored_base": 3,
+      "censored_policy": 3,
+      "n_cout_undefined": 4,
+      "geo_speedup": {
+        "point": 0.8236098796595412,
+        "ci_low": 0.7638801840394315,
+        "ci_high": 0.8851560843095166,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "total_ratio": {
+        "point": 0.9146396305357074,
+        "ci_low": 0.7690294707920318,
+        "ci_high": 0.9820165775726534,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_faster": {
+        "point": 0.0547945205479452,
+        "ci_low": 0.02054794520547945,
+        "ci_high": 0.0958904109589041,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "share_slower": {
+        "point": 0.3835616438356164,
+        "ci_low": 0.3082191780821918,
+        "ci_high": 0.4589041095890411,
+        "n_rows": 146,
+        "n_clusters": 146,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "geo_cout_ratio": {
+        "point": 0.9249014346937214,
+        "ci_low": 0.8293245172221586,
+        "ci_high": 1.025879258334874,
+        "n_rows": 142,
+        "n_clusters": 142,
+        "replicates": 10000,
+        "replicates_dropped": 0
+      },
+      "matched_lhat": {
+        "n": 128,
+        "geo_speedup": {
+          "point": 0.8362722677568448,
+          "ci_low": 0.7736907346698025,
+          "ci_high": 0.8979904910822243,
+          "n_rows": 128,
+          "n_clusters": 128,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      },
+      "without_lhat": {
+        "n": 18,
+        "geo_speedup": {
+          "point": 0.7389282605382702,
+          "ci_low": 0.5701996308161927,
+          "ci_high": 0.952260320344992,
+          "n_rows": 18,
+          "n_clusters": 18,
+          "replicates": 10000,
+          "replicates_dropped": 0
+        }
+      }
+    }
+  }
+}

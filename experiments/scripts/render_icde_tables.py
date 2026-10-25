@@ -269,6 +269,7 @@ def tightness_rows(path: Path = TIGHTNESS) -> list[str]:
 
 # Every result file a generated table reads (checked by the audit).
 PG16 = Path("results/pg_injection/pg16/pg16_comparison.json")
+PG16_JITOFF = Path("results/pg_injection/pg16_jitoff/pg16_comparison.json")
 PG16_ROWS = (
     ("Our estimates $\\to$ true sizes", "headroom", "speedup"),
     ("Upper guard on our estimates", "upper", "speedup"),
@@ -282,21 +283,24 @@ PG16_ROWS = (
 )
 
 
-def pg16_rows(path: Path = PG16) -> list[str]:
-    """PostgreSQL 13.1 against 16: point for 13.1, interval for 16."""
+def pg16_rows(path: Path = PG16_JITOFF, jit_on: Path = PG16) -> list[str]:
+    """PostgreSQL 13.1 against 16: point for 13.1, interval for 16 with JIT off
+    (the primary run), point for the first 16 run with JIT on."""
     data = json.loads(path.read_text())
+    first = json.loads(jit_on.read_text())["pg16"]
     rows = []
     for label, key, kind in PG16_ROWS:
-        old, new = data["pg13"][key], data["pg16"][key]
+        old, new, on = data["pg13"][key], data["pg16"][key], first[key]
         if kind == "share":
             cells = (
                 f"{round(100 * old['point'])}\\%",
                 f"{round(100 * new['point'])}\\% "
                 f"[{round(100 * new['ci_low'])}, {round(100 * new['ci_high'])}]",
+                f"{round(100 * on['point'])}\\%",
             )
         else:
-            cells = (f"{old['point']:.2f}", interval(new))
-        rows.append(f"{label} & {cells[0]} & {cells[1]} \\\\")
+            cells = (f"{old['point']:.2f}", interval(new), f"{on['point']:.2f}")
+        rows.append(f"{label} & {cells[0]} & {cells[1]} & {cells[2]} \\\\")
     return rows
 
 
@@ -310,6 +314,7 @@ TABLE_SOURCES: set[Path] = {
     *RATE_CARD.values(),
     TIGHTNESS,
     PG16,
+    PG16_JITOFF,
 }
 
 

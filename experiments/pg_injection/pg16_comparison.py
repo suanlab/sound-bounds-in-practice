@@ -54,11 +54,20 @@ def numbers(summary: Path, points: Path) -> dict[str, Any]:
 def main() -> None:
     """CLI entry point."""
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=PG16 / "pg16_comparison.json")
+    parser.add_argument(
+        "--dir",
+        type=Path,
+        default=PG16,
+        help="PostgreSQL 16 run directory (the JIT-off re-run: pg16_jitoff)",
+    )
+    parser.add_argument("--output", type=Path, default=None)
     args = parser.parse_args()
+    output = args.output or args.dir / "pg16_comparison.json"
     old = numbers(V3 / "stats_summary.json", V3 / "tightness_points_summary.json")
-    new = numbers(PG16 / "stats_summary.json", PG16 / "tightness_points_summary.json")
-    runs = _read_jsonl(PG16 / "stats_inject.jsonl")
+    new = numbers(
+        args.dir / "stats_summary.json", args.dir / "tightness_points_summary.json"
+    )
+    runs = _read_jsonl(args.dir / "stats_inject.jsonl")
     reproduced = sum(
         r["policy_plan"]["native"] == r["policy_plan"]["native_raw"] for r in runs
     )
@@ -75,14 +84,17 @@ def main() -> None:
         "R6": point("bi_k2_share") >= 0.5 > point("bi_k8_share"),
     }
     payload = {
-        "predictions": "docs/vldb_2027/PREDICTIONS_PG16.md",
+        "predictions": (
+            "docs/vldb_2027/PREDICTIONS_PG16.md (frozen for results/pg_injection/pg16)"
+        ),
+        "run": str(args.dir),
         "n_queries": len(runs),
         "native_reproduced": reproduced,
         "pg13": old,
         "pg16": new,
         "verdicts": {k: "holds" if v else "fails" for k, v in verdicts.items()},
     }
-    args.output.write_text(json.dumps(payload, indent=2) + "\n")
+    output.write_text(json.dumps(payload, indent=2) + "\n")
     for name in new:
         logger.info(
             "%-20s 13.1 %.2f  16 %.2f [%.2f, %.2f]",

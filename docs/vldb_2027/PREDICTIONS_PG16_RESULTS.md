@@ -16,3 +16,23 @@ frozen 2026-10-20 22:02 (hash verified before analysis).
 Run notes: one plan (query 58) hit the 8 GB temp_file_limit and is censored with
 the 22 timed-out plans; 49 queries started at a one-minute load above 30 (none
 above the gate of 60); statistics from PostgreSQL 16's own ANALYZE.
+
+## JIT-off re-run (2026-10-25 22:28 to 10-26 07:21; `results/pg_injection/pg16_jitoff/`)
+
+An independent review (`reviews/pvldb_2026-10-25/report.md`) found JIT on in the
+run above (`pg_jit_available()` true, `jit = on`) while PostgreSQL 13.1 has no
+JIT. We re-ran with `jit = off` (`ALTER SYSTEM`), the same statistics (no new
+ANALYZE; exported in `results/pg_injection/pg16/pg_stats_stats_db.csv`), after 10
+quiet minutes; median start load 6.4, maximum 22.1. The predictions above were
+frozen for the first run and are scored on it; on the re-run the values are
+(predictions not re-scored): headroom 1.40x [1.23, 1.62]; guards 1.07 / 1.06 /
+1.14x [1.04, 1.27]; published-PG upper guard 2.48x; LpBound vs truth 0.82x;
+synthetic shares 81% [69, 89] at k = 2 and 47% [27, 62] at k = 8; 146/146 native
+plans reproduced; 24 censored plans, one of them at the 8 GB temp cap. JIT does
+not explain the difference from 13.1. The paper reports the JIT-off run as
+primary and the JIT-on run beside it.
+
+Note: the header of `PREDICTIONS_PG16.md` says 22:05 KST; the hash file's
+timestamp, 22:02:00, is authoritative. The file was frozen with 67 of 146
+queries measured and per-query native and true-size times visible in the
+pipeline log (which bear on R2); no aggregate had been computed.

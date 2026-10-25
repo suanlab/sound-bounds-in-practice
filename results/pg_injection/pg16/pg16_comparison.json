@@ -1,5 +1,6 @@
 {
-  "predictions": "docs/vldb_2027/PREDICTIONS_PG16.md",
+  "predictions": "docs/vldb_2027/PREDICTIONS_PG16.md (frozen for results/pg_injection/pg16)",
+  "run": "results/pg_injection/pg16",
   "n_queries": 146,
   "native_reproduced": 146,
   "pg13": {

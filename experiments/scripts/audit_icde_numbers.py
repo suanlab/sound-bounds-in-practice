@@ -77,6 +77,8 @@ WITNESS = R / "pg_injection/v3/witness_floor_summary.json"
 HINT = R / "heldout_jobrange/heldout_intervals.json"
 PG16CMP = R / "pg_injection/pg16/pg16_comparison.json"
 PG16PROT = R / "pg_injection/pg16/stats_protocol.json"
+PG16JO = R / "pg_injection/pg16_jitoff/pg16_comparison.json"
+PG16JOPROT = R / "pg_injection/pg16_jitoff/stats_protocol.json"
 JRL_STATS = R / "pg_injection/v3/joinrel_log_stats_pg13.summary.json"
 JRL_JL = R / "pg_injection/v3/joinrel_log_joblight_pg13.summary.json"
 PREFIX = R / "pg_injection/v3/prefix_estimates_stats_pg13.summary.json"
@@ -1254,13 +1256,14 @@ CHECKS: tuple[Check, ...] = (
         SP,
         "",
         lambda v: (
-            f"(the highest start load was {v['load_start_max']:.1f}; "
-            f"{NUMBER[v['n_end_above_60']]} STATS-CEB queries ended above 60, at "
-            f"most {v['load_end_max']:.1f}), our intervals are over queries, not "
-            "repeated runs, and plans cut off at 300\\,s "
-            f"({v['n_censored_plans']} on STATS-CEB; "
+            "(on PostgreSQL 13.1 the highest start load was "
+            f"{v['load_start_max']:.1f}; {NUMBER[v['n_end_above_60']]} STATS-CEB "
+            f"queries ended above 60, at most {v['load_end_max']:.1f}), our "
+            "intervals are over queries, not repeated runs, and plans cut off at "
+            f"300\\,s (on 13.1, {v['n_censored_plans']} on STATS-CEB; "
             f"{value(JP, 'n_censored_plans'):.0f} on JOB-light, all of one query "
-            "on which every plan times out)"
+            "on which every plan times out; on 16, "
+            f"{value(PG16JOPROT, 'n_censored_plans'):.0f} with JIT off)"
             if len(json.loads(JP.read_text())["queries_with_censored_plan"]) == 1
             else "MISMATCH"
         ),
@@ -1570,32 +1573,45 @@ CHECKS: tuple[Check, ...] = (
     ),
     Check(
         "pg16 reproduced and predictions",
-        PG16CMP,
+        PG16JO,
         "",
         lambda v: (
             (
                 "Injecting PostgreSQL 16's own estimates reproduces its native plan on "
                 f"all {v['native_reproduced']} queries"
                 if v["native_reproduced"] == v["n_queries"]
+                and value(PG16CMP, "native_reproduced") == value(PG16CMP, "n_queries")
                 else "MISMATCH"
             )
-            + ". Table~\\ref{tab:pg16} sets the two versions side by side; we "
-            "froze six predictions before reading the results (supplement), and "
-            f"{NUMBER[sum(x == 'holds' for x in v['verdicts'].values())]} held"
+            + ". Table~\\ref{tab:pg16} sets the two versions side by side. Our first "
+            "PostgreSQL 16 run had JIT on"
+        ),
+        transform=lambda v: v,
+    ),
+    Check(
+        "pg16 predictions held",
+        PG16CMP,
+        "verdicts",
+        lambda v: (
+            "no aggregate computed; supplement), and "
+            f"{NUMBER[sum(x == 'holds' for x in v.values())]} held"
         ),
         transform=lambda v: v,
     ),
     Check(
         "pg16 guards text",
-        PG16CMP,
+        PG16JO,
         "",
         lambda v: (
             f"estimates, {iv(v['pg16']['both'])} of a "
             f"${v['pg16']['headroom']['point']:.2f}\\times$ headroom ("
             f"{log_share(v['pg16'])}\\%, against {log_share(v['pg13'])}\\% on "
             "13.1), above the $1.12\\times$ we predicted, and an $8\\times$ synthetic "
-            f"bracket recovers {pct_iv(v['pg16']['bi_k8_share'])} of the headroom"
-            if v["verdicts"]["R3"] == "fails" and v["verdicts"]["R6"] == "fails"
+            f"bracket recovers {pct_iv(v['pg16']['bi_k8_share'])} of the headroom "
+            f"({round(100 * value(PG16CMP, 'pg16::bi_k8_share::point'))}\\% with JIT "
+            "on, where we predicted less than half)"
+            if value(PG16CMP, "pg16::both::point") > 1.12
+            and v["pg16"]["both"]["point"] > 1.12
             else "MISMATCH"
         ),
         transform=lambda v: v,
@@ -1605,8 +1621,30 @@ CHECKS: tuple[Check, ...] = (
         PG16PROT,
         "",
         lambda v: (
-            f"In this run {v['n_start_above_30']} queries started at a load above 30, "
-            f"and {NUMBER[v['n_crashed_plans']]} plan reached the 8\\,GB cap"
+            "In each run one plan reached the 8\\,GB cap on temporary files"
+            if v["n_crashed_plans"] == 1 and value(PG16JOPROT, "n_crashed_plans") == 1
+            else "MISMATCH"
+        ),
+        transform=lambda v: v,
+    ),
+    Check(
+        "abstract pg16",
+        PG16JO,
+        "pg16",
+        lambda v: (
+            "the guards do somewhat more for its own estimates "
+            f"(${v['both']['point']:.2f}\\times$ of a "
+            f"${v['headroom']['point']:.2f}\\times$ headroom)"
+        ),
+        transform=lambda v: v,
+    ),
+    Check(
+        "intro pg16 guards",
+        PG16JO,
+        "",
+        lambda v: (
+            f"(${v['pg13']['both']['point']:.2f}\\times$ on 13.1, "
+            f"${v['pg16']['both']['point']:.2f}\\times$ on 16)"
         ),
         transform=lambda v: v,
     ),
