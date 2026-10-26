@@ -1609,8 +1609,10 @@ CHECKS: tuple[Check, ...] = (
             "13.1), above the $1.12\\times$ we predicted, and an $8\\times$ synthetic "
             f"bracket recovers {pct_iv(v['pg16']['bi_k8_share'])} of the headroom "
             f"({round(100 * value(PG16CMP, 'pg16::bi_k8_share::point'))}\\% with JIT "
-            "on, where we predicted less than half)"
-            if value(PG16CMP, "pg16::both::point") > 1.12
+            "on, where we predicted less than half; on the JIT-off run that "
+            "prediction holds, which we do not count)"
+            if v["pg16"]["bi_k8_share"]["point"] < 0.5
+            and value(PG16CMP, "pg16::both::point") > 1.12
             and v["pg16"]["both"]["point"] > 1.12
             else "MISMATCH"
         ),
@@ -1643,8 +1645,8 @@ CHECKS: tuple[Check, ...] = (
         PG16JO,
         "",
         lambda v: (
-            f"(${v['pg13']['both']['point']:.2f}\\times$ on 13.1, "
-            f"${v['pg16']['both']['point']:.2f}\\times$ on 16)"
+            f"(${v['pg13']['both']['point']:.2f}\\times$ on 13.1; somewhat more, "
+            f"${v['pg16']['both']['point']:.2f}\\times$, on 16)"
         ),
         transform=lambda v: v,
     ),

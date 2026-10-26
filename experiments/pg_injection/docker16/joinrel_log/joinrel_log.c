@@ -8,12 +8,14 @@
  * in-context estimates of every sub-plan, read from a stock server (no core
  * patch). Active only in sessions that run LOAD 'joinrel_log'.
  *
- * Limits: GEQO bypasses join_search_hook (run with geqo = off); a query whose
- * join search is split into several problems (more relations than
- * join_collapse_limit, or subqueries) prints each problem's relations, so
- * duplicates are possible; from PostgreSQL 16 on, relids can include outer-join
- * relation indexes, which have no alias and are skipped. None of this applies
- * to the inner-join STATS-CEB and JOB-light queries measured here.
+ * Limits: join_search_hook is consulted before GEQO, so with this module loaded
+ * alone the standard search runs even where GEQO would (we run with
+ * geqo = off anyway); a query whose join search is split into several problems
+ * (more relations than join_collapse_limit, or subqueries) prints each
+ * problem's relations, so duplicates are possible; from PostgreSQL 16 on,
+ * relids can include outer-join relation indexes, which print as
+ * "unnamed_join". None of this applies to the inner-join STATS-CEB and
+ * JOB-light queries measured here.
  */
 #include "postgres.h"
 

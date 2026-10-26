@@ -74,6 +74,18 @@ ruff check experiments/ tests/ >/dev/null || fail "ruff"
 
 bash experiments/scripts/build_vldb_supplement.sh freeze
 
+# EA&B: the linked reproducibility package must be complete at submission. A
+# real freeze requires the public release repository to be clean and in sync
+# with its remote; tag that commit when submitting.
+if [[ $DRY -eq 0 ]]; then
+    RELEASE=${RELEASE_REPO:-/projects/CEG/release_stage/icde2027_supplement}
+    [[ -z "$(git -C "$RELEASE" status --porcelain)" ]] || fail "release repo has uncommitted changes"
+    git -C "$RELEASE" fetch -q origin
+    [[ "$(git -C "$RELEASE" rev-parse HEAD)" == "$(git -C "$RELEASE" rev-parse origin/main)" ]] \
+        || fail "release repo is not in sync with origin/main"
+    echo "public artifact at commit $(git -C "$RELEASE" rev-parse --short HEAD); tag it on submission"
+fi
+
 tar --exclude='*.pt' --exclude='*.ckpt' --exclude='__pycache__' \
     --exclude='experiments/pg_injection/build' \
     --exclude='.pytest_cache' --exclude='.mypy_cache' --exclude='.ruff_cache' \
