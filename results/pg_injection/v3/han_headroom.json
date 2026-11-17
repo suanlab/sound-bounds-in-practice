@@ -1,0 +1,40 @@
+{
+ "inputs": {
+  "results/pg_injection/v3/stats_inject.jsonl": "750df5c864f649cc5e314034139c9fbbfac2b0e8ac87d586628a87e220ec64e9",
+  "results/pg_injection/v3/joblight_inject.jsonl": "5ac472dd95b657b4f40a5935134c98c039da909dd4e8512246b3cb84c9cd2bc8"
+ },
+ "post_hoc": true,
+ "stats_ceb": {
+  "n_queries": 146,
+  "native_total_h": 0.5847168548651583,
+  "truth_total_h": 0.5200002762428872,
+  "headroom_total_time": 1.1244548927740232,
+  "headroom_geomean": 1.3464389513062383,
+  "queries_both_plans_capped": [
+   58,
+   120,
+   122,
+   126
+  ],
+  "n_both_plans_capped": 4,
+  "both_capped_share_of_native_total": 0.5700764918264644
+ },
+ "joblight": {
+  "n_queries": 70,
+  "native_total_h": 0.21727385921558987,
+  "truth_total_h": 0.20684715682634205,
+  "headroom_total_time": 1.0504077626650752,
+  "headroom_geomean": 1.122042877813946,
+  "queries_both_plans_capped": [
+   60
+  ],
+  "n_both_plans_capped": 1,
+  "both_capped_share_of_native_total": 0.3835405401928535
+ },
+ "han_stats_ceb": {
+  "postgresql_h": 11.34,
+  "truecard_h": 5.69,
+  "source": "Han et al., PVLDB 15(4):752-765, Table 3 (external)",
+  "headroom_total_time": 1.992970123022847
+ }
+}

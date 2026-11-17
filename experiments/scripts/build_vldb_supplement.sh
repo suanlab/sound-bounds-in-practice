@@ -18,7 +18,7 @@ cp docs/references.bib docs/c4_preregistration.md docs/c1_preregistration.md \
     docs/AUDIT_REPAIR_LOG.md "$DEST/docs/"
 cp docs/icde_2027/{CLAIMS_EVIDENCE.md,REPRODUCE.md} "$DEST/docs/icde_2027/"
 mkdir -p "$DEST/docs/vldb_2027"
-cp docs/vldb_2027/{paper.tex,paper.pdf,paper.bbl,acmart.cls,pvldb.sty,ACM-Reference-Format.bst,PREDICTIONS_PG16.md,PREDICTIONS_PG16.sha256,PREDICTIONS_PG16_RESULTS.md} "$DEST/docs/vldb_2027/"
+cp docs/vldb_2027/{paper.tex,paper.pdf,paper.bbl,acmart.cls,pvldb.sty,ACM-Reference-Format.bst,PREDICTIONS_PG16.md,PREDICTIONS_PG16.sha256,PREDICTIONS_PG16_RESULTS.md,PREDICTIONS_S3.md,PREDICTIONS_S3.sha256,S3_DESIGN.json,REPRODUCE.md,REVISION_EXPERIMENTS.md} "$DEST/docs/vldb_2027/"
 cp docs/icde_2027/SUPPLEMENT_README.md "$DEST/README.md"
 # Predictions frozen before the post-hoc mechanism analyses, their results, and
 # the held-out pre-registration with its addendum (each with its SHA-256 file).

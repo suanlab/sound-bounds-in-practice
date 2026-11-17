@@ -180,7 +180,7 @@ def main() -> None:
     parser.add_argument(
         "--native-runs",
         type=Path,
-        default=Path("results/pg_injection/inject_plans_native.jsonl"),
+        default=Path("results/pg_injection/v3/stats_inject.jsonl"),
     )
     parser.add_argument("--upper", default="lpbound")
     parser.add_argument("--target", type=float, default=2.0)
@@ -191,7 +191,7 @@ def main() -> None:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("results/plan_certificate/selective_sampling.json"),
+        default=Path("results/plan_certificate/selective_sampling_v3.json"),
     )
     args = parser.parse_args()
 

@@ -212,3 +212,70 @@ official train/eval CLIs produce artifacts ✅.
 - **Impact:** every *real-data* max-degree number (tightness ablation's max-degree arm, plan-certificate
   and plan-guard max-degree brackets/gates, the max-degree JOB q-error) must be recomputed before reuse.
   LpBound/SafeBound values (from the artifact) and the sampling bound are unaffected.
+
+## 2026-11-09 — PVLDB paper revised after a simulated review; October freeze superseded
+
+- **Found by:** simulated five-reviewer panel plus a consistency audit (`REVIEW_VLDB.md`), followed by two
+  independent critic passes over the revision.
+- **Defects (text and scope; no measured value changed):**
+  - Timeout-capped speedups were called lower bounds. The direction is unknown where two different plans both
+    time out, and the ratio is an upper bound where only the policy's plan does.
+  - The certificates' floor of 1 was called sound without stating that it assumes non-empty sub-joins.
+  - The true-size headroom was called an aggregate bound on what a guard recovers.
+  - Both pre-registered certificate rules were called unattainable by construction. Only the unique-survivor
+    rule is; the G ≤ 2 rule failed at the sample rate used.
+  - The query-level agreement bound counted queries with any compared sub-plan. It is now 112/146 and 68/70
+    fully compared queries: 2.6% and 4.3%, not 2.0% and 4.2%.
+  - The oracle's "no choice of samples rescues it" claim was not scoped to the measured samples and the
+    executed plans.
+- **Fix:** paper text, the audit (262 → 271 checks), `experiments/scripts/review_checks.py`,
+  `experiments/scripts/certificate_threshold_sweep.py`, tests (`tests/unit/test_review_checks.py`),
+  `docs/vldb_2027/REPRODUCE.md`, `CLAIMS_EVIDENCE.md`. The `selective_sampling` defaults now point at v3.
+- **Not changed:** `experiments/scripts/plan_certificate_joint.py` stays at the hash recorded in
+  `docs/icde_2027/PREREGISTRATION_JOBRANGE_ADDENDUM.sha256`. Positivity is enforced by `review_checks` and
+  the audit instead.
+- **Provenance:** the October freeze stays in `freeze/vldb2027_submission_2026-10-26_2222.*`. Its supplement
+  zip is copied to `freeze/vldb2027_supplement_2026-10-26.zip`, because `build_vldb_supplement.sh` overwrites
+  `freeze/vldb2027_supplement.zip`. Re-freezing and re-tagging are pending the author's decision.
+
+## 2026-11-16 — Related work and headroom comparison added (Han, Mu, Stoian)
+
+- **Trigger:** a literature scan for the next paper (`research/breakthrough/`) found three works the submission should address:
+  - Han et al. report STATS-CEB TrueCard 11.34 h → 5.69 h, about 2×, against our 1.35× geomean.
+  - Mu et al. (arXiv 2511.16455) is an EA&B paper on plan-based AQP in PostgreSQL.
+  - Stoian et al. (PVLDB 19(12), demo) check estimators against the [xBound, LpBound] bracket.
+- **Check:** `experiments/scripts/han_headroom.py` (post-hoc; read-only on `results/pg_injection/v3/*_inject.jsonl`) gives:
+  - Total-time headroom of 1.12×, below our geomean, so the way we aggregate does not explain the gap.
+  - Four STATS-CEB queries capped under both plans, making up 57% of our native total.
+  - The cause of the gap is not isolated: the cap, base tables, or hardware and configuration.
+- **Change:** in `docs/vldb_2027/paper.tex`:
+  - Two related-work clauses (Stoian demo, Mu).
+  - One paragraph in §execution (Han).
+  - One clause in Limitations.
+- **Other changes:** two bib entries (verified via the arXiv API and Crossref), two audit checks (271 → 273), and rows in `CLAIMS_EVIDENCE.md` and `REPRODUCE.md`.
+- **Results:** tests 181 pass; ruff passes; no LaTeX errors or overfull boxes.
+- **Page budget:** the references now start at the top of page 13, which meets the gate with no slack left.
+- **Not changed:** pinned files. Re-freeze and re-tag are still pending the author's decision.
+
+## 2026-11-17 — S3 block re-measurement (registered); single-run caveats replaced
+
+- **Trigger:** `REVIEW_VLDB.md` S3 (R3-M2, R4-M1 blocking; R5-M3). The paper's small runtime effects and the sampling cost each rested on one run, with plans in a fixed order and native first.
+- **Registration:** `docs/vldb_2027/PREDICTIONS_S3.md`, `S3_DESIGN.json` and `PREDICTIONS_S3.sha256` were frozen 2026-11-16 23:43 KST, before any block. Smoke tests touched only unregistered queries (1, 11, 99).
+- **Run:** six blocks on 2026-11-16/17, all valid (61/61 queries each).
+  - The blocks were spaced at least 3 h apart, with a server restart before each.
+  - Query and plan order were seeded and randomized.
+  - Each plan had one warm-up, then 3 timed rounds, and every repetition was stored.
+  - The sampling → certificate → execution chain ran live in the same block.
+  - No censored plans and no high-load queries.
+- **Result:** P1–P6 all hold (`results/pg_injection/s3/s3_summary.json`).
+  - Every pooled ratio is within 6% of v3 on the same queries.
+  - Block-to-block ranges are ≤ 0.04.
+  - Native plans drifted by up to 1.25× per block.
+  - Live sample counts equal the stored ones (834/834 uncensored draws).
+  - All 126 certified cells reproduced v3's orders.
+- **Paper changes:**
+  - §execution: "intervals … do not capture run-to-run variation … descriptions of the run" is replaced by a pointer to the re-measurement.
+  - Limitations: "one run … mitigate host noise but do not remove it" is replaced by the S3 result. "We did not time the certificate computation" is replaced by its measured time (median 1.2 ms, max 160 ms; `experiments/scripts/s3_report.py`, post-registration, descriptive). The now redundant "our intervals are over queries, not repeated runs" is removed.
+  - Space: the Han paragraph is cut to its registered minimum, the availability paragraph is trimmed (it now points to `docs/vldb_2027/REPRODUCE.md`), and `\looseness=-1` is applied to five paragraphs. The references start at the top of page 13.
+- **Audit:** 273 → 275 checks. The Han both-capped check and the limitations-load check follow the new wording. Tests pass (181).
+- **Not changed:** pinned files (all `*.sha256` verify).

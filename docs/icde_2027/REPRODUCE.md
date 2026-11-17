@@ -1,7 +1,9 @@
-# Reproducing the ICDE 2027 (EAB) results
+# Reproducing the PVLDB Vol. 20 (EA&B) results
 
-**Paper:** `docs/icde_2027/paper.tex` — *[Experiment, Analysis, and Benchmark] Sound Cardinality Bounds in
-Practice: Guards, Estimates, and Plan Certificates*. `docs/icde_2027/CLAIMS_EVIDENCE.md` maps every claim to its
+**Paper:** `docs/vldb_2027/paper.tex` — *Sound Cardinality Bounds in Practice: Guards, Estimates, and Plan
+Certificates [Experiment, Analysis & Benchmark]*. This directory keeps the name of an earlier, never-submitted
+ICDE 2027 target because hash files record its paths; `docs/icde_2027/paper.tex` is that historical source and
+the audit's default is the PVLDB paper. `docs/icde_2027/CLAIMS_EVIDENCE.md` maps every claim to its
 value, interval and status. `PYTHONHASHSEED=0 python -m experiments.scripts.audit_icde_numbers` re-derives every
 headline number from `results/` and checks it against the LaTeX source.
 
@@ -84,8 +86,8 @@ previously committed synthetic/fixture results are unaffected.
 
 Scope: existing methods only. `PYTHONHASHSEED=0 python -m experiments.scripts.audit_icde_numbers` re-derives
 the paper's headline numbers and generated table rows from the result JSON and requires each verbatim in the
-LaTeX source. It checks transcription only: it does not check that a JSON is current or not superseded
-(see `results/SUPERSEDED.md`).
+LaTeX source. It also rejects a source listed in `results/SUPERSEDED.md` and, for some summaries, one whose
+input hash no longer matches; it does not re-run any measurement.
 
 ### PostgreSQL with sub-plan injection (`experiments/pg_injection/`)
 1. Build: `bash experiments/pg_injection/prepare_build.sh` downloads PostgreSQL 13.1
@@ -140,7 +142,7 @@ same plan order every round (PostgreSQL's own first), a plan that kills the back
 |---|---|---|
 | Single-run re-measurement, every estimate source, τ = 1, 3 reps for every plan (both benchmarks) + in-engine samples at r = 0.25 | `bash experiments/pg_injection/run_pipeline_v2.sh` | `results/pg_injection/v2/`, `results/pg_injection/subset_counts_r025.jsonl` |
 | Joint certificates from PostgreSQL's in-engine samples | `experiments.scripts.plan_certificate_joint --sizes results/plan_guard/subjoin_sizes_maxdeg_fixed.jsonl --pg-samples results/pg_injection/subset_counts.jsonl --output results/plan_certificate/plan_certificate_joint_pg_r010.json` | that file |
-| Selective (certify-then-stop) sampling, offline | `experiments.scripts.selective_sampling` | `results/plan_certificate/selective_sampling.json` |
+| Selective (certify-then-stop) sampling, offline (superseded by the v3 row below; pass `--native-runs results/pg_injection/inject_plans_native.jsonl --output results/plan_certificate/selective_sampling.json` to regenerate it) | `experiments.scripts.selective_sampling` | `results/plan_certificate/selective_sampling.json` |
 | ~~Certified join orders executed in PostgreSQL (`Leading` hints)~~ — **withdrawn** (hint not obeyed; see below) | ~~`experiments.pg_injection.run_certified_plans`~~ | ~~`results/pg_injection/certified_plans{.jsonl,_summary.json}`~~ |
 | Unit tests of the certificate math (brute force over box corners) and the injection helpers | `pytest tests/unit/test_icde_pipeline.py` | — |
 | Execution tables (STATS-CEB, JOB-light) and the per-query execution figure: summaries of the v2 runs, incl. matched-denominator rows for planning on L̂ | `experiments.pg_injection.analyze_injection --runs results/pg_injection/v2/stats_inject.jsonl --output results/pg_injection/v2/stats_summary.json`; same with `--workload joblight --runs results/pg_injection/v2/joblight_inject.jsonl --output results/pg_injection/v2/joblight_summary.json` | those files |
@@ -187,6 +189,9 @@ same plan order every round (PostgreSQL's own first), a plan that kills the back
 | Our instance's estimates relative to the sound bracket | `experiments.pg_injection.native_bracket` | `results/pg_injection/v3/native_bracket.json` |
 | Selective sampling against v3 native times | `experiments.scripts.selective_sampling --native-runs results/pg_injection/v3/stats_inject.jsonl --output results/plan_certificate/selective_sampling_v3.json` | that file |
 | Selective-sampling cost under the three v3 native-time references (post-hoc) | `experiments.scripts.selective_denominators` | `results/plan_certificate/selective_denominators.json` |
+| Headroom on total time beside Han et al.'s TrueCard; queries capped under both plans (post-hoc) | `experiments.scripts.han_headroom` | `results/pg_injection/v3/han_headroom.json` |
+| S3 block re-measurement: six blocks, randomized order, same-block sampling (registered) | `experiments/pg_injection/run_s3_blocks.sh`, then `experiments.scripts.s3_analysis` | `results/pg_injection/s3/block_*.jsonl`, `s3_summary.json` |
+| S3 descriptive figures and supplement table (certificate time, sampling time) | `experiments.scripts.s3_report` | `results/pg_injection/s3/s3_report.json`, `S3_TABLE.md` |
 | Resume of the v3 pipeline after step 2 stopped on an implied-equality order | `STAGE=<dir> bash experiments/pg_injection/run_pipeline_v3_resume.sh` | `results/pg_injection/v3/` |
 
 
@@ -222,3 +227,9 @@ JOB-range test is pre-registered in `PREREGISTRATION_JOBRANGE.md` and its addend
 | Same with JIT off (**primary PostgreSQL 16 result**; `ALTER SYSTEM SET jit = off` first, the script refuses otherwise; it reuses the statistics of the first run's ANALYZE, exported for reference in `results/pg_injection/pg16/pg_stats_stats_db.csv`, which cannot be loaded back, so a rebuild starts from a fresh ANALYZE) | `bash experiments/pg_injection/run_pipeline_pg16_jitoff.sh` | `results/pg_injection/pg16_jitoff/` |
 | Summaries, the 13.1-vs-16 comparison and the frozen R1-R6 verdicts | `bash experiments/pg_injection/analyze_pg16.sh results/pg_injection/pg16_jitoff` (and `… pg16`) | `pg16_comparison.json` in each run directory; table rows via `experiments.scripts.render_icde_tables` |
 | A forced-prefix alternative that does **not** reproduce in-context estimates (kept as a negative result) | `experiments.pg_injection.incontext_by_prefix` | `results/pg_injection/v3/prefix_estimates_stats_pg13.*` |
+
+## Revision analyses (2026-11-09, after the first freeze; post-hoc, stored results only)
+| Result | Command (`python -m …`, `PYTHONHASHSEED=0`) | Output |
+|---|---|---|
+| Censoring cases of every speedup, headroom exceedance, agreement coverage, positivity of certified sub-joins, held-out exclusion ranges | `experiments.scripts.review_checks` | `results/review/review_checks.json` |
+| Certified share at thresholds t = 1.5, 2, 3, 4 | `experiments.scripts.certificate_threshold_sweep` | `results/plan_certificate/certificate_threshold_sweep.json` |

@@ -1,0 +1,62 @@
+block 3 q32 (A): {'native_raw': 1291, 'native_upper': 3520, 'native_lower': 1291, 'native_bi': 3520, 'truth': 1230, 'bi_k2': 1230, 'bi_k8': 1291, 'native': 3866, 'certified': 1226} | chain True 124937 ms
+block 3 q90 (B): {'native_raw': 116, 'native_upper': 116, 'native_lower': 116, 'native_bi': 116, 'truth': 116, 'bi_k2': 116, 'bi_k8': 116, 'native': 116, 'certified': 158} | chain True 45 ms
+block 3 q33 (A): {'native_raw': 65, 'native_upper': 65, 'native_lower': 65, 'native_bi': 65, 'truth': 65, 'bi_k2': 65, 'bi_k8': 65, 'native': 65, 'certified': 18} | chain True 18895 ms
+block 3 q130 (B): {'native_raw': 129, 'native_upper': 93, 'native_lower': 129, 'native_bi': 93, 'truth': 61, 'bi_k2': 69, 'bi_k8': 129, 'native': 129} | chain False 326 ms
+block 3 q45 (B): {'native_raw': 12, 'native_upper': 12, 'native_lower': 12, 'native_bi': 12, 'truth': 10, 'bi_k2': 12, 'bi_k8': 12, 'native': 12} | chain False 42 ms
+block 3 q7 (A): {'native_raw': 68, 'native_upper': 68, 'native_lower': 68, 'native_bi': 68, 'truth': 68, 'bi_k2': 68, 'bi_k8': 68, 'native': 68, 'certified': 68} | chain True 29 ms
+block 3 q47 (B): {'native_raw': 4682, 'native_upper': 4682, 'native_lower': 4682, 'native_bi': 4682, 'truth': 3743, 'bi_k2': 4102, 'bi_k8': 4682, 'native': 4691} | chain False 807 ms
+block 3 q59 (B): {'native_raw': 9089, 'native_upper': 6117, 'native_lower': 9089, 'native_bi': 6117, 'truth': 5180, 'bi_k2': 5180, 'bi_k8': 9089, 'native': 9089} | chain False 969 ms
+block 3 q24 (A): {'native_raw': 20, 'native_upper': 20, 'native_lower': 20, 'native_bi': 20, 'truth': 20, 'bi_k2': 20, 'bi_k8': 20, 'native': 20, 'certified': 14} | chain True 10 ms
+block 3 q85 (B): {'native_raw': 822, 'native_upper': 822, 'native_lower': 822, 'native_bi': 822, 'truth': 822, 'bi_k2': 822, 'bi_k8': 822, 'native': 822, 'certified': 796} | chain True 76 ms
+block 3 q86 (B): {'native_raw': 185, 'native_upper': 199, 'native_lower': 185, 'native_bi': 199, 'truth': 114, 'bi_k2': 199, 'bi_k8': 185, 'native': 185} | chain False 210 ms
+block 3 q8 (A): {'native_raw': 140, 'native_upper': 140, 'native_lower': 140, 'native_bi': 140, 'truth': 140, 'bi_k2': 140, 'bi_k8': 140, 'native': 140, 'certified': 140} | chain True 22 ms
+block 3 q112 (B): {'native_raw': 390, 'native_upper': 390, 'native_lower': 390, 'native_bi': 390, 'truth': 236, 'bi_k2': 390, 'bi_k8': 390, 'native': 390} | chain False 279 ms
+block 3 q9 (B): {'native_raw': 131, 'native_upper': 131, 'native_lower': 131, 'native_bi': 131, 'truth': 131, 'bi_k2': 131, 'bi_k8': 131, 'native': 131} | chain False 104 ms
+block 3 q114 (B): {'native_raw': 1405, 'native_upper': 1474, 'native_lower': 1405, 'native_bi': 1474, 'truth': 1259, 'bi_k2': 1459, 'bi_k8': 1459, 'native': 1405, 'certified': 1298} | chain True 180 ms
+block 3 q14 (A): {'native_raw': 14, 'native_upper': 14, 'native_lower': 14, 'native_bi': 14, 'truth': 14, 'bi_k2': 14, 'bi_k8': 14, 'native': 14, 'certified': 14} | chain True 22 ms
+block 3 q44 (A): {'native_raw': 531, 'native_upper': 531, 'native_lower': 531, 'native_bi': 531, 'truth': 188, 'bi_k2': 188, 'bi_k8': 200, 'native': 531, 'certified': 232} | chain True 1094 ms
+block 3 q131 (B): {'native_raw': 1376, 'native_upper': 1376, 'native_lower': 1376, 'native_bi': 1376, 'truth': 461, 'bi_k2': 1065, 'bi_k8': 1376, 'native': 1376} | chain False 137 ms
+block 3 q6 (B): {'native_raw': 146, 'native_upper': 146, 'native_lower': 146, 'native_bi': 146, 'truth': 146, 'bi_k2': 146, 'bi_k8': 146, 'native': 146}
+block 3 q100 (B): {'native_raw': 106, 'native_upper': 106, 'native_lower': 106, 'native_bi': 106, 'truth': 129, 'bi_k2': 106, 'bi_k8': 106, 'native': 106} | chain False 144 ms
+block 3 q138 (A): {'native_raw': 3586, 'native_upper': 3586, 'native_lower': 1576, 'native_bi': 1576, 'truth': 1143, 'bi_k2': 1143, 'bi_k8': 1576, 'native': 3586, 'certified': 1576} | chain True 3255 ms
+block 3 q115 (B): {'native_raw': 3184, 'native_upper': 2765, 'native_lower': 3184, 'native_bi': 2765, 'truth': 2765, 'bi_k2': 2725, 'bi_k8': 2725, 'native': 3184, 'certified': 2725} | chain True 324 ms
+block 3 q75 (B): {'native_raw': 465, 'native_upper': 465, 'native_lower': 465, 'native_bi': 465, 'truth': 507, 'bi_k2': 453, 'bi_k8': 465, 'native': 465} | chain False 294 ms
+block 3 q104 (B): {'native_raw': 3367, 'native_upper': 3367, 'native_lower': 3367, 'native_bi': 3367, 'truth': 1207, 'bi_k2': 3367, 'bi_k8': 3367, 'native': 3367, 'certified': 815} | chain True 371 ms
+block 3 q83 (B): {'native_raw': 239, 'native_upper': 239, 'native_lower': 239, 'native_bi': 239, 'truth': 239, 'bi_k2': 239, 'bi_k8': 239, 'native': 239, 'certified': 236} | chain True 48 ms
+block 3 q72 (B): {'native_raw': 379, 'native_upper': 379, 'native_lower': 379, 'native_bi': 379, 'truth': 379, 'bi_k2': 379, 'bi_k8': 379, 'native': 379} | chain False 92 ms
+block 3 q105 (B): {'native_raw': 16417, 'native_upper': 16417, 'native_lower': 16417, 'native_bi': 16417, 'truth': 13001, 'bi_k2': 16417, 'bi_k8': 16417, 'native': 16417} | chain False 1546 ms
+block 3 q66 (B): {'native_raw': 402, 'native_upper': 402, 'native_lower': 402, 'native_bi': 402, 'truth': 143, 'bi_k2': 143, 'bi_k8': 310, 'native': 402} | chain False 353 ms
+block 3 q135 (A): {'native_raw': 225667, 'native_upper': 225667, 'native_lower': 225667, 'native_bi': 225667, 'truth': 127167, 'bi_k2': 225667, 'bi_k8': 225667, 'native': 225667, 'certified': 137398} | chain True 15685 ms
+block 3 q13 (B): {'native_raw': 45, 'native_upper': 45, 'native_lower': 45, 'native_bi': 45, 'truth': 45, 'bi_k2': 45, 'bi_k8': 45, 'native': 45, 'certified': 44} | chain True 44 ms
+block 3 q116 (B): {'native_raw': 250, 'native_upper': 250, 'native_lower': 250, 'native_bi': 250, 'truth': 105, 'bi_k2': 110, 'bi_k8': 110, 'native': 250} | chain False 81 ms
+block 3 q118 (B): {'native_raw': 216, 'native_upper': 216, 'native_lower': 216, 'native_bi': 216, 'truth': 171, 'bi_k2': 171, 'bi_k8': 216, 'native': 216} | chain False 182 ms
+block 3 q17 (A): {'native_raw': 13, 'native_upper': 13, 'native_lower': 13, 'native_bi': 13, 'truth': 13, 'bi_k2': 13, 'bi_k8': 13, 'native': 13, 'certified': 13} | chain True 62 ms
+block 3 q124 (B): {'native_raw': 515, 'native_upper': 515, 'native_lower': 515, 'native_bi': 515, 'truth': 515, 'bi_k2': 515, 'bi_k8': 515, 'native': 515, 'certified': 494} | chain True 65 ms
+block 3 q101 (B): {'native_raw': 179, 'native_upper': 179, 'native_lower': 179, 'native_bi': 179, 'truth': 179, 'bi_k2': 179, 'bi_k8': 179, 'native': 179} | chain False 204 ms
+block 3 q123 (B): {'native_raw': 9601, 'native_upper': 9601, 'native_lower': 9601, 'native_bi': 9601, 'truth': 8713, 'bi_k2': 8713, 'bi_k8': 9601, 'native': 9601, 'certified': 9392} | chain True 946 ms
+block 3 q64 (B): {'native_raw': 209, 'native_upper': 209, 'native_lower': 209, 'native_bi': 209, 'truth': 71, 'bi_k2': 71, 'bi_k8': 209, 'native': 209} | chain False 118 ms
+block 3 q92 (A): {'native_raw': 127, 'native_upper': 62, 'native_lower': 127, 'native_bi': 62, 'truth': 62, 'bi_k2': 62, 'bi_k8': 127, 'native': 127, 'certified': 62} | chain True 27 ms
+block 3 q111 (B): {'native_raw': 449, 'native_upper': 449, 'native_lower': 449, 'native_bi': 449, 'truth': 310, 'bi_k2': 449, 'bi_k8': 449, 'native': 449} | chain False 323 ms
+block 3 q21 (A): {'native_raw': 40, 'native_upper': 40, 'native_lower': 40, 'native_bi': 40, 'truth': 40, 'bi_k2': 40, 'bi_k8': 40, 'native': 40, 'certified': 40} | chain True 33 ms
+block 3 q22 (A): {'native_raw': 235, 'native_upper': 235, 'native_lower': 235, 'native_bi': 235, 'truth': 235, 'bi_k2': 235, 'bi_k8': 235, 'native': 235, 'certified': 204} | chain True 52 ms
+block 3 q49 (B): {'native_raw': 5447, 'native_upper': 5447, 'native_lower': 2003, 'native_bi': 2003, 'truth': 1344, 'bi_k2': 1344, 'bi_k8': 2003, 'native': 2101} | chain False 120453 ms
+block 3 q78 (B): {'native_raw': 69, 'native_upper': 69, 'native_lower': 69, 'native_bi': 69, 'truth': 64, 'bi_k2': 64, 'bi_k8': 69, 'native': 69} | chain False 204 ms
+block 3 q93 (B): {'native_raw': 275, 'native_upper': 275, 'native_lower': 275, 'native_bi': 275, 'truth': 275, 'bi_k2': 275, 'bi_k8': 275, 'native': 275, 'certified': 173} | chain True 89 ms
+block 3 q40 (A): {'native_raw': 44, 'native_upper': 42, 'native_lower': 44, 'native_bi': 42, 'truth': 42, 'bi_k2': 44, 'bi_k8': 44, 'native': 44, 'certified': 44} | chain True 77 ms
+block 3 q25 (B): {'native_raw': 82, 'native_upper': 82, 'native_lower': 82, 'native_bi': 82, 'truth': 82, 'bi_k2': 82, 'bi_k8': 82, 'native': 82} | chain False 129 ms
+block 3 q142 (B): {'native_raw': 19844, 'native_upper': 19844, 'native_lower': 30041, 'native_bi': 30041, 'truth': 18543, 'bi_k2': 18576, 'bi_k8': 30041, 'native': 19844} | chain False 2711 ms
+block 3 q65 (B): {'native_raw': 49, 'native_upper': 49, 'native_lower': 38, 'native_bi': 38, 'truth': 34, 'bi_k2': 34, 'bi_k8': 38, 'native': 49} | chain False 153 ms
+block 3 q2 (B): {'native_raw': 2345, 'native_upper': 2345, 'native_lower': 2345, 'native_bi': 2345, 'truth': 2345, 'bi_k2': 2345, 'bi_k8': 2345, 'native': 2345}
+block 3 q43 (A): {'native_raw': 553, 'native_upper': 553, 'native_lower': 553, 'native_bi': 553, 'truth': 553, 'bi_k2': 553, 'bi_k8': 553, 'native': 553, 'certified': 603} | chain True 1792 ms
+block 3 q71 (A): {'native_raw': 4506, 'native_upper': 4506, 'native_lower': 4012, 'native_bi': 4012, 'truth': 3706, 'bi_k2': 4201, 'bi_k8': 4012, 'native': 4506, 'certified': 4012} | chain True 1196 ms
+block 3 q19 (A): {'native_raw': 21, 'native_upper': 21, 'native_lower': 21, 'native_bi': 21, 'truth': 21, 'bi_k2': 21, 'bi_k8': 21, 'native': 21, 'certified': 21} | chain True 11 ms
+block 3 q53 (B): {'native_raw': 102, 'native_upper': 102, 'native_lower': 102, 'native_bi': 102, 'truth': 102, 'bi_k2': 102, 'bi_k8': 102, 'native': 102} | chain False 80 ms
+block 3 q12 (A): {'native_raw': 154, 'native_upper': 154, 'native_lower': 154, 'native_bi': 154, 'truth': 154, 'bi_k2': 125, 'bi_k8': 154, 'native': 154, 'certified': 154} | chain True 1631 ms
+block 3 q121 (B): {'native_raw': 805, 'native_upper': 805, 'native_lower': 805, 'native_bi': 805, 'truth': 137, 'bi_k2': 196, 'bi_k8': 805, 'native': 805} | chain False 99 ms
+block 3 q146 (B): {'native_raw': 282, 'native_upper': 282, 'native_lower': 282, 'native_bi': 282, 'truth': 282, 'bi_k2': 282, 'bi_k8': 282, 'native': 282} | chain False 647 ms
+block 3 q81 (B): {'native_raw': 71, 'native_upper': 71, 'native_lower': 71, 'native_bi': 71, 'truth': 71, 'bi_k2': 71, 'bi_k8': 71, 'native': 71, 'certified': 71} | chain True 29 ms
+block 3 q23 (A): {'native_raw': 92, 'native_upper': 92, 'native_lower': 92, 'native_bi': 92, 'truth': 92, 'bi_k2': 92, 'bi_k8': 92, 'native': 92, 'certified': 25} | chain True 23 ms
+block 3 q56 (A): {'native_raw': 1185, 'native_upper': 1185, 'native_lower': 1116, 'native_bi': 1116, 'truth': 1116, 'bi_k2': 1116, 'bi_k8': 1116, 'native': 1185, 'certified': 1626} | chain True 3004 ms
+block 3 q16 (A): {'native_raw': 54, 'native_upper': 52, 'native_lower': 54, 'native_bi': 52, 'truth': 52, 'bi_k2': 54, 'bi_k8': 54, 'native': 54, 'certified': 52} | chain True 253 ms
+block 3 q110 (B): {'native_raw': 259, 'native_upper': 259, 'native_lower': 259, 'native_bi': 259, 'truth': 208, 'bi_k2': 259, 'bi_k8': 259, 'native': 259} | chain False 311 ms
+block 3 done

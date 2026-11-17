@@ -1,0 +1,3269 @@
+{
+  "experiment": "review_checks",
+  "preregistered": false,
+  "inputs": {
+    "results/pg_injection/v3/stats_inject.jsonl": "750df5c864f649cc5e314034139c9fbbfac2b0e8ac87d586628a87e220ec64e9",
+    "results/pg_injection/v3/joblight_inject.jsonl": "5ac472dd95b657b4f40a5935134c98c039da909dd4e8512246b3cb84c9cd2bc8",
+    "results/pg_injection/pg16_jitoff/stats_inject.jsonl": "f2fee8d41496572c146768dc98f9282d9f0a928c6b1848fc25d873734fe55819",
+    "results/pg_injection/pg16/stats_inject.jsonl": "f0ccc5016420a7ef291e2559e264b272ec0447bb89d824f46c3489e52cf8712a",
+    "results/pg_injection/v3/tightness_points_stats.jsonl": "2e9b47818b310bba59c433e7ac8403c982313d4c0daa9074c1fff69e16763417",
+    "results/pg_injection/pg16_jitoff/tightness_points_stats.jsonl": "63fa7b8d1909344136b68f9c104a124152422dd774c93be8b1c2c7fdd9128e21",
+    "results/pg_injection/pg16/tightness_points_stats.jsonl": "65d423d15371c6cbbae73989f723e4ddcf51777f9af0694fb17f0e5e5fab093a",
+    "results/pg_injection/v3/forced_orders.jsonl": "90221626fae40bdebcfd43fa085cd5ace4fc26f3304553c057cc13b782c27ee2",
+    "results/pg_injection/subset_counts.jsonl": "56dbd5e259580008b523ae4c4f0f467328b5a2485c00aa090ad8fdd7f79e4544",
+    "results/pg_injection/joblight/subset_counts.jsonl": "67499bc4e663a5b404f14ddd6a43348ef518292c18c9cffb4bb08df338252e33",
+    "results/plan_guard/subjoin_sizes_maxdeg_fixed.jsonl": "77dec6e9a2bdf974fc7d3c31181201ca17c2f4ac4839a9b5c3363861a061d77c",
+    "results/plan_certificate/joblight_subjoin_sizes.jsonl": "43df4c84a1c2f7d69058ef4a9c2e577bf97a1c8fd8c0dea1293f5cdddb9fe234",
+    "results/pg_injection/subset_counts_r025.jsonl": "4e554702f761cb2486c46e622f85def70959ee7188a06b6a56afd5488c351b69",
+    "results/heldout_jobrange/subset_counts.jsonl": "5a20589fa6dda2db1e3a817e82a182720041a33c9279dc00da6fc134331baf77",
+    "results/heldout_jobrange/confirmatory_results.json": "26661f13f27a3d9338121004734c7e3679f57b46f4475d1d72045640ea306d6f"
+  },
+  "censoring": {
+    "pg13_stats": {
+      "duckdb_raw->duckdb_bi": {
+        "base_only": [
+          38,
+          107
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.4139913650262144,
+        "geo_without_distinct_both": 1.4243049479168515
+      },
+      "duckdb_raw->duckdb_bi_hat": {
+        "base_only": [
+          38,
+          107
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.685538595679101,
+        "geo_without_distinct_both": 1.7041014950955438
+      },
+      "duckdb_raw->duckdb_lower": {
+        "base_only": [
+          38,
+          107
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.3867024562456918,
+        "geo_without_distinct_both": 1.3962460423598224
+      },
+      "duckdb_raw->duckdb_upper": {
+        "both_same_plan": [
+          38,
+          58,
+          107,
+          120,
+          122
+        ],
+        "geo_all": 1.0238610761728466,
+        "geo_without_distinct_both": 1.0238610761728466
+      },
+      "duckdb_raw->lhat_est": {
+        "base_only": [
+          38,
+          107
+        ],
+        "both_distinct_plans": [
+          122
+        ],
+        "policy_only": [
+          126
+        ],
+        "geo_all": 1.694733179410355,
+        "geo_without_distinct_both": 1.7017873052085803
+      },
+      "duckdb_raw->lpbound_est": {
+        "base_only": [
+          38,
+          107
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "policy_only": [
+          126
+        ],
+        "geo_all": 1.3728252810931372,
+        "geo_without_distinct_both": 1.3819817307467592
+      },
+      "duckdb_raw->truth": {
+        "base_only": [
+          38,
+          107
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "policy_only": [
+          126
+        ],
+        "geo_all": 1.696695926368243,
+        "geo_without_distinct_both": 1.7156191475265476
+      },
+      "native->duckdb_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          126
+        ],
+        "geo_all": 1.122094431355856,
+        "geo_without_distinct_both": 1.1248094984029193
+      },
+      "native->duckdb_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          126
+        ],
+        "geo_all": 1.337584881228625,
+        "geo_without_distinct_both": 1.3457718803333
+      },
+      "native->duckdb_lower": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          126
+        ],
+        "geo_all": 1.1004389012459999,
+        "geo_without_distinct_both": 1.102650673825713
+      },
+      "native->duckdb_raw": {
+        "policy_only": [
+          38,
+          107
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          126
+        ],
+        "geo_all": 0.793565264336005,
+        "geo_without_distinct_both": 0.7897251919597936
+      },
+      "native->duckdb_upper": {
+        "policy_only": [
+          38,
+          107
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          126
+        ],
+        "geo_all": 0.8125005855564515,
+        "geo_without_distinct_both": 0.8089689854433587
+      },
+      "native->lhat_est": {
+        "both_distinct_plans": [
+          122,
+          126
+        ],
+        "geo_all": 1.2944475322910367,
+        "geo_without_distinct_both": 1.299761205312704
+      },
+      "native->lpbound_est": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.0894264570778258,
+        "geo_without_distinct_both": 1.0920581057294618
+      },
+      "native->native_bi": {
+        "both_same_plan": [
+          58,
+          126
+        ],
+        "both_distinct_plans": [
+          120,
+          122
+        ],
+        "geo_all": 1.0707460311214343,
+        "geo_without_distinct_both": 1.071763062716981
+      },
+      "native->native_bi_hat": {
+        "both_same_plan": [
+          58
+        ],
+        "both_distinct_plans": [
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.1827582039278142,
+        "geo_without_distinct_both": 1.1869304052515421
+      },
+      "native->native_lower": {
+        "both_same_plan": [
+          58,
+          126
+        ],
+        "both_distinct_plans": [
+          120,
+          122
+        ],
+        "geo_all": 1.047374534901928,
+        "geo_without_distinct_both": 1.0480480763165976
+      },
+      "native->native_raw": {
+        "both_same_plan": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 0.9991094717662222,
+        "geo_without_distinct_both": 0.9991094717662222
+      },
+      "native->native_upper": {
+        "both_same_plan": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.0214039638167127,
+        "geo_without_distinct_both": 1.0214039638167127
+      },
+      "native->postgres_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.0580127440428129,
+        "geo_without_distinct_both": 1.0596947516218655
+      },
+      "native->postgres_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.1049153717450415,
+        "geo_without_distinct_both": 1.1080249793099803
+      },
+      "native->postgres_lower": {
+        "policy_only": [
+          33,
+          48,
+          106,
+          132,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 0.3719051981792911,
+        "geo_without_distinct_both": 0.3616860416242099
+      },
+      "native->postgres_raw": {
+        "policy_only": [
+          33,
+          48,
+          106,
+          132,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 0.3077037049081905,
+        "geo_without_distinct_both": 0.297655511785429
+      },
+      "native->postgres_upper": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 0.9490994839311545,
+        "geo_without_distinct_both": 0.9477038201698228
+      },
+      "native->truth": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.3464389513062383,
+        "geo_without_distinct_both": 1.357768497041791
+      },
+      "native_raw->duckdb_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          126
+        ],
+        "geo_all": 1.123094578787469,
+        "geo_without_distinct_both": 1.1258331082840307
+      },
+      "native_raw->duckdb_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          126
+        ],
+        "geo_all": 1.3387771000349413,
+        "geo_without_distinct_both": 1.3469965725112976
+      },
+      "native_raw->duckdb_lower": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          126
+        ],
+        "geo_all": 1.101419746627612,
+        "geo_without_distinct_both": 1.1036541185216768
+      },
+      "native_raw->duckdb_raw": {
+        "policy_only": [
+          38,
+          107
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          126
+        ],
+        "geo_all": 0.7942725864995986,
+        "geo_without_distinct_both": 0.7904438652204662
+      },
+      "native_raw->duckdb_upper": {
+        "policy_only": [
+          38,
+          107
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          126
+        ],
+        "geo_all": 0.8132247851880694,
+        "geo_without_distinct_both": 0.8097051711247459
+      },
+      "native_raw->lhat_est": {
+        "both_distinct_plans": [
+          122,
+          126
+        ],
+        "geo_all": 1.2978000041821176,
+        "geo_without_distinct_both": 1.3031809415239433
+      },
+      "native_raw->lpbound_est": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.0903974868258846,
+        "geo_without_distinct_both": 1.0930589127091812
+      },
+      "native_raw->native": {
+        "both_same_plan": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.0008913219811675,
+        "geo_without_distinct_both": 1.0008913219811675
+      },
+      "native_raw->native_bi": {
+        "both_same_plan": [
+          58,
+          126
+        ],
+        "both_distinct_plans": [
+          120,
+          122
+        ],
+        "geo_all": 1.0717004105952206,
+        "geo_without_distinct_both": 1.0727316225475043
+      },
+      "native_raw->native_bi_hat": {
+        "both_same_plan": [
+          58
+        ],
+        "both_distinct_plans": [
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.183812422313381,
+        "geo_without_distinct_both": 1.188010546993528
+      },
+      "native_raw->native_lower": {
+        "both_same_plan": [
+          58,
+          126
+        ],
+        "both_distinct_plans": [
+          120,
+          122
+        ],
+        "geo_all": 1.048308082847401,
+        "geo_without_distinct_both": 1.048995204746835
+      },
+      "native_raw->native_upper": {
+        "both_same_plan": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.0223143636213141,
+        "geo_without_distinct_both": 1.0223143636213141
+      },
+      "native_raw->postgres_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.0589557740579334,
+        "geo_without_distinct_both": 1.060665899492323
+      },
+      "native_raw->postgres_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.1059002071032076,
+        "geo_without_distinct_both": 1.1090404189895897
+      },
+      "native_raw->postgres_lower": {
+        "policy_only": [
+          33,
+          48,
+          106,
+          132,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 0.3722366854573387,
+        "geo_without_distinct_both": 0.36201750559396156
+      },
+      "native_raw->postgres_raw": {
+        "policy_only": [
+          33,
+          48,
+          106,
+          132,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 0.3079779679840618,
+        "geo_without_distinct_both": 0.2979282955431648
+      },
+      "native_raw->postgres_upper": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 0.949945437163497,
+        "geo_without_distinct_both": 0.9485723349429438
+      },
+      "native_raw->truth": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.3476390619398375,
+        "geo_without_distinct_both": 1.3590128119564948
+      },
+      "postgres_raw->lhat_est": {
+        "base_only": [
+          33,
+          106,
+          132
+        ],
+        "both_distinct_plans": [
+          122,
+          126
+        ],
+        "geo_all": 3.572770109246016,
+        "geo_without_distinct_both": 3.645716808905714
+      },
+      "postgres_raw->lpbound_est": {
+        "base_only": [
+          33,
+          48,
+          106,
+          132,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 3.540504841834382,
+        "geo_without_distinct_both": 3.6688657272931495
+      },
+      "postgres_raw->postgres_bi": {
+        "base_only": [
+          33,
+          48,
+          106,
+          132,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 3.438414056010448,
+        "geo_without_distinct_both": 3.5601381787472786
+      },
+      "postgres_raw->postgres_bi_hat": {
+        "base_only": [
+          33,
+          48,
+          106,
+          132,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 3.5908419499684476,
+        "geo_without_distinct_both": 3.7225078503122893
+      },
+      "postgres_raw->postgres_lower": {
+        "both_same_plan": [
+          33,
+          48,
+          58,
+          106,
+          120,
+          122,
+          126,
+          132,
+          135
+        ],
+        "geo_all": 1.208647124643028,
+        "geo_without_distinct_both": 1.208647124643028
+      },
+      "postgres_raw->postgres_upper": {
+        "base_only": [
+          33,
+          48,
+          106,
+          132,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 3.084459071477017,
+        "geo_without_distinct_both": 3.1838947462629044
+      },
+      "postgres_raw->truth": {
+        "base_only": [
+          33,
+          48,
+          106,
+          132,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 4.375764509263791,
+        "geo_without_distinct_both": 4.561543271607771
+      },
+      "truth->lhat_est": {
+        "both_same_plan": [
+          122,
+          126
+        ],
+        "geo_all": 0.9948499988461939,
+        "geo_without_distinct_both": 0.9948499988461939
+      },
+      "truth->lpbound_est": {
+        "both_distinct_plans": [
+          58
+        ],
+        "both_same_plan": [
+          120,
+          122,
+          126
+        ],
+        "geo_all": 0.8091168604569308,
+        "geo_without_distinct_both": 0.807935788152334
+      }
+    },
+    "pg13_joblight": {
+      "bayescard_raw->bayescard_bi": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.0,
+        "geo_without_distinct_both": 1.0
+      },
+      "bayescard_raw->bayescard_bi_hat": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.003085237812237,
+        "geo_without_distinct_both": 1.003085237812237
+      },
+      "bayescard_raw->bayescard_lower": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.0,
+        "geo_without_distinct_both": 1.0
+      },
+      "bayescard_raw->bayescard_upper": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.0,
+        "geo_without_distinct_both": 1.0
+      },
+      "bayescard_raw->lhat_est": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.0084980683658589,
+        "geo_without_distinct_both": 1.0084980683658589
+      },
+      "bayescard_raw->lpbound_est": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.8710133471614058,
+        "geo_without_distinct_both": 0.8692718269876039
+      },
+      "bayescard_raw->truth": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.0048676583282397,
+        "geo_without_distinct_both": 1.0048676583282397
+      },
+      "duckdb_raw->duckdb_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.180542565956121,
+        "geo_without_distinct_both": 1.1833856873806883
+      },
+      "duckdb_raw->duckdb_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.31145933174646,
+        "geo_without_distinct_both": 1.3166229451831586
+      },
+      "duckdb_raw->duckdb_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.077522836880153,
+        "geo_without_distinct_both": 1.0786894528802913
+      },
+      "duckdb_raw->duckdb_upper": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.0956079310339724,
+        "geo_without_distinct_both": 1.0956079310339724
+      },
+      "duckdb_raw->lhat_est": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.334904126005856,
+        "geo_without_distinct_both": 1.3405042413961086
+      },
+      "duckdb_raw->lpbound_est": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1529217034753159,
+        "geo_without_distinct_both": 1.155301837910686
+      },
+      "duckdb_raw->truth": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.33009871339246,
+        "geo_without_distinct_both": 1.3356088614110186
+      },
+      "factorjoin_raw->factorjoin_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.179332183803072,
+        "geo_without_distinct_both": 1.1821548153744832
+      },
+      "factorjoin_raw->factorjoin_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1792776246942511,
+        "geo_without_distinct_both": 1.1820993330974388
+      },
+      "factorjoin_raw->factorjoin_lower": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.0,
+        "geo_without_distinct_both": 1.0
+      },
+      "factorjoin_raw->factorjoin_upper": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.179332183803072,
+        "geo_without_distinct_both": 1.1821548153744832
+      },
+      "factorjoin_raw->lhat_est": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.3487073900114641,
+        "geo_without_distinct_both": 1.3487073900114641
+      },
+      "factorjoin_raw->lpbound_est": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.164843220789433,
+        "geo_without_distinct_both": 1.167422003766956
+      },
+      "factorjoin_raw->truth": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.3438522881524761,
+        "geo_without_distinct_both": 1.3438522881524761
+      },
+      "native->bayescard_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1166076134648877,
+        "geo_without_distinct_both": 1.1183939165545194
+      },
+      "native->bayescard_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1200526134953812,
+        "geo_without_distinct_both": 1.121894513344733
+      },
+      "native->bayescard_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1166076134648877,
+        "geo_without_distinct_both": 1.1183939165545194
+      },
+      "native->bayescard_raw": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1166076134648877,
+        "geo_without_distinct_both": 1.1183939165545194
+      },
+      "native->bayescard_upper": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1166076134648877,
+        "geo_without_distinct_both": 1.1183939165545194
+      },
+      "native->duckdb_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9958805047700418,
+        "geo_without_distinct_both": 0.995820926864769
+      },
+      "native->duckdb_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1063190933969171,
+        "geo_without_distinct_both": 1.1079402899537816
+      },
+      "native->duckdb_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9089752607305301,
+        "geo_without_distinct_both": 0.9077188800078365
+      },
+      "native->duckdb_raw": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.8435786506041638,
+        "geo_without_distinct_both": 0.8415015810009702
+      },
+      "native->duckdb_upper": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9242314600528583,
+        "geo_without_distinct_both": 0.9231766605353853
+      },
+      "native->factorjoin_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9846776234851075,
+        "geo_without_distinct_both": 0.9844572947371872
+      },
+      "native->factorjoin_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9846320696247524,
+        "geo_without_distinct_both": 0.9844110910321777
+      },
+      "native->factorjoin_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.8349450960540662,
+        "geo_without_distinct_both": 0.8327651183532426
+      },
+      "native->factorjoin_raw": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.8349450960540662,
+        "geo_without_distinct_both": 0.8327651183532426
+      },
+      "native->factorjoin_upper": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9846776234851075,
+        "geo_without_distinct_both": 0.9844572947371872
+      },
+      "native->lhat_est": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1260966213019508,
+        "geo_without_distinct_both": 1.1280364384733315
+      },
+      "native->lpbound_est": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9725801348699611,
+        "geo_without_distinct_both": 0.9721883231351689
+      },
+      "native->native_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.0880770401873903,
+        "geo_without_distinct_both": 1.0894089664751823
+      },
+      "native->native_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1191858057282762,
+        "geo_without_distinct_both": 1.1210137019837139
+      },
+      "native->native_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.0815214308140986,
+        "geo_without_distinct_both": 1.0827504984725507
+      },
+      "native->native_raw": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.0,
+        "geo_without_distinct_both": 1.0
+      },
+      "native->native_upper": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.0060614696912265,
+        "geo_without_distinct_both": 1.0060614696912265
+      },
+      "native->postgres_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.8290021739440344,
+        "geo_without_distinct_both": 0.8267521192100067
+      },
+      "native->postgres_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.0814319073977785,
+        "geo_without_distinct_both": 1.0826595744588894
+      },
+      "native->postgres_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.793679013339862,
+        "geo_without_distinct_both": 0.7910254836641631
+      },
+      "native->postgres_raw": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.5769109867408486,
+        "geo_without_distinct_both": 0.5723301417470542
+      },
+      "native->postgres_upper": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.6138450541038382,
+        "geo_without_distinct_both": 0.6095188607382956
+      },
+      "native->truth": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.122042877813946,
+        "geo_without_distinct_both": 1.123916968476278
+      },
+      "native_raw->bayescard_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1166076134648877,
+        "geo_without_distinct_both": 1.1183939165545194
+      },
+      "native_raw->bayescard_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1200526134953812,
+        "geo_without_distinct_both": 1.121894513344733
+      },
+      "native_raw->bayescard_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1166076134648877,
+        "geo_without_distinct_both": 1.1183939165545194
+      },
+      "native_raw->bayescard_raw": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1166076134648877,
+        "geo_without_distinct_both": 1.1183939165545194
+      },
+      "native_raw->bayescard_upper": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1166076134648877,
+        "geo_without_distinct_both": 1.1183939165545194
+      },
+      "native_raw->duckdb_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9958805047700418,
+        "geo_without_distinct_both": 0.995820926864769
+      },
+      "native_raw->duckdb_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1063190933969171,
+        "geo_without_distinct_both": 1.1079402899537816
+      },
+      "native_raw->duckdb_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9089752607305301,
+        "geo_without_distinct_both": 0.9077188800078365
+      },
+      "native_raw->duckdb_raw": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.8435786506041638,
+        "geo_without_distinct_both": 0.8415015810009702
+      },
+      "native_raw->duckdb_upper": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9242314600528583,
+        "geo_without_distinct_both": 0.9231766605353853
+      },
+      "native_raw->factorjoin_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9846776234851075,
+        "geo_without_distinct_both": 0.9844572947371872
+      },
+      "native_raw->factorjoin_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9846320696247524,
+        "geo_without_distinct_both": 0.9844110910321777
+      },
+      "native_raw->factorjoin_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.8349450960540662,
+        "geo_without_distinct_both": 0.8327651183532426
+      },
+      "native_raw->factorjoin_raw": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.8349450960540662,
+        "geo_without_distinct_both": 0.8327651183532426
+      },
+      "native_raw->factorjoin_upper": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9846776234851075,
+        "geo_without_distinct_both": 0.9844572947371872
+      },
+      "native_raw->lhat_est": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1260966213019508,
+        "geo_without_distinct_both": 1.1280364384733315
+      },
+      "native_raw->lpbound_est": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.9725801348699611,
+        "geo_without_distinct_both": 0.9721883231351689
+      },
+      "native_raw->native": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.0,
+        "geo_without_distinct_both": 1.0
+      },
+      "native_raw->native_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.0880770401873903,
+        "geo_without_distinct_both": 1.0894089664751823
+      },
+      "native_raw->native_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.1191858057282762,
+        "geo_without_distinct_both": 1.1210137019837139
+      },
+      "native_raw->native_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.0815214308140986,
+        "geo_without_distinct_both": 1.0827504984725507
+      },
+      "native_raw->native_upper": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.0060614696912265,
+        "geo_without_distinct_both": 1.0060614696912265
+      },
+      "native_raw->postgres_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.8290021739440344,
+        "geo_without_distinct_both": 0.8267521192100067
+      },
+      "native_raw->postgres_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.0814319073977785,
+        "geo_without_distinct_both": 1.0826595744588894
+      },
+      "native_raw->postgres_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.793679013339862,
+        "geo_without_distinct_both": 0.7910254836641631
+      },
+      "native_raw->postgres_raw": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.5769109867408486,
+        "geo_without_distinct_both": 0.5723301417470542
+      },
+      "native_raw->postgres_upper": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.6138450541038382,
+        "geo_without_distinct_both": 0.6095188607382956
+      },
+      "native_raw->truth": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.122042877813946,
+        "geo_without_distinct_both": 1.123916968476278
+      },
+      "postgres_raw->lhat_est": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.951941715763855,
+        "geo_without_distinct_both": 1.9709540983285763
+      },
+      "postgres_raw->lpbound_est": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.6858408961222453,
+        "geo_without_distinct_both": 1.698649524499157
+      },
+      "postgres_raw->postgres_bi": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.4369672150418353,
+        "geo_without_distinct_both": 1.4445370930252286
+      },
+      "postgres_raw->postgres_bi_hat": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.874521255882345,
+        "geo_without_distinct_both": 1.891669677144803
+      },
+      "postgres_raw->postgres_lower": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.3757391202126414,
+        "geo_without_distinct_both": 1.3821139687830089
+      },
+      "postgres_raw->postgres_upper": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.0640203917273992,
+        "geo_without_distinct_both": 1.0649777397320395
+      },
+      "postgres_raw->truth": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 1.9449150797989103,
+        "geo_without_distinct_both": 1.9637563820166606
+      },
+      "truth->lhat_est": {
+        "both_same_plan": [
+          60
+        ],
+        "geo_all": 1.00361282404457,
+        "geo_without_distinct_both": 1.00361282404457
+      },
+      "truth->lpbound_est": {
+        "both_distinct_plans": [
+          60
+        ],
+        "geo_all": 0.8667940896918482,
+        "geo_without_distinct_both": 0.8650001293718242
+      }
+    },
+    "pg16_stats": {
+      "duckdb_raw->duckdb_bi": {
+        "base_only": [
+          38
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.4674154051879875,
+        "geo_without_distinct_both": 1.47926913064655
+      },
+      "duckdb_raw->duckdb_bi_hat": {
+        "base_only": [
+          38
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.7018352286342102,
+        "geo_without_distinct_both": 1.7209249567701235
+      },
+      "duckdb_raw->duckdb_lower": {
+        "base_only": [
+          38
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.4360281643557047,
+        "geo_without_distinct_both": 1.446971851331294
+      },
+      "duckdb_raw->duckdb_upper": {
+        "both_same_plan": [
+          38,
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0253153244862538,
+        "geo_without_distinct_both": 1.0253153244862538
+      },
+      "duckdb_raw->lhat_est": {
+        "base_only": [
+          38
+        ],
+        "both_distinct_plans": [
+          122
+        ],
+        "geo_all": 1.709802469379923,
+        "geo_without_distinct_both": 1.7170390013650911
+      },
+      "duckdb_raw->lpbound_est": {
+        "base_only": [
+          38
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.4142906017578338,
+        "geo_without_distinct_both": 1.424612691432303
+      },
+      "duckdb_raw->truth": {
+        "base_only": [
+          38
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.7171850856651512,
+        "geo_without_distinct_both": 1.7367741274783244
+      },
+      "native->duckdb_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.196207712767359,
+        "geo_without_distinct_both": 1.200712147942978
+      },
+      "native->duckdb_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.3873020680811563,
+        "geo_without_distinct_both": 1.3968624494915198
+      },
+      "native->duckdb_lower": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1706214612987413,
+        "geo_without_distinct_both": 1.1744966778733863
+      },
+      "native->duckdb_raw": {
+        "policy_only": [
+          38
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.8151800155144993,
+        "geo_without_distinct_both": 0.8116928306468331
+      },
+      "native->duckdb_upper": {
+        "policy_only": [
+          38
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.8358165621219581,
+        "geo_without_distinct_both": 0.8326777060833949
+      },
+      "native->lhat_est": {
+        "both_distinct_plans": [
+          122
+        ],
+        "geo_all": 1.3049691440574196,
+        "geo_without_distinct_both": 1.3077070981115688
+      },
+      "native->lpbound_est": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1529014346829611,
+        "geo_without_distinct_both": 1.156347908084089
+      },
+      "native->native_bi": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1378410943760342,
+        "geo_without_distinct_both": 1.1378410943760342
+      },
+      "native->native_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.2575902110363717,
+        "geo_without_distinct_both": 1.2636516887043168
+      },
+      "native->native_lower": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0593030807502823,
+        "geo_without_distinct_both": 1.0593030807502823
+      },
+      "native->native_raw": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0,
+        "geo_without_distinct_both": 1.0
+      },
+      "native->native_upper": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0716296804373084,
+        "geo_without_distinct_both": 1.0716296804373084
+      },
+      "native->postgres_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0863989700586267,
+        "geo_without_distinct_both": 1.0882893180565185
+      },
+      "native->postgres_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1785871333592823,
+        "geo_without_distinct_both": 1.1826569657732775
+      },
+      "native->postgres_lower": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "policy_only": [
+          106,
+          126,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 0.4546530916090476,
+        "geo_without_distinct_both": 0.44719672384986375
+      },
+      "native->postgres_raw": {
+        "policy_only": [
+          33,
+          106,
+          126,
+          132,
+          133,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.3641257002341888,
+        "geo_without_distinct_both": 0.356489559592115
+      },
+      "native->postgres_upper": {
+        "policy_only": [
+          33
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.901890957817155,
+        "geo_without_distinct_both": 0.8999392805371346
+      },
+      "native->truth": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.3998149647737843,
+        "geo_without_distinct_both": 1.4097271077270643
+      },
+      "native_raw->duckdb_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.196207712767359,
+        "geo_without_distinct_both": 1.200712147942978
+      },
+      "native_raw->duckdb_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.3873020680811563,
+        "geo_without_distinct_both": 1.3968624494915198
+      },
+      "native_raw->duckdb_lower": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1706214612987413,
+        "geo_without_distinct_both": 1.1744966778733863
+      },
+      "native_raw->duckdb_raw": {
+        "policy_only": [
+          38
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.8151800155144993,
+        "geo_without_distinct_both": 0.8116928306468331
+      },
+      "native_raw->duckdb_upper": {
+        "policy_only": [
+          38
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.8358165621219581,
+        "geo_without_distinct_both": 0.8326777060833949
+      },
+      "native_raw->lhat_est": {
+        "both_distinct_plans": [
+          122
+        ],
+        "geo_all": 1.3049691440574196,
+        "geo_without_distinct_both": 1.3077070981115688
+      },
+      "native_raw->lpbound_est": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1529014346829611,
+        "geo_without_distinct_both": 1.156347908084089
+      },
+      "native_raw->native": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0,
+        "geo_without_distinct_both": 1.0
+      },
+      "native_raw->native_bi": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1378410943760342,
+        "geo_without_distinct_both": 1.1378410943760342
+      },
+      "native_raw->native_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.2575902110363717,
+        "geo_without_distinct_both": 1.2636516887043168
+      },
+      "native_raw->native_lower": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0593030807502823,
+        "geo_without_distinct_both": 1.0593030807502823
+      },
+      "native_raw->native_upper": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0716296804373084,
+        "geo_without_distinct_both": 1.0716296804373084
+      },
+      "native_raw->postgres_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0863989700586267,
+        "geo_without_distinct_both": 1.0882893180565185
+      },
+      "native_raw->postgres_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1785871333592823,
+        "geo_without_distinct_both": 1.1826569657732775
+      },
+      "native_raw->postgres_lower": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "policy_only": [
+          106,
+          126,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 0.4546530916090476,
+        "geo_without_distinct_both": 0.44719672384986375
+      },
+      "native_raw->postgres_raw": {
+        "policy_only": [
+          33,
+          106,
+          126,
+          132,
+          133,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.3641257002341888,
+        "geo_without_distinct_both": 0.356489559592115
+      },
+      "native_raw->postgres_upper": {
+        "policy_only": [
+          33
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.901890957817155,
+        "geo_without_distinct_both": 0.8999392805371346
+      },
+      "native_raw->truth": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.3998149647737843,
+        "geo_without_distinct_both": 1.4097271077270643
+      },
+      "postgres_raw->lhat_est": {
+        "base_only": [
+          33,
+          106,
+          126,
+          132
+        ],
+        "both_distinct_plans": [
+          122
+        ],
+        "geo_all": 3.3763487382187627,
+        "geo_without_distinct_both": 3.408853209751843
+      },
+      "postgres_raw->lpbound_est": {
+        "base_only": [
+          33,
+          106,
+          126,
+          132,
+          133,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 3.166218242605423,
+        "geo_without_distinct_both": 3.2437076401540335
+      },
+      "postgres_raw->postgres_bi": {
+        "base_only": [
+          33,
+          106,
+          126,
+          132,
+          133,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 2.983582233717381,
+        "geo_without_distinct_both": 3.0527943631833354
+      },
+      "postgres_raw->postgres_bi_hat": {
+        "base_only": [
+          33,
+          106,
+          126,
+          132,
+          133,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 3.2367589890009705,
+        "geo_without_distinct_both": 3.317507999747426
+      },
+      "postgres_raw->postgres_lower": {
+        "base_only": [
+          33
+        ],
+        "both_same_plan": [
+          58,
+          106,
+          120,
+          122,
+          126,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 1.2486157700943272,
+        "geo_without_distinct_both": 1.2486157700943272
+      },
+      "postgres_raw->postgres_upper": {
+        "both_same_plan": [
+          33
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          106,
+          126,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 2.476867074301816,
+        "geo_without_distinct_both": 2.524447789065181
+      },
+      "postgres_raw->truth": {
+        "base_only": [
+          33,
+          106,
+          126,
+          132,
+          133,
+          135
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 3.844317948097286,
+        "geo_without_distinct_both": 3.954469548393039
+      },
+      "truth->lhat_est": {
+        "both_same_plan": [
+          122
+        ],
+        "geo_all": 0.9953337948556601,
+        "geo_without_distinct_both": 0.9953337948556601
+      },
+      "truth->lpbound_est": {
+        "both_distinct_plans": [
+          58
+        ],
+        "both_same_plan": [
+          120,
+          122
+        ],
+        "geo_all": 0.8236098796595412,
+        "geo_without_distinct_both": 0.8225083525162604
+      }
+    },
+    "pg16_stats_jit_on": {
+      "duckdb_raw->duckdb_bi": {
+        "base_only": [
+          38,
+          126
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.4821784044634614,
+        "geo_without_distinct_both": 1.4944651982252977
+      },
+      "duckdb_raw->duckdb_bi_hat": {
+        "base_only": [
+          38,
+          126
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.749912380368083,
+        "geo_without_distinct_both": 1.7705758971099281
+      },
+      "duckdb_raw->duckdb_lower": {
+        "base_only": [
+          38,
+          126
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.4504793928088267,
+        "geo_without_distinct_both": 1.4618402569924076
+      },
+      "duckdb_raw->duckdb_upper": {
+        "both_same_plan": [
+          38,
+          58,
+          120,
+          122,
+          126
+        ],
+        "geo_all": 1.025256246338193,
+        "geo_without_distinct_both": 1.025256246338193
+      },
+      "duckdb_raw->lhat_est": {
+        "base_only": [
+          38,
+          126
+        ],
+        "both_distinct_plans": [
+          122
+        ],
+        "geo_all": 1.7526876341511657,
+        "geo_without_distinct_both": 1.7604490311603382
+      },
+      "duckdb_raw->lpbound_est": {
+        "base_only": [
+          38,
+          126
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.4355925053335414,
+        "geo_without_distinct_both": 1.4465236643125725
+      },
+      "duckdb_raw->truth": {
+        "base_only": [
+          38,
+          126
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.770094163091746,
+        "geo_without_distinct_both": 1.7914268990196671
+      },
+      "native->duckdb_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1857221435726488,
+        "geo_without_distinct_both": 1.1899672799037773
+      },
+      "native->duckdb_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.3999056068189462,
+        "geo_without_distinct_both": 1.409820306721831
+      },
+      "native->duckdb_lower": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1603633743886694,
+        "geo_without_distinct_both": 1.1639896842916309
+      },
+      "native->duckdb_raw": {
+        "policy_only": [
+          38,
+          126
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.7999861150330768,
+        "geo_without_distinct_both": 0.7962495756454437
+      },
+      "native->duckdb_upper": {
+        "policy_only": [
+          38,
+          126
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.8201907614214861,
+        "geo_without_distinct_both": 0.81678714018214
+      },
+      "native->lhat_est": {
+        "both_distinct_plans": [
+          122
+        ],
+        "geo_all": 1.3363415445133302,
+        "geo_without_distinct_both": 1.3393958414702958
+      },
+      "native->lpbound_est": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1484540711123814,
+        "geo_without_distinct_both": 1.1517938538699781
+      },
+      "native->native_bi": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.134885944100311,
+        "geo_without_distinct_both": 1.134885944100311
+      },
+      "native->native_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.2660381465661688,
+        "geo_without_distinct_both": 1.2723190355687575
+      },
+      "native->native_lower": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0608238200294138,
+        "geo_without_distinct_both": 1.0608238200294138
+      },
+      "native->native_raw": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0,
+        "geo_without_distinct_both": 1.0
+      },
+      "native->native_upper": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0667657425852595,
+        "geo_without_distinct_both": 1.0667657425852595
+      },
+      "native->postgres_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0840921568126842,
+        "geo_without_distinct_both": 1.0859300646206276
+      },
+      "native->postgres_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1902901370392815,
+        "geo_without_distinct_both": 1.1946479917904194
+      },
+      "native->postgres_lower": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "policy_only": [
+          106,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 0.4654107851817852,
+        "geo_without_distinct_both": 0.4580026353554796
+      },
+      "native->postgres_raw": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "policy_only": [
+          106,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 0.37138180274528043,
+        "geo_without_distinct_both": 0.36374403306163894
+      },
+      "native->postgres_upper": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.8999144709877116,
+        "geo_without_distinct_both": 0.8979257420840384
+      },
+      "native->truth": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.4160507527744912,
+        "geo_without_distinct_both": 1.426422908144243
+      },
+      "native_raw->duckdb_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1857221435726488,
+        "geo_without_distinct_both": 1.1899672799037773
+      },
+      "native_raw->duckdb_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.3999056068189462,
+        "geo_without_distinct_both": 1.409820306721831
+      },
+      "native_raw->duckdb_lower": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1603633743886694,
+        "geo_without_distinct_both": 1.1639896842916309
+      },
+      "native_raw->duckdb_raw": {
+        "policy_only": [
+          38,
+          126
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.7999861150330768,
+        "geo_without_distinct_both": 0.7962495756454437
+      },
+      "native_raw->duckdb_upper": {
+        "policy_only": [
+          38,
+          126
+        ],
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.8201907614214861,
+        "geo_without_distinct_both": 0.81678714018214
+      },
+      "native_raw->lhat_est": {
+        "both_distinct_plans": [
+          122
+        ],
+        "geo_all": 1.3363415445133302,
+        "geo_without_distinct_both": 1.3393958414702958
+      },
+      "native_raw->lpbound_est": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1484540711123814,
+        "geo_without_distinct_both": 1.1517938538699781
+      },
+      "native_raw->native": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0,
+        "geo_without_distinct_both": 1.0
+      },
+      "native_raw->native_bi": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.134885944100311,
+        "geo_without_distinct_both": 1.134885944100311
+      },
+      "native_raw->native_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.2660381465661688,
+        "geo_without_distinct_both": 1.2723190355687575
+      },
+      "native_raw->native_lower": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0608238200294138,
+        "geo_without_distinct_both": 1.0608238200294138
+      },
+      "native_raw->native_upper": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0667657425852595,
+        "geo_without_distinct_both": 1.0667657425852595
+      },
+      "native_raw->postgres_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.0840921568126842,
+        "geo_without_distinct_both": 1.0859300646206276
+      },
+      "native_raw->postgres_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.1902901370392815,
+        "geo_without_distinct_both": 1.1946479917904194
+      },
+      "native_raw->postgres_lower": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "policy_only": [
+          106,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 0.4654107851817852,
+        "geo_without_distinct_both": 0.4580026353554796
+      },
+      "native_raw->postgres_raw": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "policy_only": [
+          106,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 0.37138180274528043,
+        "geo_without_distinct_both": 0.36374403306163894
+      },
+      "native_raw->postgres_upper": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 0.8999144709877116,
+        "geo_without_distinct_both": 0.8979257420840384
+      },
+      "native_raw->truth": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.4160507527744912,
+        "geo_without_distinct_both": 1.426422908144243
+      },
+      "postgres_raw->lhat_est": {
+        "base_only": [
+          106,
+          132
+        ],
+        "both_distinct_plans": [
+          122
+        ],
+        "geo_all": 3.3469678981205084,
+        "geo_without_distinct_both": 3.3789569720021677
+      },
+      "postgres_raw->lpbound_est": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          106,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 3.0923811092060203,
+        "geo_without_distinct_both": 3.166495527570067
+      },
+      "postgres_raw->postgres_bi": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          106,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 2.91907721056605,
+        "geo_without_distinct_both": 2.9854237208520997
+      },
+      "postgres_raw->postgres_bi_hat": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          106,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 3.2050308556869864,
+        "geo_without_distinct_both": 3.2843095231969834
+      },
+      "postgres_raw->postgres_lower": {
+        "both_same_plan": [
+          58,
+          106,
+          120,
+          122,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 1.2531868329073637,
+        "geo_without_distinct_both": 1.2531868329073637
+      },
+      "postgres_raw->postgres_upper": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          106,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 2.423151765475532,
+        "geo_without_distinct_both": 2.4685648710885633
+      },
+      "postgres_raw->truth": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "base_only": [
+          106,
+          132,
+          133,
+          135
+        ],
+        "geo_all": 3.8129244413887413,
+        "geo_without_distinct_both": 3.9215018763002676
+      },
+      "truth->lhat_est": {
+        "both_same_plan": [
+          122
+        ],
+        "geo_all": 0.996481890588213,
+        "geo_without_distinct_both": 0.996481890588213
+      },
+      "truth->lpbound_est": {
+        "both_distinct_plans": [
+          58
+        ],
+        "both_same_plan": [
+          120,
+          122
+        ],
+        "geo_all": 0.8110260658823116,
+        "geo_without_distinct_both": 0.8098553700208136
+      }
+    },
+    "pg13_points": {
+      "raw->bi_k2": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126
+        ],
+        "both_same_plan": [
+          135
+        ],
+        "geo_all": 1.2329578882732148,
+        "geo_without_distinct_both": 1.2402526563001137
+      },
+      "raw->bi_k8": {
+        "both_same_plan": [
+          58,
+          126,
+          135
+        ],
+        "both_distinct_plans": [
+          120,
+          122
+        ],
+        "geo_all": 1.1106502448516036,
+        "geo_without_distinct_both": 1.1122702851194395
+      },
+      "raw->truth": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122,
+          126,
+          135
+        ],
+        "geo_all": 1.3426951666786282,
+        "geo_without_distinct_both": 1.3567993665830365
+      }
+    },
+    "pg16_points": {
+      "raw->bi_k2": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "policy_only": [
+          126
+        ],
+        "both_same_plan": [
+          135
+        ],
+        "geo_all": 1.3145098042152188,
+        "geo_without_distinct_both": 1.3220728250860116
+      },
+      "raw->bi_k8": {
+        "both_same_plan": [
+          58,
+          120,
+          122,
+          135
+        ],
+        "policy_only": [
+          126
+        ],
+        "geo_all": 1.1748123802922665,
+        "geo_without_distinct_both": 1.1748123802922665
+      },
+      "raw->truth": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "both_same_plan": [
+          135
+        ],
+        "geo_all": 1.40410137535983,
+        "geo_without_distinct_both": 1.4141345734300725
+      }
+    },
+    "pg16_points_jit_on": {
+      "raw->bi_k2": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.3289979679414248,
+        "geo_without_distinct_both": 1.336951756426924
+      },
+      "raw->bi_k8": {
+        "both_same_plan": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.195938387147213,
+        "geo_without_distinct_both": 1.195938387147213
+      },
+      "raw->truth": {
+        "both_distinct_plans": [
+          58,
+          120,
+          122
+        ],
+        "geo_all": 1.4228352784711535,
+        "geo_without_distinct_both": 1.433400853874256
+      }
+    }
+  },
+  "headroom_exceedance": {
+    "pg13_stats": {
+      "duckdb": {
+        "truth_slower_than_raw": 8,
+        "upper_beats_truth": 8,
+        "lower_beats_truth": 11,
+        "bi_beats_truth": 11
+      },
+      "native": {
+        "truth_slower_than_raw": 1,
+        "upper_beats_truth": 1,
+        "lower_beats_truth": 2,
+        "bi_beats_truth": 2
+      },
+      "postgres": {
+        "truth_slower_than_raw": 1,
+        "upper_beats_truth": 4,
+        "lower_beats_truth": 1,
+        "bi_beats_truth": 4
+      }
+    },
+    "pg13_joblight": {
+      "bayescard": {
+        "truth_slower_than_raw": 2,
+        "upper_beats_truth": 2,
+        "lower_beats_truth": 2,
+        "bi_beats_truth": 2
+      },
+      "duckdb": {
+        "truth_slower_than_raw": 4,
+        "upper_beats_truth": 4,
+        "lower_beats_truth": 4,
+        "bi_beats_truth": 4
+      },
+      "factorjoin": {
+        "truth_slower_than_raw": 2,
+        "upper_beats_truth": 5,
+        "lower_beats_truth": 2,
+        "bi_beats_truth": 5
+      },
+      "native": {
+        "truth_slower_than_raw": 4,
+        "upper_beats_truth": 4,
+        "lower_beats_truth": 5,
+        "bi_beats_truth": 5
+      },
+      "postgres": {
+        "truth_slower_than_raw": 3,
+        "upper_beats_truth": 3,
+        "lower_beats_truth": 3,
+        "bi_beats_truth": 3
+      }
+    },
+    "pg16_stats": {
+      "duckdb": {
+        "truth_slower_than_raw": 8,
+        "upper_beats_truth": 8,
+        "lower_beats_truth": 15,
+        "bi_beats_truth": 15
+      },
+      "native": {
+        "truth_slower_than_raw": 6,
+        "upper_beats_truth": 4,
+        "lower_beats_truth": 6,
+        "bi_beats_truth": 4
+      },
+      "postgres": {
+        "truth_slower_than_raw": 6,
+        "upper_beats_truth": 4,
+        "lower_beats_truth": 6,
+        "bi_beats_truth": 7
+      }
+    }
+  },
+  "censoring_forced_orders": {
+    "native->cout_opt": {
+      "both_distinct_plans": [
+        58,
+        120,
+        122
+      ],
+      "geo_all": 1.1488857219550643,
+      "geo_without_distinct_both": 1.1523827874088748
+    },
+    "native->certified": {
+      "both_distinct_plans": [
+        120,
+        122
+      ],
+      "geo_all": 1.0733171606641216,
+      "geo_without_distinct_both": 1.07608222478822
+    },
+    "native->native_lo": {
+      "both_distinct_plans": [
+        58,
+        120,
+        122
+      ],
+      "policy_only": [
+        135
+      ],
+      "geo_all": 0.8917989060149751,
+      "geo_without_distinct_both": 0.8891387768137969
+    },
+    "native_lo->cout_opt": {
+      "both_distinct_plans": [
+        58,
+        120
+      ],
+      "both_same_plan": [
+        122
+      ],
+      "base_only": [
+        135
+      ],
+      "geo_all": 1.2027842032991924,
+      "geo_without_distinct_both": 1.2066192857866056
+    }
+  },
+  "censoring_summary": {
+    "n_comparisons": 255,
+    "policy_only": [
+      [
+        "pg13_stats",
+        "duckdb_raw->lhat_est",
+        126
+      ],
+      [
+        "pg13_stats",
+        "duckdb_raw->lpbound_est",
+        126
+      ],
+      [
+        "pg13_stats",
+        "duckdb_raw->truth",
+        126
+      ],
+      [
+        "pg13_stats",
+        "native->duckdb_raw",
+        38
+      ],
+      [
+        "pg13_stats",
+        "native->duckdb_raw",
+        107
+      ],
+      [
+        "pg13_stats",
+        "native->duckdb_upper",
+        38
+      ],
+      [
+        "pg13_stats",
+        "native->duckdb_upper",
+        107
+      ],
+      [
+        "pg13_stats",
+        "native->postgres_lower",
+        33
+      ],
+      [
+        "pg13_stats",
+        "native->postgres_lower",
+        48
+      ],
+      [
+        "pg13_stats",
+        "native->postgres_lower",
+        106
+      ],
+      [
+        "pg13_stats",
+        "native->postgres_lower",
+        132
+      ],
+      [
+        "pg13_stats",
+        "native->postgres_lower",
+        135
+      ],
+      [
+        "pg13_stats",
+        "native->postgres_raw",
+        33
+      ],
+      [
+        "pg13_stats",
+        "native->postgres_raw",
+        48
+      ],
+      [
+        "pg13_stats",
+        "native->postgres_raw",
+        106
+      ],
+      [
+        "pg13_stats",
+        "native->postgres_raw",
+        132
+      ],
+      [
+        "pg13_stats",
+        "native->postgres_raw",
+        135
+      ],
+      [
+        "pg13_stats",
+        "native_raw->duckdb_raw",
+        38
+      ],
+      [
+        "pg13_stats",
+        "native_raw->duckdb_raw",
+        107
+      ],
+      [
+        "pg13_stats",
+        "native_raw->duckdb_upper",
+        38
+      ],
+      [
+        "pg13_stats",
+        "native_raw->duckdb_upper",
+        107
+      ],
+      [
+        "pg13_stats",
+        "native_raw->postgres_lower",
+        33
+      ],
+      [
+        "pg13_stats",
+        "native_raw->postgres_lower",
+        48
+      ],
+      [
+        "pg13_stats",
+        "native_raw->postgres_lower",
+        106
+      ],
+      [
+        "pg13_stats",
+        "native_raw->postgres_lower",
+        132
+      ],
+      [
+        "pg13_stats",
+        "native_raw->postgres_lower",
+        135
+      ],
+      [
+        "pg13_stats",
+        "native_raw->postgres_raw",
+        33
+      ],
+      [
+        "pg13_stats",
+        "native_raw->postgres_raw",
+        48
+      ],
+      [
+        "pg13_stats",
+        "native_raw->postgres_raw",
+        106
+      ],
+      [
+        "pg13_stats",
+        "native_raw->postgres_raw",
+        132
+      ],
+      [
+        "pg13_stats",
+        "native_raw->postgres_raw",
+        135
+      ],
+      [
+        "pg16_stats",
+        "native->duckdb_raw",
+        38
+      ],
+      [
+        "pg16_stats",
+        "native->duckdb_upper",
+        38
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_lower",
+        106
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_lower",
+        126
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_lower",
+        132
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_lower",
+        133
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_lower",
+        135
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_raw",
+        33
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_raw",
+        106
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_raw",
+        126
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_raw",
+        132
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_raw",
+        133
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_raw",
+        135
+      ],
+      [
+        "pg16_stats",
+        "native->postgres_upper",
+        33
+      ],
+      [
+        "pg16_stats",
+        "native_raw->duckdb_raw",
+        38
+      ],
+      [
+        "pg16_stats",
+        "native_raw->duckdb_upper",
+        38
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_lower",
+        106
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_lower",
+        126
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_lower",
+        132
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_lower",
+        133
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_lower",
+        135
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_raw",
+        33
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_raw",
+        106
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_raw",
+        126
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_raw",
+        132
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_raw",
+        133
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_raw",
+        135
+      ],
+      [
+        "pg16_stats",
+        "native_raw->postgres_upper",
+        33
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->duckdb_raw",
+        38
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->duckdb_raw",
+        126
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->duckdb_upper",
+        38
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->duckdb_upper",
+        126
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->postgres_lower",
+        106
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->postgres_lower",
+        132
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->postgres_lower",
+        133
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->postgres_lower",
+        135
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->postgres_raw",
+        106
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->postgres_raw",
+        132
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->postgres_raw",
+        133
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native->postgres_raw",
+        135
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->duckdb_raw",
+        38
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->duckdb_raw",
+        126
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->duckdb_upper",
+        38
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->duckdb_upper",
+        126
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->postgres_lower",
+        106
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->postgres_lower",
+        132
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->postgres_lower",
+        133
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->postgres_lower",
+        135
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->postgres_raw",
+        106
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->postgres_raw",
+        132
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->postgres_raw",
+        133
+      ],
+      [
+        "pg16_stats_jit_on",
+        "native_raw->postgres_raw",
+        135
+      ],
+      [
+        "pg16_points",
+        "raw->bi_k2",
+        126
+      ],
+      [
+        "pg16_points",
+        "raw->bi_k8",
+        126
+      ],
+      [
+        "forced_orders",
+        "native->native_lo",
+        135
+      ]
+    ],
+    "policy_only_queries": [
+      [
+        "forced_orders",
+        135
+      ],
+      [
+        "pg13_stats",
+        33
+      ],
+      [
+        "pg13_stats",
+        38
+      ],
+      [
+        "pg13_stats",
+        48
+      ],
+      [
+        "pg13_stats",
+        106
+      ],
+      [
+        "pg13_stats",
+        107
+      ],
+      [
+        "pg13_stats",
+        126
+      ],
+      [
+        "pg13_stats",
+        132
+      ],
+      [
+        "pg13_stats",
+        135
+      ],
+      [
+        "pg16_points",
+        126
+      ],
+      [
+        "pg16_stats",
+        33
+      ],
+      [
+        "pg16_stats",
+        38
+      ],
+      [
+        "pg16_stats",
+        106
+      ],
+      [
+        "pg16_stats",
+        126
+      ],
+      [
+        "pg16_stats",
+        132
+      ],
+      [
+        "pg16_stats",
+        133
+      ],
+      [
+        "pg16_stats",
+        135
+      ],
+      [
+        "pg16_stats_jit_on",
+        38
+      ],
+      [
+        "pg16_stats_jit_on",
+        106
+      ],
+      [
+        "pg16_stats_jit_on",
+        126
+      ],
+      [
+        "pg16_stats_jit_on",
+        132
+      ],
+      [
+        "pg16_stats_jit_on",
+        133
+      ],
+      [
+        "pg16_stats_jit_on",
+        135
+      ]
+    ],
+    "max_distinct_both": 5,
+    "max_sensitivity_shift": 0.04245629808246609
+  },
+  "agreement_coverage": {
+    "stats": {
+      "n_queries": 146,
+      "n_any_compared": 146,
+      "n_all_compared": 112,
+      "n_subplans": 2577,
+      "n_subplans_compared": 2510,
+      "upper95_share_complete_queries": 0.02639306042365297
+    },
+    "joblight": {
+      "n_queries": 70,
+      "n_any_compared": 70,
+      "n_all_compared": 68,
+      "n_subplans": 696,
+      "n_subplans_compared": 693,
+      "upper95_share_complete_queries": 0.043098564820088336
+    }
+  },
+  "positivity": {
+    "results/plan_guard/subjoin_sizes_maxdeg_fixed.jsonl": {
+      "n": 1560,
+      "min_truth": 26.0
+    },
+    "results/plan_certificate/joblight_subjoin_sizes.jsonl": {
+      "n": 696,
+      "min_truth": 2.0
+    },
+    "results/pg_injection/subset_counts.jsonl": {
+      "n_exact": 2510,
+      "min_exact": 16.0
+    },
+    "results/pg_injection/joblight/subset_counts.jsonl": {
+      "n_exact": 693,
+      "min_exact": 2.0
+    },
+    "results/pg_injection/subset_counts_r025.jsonl": {
+      "n_exact": 2503,
+      "min_exact": 16.0
+    },
+    "results/heldout_jobrange/subset_counts.jsonl": {
+      "n_exact": 1907,
+      "min_exact": 1.0
+    }
+  },
+  "heldout_exclusion_ranges": {
+    "n_observed": 179,
+    "n_missing_count": 9,
+    "cout|sample": {
+      "observed": 0.888268156424581,
+      "if_none_certified": 0.8457446808510638,
+      "if_all_certified": 0.8936170212765957
+    },
+    "cout|none": {
+      "observed": 0.8659217877094972,
+      "if_none_certified": 0.824468085106383,
+      "if_all_certified": 0.8723404255319149
+    },
+    "cout_minus_final|sample": {
+      "observed": 0.3575418994413408,
+      "if_none_certified": 0.3404255319148936,
+      "if_all_certified": 0.3882978723404255
+    },
+    "cout_minus_final|none": {
+      "observed": 0.07262569832402235,
+      "if_none_certified": 0.06914893617021277,
+      "if_all_certified": 0.11702127659574468
+    }
+  }
+}

@@ -3,8 +3,9 @@
 Every number below is re-derived from its source and found in `paper.tex` by
 `PYTHONHASHSEED=0 python -m experiments.scripts.audit_icde_numbers` (sentence-anchored checks).
 Intervals: 95% query-clustered bootstrap, 10,000 replicates, seed 0. **Post-hoc** = designed after
-we saw a related result; nothing in this paper is pre-registered except the failed plan-certificate
-study, whose two rules are reported as unattainable.
+we saw a related result. Pre-registered: the failed plan-certificate study (one rule unattainable by
+the cost model's symmetry, the other at the sample rate used) and the held-out JOB-range test (C1-C7);
+predictions frozen before some post-hoc analyses are listed where they apply.
 
 ## Ground truth and instruments
 | Claim | Value | Source | Status |
@@ -38,7 +39,7 @@ study, whose two rules are reported as unattainable.
 The Python-sampler joint-certificate rows below are **superseded in the paper** by the in-engine rows in the next section; kept for provenance.
 | Claim | Value | Status |
 |---|---|---|
-| Pre-registered study (decoupled G) | 0 / 140 on both registered rules | **Both rules unattainable by construction** (C_out first-two symmetry; G ≳ 1/r with a sampled floor, min G·r = 0.98) — disclosed |
+| Pre-registered study (decoupled G) | 0 / 140 on both registered rules | **Unique-survivor rule unattainable by construction** (C_out first-two symmetry); **G ≤ 2 rule failed at the sample rate used**, not by construction (G ≳ 1/r with a sampled floor, min G·r = 0.98; G ≤ 2 needs every plan's floor cost to reach half the largest surviving upper-bound cost) — disclosed |
 | Joint certificate, LpBound × Python sample (superseded) | 54.3% [46.4, 62.9] ≤ 2×; median 1.51; prunes 33.4% vs 3.6% | Post-hoc; paper uses in-engine 55.0% |
 | Without the shared final result | 27.9% | Post-hoc |
 | Without a lower bound | 0% on every upper bound | Post-hoc |
@@ -74,7 +75,7 @@ stand-alone estimates. v3 uses PostgreSQL's in-context estimates for that source
 |---|---|---|
 | Protocol | one run per benchmark; uncensored plans timed 3×; 25 (STATS) / 11 (JOB-light) plans censored at 300 s; 0 crashes; median start load 4.9 / 2.9; none flagged | Measured (`*_protocol.json`) |
 | Injection is neutral | own in-context estimates change 3/146 STATS plans, 0/70 JOB-light; 1.00× [0.98, 1.02] | Measured (was 90/146 and 1.12× with stand-alone estimates) |
-| Headroom (STATS) | published PG 4.38×, DuckDB 1.70×, our PG 1.35× [1.23, 1.51] | Supported |
+| Headroom (STATS) | published PG 4.38×, DuckDB 1.70×, our PG 1.35× [1.23, 1.51] | Supported; a measured reference, not a bound (the two-sided guard beats the truth's plan by >10% on 2/4/11 queries on 13.1; no guard's geometric mean exceeds it in any run, `results/review/review_checks.json`) |
 | Upper guard, published PG | 3.08× [2.35, 4.15], 66% faster / 3% slower; vs native 0.95× [0.88, 1.03] (both guards 1.06×) | Supported; guarded plans do not beat native |
 | Our PG's own estimates | upper 1.02× (23/146 plans change), floor 1.05×, both 1.07×, upper + L̂ floor 1.18× | Supported: little recovered of a 1.35× headroom. Not because the errors are invisible — 404 of the 475 sub-plans with q-error > 10 lie outside the bracket (`v3/native_bracket.json`) — but because clamping to a wide bracket corrects too little (an earlier draft wrongly said the errors were not where a bound can see them) |
 | DuckDB | upper 1.02×, floor 1.39× | Supported |
@@ -103,7 +104,7 @@ Separate-lane verifier (`reviews/verifier_v3_2026-10-19/report.md`): ~100 number
 | Joint certificate: R(p) <= t iff B(A) - tL(D) <= (t-1)L(Sh) for all p' | 0 disagreements in 10,458 random plans (author) and 59,605 (reviewer) | `tests/unit/test_mechanisms.py`, review | Proposition (proved from the pair formula) |
 | Certificate depends only on B/L | B/2.5 and L x 2.5 both certify 55.0% (= r 0.25 share) | `certificate_mechanisms.json` h2 | Identity; unit test |
 | rho separates certified queries | AUC 0.93 [0.88, 0.98] STATS, 0.93 [0.87, 0.98] JOB-light; relations alone 0.87 / 0.64; JOB-light accuracy 82% at STATS threshold | `mechanism_intervals.json` h1 | Supported (post-hoc); rho does not explain the size trend on JOB-light |
-| Oracle sampling price | online rule optimal on 77% of 57; end to end 0.51x [0.28, 0.78] where choice matters, faster on 14% | `price_of_certification.json`, `mechanism_intervals.json` h5 | Supported (post-hoc) |
+| Oracle sampling price | online rule optimal on 77% of 57; end to end 0.51x [0.28, 0.78] where choice matters, faster on 14% | `price_of_certification.json`, `mechanism_intervals.json` h5 | Supported (post-hoc) for the measured samples (largest relation, fixed rate, per-sub-plan charge) and the executed plans; joint choice of samples and plans not evaluated |
 | A-posteriori certification of PostgreSQL's plan | 86.1% [80.3, 91.2] / 83.9% [77.4, 89.8] (sample / none) of 137 STATS; JOB-light 100% / 97.0% of 67; without final 21.2% / 0% and 41.8% / 1.5% | `certificate_mechanisms.json` h4, `mechanism_intervals.json` h4 | Supported (post-hoc); driven by the final result |
 | Guard funnel (both guards) | ours 91 -> 86 -> 32 changed -> 17 faster (5 less work); published PG 132 -> 131 -> 121 -> 100 faster | `v3/guard_funnel.json` | Supported (post-hoc) |
 | Tightness sweep | ours: 69% [51, 87] of the true-size C_out gain at k = 2, ~40% for k = 4-32 (wide); published PG 73% [59, 84] at k = 32 | `mechanism_intervals.json` sweep | Supplement only (fragile for our estimates) |
@@ -112,4 +113,18 @@ Separate-lane verifier (`reviews/verifier_v3_2026-10-19/report.md`): ~100 number
 | Witness floors (LIMIT k) vs sampled counts | median 0.96x [0.80, 1.04], 70 sub-joins | `v3/witness_floor_summary.json` | Supported (post-hoc); H7 prediction failed |
 | Held-out JOB-range (pre-registered C1-C7) | C1 86.6%, C2 88.8%, C3 7.3% (inconclusive), C4 35.8%, C5 sound, C6 19.4% -> 5.8%, C7 not testable (1.03x) | `results/heldout_jobrange/confirmatory_results.json` | Confirmatory; 4 of 5 empirical predictions confirmed, 1 inconclusive |
 | In-context estimates on a stock server (`joinrel_log`) | 2,577/2,577 STATS-CEB and 696/696 JOB-light equal to the 13.1 patch values; forced prefixes differ on 1,052 | `v3/joinrel_log_*_pg13.summary.json`, `v3/prefix_estimates_stats_pg13.summary.json` | Validated |
-| PostgreSQL 16 replication (STATS-CEB execution) | headroom 1.42x; guards 1.07/1.06/1.13x; published upper 2.42x; LpBound vs truth 0.81x; k=2 81%, k=8 51% | `results/pg_injection/pg16/pg16_comparison.json` | Post-hoc replication; 4 of 6 frozen predictions held (R3, R6 failed narrowly) |
+| PostgreSQL 16 replication (STATS-CEB execution, JIT off, primary) | headroom 1.40x; guards 1.07/1.06/1.14x; published upper 2.48x; LpBound vs truth 0.82x; k=2 81%, k=8 47% (JIT on: 1.42x; 1.07/1.06/1.13x; 2.42x; 0.81x; 81%, 51%) | `results/pg_injection/pg16_jitoff/pg16_comparison.json` (JIT on: `pg16/`) | Post-hoc replication; 4 of 6 frozen predictions; one run per version, so the 13.1-vs-16 difference is not separated from run-to-run variation |
+
+## Revision analyses (2026-11-09, post-hoc, stored results only; `results/review/review_checks.json`, `results/plan_certificate/certificate_threshold_sweep.json`)
+| Claim | Value | Status |
+|---|---|---|
+| Timeouts make speedups ones of capped runtimes | over 251 comparisons plus forced orders: policy-only timeouts outside native-plan comparisons on q126 only (DuckDB 13.1, two PG16 synthetic points) and q135 (forced native order); ≤ 5 queries with two different censored plans per comparison; leaving them out shifts no geometric mean by more than 4.25% | Supported |
+| Exact counts agree with the artifact's truth, by query | every sub-plan compared on 112/146 STATS-CEB and 68/70 JOB-light queries, none disagreeing; one-sided 95% bound 2.6% / 4.3% among such (fully counted) queries | Supported (replaces the earlier 2.0% / 4.2%, which counted queries with at least one compared sub-plan) |
+| Certified sub-joins are non-empty (floors of 1 sound) | min true size 26 (STATS-CEB), 2 (JOB-light); min exact count 1 (JOB-range) | Supported; with empty joins the floor must be 0 (`tests/unit/test_review_checks.py`) |
+| Workload total time, both guards on our estimates | 1.01x [0.96, 1.07] STATS-CEB, 1.02x [1.00, 1.05] JOB-light, 1.03x [0.998, 1.10] PG16 | Supported (one run each) |
+| Certification threshold t | spread > t: STATS-CEB r=0.25 35.6 / 40.6 / 45.5 / 54.3% for t = 1.5 / 2 / 3 / 4; JOB-light 28.8 / 52.4 / 64.2 / 71.1% | Supported (post-hoc); JOB-light sensitive between 1.5 and 2 |
+| Held-out exclusions | were the 9 missing-count queries uncertified: C1 82.4%, C2 84.6% (still confirmed); C3 6.9–11.7% (inconclusive or falsified) | Sensitivity (post-hoc) |
+| LpBound on SafeBound's 138 queries | 55.1% (SafeBound 56.5%) | Supported; SafeBound's three violations not traced |
+| Headroom vs Han et al. (STATS-CEB TrueCard 11.34 h → 5.69 h, external) | ours on total (capped) time 0.58 h → 0.52 h, 1.12x (geomean 1.35x); 4 queries capped under both plans = 57% of our native total (`results/pg_injection/v3/han_headroom.json`, `experiments.scripts.han_headroom`, added 2026-11-16) | Supported (post-hoc); cause of the gap not isolated (cap, base tables, hardware/config) |
+| S3: small runtime effects across six independent blocks (61 STATS-CEB queries, randomized plan order, server restart per block; registered `docs/vldb_2027/PREDICTIONS_S3.md`) | upper 1.01x, floor 1.03x, both 1.04x, true sizes 1.31x, k=2 1.20x (68.5%), k=8 1.07x (25.2%), certified 1.37x [1.14, 1.69], with same-block sampling 0.35x [0.18, 0.61]; block ranges ≤ 0.04 wide; native drift up to 1.25x per block; 834 live sample counts all equal stored; 126/126 certified, orders = v3; certificate computation median 1.2 ms, max 160 ms | Supported (registered; P1–P6 all hold) |
+

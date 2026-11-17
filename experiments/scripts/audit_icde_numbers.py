@@ -62,6 +62,9 @@ MATCHED_N = "pairs::postgres_raw->truth::matched_lhat::n"
 GVN = R / "pg_injection/v3/guarded_vs_native.json"
 INRUN = R / "pg_injection/v3/sampling_overhead_inrun_summary.json"
 FORCED = R / "pg_injection/v3/forced_orders_summary.json"
+HAN = R / "pg_injection/v3/han_headroom.json"
+S3SUM = R / "pg_injection/s3/s3_summary.json"
+S3REP = R / "pg_injection/s3/s3_report.json"
 SELDEN = R / "plan_certificate/selective_denominators.json"
 PG_UPPER = "pairs::postgres_raw->postgres_upper::geo_speedup::point"
 MECH = R / "plan_certificate/certificate_mechanisms.json"
@@ -96,6 +99,7 @@ J2 = R / "pg_injection/v3/joblight_summary.json"
 SP = R / "pg_injection/v3/stats_protocol.json"
 JP = R / "pg_injection/v3/joblight_protocol.json"
 REP = R / "pg_injection/v3/artifact_replication.json"
+REVIEW = R / "review/review_checks.json"
 
 
 def thousands(value: float) -> str:
@@ -264,6 +268,26 @@ def iv(stat: dict[str, float]) -> str:
     return f"${stat['point']:.2f}\\times$ [{stat['ci_low']:.2f}, {stat['ci_high']:.2f}]"
 
 
+def s3_max_dev(summary: dict[str, Any]) -> float:
+    """Largest deviation (%) of an S3 pooled ratio from v3 on the same queries."""
+    ref = json.loads(Path("docs/vldb_2027/S3_DESIGN.json").read_text())["reference_v3"]
+    devs = []
+    for name in (
+        "native_upper",
+        "native_lower",
+        "native_bi",
+        "truth",
+        "bi_k2",
+        "bi_k8",
+        "certified",
+        "certified_with_sampling",
+    ):
+        part = "A" if name.startswith("certified") else "A+B"
+        r = ref[part][name]["geo_speedup"]["point"]
+        devs.append(abs(summary["comparisons"][name]["pooled"] / r - 1))
+    return math.ceil(100 * max(devs))
+
+
 def value(source: Path, path: str) -> float:
     """One number from another result file, for checks that compare two."""
     return float(_dig(json.loads(source.read_text()), path))
@@ -315,13 +339,246 @@ CHECKS: tuple[Check, ...] = (
     ),
     Check(
         "query-level agreement bound",
-        COUNTS_JSONL_QUERIES,
-        "",
+        REVIEW,
+        "agreement_coverage",
         lambda v: (
-            f"{100 * (1 - 0.05 ** (1 / v[0])):.1f}\\% on the share of queries with "
-            f"one, {100 * (1 - 0.05 ** (1 / v[1])):.1f}\\% on JOB-light)"
+            f"every sub-plan was compared on {v['stats']['n_all_compared']} of "
+            f"{v['stats']['n_queries']} STATS-CEB and "
+            f"{v['joblight']['n_all_compared']}\nof {v['joblight']['n_queries']} "
+            "JOB-light queries, none with a disagreement, which bounds the rate "
+            "of\nsuch defects among queries like these (fully counted, hence cheaper "
+            "ones) at "
+            f"{100 * v['stats']['upper95_share_complete_queries']:.1f}\\% and "
+            f"{100 * v['joblight']['upper95_share_complete_queries']:.1f}\\%\n"
+            "(one-sided 95\\%)"
         ),
         transform=lambda v: v,
+    ),
+    Check(
+        "censoring cases",
+        REVIEW,
+        "censoring_summary",
+        lambda v: (
+            (
+                "it happens\non one DuckDB query on 13.1, one synthetic-bracket query "
+                "on PostgreSQL 16 and\none query of the forced native order "
+                "(Section~\\ref{sec:certificates}).\nWhere two different plans both "
+                "time out (at most "
+                f"{['zero', 'one', 'two', 'three', 'four', 'five'][v]} queries in any\n"
+                "comparison)"
+            )
+            if isinstance(v, int)
+            else "MISMATCH"
+        ),
+        transform=lambda v: (
+            v["max_distinct_both"]
+            if sorted(
+                (run, q)
+                for run, pair, q in {
+                    (run, pair, q)
+                    for run, pair, q in v["policy_only"]
+                    if run == "forced_orders"
+                    or not pair.startswith(("native->", "native_raw->"))
+                }
+            )
+            == [
+                ("forced_orders", 135),
+                ("pg13_stats", 126),
+                ("pg13_stats", 126),
+                ("pg13_stats", 126),
+                ("pg16_points", 126),
+                ("pg16_points", 126),
+            ]
+            and all(
+                pair.split("->")[1].startswith(("duckdb_", "postgres_"))
+                for run, pair, _ in v["policy_only"]
+                if run != "forced_orders"
+                and pair.startswith(("native->", "native_raw->"))
+            )
+            and v["max_distinct_both"] <= 5
+            else None
+        ),
+    ),
+    Check(
+        "workload total ratios",
+        REVIEW,
+        "",
+        lambda v: (
+            f"{iv(v[0])}\non STATS-CEB, "
+            f"{iv(v[1])} on JOB-light and "
+            f"${v[2]['point']:.2f}\\times$ "
+            f"[{v[2]['ci_low']:.3f},\n{v[2]['ci_high']:.2f}] on PostgreSQL 16"
+        ),
+        transform=lambda _: tuple(
+            json.loads(path.read_text())["pairs"]["native_raw->native_bi"][
+                "total_ratio"
+            ]
+            for path in (S2, J2, R / "pg_injection/pg16_jitoff/stats_summary.json")
+        ),
+    ),
+    Check(
+        "heldout exclusion ranges",
+        REVIEW,
+        "heldout_exclusion_ranges",
+        lambda v: (
+            "were all 9 uncertified, C1 and C2 would still be confirmed at "
+            f"{100 * v['cout|none']['if_none_certified']:.1f}\\% and\n"
+            f"{100 * v['cout|sample']['if_none_certified']:.1f}\\%, while C3 would "
+            "lie between "
+            f"{100 * v['cout_minus_final|none']['if_none_certified']:.1f}\\% and "
+            f"{100 * v['cout_minus_final|none']['if_all_certified']:.1f}\\% "
+            "depending on those 9,\ninconclusive or falsified"
+            if v["cout|none"]["if_none_certified"] >= 0.7
+            and v["cout|sample"]["if_none_certified"] >= 0.8
+            and v["cout_minus_final|none"]["if_none_certified"] > 0.05
+            and v["cout_minus_final|none"]["if_all_certified"] > 0.10
+            else "MISMATCH"
+        ),
+        transform=lambda v: v,
+    ),
+    Check(
+        "threshold sweep",
+        R / "plan_certificate/certificate_threshold_sweep.json",
+        "cases",
+        lambda v: (
+            f"LpBound covers {v[0]:.1f}\\%, {v[1]:.1f}\\% and {v[2]:.1f}\\% of "
+            "STATS-CEB at $r{=}0.25$ for\n$t=1.5$, 3 and 4, a smooth trend, and "
+            f"{v[3]:.1f}\\%, {v[4]:.1f}\\% and {v[5]:.1f}\\% of JOB-light\n"
+            f"against {v[6]:.1f}\\% at 2; on JOB-light's fixed {v[7]} queries it "
+            f"certifies {v[8]} at\n$t=1.5$ against {v[9]} at 2"
+        ),
+        transform=lambda v: (
+            *(
+                100 * v[case]["by_threshold"][t]["spread_above_t"]["share"]["point"]
+                for case, t in (
+                    ("stats_r025", "1.5"),
+                    ("stats_r025", "3"),
+                    ("stats_r025", "4"),
+                    ("joblight_r010", "1.5"),
+                    ("joblight_r010", "3"),
+                    ("joblight_r010", "4"),
+                    ("joblight_r010", "2"),
+                )
+            ),
+            v["joblight_r010"]["by_threshold"]["2"]["spread_above_2"]["n"],
+            v["joblight_r010"]["by_threshold"]["1.5"]["spread_above_2"]["n_certified"],
+            v["joblight_r010"]["by_threshold"]["2"]["spread_above_2"]["n_certified"],
+        ),
+    ),
+    Check(
+        "headroom exceeded on single queries",
+        REVIEW,
+        "headroom_exceedance::pg13_stats",
+        lambda v: (
+            f"on {v['native']['bi_beats_truth']} of 146 STATS-CEB queries for our\n"
+            f"estimates, {v['postgres']['bi_beats_truth']} for the published "
+            f"PostgreSQL estimates and {v['duckdb']['bi_beats_truth']} for DuckDB's)"
+        ),
+        transform=lambda v: v,
+    ),
+    Check(
+        "lpbound on the safebound queries",
+        PG25,
+        "per_query",
+        lambda v: f"on the same {v[0]}, LpBound certifies {100 * v[1]:.1f}\\%",
+        transform=lambda v: (
+            len(
+                lp := [
+                    r
+                    for r in v["lpboundxsample|cout"]
+                    if r["query_id"]
+                    in {s["query_id"] for s in v["safeboundxsample|cout"]}
+                ]
+            ),
+            sum(r["joint_bound_best"] <= 2 for r in lp) / len(lp),
+        ),
+    ),
+    Check(
+        "no guard exceeded the headroom",
+        S2,
+        "",
+        lambda v: (
+            "No\nguard's geometric mean exceeded the headroom in any of our runs."
+            if v
+            else "MISMATCH"
+        ),
+        transform=lambda _: (
+            all(
+                json.loads(path.read_text())["time"][k]["share_of_truth_speedup"][
+                    "point"
+                ]
+                <= 1
+                for path in (
+                    POINTS,
+                    R / "pg_injection/pg16/tightness_points_summary.json",
+                    R / "pg_injection/pg16_jitoff/tightness_points_summary.json",
+                )
+                for k in ("bi_k2", "bi_k8")
+            )
+            and all(
+                pairs[f"{raw}->{raw[:-4]}_{g}"]["geo_speedup"]["point"]
+                <= pairs[f"{raw}->truth"]["geo_speedup"]["point"]
+                for path in (
+                    S2,
+                    J2,
+                    *(
+                        R / f"pg_injection/{d}/stats_summary.json"
+                        for d in ("pg16", "pg16_jitoff")
+                    ),
+                )
+                for pairs in [json.loads(path.read_text())["pairs"]]
+                for raw in {
+                    k.split("->")[0] for k in pairs if k.split("->")[0].endswith("_raw")
+                }
+                for g in ("upper", "upper_t1", "lower", "bi", "bi_hat")
+                if f"{raw}->{raw[:-4]}_{g}" in pairs
+            )
+        ),
+    ),
+    Check(
+        "censoring sensitivity",
+        REVIEW,
+        "",
+        lambda v: f"moves no geometric mean of any executed run by more than {v}\\%",
+        transform=lambda v: (
+            -int(
+                -100
+                * max(
+                    v["censoring_summary"]["max_sensitivity_shift"],
+                    *(
+                        abs(c["geo_without_distinct_both"] / c["geo_all"] - 1)
+                        for c in v["censoring_forced_orders"].values()
+                    ),
+                )
+                // 1
+            )
+        ),
+    ),
+    Check(
+        "certified sub-joins are non-empty",
+        REVIEW,
+        "positivity",
+        lambda v: (
+            (
+                f"(smallest true size {round(v[0])} on\nSTATS-CEB and {round(v[1])} "
+                f"on JOB-light, smallest exact count {round(v[2])} on JOB-range)"
+            )
+            if v is not None
+            else "MISMATCH"
+        ),
+        transform=lambda v: (
+            (
+                v["results/plan_guard/subjoin_sizes_maxdeg_fixed.jsonl"]["min_truth"],
+                v["results/plan_certificate/joblight_subjoin_sizes.jsonl"]["min_truth"],
+                v["results/heldout_jobrange/subset_counts.jsonl"]["min_exact"],
+            )
+            if min(
+                *(e["min_truth"] for e in v.values() if "min_truth" in e),
+                *(e["min_exact"] for e in v.values() if "min_exact" in e),
+            )
+            >= 1
+            else None
+        ),
     ),
     Check(
         "native reproduction stats",
@@ -1026,7 +1283,8 @@ CHECKS: tuple[Check, ...] = (
         FORCED,
         "certified_by_choice::matters",
         lambda v: (
-            "on STATS-CEB, certified plans beat PostgreSQL's own where the choice "
+            "on STATS-CEB, plans certified with the 10\\% sample beat "
+            "PostgreSQL's\nown where the choice "
             f"matters (${v['geo_speedup']['point']:.2f}\\times$) until the sample "
             "is paid for"
             if v["geo_speedup"]["ci_low"] > 1
@@ -1040,8 +1298,8 @@ CHECKS: tuple[Check, ...] = (
         FORCED,
         "",
         lambda v: (
-            "on STATS-CEB the plans they certify run as fast as PostgreSQL's own, "
-            "and faster where the choice matters"
+            "on STATS-CEB the plans they certify with the 10\\% sample run\nas fast "
+            "as PostgreSQL's own, and faster where the choice matters"
             if v["comparisons"]["native->certified"]["geo_speedup"]["ci_low"]
             <= 1
             <= v["comparisons"]["native->certified"]["geo_speedup"]["ci_high"]
@@ -1258,8 +1516,8 @@ CHECKS: tuple[Check, ...] = (
         lambda v: (
             "(on PostgreSQL 13.1 the highest start load was "
             f"{v['load_start_max']:.1f}; {NUMBER[v['n_end_above_60']]} STATS-CEB "
-            f"queries ended above 60, at most {v['load_end_max']:.1f}), our "
-            "intervals are over queries, not repeated runs, and plans cut off at "
+            f"queries ended above 60, at most {v['load_end_max']:.1f}), and "
+            "plans cut off at "
             f"300\\,s (on 13.1, {v['n_censored_plans']} on STATS-CEB; "
             f"{value(JP, 'n_censored_plans'):.0f} on JOB-light, all of one query "
             "on which every plan times out; on 16, "
@@ -1350,7 +1608,7 @@ CHECKS: tuple[Check, ...] = (
             f"\\% of the {v['all']['n']} certified queries ("
             f"{round(100 * value(POC, POC_GREEDY_MATTERS))}"
             f"\\% of the {v['choice_matters']['n']} where the choice matters). Charged "
-            "the oracle's price instead of the online rule's, the certified plans "
+            "the oracle's price instead of the online rule's, the same executed plans "
             f"still run {iv(v['all']['oracle_geo'])} as fast as the native plan over "
             f"the {v['all']['n']} queries and {iv(v['choice_matters']['oracle_geo'])} "
             "where the choice matters, faster on "
@@ -1603,11 +1861,13 @@ CHECKS: tuple[Check, ...] = (
         PG16JO,
         "",
         lambda v: (
-            f"estimates, {iv(v['pg16']['both'])} of a "
+            f"gained\n{iv(v['pg16']['both'])} of a "
             f"${v['pg16']['headroom']['point']:.2f}\\times$ headroom ("
             f"{log_share(v['pg16'])}\\%, against {log_share(v['pg13'])}\\% on "
-            "13.1), above the $1.12\\times$ we predicted, and an $8\\times$ synthetic "
-            f"bracket recovers {pct_iv(v['pg16']['bi_k8_share'])} of the headroom "
+            "13.1), above the $1.12\\times$ we predicted; with one run per version we "
+            "cannot\nseparate this difference from run-to-run variation. An "
+            "$8\\times$ synthetic bracket\nrecovers "
+            f"{pct_iv(v['pg16']['bi_k8_share'])} of the headroom "
             f"({round(100 * value(PG16CMP, 'pg16::bi_k8_share::point'))}\\% with JIT "
             "on, where we predicted less than half; on the JIT-off run that "
             "prediction holds, which we do not count)"
@@ -1634,9 +1894,10 @@ CHECKS: tuple[Check, ...] = (
         PG16JO,
         "pg16",
         lambda v: (
-            "the guards do somewhat more for its own estimates "
-            f"(${v['both']['point']:.2f}\\times$ of a "
-            f"${v['headroom']['point']:.2f}\\times$ headroom)"
+            "guards on its own estimates gained "
+            f"${v['both']['point']:.2f}\\times$ of a\n"
+            f"${v['headroom']['point']:.2f}\\times$ headroom, above our prediction, "
+            "in one run per version"
         ),
         transform=lambda v: v,
     ),
@@ -1645,8 +1906,8 @@ CHECKS: tuple[Check, ...] = (
         PG16JO,
         "",
         lambda v: (
-            f"(${v['pg13']['both']['point']:.2f}\\times$ on 13.1; somewhat more, "
-            f"${v['pg16']['both']['point']:.2f}\\times$, on 16)"
+            f"(${v['pg13']['both']['point']:.2f}\\times$ on 13.1, "
+            f"${v['pg16']['both']['point']:.2f}\\times$ on 16, one run each)"
         ),
         transform=lambda v: v,
     ),
@@ -2022,6 +2283,74 @@ CHECKS: tuple[Check, ...] = (
         S2,
         "pairs::native_raw->truth::geo_speedup::point",
         lambda v: f"${v:.2f}\\times$ for our instance's own",
+    ),
+    # S3 block re-measurement (registered: docs/vldb_2027/PREDICTIONS_S3.md).
+    Check(
+        "s3 limitations sentence",
+        S3SUM,
+        "",
+        lambda v: (
+            "in six blocks hours\napart, restarting the server and randomizing the "
+            "plan order in every round, with predictions registered beforehand: a "
+            "block's native plans ran up to "
+            f"${max(v['native_raw_block_drift'].values()):.2f}\\times$ slower than "
+            "their mean over blocks, yet all six predictions held and every ratio "
+            f"stayed within {s3_max_dev(v):.0f}\\% of the main run on the same "
+            "queries (both guards "
+            f"${v['comparisons']['native_bi']['pooled']:.2f}\\times$, true sizes "
+            f"${v['comparisons']['truth']['pooled']:.2f}\\times$, certified plans "
+            f"${v['comparisons']['certified']['pooled']:.2f}\\times$, or "
+            f"${v['comparisons']['certified_with_sampling']['pooled']:.2f}\\times$ "
+            "with same-block\nsampling; supplement)"
+            if v["status"] == "valid"
+            and len(v["valid_blocks"]) == 6
+            and all(
+                v["verdicts"][k]
+                for k in v["verdicts"]
+                if k.startswith("P") and k != "P3_blocks_ordered"
+            )
+            else "MISMATCH"
+        ),
+        transform=lambda v: v,
+    ),
+    Check(
+        "s3 certificate time",
+        S3REP,
+        "certificate_ms_all",
+        lambda v: (
+            f"took a median {v['median']:.1f}\\,ms and at most {v['max']:.0f}\\,ms "
+            "per query\nin the re-measurement"
+        ),
+        transform=lambda v: v,
+    ),
+    # Han et al. comparison (post-hoc; experiments/scripts/han_headroom.py).
+    Check(
+        "han total-time headroom",
+        HAN,
+        "",
+        lambda v: (
+            f"from {v['han_stats_ceb']['postgresql_h']:.2f}\\,h to "
+            f"{v['han_stats_ceb']['truecard_h']:.2f}\\,h. Our instance runs the "
+            f"{v['stats_ceb']['n_queries']} native plans in "
+            f"{v['stats_ceb']['native_total_h']:.2f}\\,h in total and gains "
+            f"${v['stats_ceb']['headroom_total_time']:.2f}\\times$ on that total"
+            if v["stats_ceb"]["headroom_total_time"]
+            < v["stats_ceb"]["headroom_geomean"]
+            else "MISMATCH"
+        ),
+        transform=lambda v: v,
+    ),
+    Check(
+        "han both-capped queries",
+        HAN,
+        "stats_ceb",
+        lambda v: (
+            "four queries that time out under\nboth plans make up more than half of it"
+            if v["n_both_plans_capped"] == 4
+            and v["both_capped_share_of_native_total"] > 0.5
+            else "MISMATCH"
+        ),
+        transform=lambda v: v,
     ),
     Check(
         "published vs native",

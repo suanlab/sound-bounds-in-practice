@@ -1,0 +1,7 @@
+# S3 registration, frozen 2026-11-16T23:43:20+09:00 (before any S3 block)
+1352151ea6b0771f5f8b3df0e839563e85aa9fd26c76de8a616c19e781687d56  docs/vldb_2027/PREDICTIONS_S3.md
+d2520ca70c093fa34e4773c062c3d60d109c1550115e01afa842ea825c1102f6  docs/vldb_2027/S3_DESIGN.json
+4266001e90d45eab731ca091f2dfa8f4f7393d7406cc105f0fdd376676286dde  experiments/pg_injection/run_blocks_s3.py
+3e96155c59e938077f724e3206cda62237c9bb42a26fe8ac6856f49658ccd964  experiments/pg_injection/run_s3_blocks.sh
+857074926f7a13f28e7b3e366b156b8c45b8d0040e39568164985f829f9bbf91  experiments/scripts/s3_analysis.py
+b7dca9baa43a4a742e3a5afc7022cd7b2b0ae4a8dd732f3b3276c7f002182130  experiments/scripts/s3_design.py

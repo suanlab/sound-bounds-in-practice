@@ -12,10 +12,12 @@ frozen predictions and the pre-registration record those paths.
 | `docs/icde_2027/REPRODUCE.md` | every number → command → output file |
 | `docs/icde_2027/CLAIMS_EVIDENCE.md` | every claim → value, interval, status (post-hoc items marked) |
 | `docs/AUDIT_REPAIR_LOG.md`, `results/SUPERSEDED.md` | defects in our own pipeline and the results they invalidated |
-| `docs/c4_preregistration.md` | the pre-registered plan-certificate study whose two rules the paper reports as unattainable |
+| `docs/c4_preregistration.md` | the pre-registered plan-certificate study whose two rules failed (one unattainable by construction, one at the sample rate used) |
 | `docs/icde_2027/PREDICTIONS.md`, `PREDICTIONS_RESULTS.md` | predictions frozen before the post-hoc mechanism analyses, and how each fared |
 | `docs/icde_2027/PREREGISTRATION_JOBRANGE*.md` | the held-out JOB-range pre-registration and its two addenda (each with a `.sha256` file); results in `results/heldout_jobrange/confirmatory_results.json` |
 | `docs/vldb_2027/PREDICTIONS_PG16*.md` | predictions frozen for the PostgreSQL 16 replication and how each fared; results in `results/pg_injection/pg16*/` |
+| `docs/vldb_2027/PREDICTIONS_S3.md`, `S3_DESIGN.json` | the registered six-block re-measurement of the small runtime effects and the sampling cost (hashes in `PREDICTIONS_S3.sha256`); results and table in `results/pg_injection/s3/` (`s3_summary.json`, `S3_TABLE.md`) |
+| `docs/vldb_2027/REPRODUCE.md`, `REVISION_EXPERIMENTS.md` | landing page for reproducing this version; analyses added in revision |
 | `experiments/pg_injection/joinrel_log/`, `docker16/` | the extension that reads PostgreSQL's in-context sub-plan estimates on a stock server, and the PostgreSQL 16 image |
 
 ## Checks without any data download
@@ -27,7 +29,7 @@ pytest tests/
 
 ## Which results the paper uses
 - Execution (both execution tables, the replication table, the per-query figure): `results/pg_injection/v3/` — one run per benchmark covering every
-  source and policy. `results/pg_injection/v2/` is superseded (see `results/SUPERSEDED.md`). The older `results/pg_injection/inject_plans*.jsonl` and `injection_summary*.json`
+  source and policy; `results/pg_injection/s3/` re-measures 61 STATS-CEB queries in six independent blocks (Limitations). `results/pg_injection/v2/` is superseded (see `results/SUPERSEDED.md`). The older `results/pg_injection/inject_plans*.jsonl` and `injection_summary*.json`
   are superseded (different load, τ = 2) and kept only for provenance.
 - Plan certificates: `results/plan_certificate/plan_certificate_joint_pg_r025.json` (PostgreSQL's
   in-engine samples); the registered study used our own sampler (`plan_certificate.json`).
