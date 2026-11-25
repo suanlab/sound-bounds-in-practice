@@ -1,7 +1,8 @@
 # Sound Cardinality Bounds in Practice: Guards, Estimates, and Plan Certificates — code and data
 
 Reproducibility package for the PVLDB Vol. 20 (VLDB 2027) Experiment, Analysis & Benchmark submission of the
-same title (Suan Lee, Semyung University). The paper itself will be added after review.
+same title (Suan Lee, Semyung University). The paper's LaTeX source is included (`docs/vldb_2027/paper.tex`,
+`paper.bbl`); the PDF is the one submitted to PVLDB. The submitted version is tagged `pvldb2027-submission-r6`.
 
 The directory `docs/icde_2027/` keeps its name from an earlier, never-submitted target: the hash files of the
 frozen predictions and the pre-registration record those paths.
@@ -9,6 +10,7 @@ frozen predictions and the pre-registration record those paths.
 ## Start here
 | File | What it is |
 |---|---|
+| `docs/vldb_2027/paper.tex`, `paper.bbl` | the submission's source (PVLDB template; builds with `pdflatex`/`bibtex` in that directory) |
 | `docs/icde_2027/REPRODUCE.md` | every number → command → output file |
 | `docs/icde_2027/CLAIMS_EVIDENCE.md` | every claim → value, interval, status (post-hoc items marked) |
 | `docs/AUDIT_REPAIR_LOG.md`, `results/SUPERSEDED.md` | defects in our own pipeline and the results they invalidated |
@@ -23,7 +25,7 @@ frozen predictions and the pre-registration record those paths.
 ## Checks without any data download
 ```bash
 pip install -r requirements.txt
-PYTHONHASHSEED=0 python -m experiments.scripts.audit_icde_numbers   # needs docs/vldb_2027/paper.tex (added after review)
+PYTHONHASHSEED=0 python -m experiments.scripts.audit_icde_numbers   # every headline number re-derived from results/ and found in docs/vldb_2027/paper.tex
 pytest tests/
 ```
 

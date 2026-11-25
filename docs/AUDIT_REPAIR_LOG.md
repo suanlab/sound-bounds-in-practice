@@ -279,3 +279,53 @@ official train/eval CLIs produce artifacts ✅.
   - Space: the Han paragraph is cut to its registered minimum, the availability paragraph is trimmed (it now points to `docs/vldb_2027/REPRODUCE.md`), and `\looseness=-1` is applied to five paragraphs. The references start at the top of page 13.
 - **Audit:** 273 → 275 checks. The Han both-capped check and the limitations-load check follow the new wording. Tests pass (181).
 - **Not changed:** pinned files (all `*.sha256` verify).
+
+## 2026-11-24 — Concurrent submission cited and declared (r3)
+
+- **Trigger:** PVLDB Vol. 20 "Self-Declaration of Related Submissions". The policy requires authors to cite related submissions concurrently under review, mark them "under submission" in the references, and report them in CMT. The author's LpH-CEG paper ("Where the Headroom Lies: Block ℓp-Norm Statistics for Cyclic Join Bounds", with Jinho Kim and Eenjun Hwang) was submitted to ICDE 2027 Research Round 2 on 2026-11-12.
+  - It is related in area: pessimistic join-size bounds, with LpBound as the baseline.
+  - It is not a duplicate. Comparing the two submitted PDFs found 0 shared 12-grams; the only shared 8-grams are affiliation lines. Workloads differ (cyclic graph patterns against STATS-CEB and JOB-light), and the papers share no results or code.
+- **Paper change** (user approved 2026-11-24), §2.1: after LpBound "is the tightest we know of", a parenthesis is added citing the concurrent work under submission, which tightens LpBound on cyclic graph patterns outside the predicates of our workloads. New bib entry: `lee2026lphceg` (`@misc`, note "Under submission", public artifact URL). The title and authors were checked against the LpH-CEG source.
+- **Space:** absorbed with no cut. The references still start at the top of page 13.
+- **CMT_CHECKLIST.md:** the concurrent-submissions item is corrected from "None" to declaring LpH-CEG.
+- **Artifact:** unchanged. The paper still points to tag `pvldb2027-submission-r2`, so the release repository was not modified.
+
+## 2026-11-24 — Abstract restructured, executed-count wording, count-DP limitation (r4)
+
+- **Trigger:** an acceptance assessment on 2026-11-24 found two problems with r3.
+  - The r3 abstract listed results without the claim that unifies them.
+  - The "a third of an exact count" comparison could be read as against any exact method. Measurements made after r3 show that a count rewrite (count dynamic programming) can be far cheaper than an executed COUNT(*) on STATS-CEB, but not on IMDb (`research/breakthrough/t3`, `t3b`, `b_exact`; not part of this paper).
+- **Paper changes** (user approved 2026-11-24; candidate and diff in `research/breakthrough/pvldb_revision/r4_candidate/`):
+  1. **Abstract** restructured around §1's sentence that the answer depends more on the estimator and consumer a bound meets than on the bound, with three numbered findings.
+     - Every audited abstract phrase of r3 is kept verbatim.
+     - Added: the six-block re-measurement on STATS-CEB.
+     - Dropped: "with up to eight estimators".
+  2. **§1 and §4.4:** "exact count" becomes "executed exact count".
+  3. **Limitations:** exact sizes by count dynamic programming without enumeration (Zhao et al. 2018) are named as not covered. The bib entry was already present and cited. Crossref check of DOI 10.1145/3183713.3183739 on 2026-11-24: title, authors, venue and pages match.
+  4. **`\Description`** added to the three figures (acmart accessibility). This removes the "image without description" warnings.
+- **Space:** the references still start at line 1 of page 13. Two longer drafts spilled onto page 13 and were cut in the abstract only.
+- **Checks:**
+  - `audit_icde_numbers`: 275/275, with no change to the audit code.
+  - Word-level PDF text diff against r3: only the intended edits.
+- **CMT_ABSTRACT.txt** is regenerated from the new abstract. The CMT abstract field must use it.
+- **Artifact:** unchanged, still tag `pvldb2027-submission-r2`.
+- **Clean-room check of the r3 supplement, the same day:** audit 275/275; 181 tests passed; `review_checks` byte-identical; all registration hashes OK.
+
+## 2026-11-26 — Reproducibility package made complete at the public tag (r6)
+
+**Why.** PVLDB's CMT form has no upload for supplemental material. Vol. 20 asks for a public archival link instead, and for EA&B papers "already the initial submission must include a link to the full reproducibility package". The public tag `pvldb2027-submission-r2` lacked the paper source (`docs/vldb_2027/paper.tex`, `paper.bbl`), so reviewers could not run `audit_icde_numbers` against the submitted text. That was the policy from the double-blind ICDE period; PVLDB is single-blind.
+
+**r5** (frozen 2026-11-26 02:05, by the author's other session) changed only the `lee2026lphceg` bib entry ([28]). It now carries LpH-CEG's new title, "Block Statistics for Pessimistic Cardinality Bounds on Cyclic Joins" (formerly "Where the Headroom Lies: Block $\ell_p$-Norm Statistics for Cyclic Join Bounds"). The author changed it while converting that paper for PVLDB. LpH-CEG was desk-rejected at ICDE 2027 and is submitted to PVLDB Vol. 20 in the same cycle. The citation "under submission" stays accurate, and the CMT declaration was updated (`SUBMISSION_VLDB.md`, item 12).
+
+**r6 changes** (on top of r5):
+- **Paper:**
+  - The availability URL and the Artifacts paragraph now name the new tag `pvldb2027-submission-r6`. The paragraph says the tag includes the paper's source.
+  - Section 2.1 now says the concurrent work tightens LpBound "on cyclic joins" (was "on cyclic graph patterns"), to match LpH-CEG's new title.
+  - No other text or number changed. The audit finds all 275 numbers; there are no overfull boxes; references start at the top of p. 13.
+- **Public repository:** the tag `pvldb2027-submission-r6` adds:
+  - the paper source and `paper.bbl`;
+  - the `lee2026lphceg` bib entry;
+  - this log's r3–r6 entries;
+  - `results/pg_injection/pg16/smoke/stats_inject.jsonl`, the PG16 smoke run, which was missing from r2.
+
+  It also updates the README. `paper.pdf` is left out: it is uploaded to CMT, and its bytes change with every build.
