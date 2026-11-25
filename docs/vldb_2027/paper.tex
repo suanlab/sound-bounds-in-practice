@@ -21,7 +21,7 @@
 
 \renewcommand\vldbdoi{XX.XX/XXX.XX}
 \renewcommand\vldbpages{XXX-XXX}
-\renewcommand\vldbavailabilityurl{https://github.com/suanlab/sound-bounds-in-practice/tree/pvldb2027-submission-r6}
+\renewcommand\vldbavailabilityurl{https://github.com/suanlab/sound-bounds-in-practice/tree/pvldb2027-submission-r7}
 
 \usepackage{booktabs}
 \setlength{\emergencystretch}{2em}
@@ -39,6 +39,22 @@ Certificates [Experiment, Analysis \& Benchmark]}
   \country{Republic of Korea}
 }
 \email{suanlee@semyung.ac.kr}
+
+\author{Jinho Kim}
+\affiliation{%
+  \institution{Kangwon National University}
+  \city{Chuncheon}
+  \country{Republic of Korea}
+}
+\email{jhkim@kangwon.ac.kr}
+
+\author{Eenjun Hwang}
+\affiliation{%
+  \institution{Korea University}
+  \city{Seoul}
+  \country{Republic of Korea}
+}
+\email{ehwang04@korea.ac.kr}
 
 \begin{abstract}
 Sound join-size bounds are proposed as guards against bad cardinality
@@ -1316,38 +1332,34 @@ our runs no guard recovered more on average, though it is no bound.
 We used Anthropic's Claude models, through the Claude Code agent, throughout
 this work, at the following levels. \emph{Code (Sections~\ref{sec:setup}--\ref{sec:heldout}):} the
 measurement harness, the analysis and statistics scripts, the tests and the
-figure scripts were written by the assistant at the author's direction and
-reviewed by the author; the results are regenerated from the released code,
-and an automated check confirms that each headline number and generated table
-row appears in the text. \emph{Text (all sections):} drafts and revisions of every section
-were produced with the assistant and edited and approved by the author.
+figure scripts were written by the assistant at the first author's direction and
+reviewed by the first author, and the audit described under Artifacts
+checks their output. \emph{Text (all sections):} drafts and revisions of every section
+were produced with the assistant and edited and approved by the authors.
 \emph{Literature (Section~\ref{sec:related}):} an assistant agent retrieved bibliographic
 records from dblp and Crossref, and we kept only entries whose retrieved record
 matched. \emph{Internal review:} we used the assistant to simulate strict
 reviewers and independent auditors of the code, data and text; several defects
 reported in Section~\ref{sec:lessons} were found this way. These simulated reviews are not
 peer review and are not reported as such. The assistant proposed analyses and
-wording; the author chose the research questions, benchmarks and estimators,
-decided which analyses to run and report, and is responsible for all content.
+wording; the authors chose the research questions, benchmarks and estimators,
+decided which analyses to run and report, and are responsible for all content.
 
 \section*{Artifacts}
 \looseness=-1
 Code, results and provenance are public at
 \url{https://github.com/suanlab/sound-bounds-in-practice} (MIT licence; the
-submitted version is tagged \texttt{pvldb2027-submission-r6} and includes
-the paper's source). They comprise the harness (sub-plan counting and sampling
-inside PostgreSQL, injection through \texttt{pg\_hint\_plan}, the certificate
-computations), every per-query result as JSON, and the analysis scripts.
-\texttt{docs/vldb\_2027/REPRODUCE.md} leads to a map from each number in the
-paper to the command that produces it, and \texttt{audit\_icde\_numbers} re-derives the headline numbers
+submitted version is tagged \texttt{pvldb2027-submission-r7} and includes
+the paper's source): the harness, every per-query result as JSON, and the
+analysis scripts.
+\texttt{docs/vldb\_2027/REPRODUCE.md} maps each number in the paper to the
+command that produces it, and \texttt{audit\_icde\_numbers} re-derives the headline numbers
 from the results and checks them against the \LaTeX{} source. Re-running needs
 the public STATS and IMDb data, the LpBound artifact~\cite{zhang2025lpbound}
 for estimates and truth, and the STATS-CEB benchmark's PostgreSQL
-patch~\cite{han2021cardest}, built by a Dockerfile we include; PostgreSQL 16 is
-a stock server with the \texttt{joinrel\_log} extension, also with its
-Dockerfile. Third-party code and data are referenced, not redistributed, except
-the held-out JOB-range sub-plan list, a subset of the LpBound artifact's (MIT
-licence).
+patch~\cite{han2021cardest}; Dockerfiles for it and for PostgreSQL 16 with
+the \texttt{joinrel\_log} extension are included. Third-party code and data are referenced, not redistributed, except
+the held-out JOB-range sub-plan list (from the LpBound artifact, MIT licence).
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{../references}

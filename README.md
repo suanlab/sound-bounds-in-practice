@@ -1,8 +1,8 @@
 # Sound Cardinality Bounds in Practice: Guards, Estimates, and Plan Certificates — code and data
 
 Reproducibility package for the PVLDB Vol. 20 (VLDB 2027) Experiment, Analysis & Benchmark submission of the
-same title (Suan Lee, Semyung University). The paper's LaTeX source is included (`docs/vldb_2027/paper.tex`,
-`paper.bbl`); the PDF is the one submitted to PVLDB. The submitted version is tagged `pvldb2027-submission-r6`.
+same title (Suan Lee, Semyung University; Jinho Kim, Kangwon National University; Eenjun Hwang, Korea University). The paper's LaTeX source is included (`docs/vldb_2027/paper.tex`,
+`paper.bbl`); the PDF is the one submitted to PVLDB. The submitted version is tagged `pvldb2027-submission-r7`.
 
 The directory `docs/icde_2027/` keeps its name from an earlier, never-submitted target: the hash files of the
 frozen predictions and the pre-registration record those paths.

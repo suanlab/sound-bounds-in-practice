@@ -329,3 +329,18 @@ official train/eval CLIs produce artifacts ✅.
   - `results/pg_injection/pg16/smoke/stats_inject.jsonl`, the PG16 smoke run, which was missing from r2.
 
   It also updates the README. `paper.pdf` is left out: it is uploaded to CMT, and its bytes change with every build.
+
+## 2026-11-26 — Co-authors added (r7)
+
+At the author's request, the paper's author list now matches LpH-CEG's: Suan Lee (Semyung University), Jinho Kim (Kangwon National University) and Eenjun Hwang (Korea University).
+
+Changes:
+- **Paper:** two `\author` blocks were added. They carry no ORCID, since none were given.
+- **Acknowledgment of AI Use:** "the author" now reads "the first author" for directing and reviewing the code, and "the authors" for approving the text and for responsibility.
+- **Space:** the third author line and the PVLDB reference format pushed four lines onto p. 13. Three things were shortened, with no number or claim changed:
+  - the Artifacts paragraph lost its list of the harness's parts and its Dockerfile sentence;
+  - the "leads to a map" phrase is shorter;
+  - the AI paragraph's restatement of the audit now points to the Artifacts paragraph.
+- **Tag:** the availability URL and the Artifacts paragraph name `pvldb2027-submission-r7`.
+
+Checks: audit 275/275; 14 pages, with references at the top of p. 13; 0 overfull boxes.
